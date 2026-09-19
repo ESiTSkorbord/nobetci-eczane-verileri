@@ -1,0 +1,7 @@
+{
+  "eczaneler": [
+    { "id": 1, "ad": "GÜL ECZANESİ", "tel": "0216 123 45 67", "adres": "Bağlarbaşı Mah. Atatürk Cad. No:12 Maltepe/İstanbul" },
+    { "id": 2, "ad": "MENEKŞE ECZANESİ", "tel": "0216 234 56 78", "adres": "Cevizli Mah. Eski Ankara Cad. No:5 Maltepe/İstanbul" },
+    { "id": 3, "ad": "ŞİFA ECZANESİ", "tel": "0216 345 67 89", "adres": "Zümrütevler Mah. Kaptanpaşa Cad. No:8 Maltepe/İstanbul" }
+  ]
+}
