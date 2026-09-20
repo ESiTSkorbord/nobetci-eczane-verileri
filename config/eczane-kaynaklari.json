@@ -1,0 +1,17 @@
+{
+  "_aciklama": "Her satir bir panelin kurulu oldugu il/ilceyi, senin GitHub'daki dosya isimlerine (il_slug/ilce_slug) ve ucuncu parti API'nin kullandigi il/ilce yazimina (api_il/api_ilce) baglar. Yeni bir yere panel kurdugunda buraya yeni bir satir ekle, baska hicbir sey degistirmene gerek yok.",
+  "kaynaklar": [
+    {
+      "il_slug": "istanbul",
+      "ilce_slug": "kartal",
+      "api_il": "ISTANBUL",
+      "api_ilce": "KARTAL"
+    },
+    {
+      "il_slug": "istanbul",
+      "ilce_slug": "maltepe",
+      "api_il": "ISTANBUL",
+      "api_ilce": "MALTEPE"
+    }
+  ]
+}
