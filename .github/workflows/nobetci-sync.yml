@@ -1,0 +1,43 @@
+name: Nobetci Eczane Senkronizasyonu
+
+# Bu workflow GitHub'in kendi sunucularinda calisir - Enver'in bilgisayarinin
+# acik olmasina, hicbir sunucu/hosting'e gerek yoktur. Sadece bu dosya depoya
+# eklenince otomatik devreye girer.
+
+on:
+  schedule:
+    # Her saat basi calisir (UTC). Istanbul saatine gore gunde 24 kez kontrol eder.
+    - cron: "0 * * * *"
+  workflow_dispatch: {}
+    # Yukaridaki satir, GitHub deposunun "Actions" sekmesinden elle
+    # "Run workflow" butonuyla da calistirilabilmeyi saglar (test icin kullanisli).
+
+permissions:
+  contents: write
+
+jobs:
+  senkronize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Depoyu indir
+        uses: actions/checkout@v4
+
+      - name: Python kur
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Nobetci verisini senkronize et
+        run: python scripts/senkronize.py
+
+      - name: Degisiklik varsa commit+push yap
+        run: |
+          git config user.name "nobetci-eczane-bot"
+          git config user.email "nobetci-eczane-bot@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "Degisiklik yok, commit atilmayacak."
+          else
+            git commit -m "Otomatik nobetci eczane senkronizasyonu"
+            git push
+          fi
