@@ -1,0 +1,28 @@
+{
+  "eczaneler": [
+    {
+      "id": 48889,
+      "ad": "ANATOLİUM ECZANESİ",
+      "tel": "2164515151",
+      "adres": "Soğanlık Yeni Mah. Soğanlık D100 Kuzey Yanyol Cad. B Blok No:72/185"
+    },
+    {
+      "id": 59703,
+      "ad": "AVRUPA PLUS ECZANESİ",
+      "tel": "0",
+      "adres": "Esentepe Mah. İnönü Cad. No:151/A"
+    },
+    {
+      "id": 39288,
+      "ad": "DEMİRCİOĞLU ECZANESİ",
+      "tel": "2164885073",
+      "adres": "ATALAR MAH. ÜSKÜDAR CAD. NO:152/A"
+    },
+    {
+      "id": 49075,
+      "ad": "YENİ ŞİFA ECZANESİ",
+      "tel": "2163098344",
+      "adres": "Hürriyet Mahallesi Abdi İpekçi Caddesi, 19-21/A 34876 Kurfalı"
+    }
+  ]
+}
