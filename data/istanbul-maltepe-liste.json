@@ -2,7 +2,7 @@
   "eczaneler": [
     { "id": 1, "ad": "GÜL ECZANESİ", "tel": "0216 123 45 67", "adres": "Bağlarbaşı Mah. Atatürk Cad. No:12 Maltepe/İstanbul" },
     { "id": 2, "ad": "KÜBRA ECZANESİ", "tel": "0216 441 67 66", "adres": "Bağlarbaşı Mah. Sakızağacı Sok. No:60/B Yalı/Maltepe/İst." },
-    { "id": 3, "ad": "IRMAK ECZANESİ", "tel": "0216  371 16 53", "adres": "Altayçeşme Mah. Bağdat Cad. No: 319/1 Feyzullah/Maltepe/İst." },
+    { "id": 3, "ad": "IRMAK ECZANESİ", "tel": "0216 371 16 53", "adres": "Altayçeşme Mah. Bağdat Cad. No: 319/1 Feyzullah/Maltepe/İst." },
     { "id": 4, "ad": "YİĞİT ECZANESİ", "tel": "0216 518 49 85", "adres": "Çınar Mah. Rezzan Has Sok. No: 9/D Maltepe/İst." },
     { "id": 5, "ad": "DERYA ECZANESİ", "tel": "0216 626 12 52", "adres": "Firuzan Sok. No:2/B-4 Zümrütevler Maltepe/İst." }
   ]
