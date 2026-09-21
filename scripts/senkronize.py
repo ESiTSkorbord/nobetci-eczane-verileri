@@ -24,6 +24,17 @@ Guvenlik kurali (Enver'in istegi):
   GitHub'a veri girerek (veya panel uzerinden "Manuel Nobetci Girisi" ile)
   devreye girebilir.
 
+Tazelik kontrolu (21 Eylul'de kesfedildi - Enver'in istegi geregi eklendi):
+  Nobetci vardiyasi gece yarisini geciyor (orn. 19:00 -> ertesi gun 09:00), bu
+  yuzden sadece "ilce eslesti mi" yeterli DEGIL - API'nin her kayitla birlikte
+  dondurdugu "workdate" alani (vardiyanin GERCEKTEN basladigi tarih-saat, orn.
+  "2026-09-21 19:00:00") de BUGUNUN tarihiyle eslesmek ZORUNDA. Eslesmezse
+  (orn. gunduz saatlerinde hala dunku/gece bitmis vardiya donuyorsa) kayit
+  gecersiz sayilir - "hic kayit yok" ile AYNI sekilde ATLANIR, mevcut dosyalar
+  korunur. Bu, eskiden sadece basariyla yazilan dosyanin USTUNE "bugunun
+  tarihi" etiketi konulup asil vardiyanin degisip degismedigine bakilmamasi
+  riskini ortadan kaldirir.
+
 Bu script sadece dosyalari GUNCELLER; commit/push islemini cagiran GitHub
 Actions workflow'u (.github/workflows/nobetci-sync.yml) yapar.
 """
@@ -91,6 +102,15 @@ def normallestir(metin):
     return " ".join(str(metin).strip().upper().split())
 
 
+def workdate_bugun_mu(workdate_degeri, bugun_tarih_iso):
+    """API'nin "workdate" alani ("YYYY-MM-DD HH:MM:SS") gercekten BUGUNUN
+    (Istanbul saatiyle) tarihine mi ait, diye bakar. Ilk 10 karakter
+    ("YYYY-MM-DD") karsilastirmasi yeterli - saat kismini gormezden gelir."""
+    if not workdate_degeri:
+        return False
+    return str(workdate_degeri)[:10] == bugun_tarih_iso
+
+
 def main():
     if not os.path.isfile(KONFIG_YOLU):
         print(f"HATA: konfig dosyasi bulunamadi: {KONFIG_YOLU}", file=sys.stderr)
@@ -138,11 +158,24 @@ def main():
             continue
 
         hedef_ilce_norm = normallestir(api_ilce)
-        eslesenler = [k for k in il_verisi if normallestir(k.get("district")) == hedef_ilce_norm]
+        bugun_tarih_iso = simdi_istanbul().strftime("%Y-%m-%d")
 
-        if not eslesenler:
+        # Once ilceye gore filtrele, SONRA "workdate bugune mi ait" diye tazelik
+        # kontrolu yap - vardiya gece yarisini gectigi icin (bkz. dosya basindaki
+        # "Tazelik kontrolu" notu) sadece ilce eslesmesi yeterli degil.
+        ilce_eslesenler = [k for k in il_verisi if normallestir(k.get("district")) == hedef_ilce_norm]
+        eslesenler = [k for k in ilce_eslesenler if workdate_bugun_mu(k.get("workdate"), bugun_tarih_iso)]
+
+        if not ilce_eslesenler:
             print(f"[{etiket}] ATLANDI: '{api_ilce}' icin API'den hic nobetci kaydi donmedi. "
                   f"Mevcut dosyalar korunuyor.")
+            atlanan_sayisi += 1
+            continue
+
+        if not eslesenler:
+            print(f"[{etiket}] ATLANDI: '{api_ilce}' icin kayit var ama hicbirinin workdate'i "
+                  f"bugune ({bugun_tarih_iso}) ait degil - vardiya henuz baslamamis/API henuz "
+                  f"guncellenmemis olabilir. Mevcut dosyalar korunuyor.")
             atlanan_sayisi += 1
             continue
 
