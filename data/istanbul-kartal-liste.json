@@ -1,28 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 48889,
-      "ad": "ANATOLİUM ECZANESİ",
-      "tel": "2164515151",
-      "adres": "Soğanlık Yeni Mah. Soğanlık D100 Kuzey Yanyol Cad. B Blok No:72/185"
+      "id": 13254,
+      "ad": "AKIN ECZANESİ",
+      "tel": "2162904175",
+      "adres": "UGUR MUMCU MH. SEYH SAMIL CD. UPCITY CENTER NO:15 F-3/2"
     },
     {
-      "id": 59703,
-      "ad": "AVRUPA PLUS ECZANESİ",
-      "tel": "0",
-      "adres": "Esentepe Mah. İnönü Cad. No:151/A"
+      "id": 56235,
+      "ad": "DURUSU ECZANESİ",
+      "tel": "2167664202",
+      "adres": "Atalar Mah. Üsküdar Cad. No:73-B"
     },
     {
-      "id": 39288,
-      "ad": "DEMİRCİOĞLU ECZANESİ",
-      "tel": "2164885073",
-      "adres": "ATALAR MAH. ÜSKÜDAR CAD. NO:152/A"
+      "id": 34527,
+      "ad": "KURAL ECZANESİ",
+      "tel": "2163090900",
+      "adres": "ORTA MAH. YUSUF EFENDİ SOK. NO : 8A"
     },
     {
-      "id": 49075,
-      "ad": "YENİ ŞİFA ECZANESİ",
-      "tel": "2163098344",
-      "adres": "Hürriyet Mahallesi Abdi İpekçi Caddesi, 19-21/A 34876 Kurfalı"
+      "id": 13297,
+      "ad": "YENI MESUT ECZANESI",
+      "tel": "2163743004",
+      "adres": "ÜSKÜDAR CAD. AS IS MERKEZI NO:27/C"
     }
   ]
 }

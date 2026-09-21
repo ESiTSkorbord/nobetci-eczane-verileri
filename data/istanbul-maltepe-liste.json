@@ -1,28 +1,22 @@
 {
   "eczaneler": [
     {
-      "id": 63468,
-      "ad": "DERYA ECZANESİ",
-      "tel": "2166261252",
-      "adres": "Zümrütevler Mah. Firuzan Sok. No:2-4/B"
+      "id": 58784,
+      "ad": "GAMZE ECZANESİ",
+      "tel": "5378793438",
+      "adres": "Altıntepe Mah. Galipbey Cad. No:26A"
     },
     {
-      "id": 15656,
-      "ad": "IRMAK",
-      "tel": "2163711653",
-      "adres": "ALTAYÇESME MAH.ESENLIK SK.NO.1"
+      "id": 52977,
+      "ad": "HİLAL ECZANESİ",
+      "tel": "",
+      "adres": "Bağlar Başı Mah. Atatürk Cad. No:26/B"
     },
     {
-      "id": 41137,
-      "ad": "KÜBRA ECZANESİ",
-      "tel": "2164416766",
-      "adres": "Bağlarbaşı Mah. Sakızağacı Sok. No:60B"
-    },
-    {
-      "id": 46637,
-      "ad": "YİĞİT ECZANESİ",
-      "tel": "2165184985",
-      "adres": "ÇINAR MAH. REZZAN HAS. SOK. NO:9/D"
+      "id": 60117,
+      "ad": "ÇAĞDAŞ ECZANESİ",
+      "tel": "2164274926",
+      "adres": "Gülensu Mahallesi,Akar Sokak,No:4"
     }
   ]
 }
