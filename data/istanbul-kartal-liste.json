@@ -1,28 +1,34 @@
 {
   "eczaneler": [
     {
-      "id": 13254,
-      "ad": "AKIN ECZANESİ",
-      "tel": "2162904175",
-      "adres": "UGUR MUMCU MH. SEYH SAMIL CD. UPCITY CENTER NO:15 F-3/2"
+      "id": 54775,
+      "ad": "AYŞEGÜL ECZANESİ",
+      "tel": "2163094050",
+      "adres": "Cumhuriyet Mah. Erzincan Sok. No:30-B"
     },
     {
-      "id": 56235,
-      "ad": "DURUSU ECZANESİ",
-      "tel": "2167664202",
-      "adres": "Atalar Mah. Üsküdar Cad. No:73-B"
+      "id": 50127,
+      "ad": "CEYLAN ECZANESİ",
+      "tel": "2163772149",
+      "adres": "Soğanlık Yeni Mah. Beytalı Cad. No:40/A"
     },
     {
-      "id": 34527,
-      "ad": "KURAL ECZANESİ",
-      "tel": "2163090900",
-      "adres": "ORTA MAH. YUSUF EFENDİ SOK. NO : 8A"
+      "id": 44682,
+      "ad": "MAY ECZANESİ",
+      "tel": "2163050570",
+      "adres": "Cevizli Mah. Cevizli D-100 Güney Yan Yolu Kuriş Kule Dükkanlar No:2/C"
     },
     {
-      "id": 13297,
-      "ad": "YENI MESUT ECZANESI",
-      "tel": "2163743004",
-      "adres": "ÜSKÜDAR CAD. AS IS MERKEZI NO:27/C"
+      "id": 62516,
+      "ad": "MUTLULUK ECZANESİ",
+      "tel": "5451985907",
+      "adres": "Topselvi Mahallesi,Topselvi Caddesi,No:95/K"
+    },
+    {
+      "id": 31451,
+      "ad": "ŞURUP ECZANESİ",
+      "tel": "2164882629",
+      "adres": "KARLIKTEPE MAH. FAHRİ KORUTÜRK CAD. NO:19/1"
     }
   ]
 }

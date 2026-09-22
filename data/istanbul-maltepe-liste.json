@@ -1,22 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 58784,
-      "ad": "GAMZE ECZANESİ",
-      "tel": "5378793438",
-      "adres": "Altıntepe Mah. Galipbey Cad. No:26A"
+      "id": 15705,
+      "ad": "DURCAN",
+      "tel": "2164212432",
+      "adres": "Başıbüyük Mahallesi\r\nBaşıbüyük Caddesi, 30/A-B"
     },
     {
-      "id": 52977,
-      "ad": "HİLAL ECZANESİ",
-      "tel": "",
-      "adres": "Bağlar Başı Mah. Atatürk Cad. No:26/B"
+      "id": 56251,
+      "ad": "GAYE ECZANESİ",
+      "tel": "2165184081",
+      "adres": "İdealtepe Mah. Rıfkı Tongsir Cad. No:89/A"
     },
     {
-      "id": 60117,
-      "ad": "ÇAĞDAŞ ECZANESİ",
-      "tel": "2164274926",
-      "adres": "Gülensu Mahallesi,Akar Sokak,No:4"
+      "id": 56282,
+      "ad": "YEDİTEPE ECZANESİ",
+      "tel": "2163521674",
+      "adres": "Altayçeşme Mah. Atatürk Cad. No:83"
+    },
+    {
+      "id": 59923,
+      "ad": "ÇAĞRI ECZANESİ",
+      "tel": "2165777041",
+      "adres": "Fındıklı Mahallesi,Gazi Mustafa Kemal Caddesi No:30B"
     }
   ]
 }
