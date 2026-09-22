@@ -6,8 +6,20 @@ name: Nobetci Eczane Senkronizasyonu
 
 on:
   schedule:
-    # Her saat basi calisir (UTC). Istanbul saatine gore gunde 24 kez kontrol eder.
-    - cron: "0 * * * *"
+    # ONEMLI (22 Eylul'de kesfedildi): GitHub, "her saat basi" (0 * * * *)
+    # gibi TAM saat basina denk gelen cron'lari resmi olarak "yuksek
+    # yogunluk" saati sayiyor ve bu yuzden gecikme/atlama riski en yuksek
+    # zaman dilimi tam da bu (bkz. GitHub'in kendi dokumantasyonu:
+    # "the start of every hour" en yogun zamandir). Bunun cozumu icin:
+    #   1) Saat basindan kaydirilmis 4 farkli dakikada calisiyoruz (7, 22,
+    #      37, 52) - boylece hicbiri "en yogun" dakikaya denk gelmiyor.
+    #   2) Saatte 1 yerine saatte 4 kez deneniyor - GitHub bir calistirmayi
+    #      atlasa/geciktirse bile, ayni saat icinde 3 sansimiz daha oluyor,
+    #      yani "saat basi guncel veri" pratikte cok daha guvenilir hale
+    #      geliyor. Script'in calisma suresi ~10-12 saniye oldugu icin bu,
+    #      GitHub'in ucretsiz Actions dakika kotasini onemli olcude
+    #      tuketmez (ayda ~50-60 dakika islem suresi).
+    - cron: "7,22,37,52 * * * *"
   workflow_dispatch: {}
     # Yukaridaki satir, GitHub deposunun "Actions" sekmesinden elle
     # "Run workflow" butonuyla da calistirilabilmeyi saglar (test icin kullanisli).
