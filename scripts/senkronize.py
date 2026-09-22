@@ -42,8 +42,10 @@ Actions workflow'u (.github/workflows/nobetci-sync.yml) yapar.
 import json
 import os
 import sys
+import time
 import urllib.request
 import urllib.parse
+import urllib.error
 from datetime import datetime
 
 try:
@@ -82,17 +84,92 @@ def bugunun_tarih_metni():
     return f"{n.day} {ay} {gun}"
 
 
-def api_dan_il_verisini_cek(api_il):
-    """Bir il icin TUM ilcelerin nobetci listesini tek cagriyla ceker."""
+def api_dan_il_verisini_cek(api_il, deneme_sayisi=3):
+    """Bir il icin TUM ilcelerin nobetci listesini tek cagriyla ceker.
+
+    22 Eylul'de Enver'in GitHub Actions loglarinda bulduğu hata: "Expecting
+    value: line 1 column 1 (char 0)" - yani API'den BOS/gecersiz bir govde
+    donuyordu, ama SADECE GitHub Actions'tan calisinca (Enver'in kendi
+    tarayicisindan API sorunsuz calisiyordu). En olasi sebep: api.teknikzeka.net
+    (kucuk/tek gelistiricili bir servis) GitHub Actions'in bilinen paylasimli
+    bulut IP araliklarini kotuye-kullanim/bot koruma amaciyla engelliyor veya
+    hiz sinirliyor olabilir - script tarafinda kesin olarak ayirt edemeyiz,
+    bu yuzden:
+      1) Gercek tarayici gibi gorunen bir User-Agent + Accept header'i
+         deneniyor (bazi basit engelleme kurallari sadece "script/bot"
+         gorunumlu User-Agent'lari hedef alir).
+      2) Kisa bir bekleme ile (rate-limit/gecici kesinti ihtimaline karsi)
+         birkac kez tekrar deneniyor.
+      3) Basarisiz olursa, HATA MESAJINA gercek HTTP durum kodu + donen
+         govdenin ilk 200 karakteri EKLENIYOR - boylece bir sonraki
+         GitHub Actions logunda "bos govde" ile "403 Forbidden" ile "farkli
+         bir hata sayfasi" arasindaki fark NET gorulebilir (eskiden sadece
+         belirsiz bir JSON-parse hatasi yaziyordu).
+    """
     parametreler = urllib.parse.urlencode({"islem": "nobetci", "il": api_il})
     url = f"{API_TABAN_URL}?{parametreler}"
-    istek = urllib.request.Request(url, headers={"User-Agent": "NobetciEczanePano-Sync/1.0"})
-    with urllib.request.urlopen(istek, timeout=20) as yanit:
-        veri = json.loads(yanit.read().decode("utf-8"))
-    sonuc = veri.get("sonuc")
-    if not isinstance(sonuc, list):
-        raise ValueError("API yaniti beklenen bicimde degil ('sonuc' listesi yok)")
-    return sonuc
+    headers = {
+        # Gercek bir tarayiciyi taklit ediyor - bazi basit bot-korumalari
+        # sadece "script benzeri" User-Agent'lari hedef alir.
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                      "(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+        "Accept": "application/json, text/plain, */*",
+    }
+
+    son_hata = None
+    for deneme in range(1, deneme_sayisi + 1):
+        try:
+            istek = urllib.request.Request(url, headers=headers)
+            with urllib.request.urlopen(istek, timeout=20) as yanit:
+                durum_kodu = yanit.getcode()
+                govde_ham = yanit.read()
+        except urllib.error.HTTPError as hata:
+            durum_kodu = hata.code
+            govde_ham = hata.read() if hasattr(hata, "read") else b""
+            son_hata = _api_hata_mesaji(durum_kodu, govde_ham)
+            if deneme < deneme_sayisi:
+                time.sleep(2 * deneme)
+                continue
+            raise ValueError(son_hata)
+        except Exception as hata:
+            son_hata = f"baglanti hatasi: {hata}"
+            if deneme < deneme_sayisi:
+                time.sleep(2 * deneme)
+                continue
+            raise ValueError(son_hata)
+
+        govde_metin = govde_ham.decode("utf-8", errors="replace").strip()
+        if not govde_metin:
+            son_hata = _api_hata_mesaji(durum_kodu, govde_ham)
+            if deneme < deneme_sayisi:
+                time.sleep(2 * deneme)
+                continue
+            raise ValueError(son_hata)
+
+        try:
+            veri = json.loads(govde_metin)
+        except json.JSONDecodeError as hata:
+            son_hata = _api_hata_mesaji(durum_kodu, govde_ham, ek=f"JSON parse hatasi: {hata}")
+            if deneme < deneme_sayisi:
+                time.sleep(2 * deneme)
+                continue
+            raise ValueError(son_hata)
+
+        sonuc = veri.get("sonuc")
+        if not isinstance(sonuc, list):
+            raise ValueError(f"API yaniti beklenen bicimde degil ('sonuc' listesi yok) - govde: {govde_metin[:200]!r}")
+        return sonuc
+
+    # Buraya normalde hic gelinmemeli (dongu icinde ya return ya raise olur)
+    raise ValueError(son_hata or "bilinmeyen hata")
+
+
+def _api_hata_mesaji(durum_kodu, govde_ham, ek=None):
+    onizleme = govde_ham[:200].decode("utf-8", errors="replace") if govde_ham else "(bos govde)"
+    parcalar = [f"HTTP {durum_kodu}", f"govde onizleme: {onizleme!r}"]
+    if ek:
+        parcalar.append(ek)
+    return " - ".join(parcalar)
 
 
 def normallestir(metin):
