@@ -1,28 +1,22 @@
 {
   "eczaneler": [
     {
-      "id": 15705,
-      "ad": "DURCAN",
-      "tel": "2164212432",
-      "adres": "Başıbüyük Mahallesi\r\nBaşıbüyük Caddesi, 30/A-B"
+      "id": 44490,
+      "ad": "AZRA NİHAN ECZANESİ",
+      "tel": "2166296517",
+      "adres": "Altayçeşme Mah. Saldıray Sok. No:2A/10"
     },
     {
-      "id": 56251,
-      "ad": "GAYE ECZANESİ",
-      "tel": "2165184081",
-      "adres": "İdealtepe Mah. Rıfkı Tongsir Cad. No:89/A"
+      "id": 15709,
+      "ad": "EMRE",
+      "tel": "2164274403",
+      "adres": "ESENKENT MAH. KANIPASA CAD. NO:147 MALTEPE"
     },
     {
-      "id": 56282,
-      "ad": "YEDİTEPE ECZANESİ",
-      "tel": "2163521674",
-      "adres": "Altayçeşme Mah. Atatürk Cad. No:83"
-    },
-    {
-      "id": 59923,
-      "ad": "ÇAĞRI ECZANESİ",
-      "tel": "2165777041",
-      "adres": "Fındıklı Mahallesi,Gazi Mustafa Kemal Caddesi No:30B"
+      "id": 40828,
+      "ad": "GÜLAY ÖNER ECZANESİ",
+      "tel": "2164899232",
+      "adres": "Çınar Mah. Bağdat Cad. No:154/C"
     }
   ]
 }
