@@ -1,22 +1,22 @@
 {
   "eczaneler": [
     {
-      "id": 42463,
-      "ad": "BARIŞ ECZANESİ",
-      "tel": "2164512324",
-      "adres": "Cumhuriyet Mahallesi Yüzyıl Caddesi, 50A"
+      "id": 40104,
+      "ad": "BİZİM ECZANESİ",
+      "tel": "2163096957",
+      "adres": "Yakacık Çarşı Mah. Çam Sok. No:43A"
     },
     {
-      "id": 34688,
-      "ad": "DEMİRAY ECZANESİ",
-      "tel": "2163097099",
-      "adres": "ORTA MAH. YUSUF EFENDİ SOK. NO:4C"
+      "id": 62365,
+      "ad": "EZGİ ECZANESİ",
+      "tel": "0",
+      "adres": "Petroliş Mah. Üsküdar Cad. No:53/C"
     },
     {
-      "id": 13325,
-      "ad": "MERKEZ ECZANESI",
-      "tel": "2164415348",
-      "adres": "ORHANTEPE MAH. ÇINAR CAD. 7/D"
+      "id": 56612,
+      "ad": "ZEHRA IŞIK ECZANESİ",
+      "tel": "2163059080",
+      "adres": "Cevizli Mah. Mustafa Kemal Cad. No:42/A"
     }
   ]
 }
