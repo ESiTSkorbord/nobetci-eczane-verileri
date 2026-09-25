@@ -1,22 +1,22 @@
 {
   "eczaneler": [
     {
-      "id": 15664,
-      "ad": "FİDAN ECZANESİ",
-      "tel": "2163764699",
-      "adres": "ESENKENT MAH.KANIPASA CAD. ADEM YAVUZ SK.1/A MALTEPE"
+      "id": 62820,
+      "ad": "DİDEM TOPRAK ECZANESİ",
+      "tel": "5334450616",
+      "adres": "Feyzullah Mah. Bağdat Cad. No:336-338C"
     },
     {
-      "id": 15622,
-      "ad": "GÜLEN",
-      "tel": "2163660122",
-      "adres": "IDEALTEPE MH. RIFKI TONGSIR CD. NO:105/2 KÜÇÜKYALI"
+      "id": 41488,
+      "ad": "ECZANE KIRMIZI",
+      "tel": "2165041255",
+      "adres": "Aydınevler Mahallesi Siteler Yolu Sokak, 1"
     },
     {
-      "id": 15670,
-      "ad": "POZITIF",
-      "tel": "2163837098",
-      "adres": "YALI MH. M.FEVZI ÇAKMAK CD. NO:40/2 SALIH APT. MALTEPE"
+      "id": 15605,
+      "ad": "KUL ECZANESI",
+      "tel": "2163058454",
+      "adres": "ATATÜRK CAD.NO.27/1 ZÜMRÜTEVLER/MALTEPE"
     }
   ]
 }
