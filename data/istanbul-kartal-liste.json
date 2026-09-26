@@ -1,28 +1,22 @@
 {
   "eczaneler": [
     {
-      "id": 13387,
-      "ad": "GÜMÜŞPINAR",
-      "tel": "2166719444",
-      "adres": "GÜMÜSPINAR MH. DEFNELI CD. NO:10/1 KARTAL"
+      "id": 43667,
+      "ad": "DERİN ECZANESİ",
+      "tel": "2163091945",
+      "adres": "Hürriyet Mah. Peker Sok. No:36A"
     },
     {
-      "id": 50806,
-      "ad": "PELİN ECZANESİ",
-      "tel": "2164525344",
-      "adres": "Çarşı Mahallesi, Gökdemir Sokak, 9/B"
+      "id": 55075,
+      "ad": "HALE ECZANESİ",
+      "tel": "",
+      "adres": "Esentepe Mah. Bulut Sok. No:4B"
     },
     {
-      "id": 65555,
-      "ad": "SU ECZANESİ",
-      "tel": "5318987199",
-      "adres": "Cevizli Mah. Seyitgazi Sok. No:16/A"
-    },
-    {
-      "id": 13365,
-      "ad": "YAGMUR",
-      "tel": "2165172889",
-      "adres": "KARLIKTEPE MAH. FAHRI KORUTÜRK CD. NO:13/A"
+      "id": 13271,
+      "ad": "HÜMA ECZANESI",
+      "tel": "2163096215",
+      "adres": "ATATÜRK CAD. NO:93/1"
     }
   ]
 }
