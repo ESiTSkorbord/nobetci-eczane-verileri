@@ -1,28 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 49301,
-      "ad": "SELVİ ECZANESİ",
-      "tel": "2163091909",
-      "adres": "Cumhuriyet Mah. Adnan Kahveci Cad. No:86/B"
+      "id": 64915,
+      "ad": "DİCLE ECZANESİ",
+      "tel": "2164733180",
+      "adres": "Karlıktepe Mah. Spor Cad. No:8/B"
     },
     {
-      "id": 56535,
-      "ad": "SERENAY ECZANESİ",
-      "tel": "2163837036",
-      "adres": "Orhantepe Mah. 30 Ağustos Cad. No:21/A"
+      "id": 37660,
+      "ad": "KARTAL PLUS ECZANESİ",
+      "tel": "2162250891",
+      "adres": "Orta Mahallesi Yalnız Selvi Caddesi, 21A"
     },
     {
-      "id": 49690,
-      "ad": "ÇORUH ECZANESİ",
-      "tel": "2163899700",
-      "adres": "Yukarı Mahallesi Üsküdar Caddesi, 13/B"
+      "id": 57819,
+      "ad": "ZERRİN ECZANESİ",
+      "tel": "2163772552",
+      "adres": "Yakacık Yeni Mahallesi,Samandıra Caddesi,No:21/B"
     },
     {
-      "id": 26824,
-      "ad": "İSTANBUL",
-      "tel": "2163705457",
-      "adres": "Soğanlık Yeni Mahallesi Atatürk Caddesi, 3"
+      "id": 53017,
+      "ad": "ŞULE ECZANESİ",
+      "tel": "2163063019",
+      "adres": "Petrol İş Mah. Rahvanlar Cad. No:47/A"
     }
   ]
 }

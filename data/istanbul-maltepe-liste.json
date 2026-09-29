@@ -1,22 +1,16 @@
 {
   "eczaneler": [
     {
-      "id": 46800,
-      "ad": "DOĞUŞKENT ECZANESİ",
-      "tel": "",
-      "adres": "Girne Mah. Çiftlik Sk. No:13/F"
+      "id": 56448,
+      "ad": "HAYAT ECZANESİ",
+      "tel": "2164212160",
+      "adres": "Başıbüyük Mah. Başıbüyük Cad. No:12/A"
     },
     {
-      "id": 39974,
-      "ad": "KÜÇÜKYALI ELİF ECZANESİ",
-      "tel": "2164897678",
-      "adres": "Altıntepe Mah. Bağdat Cad. No:99/A-99B"
-    },
-    {
-      "id": 56536,
-      "ad": "MERYEM ECZANESİ",
-      "tel": "2164415280",
-      "adres": "Bağlarbaşı Mahallesi, Bağdat Caddesi, 449D"
+      "id": 62660,
+      "ad": "LOTUS ECZANESİ",
+      "tel": "2164891966",
+      "adres": "Altıntepe Mahallesi,Emin Ali Paşa Caddesi, No:3B"
     }
   ]
 }
