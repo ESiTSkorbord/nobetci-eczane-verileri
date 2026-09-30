@@ -1,16 +1,22 @@
 {
   "eczaneler": [
     {
-      "id": 56448,
-      "ad": "HAYAT ECZANESİ",
-      "tel": "2164212160",
-      "adres": "Başıbüyük Mah. Başıbüyük Cad. No:12/A"
+      "id": 38800,
+      "ad": "ECZANE RİTİM",
+      "tel": "2162667466",
+      "adres": "Cevizli Mah. Zuhal Cad. Füsun Sok. No:46/38"
     },
     {
-      "id": 62660,
-      "ad": "LOTUS ECZANESİ",
-      "tel": "2164891966",
-      "adres": "Altıntepe Mahallesi,Emin Ali Paşa Caddesi, No:3B"
+      "id": 51921,
+      "ad": "MİNA ECZANESİ",
+      "tel": "2163676462",
+      "adres": "Çınar Mah. Başakçı Sok. No:3/A Maltepe /İstanbu"
+    },
+    {
+      "id": 27033,
+      "ad": "NESİBE AVŞAR",
+      "tel": "2164210202",
+      "adres": "Başıbüyük Mah. Başıbüyük Cad. No:31 Maltepe"
     }
   ]
 }
