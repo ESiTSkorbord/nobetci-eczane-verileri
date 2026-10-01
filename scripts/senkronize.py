@@ -227,26 +227,47 @@ _ECZANE_LINK_DESENI = re.compile(
 
 def eczaneler_gen_tr_cek(il_slug, ilce_slug, deneme_sayisi=2):
     """eczaneler.gen.tr'den bir ilcenin nobetci listesini ceker (HATA
-    durumunda istisna FIRLATMAZ, bos liste doner - bu kaynak opsiyonel)."""
+    durumunda istisna FIRLATMAZ, bos liste doner - bu kaynak opsiyonel).
+
+    1 Ekim: GitHub Actions'tan ilk denemede 403 Forbidden alindi (teknikzeka'nin
+    eskiden yaptigi "bulut IP/bot korumasi" engellemesiyle ayni aile sorun).
+    Sadece User-Agent yetmedi - gercek bir Chrome isteginde bulunan DAHA FAZLA
+    basligi (Referer, Accept-Language, Accept-Encoding, sec-fetch-*) ekledik.
+    Yine de engellenirse (403/senzor benzeri), govdenin ilk 200 karakteri log'a
+    yazilir ki bir sonraki denemede KOR UCMAYALIM - teknikzeka'daki
+    _api_hata_mesaji ile AYNI felsefe."""
     url = f"{ECZANELER_GEN_TR_TABAN_URL}/nobetci-{il_slug}-{ilce_slug}"
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                       "(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
-        "Accept": "text/html,application/xhtml+xml",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+        "Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7",
+        "Accept-Encoding": "identity",  # gzip ISTEMIYORUZ - urllib kendi acmiyor, acarsak govde bozuk okunur
+        "Referer": "https://www.google.com/",
+        "Sec-Fetch-Dest": "document",
+        "Sec-Fetch-Mode": "navigate",
+        "Sec-Fetch-Site": "cross-site",
+        "Connection": "close",
     }
+    son_hata_ozeti = None
     for deneme in range(1, deneme_sayisi + 1):
         try:
             istek = urllib.request.Request(url, headers=headers)
             with urllib.request.urlopen(istek, timeout=20) as yanit:
                 html = yanit.read().decode("utf-8", errors="replace")
             return _eczaneler_gen_tr_ayristir(html)
+        except urllib.error.HTTPError as hata:
+            govde = hata.read() if hasattr(hata, "read") else b""
+            onizleme = govde[:200].decode("utf-8", errors="replace")
+            son_hata_ozeti = f"HTTP {hata.code} - govde onizleme: {onizleme!r}"
         except Exception as hata:
-            if deneme < deneme_sayisi:
-                time.sleep(2 * deneme)
-                continue
-            print(f"[eczaneler.gen.tr] {il_slug}-{ilce_slug}: cekilemedi ({hata}), "
-                  f"bu capraz kaynak atlaniyor.")
-            return []
+            son_hata_ozeti = str(hata)
+        if deneme < deneme_sayisi:
+            time.sleep(2 * deneme)
+            continue
+        print(f"[eczaneler.gen.tr] {il_slug}-{ilce_slug}: cekilemedi ({son_hata_ozeti}), "
+              f"bu capraz kaynak atlaniyor.")
+        return []
     return []
 
 
