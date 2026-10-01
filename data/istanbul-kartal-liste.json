@@ -1,34 +1,22 @@
 {
   "eczaneler": [
     {
-      "id": 37716,
-      "ad": "HORİZON ECZANESİ",
-      "tel": "2163681990",
-      "adres": "Kordonboyu Mahallesi Turgut Özal Bulvarı, 65/18"
+      "id": 43459,
+      "ad": "ALAÇAYIR ECZANESİ",
+      "tel": "2163873292",
+      "adres": "Petrol İş Mah. Rahvanlar Cad. No:29B"
     },
     {
-      "id": 37579,
-      "ad": "MERT ECZANESİ",
-      "tel": "2166322361",
-      "adres": "Orta Mahallesi Vezirköprü Caddesi, 6B"
+      "id": 56865,
+      "ad": "METEHAN ECZANESİ",
+      "tel": "2164757900",
+      "adres": "Uğur Mumcu Mah. Fatih Sultan Mehmet Cad. No:32-A"
     },
     {
-      "id": 61967,
-      "ad": "RÜYA ECZANESİ",
-      "tel": "2164881521",
-      "adres": "Yalı Mahallesi,Topel Sokak,No:3/A"
-    },
-    {
-      "id": 15790,
-      "ad": "YAKACIK DERMAN ECZANESİ",
-      "tel": "2165767642",
-      "adres": "ÇARSI MH. KARTAL CD.ENIS AKAYGEN SK.NO:9/27 KARTAL"
-    },
-    {
-      "id": 54025,
-      "ad": "YAŞAM ECZANESİ",
-      "tel": "2163053733",
-      "adres": "Orhantepe Mah. Bankalar Cad. No:26/B"
+      "id": 45601,
+      "ad": "ÇINAR ECZANESİ",
+      "tel": "2163535312",
+      "adres": "YUKARI MAH. ÇIRÇIR CAD. No:21/A"
     }
   ]
 }

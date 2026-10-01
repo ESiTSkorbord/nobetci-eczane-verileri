@@ -1,22 +1,22 @@
 {
   "eczaneler": [
     {
-      "id": 38800,
-      "ad": "ECZANE RİTİM",
-      "tel": "2162667466",
-      "adres": "Cevizli Mah. Zuhal Cad. Füsun Sok. No:46/38"
+      "id": 57375,
+      "ad": "CANKATAR ECZANESİ",
+      "tel": "5436405295",
+      "adres": "Zümrütevler Mah. Cansev Sok. No:111/B-10"
     },
     {
-      "id": 51921,
-      "ad": "MİNA ECZANESİ",
-      "tel": "2163676462",
-      "adres": "Çınar Mah. Başakçı Sok. No:3/A Maltepe /İstanbu"
+      "id": 56073,
+      "ad": "HİPOKRAT ECZANESİ",
+      "tel": "0",
+      "adres": "Bağlarbaşı Mah. FeyzullaSh Cad. No:28/A"
     },
     {
-      "id": 27033,
-      "ad": "NESİBE AVŞAR",
-      "tel": "2164210202",
-      "adres": "Başıbüyük Mah. Başıbüyük Cad. No:31 Maltepe"
+      "id": 41012,
+      "ad": "ÇAĞATAY ECZANESİ",
+      "tel": "2164898270",
+      "adres": "İdealtepe Mahallesi Bağdat Caddesi, 176/14"
     }
   ]
 }
