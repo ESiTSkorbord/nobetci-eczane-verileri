@@ -35,19 +35,26 @@ Tazelik kontrolu (21 Eylul'de kesfedildi - Enver'in istegi geregi eklendi):
   tarihi" etiketi konulup asil vardiyanin degisip degismedigine bakilmamasi
   riskini ortadan kaldirir.
 
+1 Ekim notu (Enver'in bulgusu): teknikzeka.net API'si bazen bir ilcenin TUM
+  nobetci eczanelerini dondurmuyor (orn. Kartal'da 5 nobetciden sadece 3'u
+  geldi). Bu, API'nin kendi veri eksikligi - script'in bir hatasi degil.
+  Ikinci bir kaynaktan (eczaneler.gen.tr) otomatik capraz kontrol DENENDI ama
+  o site Cloudflare bot korumasi ("Just a moment...") kullaniyor, otomatik
+  script'ten asla gecilemiyor - bu yuzden VAZGECILDI. Enver boyle bir eksikligi
+  fark ettiginde panel uzerinden "Manuel Nobetci Girisi" ile o ilce icin
+  listeyi elle girip MANUEL moda alabilir (zaten var olan bir ozellik).
+
 Bu script sadece dosyalari GUNCELLER; commit/push islemini cagiran GitHub
 Actions workflow'u (.github/workflows/nobetci-sync.yml) yapar.
 """
 
 import json
 import os
-import re
 import sys
 import time
 import urllib.request
 import urllib.parse
 import urllib.error
-import zlib
 from datetime import datetime
 
 try:
@@ -175,136 +182,10 @@ def _api_hata_mesaji(durum_kodu, govde_ham, ek=None):
 
 
 def normallestir(metin):
-    """Ilce/eczane adlarini karsilastirmak icin buyuk harfe cevirir ve
-    bosluklari sadelestirir.
-
-    1 Ekim, eczaneler.gen.tr caprazini eklerken ortaya cikan hata: Python'un
-    yerlesik str.upper()'i TURKCE degil - "i".upper() -> ASCII "I" doner,
-    Turkce kuralina gore noktali "İ" olmasi gerekirken. Bu yuzden API'den
-    zaten buyuk harfle (dogru Turkce "İ" ile) gelen "ECZANESİ" ile, bizim
-    kucuk harfli "Eczanesi"yi upper() ettigimiz "ECZANESI" (ASCII I) ASLA
-    ESLESMIYORDU - ayni eczane iki kez eklenmis gibi goruluyordu. Cozum:
-    upper() CAGIRMADAN ONCE her iki I turunu de (Turkce "İ"/"i" ve ASCII
-    "I"/"ı") TEK bir sembole indirgiyoruz, sonra geri kalanini upper() ile
-    buyutuyoruz."""
+    """Ilce adlarini karsilastirmak icin buyuk harfe cevirir ve bosluklari sadelestirir."""
     if metin is None:
         return ""
-    s = str(metin).strip().replace("İ", "I").replace("ı", "I").replace("i", "I")
-    return " ".join(s.upper().split())
-
-
-# ======================================================================
-# CAPRAZ KONTROL KAYNAGI: eczaneler.gen.tr (1 Ekim, Enver'in kesfi uzerine)
-#
-# Enver'in bulgusu: teknikzeka.net API'si bazen bir ilcenin TUM nobetci
-# eczanelerini dondurmuyor (orn. Kartal'da 5 nobetciden sadece 3'u geldi,
-# "Nur Eczanesi" ve "Sifa Eczanesi" API'de hic yoktu). Bu bir kod/filtreleme
-# hatasi DEGIL - API'nin kendi veri eksikligi. Bu yuzden ikinci, BAGIMSIZ
-# bir kaynaktan CAPRAZ KONTROL yapip teknikzeka'da eksik olanlari TAMAMLIYORUZ
-# (teknikzeka hep ANA kaynak kalir, bu sadece "union" - cikarma/degistirme yok).
-#
-# NOT (bilerek YAPMADIGIMIZ bir sey): Istanbul Eczaci Odasi'nin resmi sitesi
-# de denendi ama onun AJAX endpoint'i sifreli bir "h" token'i gerektiriyor
-# (anti-bot korumasi gibi duruyor) - bunu otomatik atlatmaya calismak hem
-# kirilgan hem de sitenin acikca korumaya calistigi bir seyi asmak olur.
-# Onun yerine eczaneler.gen.tr kullaniliyor: duz HTML sayfasi, token/API
-# yok, URL deseni zaten bizim il_slug/ilce_slug ile birebir ortusuyor.
-#
-# Site HTML yapisi degisebilir diye SABIT class/tag'e guvenmek yerine, tek
-# GOZLEMLENEN SABIT deseni (her eczane adi bir /eczane/... linki icinde)
-# ve Turkiye telefon formatini kullanan ESNEK bir ayristirma var. Bu kaynak
-# cekilemez veya hic sonuc vermezse fonksiyon sessizce bos liste doner -
-# cagiran taraf bunu "bu caprazi atla" olarak ele alir, teknikzeka sonucu
-# HICBIR ZAMAN bundan etkilenip bozulmaz.
-ECZANELER_GEN_TR_TABAN_URL = "https://www.eczaneler.gen.tr"
-
-_TELEFON_DESENI = re.compile(r"0\s*\(\d{3}\)\s*\d{3}[- ]?\d{2}[- ]?\d{2}")
-_ECZANE_LINK_DESENI = re.compile(
-    r'<a[^>]+href="https://www\.eczaneler\.gen\.tr/eczane/[^"]+"[^>]*>(.*?)</a>',
-    re.IGNORECASE | re.DOTALL,
-)
-
-
-def eczaneler_gen_tr_cek(il_slug, ilce_slug, deneme_sayisi=2):
-    """eczaneler.gen.tr'den bir ilcenin nobetci listesini ceker (HATA
-    durumunda istisna FIRLATMAZ, bos liste doner - bu kaynak opsiyonel).
-
-    1 Ekim: GitHub Actions'tan ilk denemede 403 Forbidden alindi (teknikzeka'nin
-    eskiden yaptigi "bulut IP/bot korumasi" engellemesiyle ayni aile sorun).
-    Sadece User-Agent yetmedi - gercek bir Chrome isteginde bulunan DAHA FAZLA
-    basligi (Referer, Accept-Language, Accept-Encoding, sec-fetch-*) ekledik.
-    Yine de engellenirse (403/senzor benzeri), govdenin ilk 200 karakteri log'a
-    yazilir ki bir sonraki denemede KOR UCMAYALIM - teknikzeka'daki
-    _api_hata_mesaji ile AYNI felsefe."""
-    url = f"{ECZANELER_GEN_TR_TABAN_URL}/nobetci-{il_slug}-{ilce_slug}"
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-                      "(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
-        "Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7",
-        "Accept-Encoding": "identity",  # gzip ISTEMIYORUZ - urllib kendi acmiyor, acarsak govde bozuk okunur
-        "Referer": "https://www.google.com/",
-        "Sec-Fetch-Dest": "document",
-        "Sec-Fetch-Mode": "navigate",
-        "Sec-Fetch-Site": "cross-site",
-        "Connection": "close",
-    }
-    son_hata_ozeti = None
-    for deneme in range(1, deneme_sayisi + 1):
-        try:
-            istek = urllib.request.Request(url, headers=headers)
-            with urllib.request.urlopen(istek, timeout=20) as yanit:
-                html = yanit.read().decode("utf-8", errors="replace")
-            return _eczaneler_gen_tr_ayristir(html)
-        except urllib.error.HTTPError as hata:
-            govde = hata.read() if hasattr(hata, "read") else b""
-            onizleme = govde[:200].decode("utf-8", errors="replace")
-            son_hata_ozeti = f"HTTP {hata.code} - govde onizleme: {onizleme!r}"
-        except Exception as hata:
-            son_hata_ozeti = str(hata)
-        if deneme < deneme_sayisi:
-            time.sleep(2 * deneme)
-            continue
-        print(f"[eczaneler.gen.tr] {il_slug}-{ilce_slug}: cekilemedi ({son_hata_ozeti}), "
-              f"bu capraz kaynak atlaniyor.")
-        return []
-    return []
-
-
-def _eczaneler_gen_tr_ayristir(html):
-    """Her /eczane/... linkinden sonraki (bir sonraki linke kadar olan)
-    metin blogundan telefon + adres cikarir. HTML yapisi degisirse hicbir
-    link bulunamaz ve [] doner - cagiran taraf bunu zararsiz sekilde atlar."""
-    sonuc = []
-    eslesmeler = list(_ECZANE_LINK_DESENI.finditer(html))
-    for i, m in enumerate(eslesmeler):
-        ad = re.sub(r"<[^>]+>", " ", m.group(1))
-        ad = " ".join(ad.split()).strip()
-        if not ad:
-            continue
-        blok_sonu = eslesmeler[i + 1].start() if i + 1 < len(eslesmeler) else min(len(html), m.end() + 1500)
-        blok_metin = re.sub(r"<[^>]+>", "\n", html[m.end():blok_sonu])
-        telefon_m = _TELEFON_DESENI.search(blok_metin)
-        telefon = telefon_m.group(0) if telefon_m else ""
-        adres = ""
-        for satir in (s.strip() for s in blok_metin.split("\n")):
-            if not satir or len(satir) < 8:
-                continue
-            if _TELEFON_DESENI.search(satir) or satir.startswith("→") or satir.startswith("->"):
-                continue
-            adres = satir
-            break
-        sonuc.append({"ad": ad, "tel": telefon, "adres": adres})
-    return sonuc
-
-
-def sentetik_id_uret(isim_norm):
-    """eczaneler.gen.tr'den gelen (API id'si olmayan) kayitlar icin, teknikzeka'nin
-    gercek id araligiyla (kucuk pozitif sayilar) CAKISMAYACAK, ayni calisma
-    icinde TUTARLI bir id uretir. zlib.crc32 kullanilir (Python'un yerlesik
-    hash()'i her calistirmada FARKLI deger uretebilir - PYTHONHASHSEED
-    rastgeleligi - bu yuzden tercih edilmedi)."""
-    return 9_000_000 + (zlib.crc32(isim_norm.encode("utf-8")) % 900_000)
+    return " ".join(str(metin).strip().upper().split())
 
 
 def workdate_bugun_mu(workdate_degeri, bugun_tarih_iso):
@@ -402,26 +283,6 @@ def main():
             print(f"[{etiket}] ATLANDI: eslesen kayitlarda gecerli id yok. Mevcut dosyalar korunuyor.")
             atlanan_sayisi += 1
             continue
-
-        # 1 Ekim: eczaneler.gen.tr'den CAPRAZ KONTROL - teknikzeka'da olmayan
-        # eczaneler varsa (bkz. dosya basindaki aciklama) listeye EKLENIR.
-        # Bu capraz kaynak basarisiz olursa veya bos donerse HICBIR SEY
-        # DEGISMEZ - teknikzeka sonucu aynen kullanilmaya devam eder.
-        mevcut_isimler = {normallestir(e["ad"]) for e in eczaneler}
-        capraz = eczaneler_gen_tr_cek(il_slug, ilce_slug)
-        eklenenler = []
-        for aday in capraz:
-            aday_norm = normallestir(aday["ad"])
-            if not aday_norm or aday_norm in mevcut_isimler:
-                continue
-            mevcut_isimler.add(aday_norm)
-            sid = sentetik_id_uret(aday_norm)
-            eczaneler.append({"id": sid, "ad": aday["ad"], "tel": aday["tel"], "adres": aday["adres"]})
-            idler.append(sid)
-            eklenenler.append(aday["ad"])
-        if eklenenler:
-            print(f"[{etiket}] eczaneler.gen.tr caprazindan {len(eklenenler)} eksik eczane EKLENDI: "
-                  f"{', '.join(eklenenler)}")
 
         liste_yolu = os.path.join(DATA_KLASORU, f"{il_slug}-{ilce_slug}-liste.json")
         gunluk_yolu = os.path.join(DATA_KLASORU, f"{il_slug}-{ilce_slug}.json")
