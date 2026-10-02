@@ -1,0 +1,898 @@
+{
+  "eczaneler": [
+    {
+      "id": 56740,
+      "ad": "21 MAYIS ECZANESİ",
+      "tel": "2163741602",
+      "adres": "Petrol İş Mah. Kızılay Bulv. No:21/C"
+    },
+    {
+      "id": 13306,
+      "ad": "ACAR ECZANESİ",
+      "tel": "2163773145",
+      "adres": "HÜRRIYET MAH. ABDI IPEKÇI CAD. TEKIN SOK. NO:12/A"
+    },
+    {
+      "id": 41653,
+      "ad": "ADA ECZANESİ",
+      "tel": "2163771122",
+      "adres": "Soğanlık Yeni Mah. Mimar Sinan Cad. No:40A"
+    },
+    {
+      "id": 52628,
+      "ad": "ADALET ECZANESİ",
+      "tel": "",
+      "adres": "ATALAR MAH. ÜSKÜDAR CAD. NO:108/D"
+    },
+    {
+      "id": 13254,
+      "ad": "AKIN ECZANESİ",
+      "tel": "2162904175",
+      "adres": "UGUR MUMCU MH. SEYH SAMIL CD. UPCITY CENTER NO:15 F-3/2"
+    },
+    {
+      "id": 43459,
+      "ad": "ALAÇAYIR ECZANESİ",
+      "tel": "2163873292",
+      "adres": "Petrol İş Mah. Rahvanlar Cad. No:29B"
+    },
+    {
+      "id": 48889,
+      "ad": "ANATOLİUM ECZANESİ",
+      "tel": "2164515151",
+      "adres": "Soğanlık Yeni Mah. Soğanlık D100 Kuzey Yanyol Cad. B Blok No:72/185"
+    },
+    {
+      "id": 48782,
+      "ad": "ASLI ECZANESİ",
+      "tel": "2164736021",
+      "adres": "ATALAR MH.DOGU CD. NO:72"
+    },
+    {
+      "id": 59703,
+      "ad": "AVRUPA PLUS ECZANESİ",
+      "tel": "0",
+      "adres": "Esentepe Mah. İnönü Cad. No:151/A"
+    },
+    {
+      "id": 54775,
+      "ad": "AYŞEGÜL ECZANESİ",
+      "tel": "2163094050",
+      "adres": "Cumhuriyet Mah. Erzincan Sok. No:30-B"
+    },
+    {
+      "id": 39341,
+      "ad": "AZRA ECZANESİ",
+      "tel": "2164751700",
+      "adres": "Uğur Mumcu Mahallesi Yunus Emre Caddesi, 33A"
+    },
+    {
+      "id": 42463,
+      "ad": "BARIŞ ECZANESİ",
+      "tel": "2164512324",
+      "adres": "Cumhuriyet Mahallesi Yüzyıl Caddesi, 50A"
+    },
+    {
+      "id": 13375,
+      "ad": "BAYKAN ECZANESI",
+      "tel": "2163065300",
+      "adres": "YUNUS MAH.DEMOKRASİ CD. NO:19/A"
+    },
+    {
+      "id": 51676,
+      "ad": "BERRAK ECZANESİ",
+      "tel": "2163875087",
+      "adres": "Atalar Mah. Tecerdağı Cad. No:61/B"
+    },
+    {
+      "id": 15785,
+      "ad": "BIRUNI",
+      "tel": "2163991112",
+      "adres": "ORHANTEPE MAH. SAHILYOLU SK. NO:19 DRAGOS"
+    },
+    {
+      "id": 48266,
+      "ad": "BURAK ECZANESİ",
+      "tel": "2164579948",
+      "adres": "Orhantepe Mah. Tuğraberk Sk. No:5/B"
+    },
+    {
+      "id": 13354,
+      "ad": "BURCU ECZANESI",
+      "tel": "2164880200",
+      "adres": "HAMAM SOK. NO:31/2"
+    },
+    {
+      "id": 40104,
+      "ad": "BİZİM ECZANESİ",
+      "tel": "2163096957",
+      "adres": "Yakacık Çarşı Mah. Çam Sok. No:43A"
+    },
+    {
+      "id": 50213,
+      "ad": "CAN ECZANESİ",
+      "tel": "2163771331",
+      "adres": "Hürriyet Mah. Abdi İpekçi Cad. No:25-A"
+    },
+    {
+      "id": 13374,
+      "ad": "CANSU ECZANESI",
+      "tel": "2163740622",
+      "adres": "KORDONBOYU MAH. KUMLAR CAD. 39/1-2 KARTAL"
+    },
+    {
+      "id": 54913,
+      "ad": "CEMİL ECZANESI",
+      "tel": "2163770848",
+      "adres": "ORTA MAH. KAPTANIDERYA CAD. NO:40/B"
+    },
+    {
+      "id": 34065,
+      "ad": "CEVİZLİ DERMAN ECZANESİ",
+      "tel": "2163050473",
+      "adres": "Cevizli Mah. Denizer Cad. No:25A"
+    },
+    {
+      "id": 50127,
+      "ad": "CEYLAN ECZANESİ",
+      "tel": "2163772149",
+      "adres": "Soğanlık Yeni Mah. Beytalı Cad. No:40/A"
+    },
+    {
+      "id": 48121,
+      "ad": "CİHAN ECZANESİ",
+      "tel": "2167558585",
+      "adres": "ESENTEPE MAH. ANADOLU CAD NO:5/2H"
+    },
+    {
+      "id": 13317,
+      "ad": "DEFNE ECZANESI",
+      "tel": "2163890076",
+      "adres": "ATALAR CAD. 28/A RAHMANLAR"
+    },
+    {
+      "id": 40461,
+      "ad": "DEMİR ECZANESİ",
+      "tel": "2163749464",
+      "adres": "Atalar Mah. Doğu Cad. No:68B"
+    },
+    {
+      "id": 34688,
+      "ad": "DEMİRAY ECZANESİ",
+      "tel": "2163097099",
+      "adres": "ORTA MAH. YUSUF EFENDİ SOK. NO:4C"
+    },
+    {
+      "id": 39288,
+      "ad": "DEMİRCİOĞLU ECZANESİ",
+      "tel": "2164885073",
+      "adres": "ATALAR MAH. ÜSKÜDAR CAD. NO:152/A"
+    },
+    {
+      "id": 13321,
+      "ad": "DENIZ ECZANESI",
+      "tel": "2163894087",
+      "adres": "PETROL-IS MAH. KIZILAY BULVARI NO:27/4"
+    },
+    {
+      "id": 13308,
+      "ad": "DERMAN ECZANESI",
+      "tel": "",
+      "adres": "ATATÜRK CAD. NO:152/1-B"
+    },
+    {
+      "id": 43667,
+      "ad": "DERİN ECZANESİ",
+      "tel": "2163091945",
+      "adres": "Hürriyet Mah. Peker Sok. No:36A"
+    },
+    {
+      "id": 53537,
+      "ad": "DEYYAROĞLU ECZANESİ",
+      "tel": "2166710988",
+      "adres": "ÇARŞI MAH. YAKAKENT CAD. NO:15-A"
+    },
+    {
+      "id": 13260,
+      "ad": "DOGA ECZANESI",
+      "tel": "2163060950",
+      "adres": "PETROL-IS MAH. BEYAZ KÖSK CAD. NO:20/2"
+    },
+    {
+      "id": 13274,
+      "ad": "DOLUNAY ECZANESI",
+      "tel": "2163530805",
+      "adres": "YUKARI MAH. ÇIRÇIR CAD. NO:15/1"
+    },
+    {
+      "id": 54498,
+      "ad": "DOĞU ECZANESİ",
+      "tel": "2163710350",
+      "adres": "Orhantepe Mah. Çınar Cad. No:55D"
+    },
+    {
+      "id": 56235,
+      "ad": "DURUSU ECZANESİ",
+      "tel": "2167664202",
+      "adres": "Atalar Mah. Üsküdar Cad. No:73-B"
+    },
+    {
+      "id": 64915,
+      "ad": "DİCLE ECZANESİ",
+      "tel": "2164733180",
+      "adres": "Karlıktepe Mah. Spor Cad. No:8/B"
+    },
+    {
+      "id": 45774,
+      "ad": "DİLEM ECZANESİ",
+      "tel": "2163533655",
+      "adres": "Topselvi Mah. Topselvi Cad. No:23/B"
+    },
+    {
+      "id": 44720,
+      "ad": "DİLŞAT ECZANESİ",
+      "tel": "2163876540",
+      "adres": "Karlıktepe Mah. Yaşar Doğu Cad. No:3A"
+    },
+    {
+      "id": 40350,
+      "ad": "EFE ECZANESİ",
+      "tel": "2163065473",
+      "adres": "Çavuşoğlu Mah. Kültür Sok. No:20A"
+    },
+    {
+      "id": 56024,
+      "ad": "EGE ECZANESİ",
+      "tel": "2166719135",
+      "adres": "YAKACIK YENİ MAH. SAMANDIRA CAD. NO:23A"
+    },
+    {
+      "id": 13259,
+      "ad": "EKIM ECZANESI",
+      "tel": "2163056984",
+      "adres": "ORHANTEPE MAH. TEKEL CAD. NO:32/2 ATALAR"
+    },
+    {
+      "id": 13310,
+      "ad": "EKIN ECZANESI",
+      "tel": "2163778455",
+      "adres": "ATATÜRK CAD. NO:123"
+    },
+    {
+      "id": 56896,
+      "ad": "EMEK ECZANESI",
+      "tel": "",
+      "adres": "Yukarı Mah. Kızılay Bulvarı No:38/B"
+    },
+    {
+      "id": 13299,
+      "ad": "EMRE ECZANESI",
+      "tel": "2163744433",
+      "adres": "ESENTEPE MAH. INÖNÜ CAD. NO:84/A"
+    },
+    {
+      "id": 13352,
+      "ad": "ERBAŞ ECZANESİ",
+      "tel": "5442428488",
+      "adres": "UGUR MUMCU MAH. SEYH SAMIL CAD. NO:54/C"
+    },
+    {
+      "id": 61617,
+      "ad": "EREN ECZANESİ",
+      "tel": "2163893636",
+      "adres": "Yunus Mah. Atölyeler Sok. B Blok No:1/B3"
+    },
+    {
+      "id": 13373,
+      "ad": "ERZINCAN TIRYAKI ECZANESI",
+      "tel": "2163834724",
+      "adres": "DENIZER CAD. NO:23-C-D"
+    },
+    {
+      "id": 52679,
+      "ad": "EYLÜL ECZANESİ",
+      "tel": "2164591156",
+      "adres": "Cevizli Mah. Konya Sk. No:11/C"
+    },
+    {
+      "id": 62365,
+      "ad": "EZGİ ECZANESİ",
+      "tel": "0",
+      "adres": "Petroliş Mah. Üsküdar Cad. No:53/C"
+    },
+    {
+      "id": 13262,
+      "ad": "FERDA ECZANESI",
+      "tel": "2163061617",
+      "adres": "KARLIKTEPE MAH. SPOR CAD. NO:4/D"
+    },
+    {
+      "id": 61932,
+      "ad": "FEYZA ECZANESİ",
+      "tel": "5513415893",
+      "adres": "Esentepe Mahallesi,Toros Caddesi, No:44/A"
+    },
+    {
+      "id": 13389,
+      "ad": "FILIZ ECZANESI",
+      "tel": "2163701570",
+      "adres": "ORHANTEPE MAH. GEZIYOLU SOK. NO:32/1"
+    },
+    {
+      "id": 13296,
+      "ad": "GÜLNIHAL ECZANESI",
+      "tel": "2163741715",
+      "adres": "KIZILAY BULVARI NO:25/A"
+    },
+    {
+      "id": 43530,
+      "ad": "GÜLŞEN ECZANESİ",
+      "tel": "2163742138",
+      "adres": "Esentepe Mah. Hakan Sok. No:9A"
+    },
+    {
+      "id": 13387,
+      "ad": "GÜMÜŞPINAR",
+      "tel": "2166719444",
+      "adres": "GÜMÜSPINAR MH. DEFNELI CD. NO:10/1 KARTAL"
+    },
+    {
+      "id": 13326,
+      "ad": "GÜNDOGDU ECZANESI",
+      "tel": "2164418266",
+      "adres": "MUSTAFA KEMAL CAD. NO:26/1"
+    },
+    {
+      "id": 40925,
+      "ad": "GÜRBÜZ ECZANESİ",
+      "tel": "2163522520",
+      "adres": "Cevizli Mah. Cevizli D-100 Güney Yanyol Cad. No:2 Kuriş Kule Dükkan No:14"
+    },
+    {
+      "id": 55075,
+      "ad": "HALE ECZANESİ",
+      "tel": "",
+      "adres": "Esentepe Mah. Bulut Sok. No:4B"
+    },
+    {
+      "id": 13399,
+      "ad": "HANIMELI",
+      "tel": "2164882578",
+      "adres": "ATALAR MAH.ATALAR CAD.SIRIN SK.NO:2/B KARTAL"
+    },
+    {
+      "id": 44500,
+      "ad": "HANNE ECZANESİ",
+      "tel": "2166726064",
+      "adres": "Hürriyet Mahallesi Peker Sokak, 33"
+    },
+    {
+      "id": 13335,
+      "ad": "HATİCE ECZANESİ",
+      "tel": "2164521490",
+      "adres": "Çarşı Mahallesi\r\nTarihi Ayazma Caddesi, 2J\r\n34876 Yakacık"
+    },
+    {
+      "id": 13320,
+      "ad": "HAYAT ECZANESI",
+      "tel": "2163892234",
+      "adres": "YUNUS MAH. KUBILAY CAD. NO:17/A"
+    },
+    {
+      "id": 37716,
+      "ad": "HORİZON ECZANESİ",
+      "tel": "2163681990",
+      "adres": "Kordonboyu Mahallesi Turgut Özal Bulvarı, 65/18"
+    },
+    {
+      "id": 13271,
+      "ad": "HÜMA ECZANESI",
+      "tel": "2163096215",
+      "adres": "ATATÜRK CAD. NO:93/1"
+    },
+    {
+      "id": 13330,
+      "ad": "HÜRRİYET ECZANESİ",
+      "tel": "2164520042",
+      "adres": "HÜRRIYET MAH. ABDI IPEKÇI CAD. NO:50/B"
+    },
+    {
+      "id": 40364,
+      "ad": "IHLAMUR ECZANESİ",
+      "tel": "2164762303",
+      "adres": "UGUR MUMCU MAH. SEYH SAMIL CD. NO:44/A-1KARTAL"
+    },
+    {
+      "id": 13265,
+      "ad": "ILKNUR ECZANESI",
+      "tel": "2163069242",
+      "adres": "YUKARI MAH. ÖZGÜR SOK. NO:6/1"
+    },
+    {
+      "id": 48345,
+      "ad": "KARTAL ECZANESİ",
+      "tel": "2164880045",
+      "adres": "Gümüşpınar Mahallesi Defneli Caddesi, 4/1A"
+    },
+    {
+      "id": 37660,
+      "ad": "KARTAL PLUS ECZANESİ",
+      "tel": "2162250891",
+      "adres": "Orta Mahallesi Yalnız Selvi Caddesi, 21A"
+    },
+    {
+      "id": 55718,
+      "ad": "KORDONBOYU ECZANESİ",
+      "tel": "2163532540",
+      "adres": "Kordonboyu Mah. Ankara Cad .No:59B"
+    },
+    {
+      "id": 34527,
+      "ad": "KURAL ECZANESİ",
+      "tel": "2163090900",
+      "adres": "ORTA MAH. YUSUF EFENDİ SOK. NO : 8A"
+    },
+    {
+      "id": 38561,
+      "ad": "LAVANTA ECZANESİ",
+      "tel": "2163535365",
+      "adres": "Esentepe Mah. Anayurt Cad. No:31/A"
+    },
+    {
+      "id": 50783,
+      "ad": "LİLYUM ECZANESİ",
+      "tel": "2162088200",
+      "adres": "ATALAR MAH. HALİTPAŞA CAD. NO:80-82B"
+    },
+    {
+      "id": 13267,
+      "ad": "MAHMUT ALI ECZANESI",
+      "tel": "2163093545",
+      "adres": "ORTA MAH. GENÇ OSMAN CAD. NO:5/1"
+    },
+    {
+      "id": 38515,
+      "ad": "MAHİNUR ECZANESI",
+      "tel": "2164594008",
+      "adres": "ORHANTEPE MAH. 30 AGUSTOS CAD. NO:20B"
+    },
+    {
+      "id": 51187,
+      "ad": "MANZARA ADALAR ECZANESİ",
+      "tel": "",
+      "adres": "Karlıktepe Mah. Yakacık Cad. No:67B D Blok İç Kapı No:2"
+    },
+    {
+      "id": 13337,
+      "ad": "MARMARA ECZANESI",
+      "tel": "2164523739",
+      "adres": "GENÇ OSMAN CAD. NO:3/B SOGANLIK"
+    },
+    {
+      "id": 58421,
+      "ad": "MARİN KARTAL ECZANESİ",
+      "tel": "2164885419",
+      "adres": "Petroliş Mahallesi Üsküdar Caddesi, 90/B"
+    },
+    {
+      "id": 42088,
+      "ad": "MAXİMUM ECZANESİ",
+      "tel": "2165172118",
+      "adres": "ORHANTEPE MAH. ÜSKÜDAR CAD. NO:145D"
+    },
+    {
+      "id": 44682,
+      "ad": "MAY ECZANESİ",
+      "tel": "2163050570",
+      "adres": "Cevizli Mah. Cevizli D-100 Güney Yan Yolu Kuriş Kule Dükkanlar No:2/C"
+    },
+    {
+      "id": 40178,
+      "ad": "MERCAN ECZANESİ",
+      "tel": "2164757688",
+      "adres": "Uğur Mumcu Mah. Şeyh Şamil Cad. No:31F"
+    },
+    {
+      "id": 13325,
+      "ad": "MERKEZ ECZANESI",
+      "tel": "2164415348",
+      "adres": "ORHANTEPE MAH. ÇINAR CAD. 7/D"
+    },
+    {
+      "id": 37579,
+      "ad": "MERT ECZANESİ",
+      "tel": "2166322361",
+      "adres": "Orta Mahallesi Vezirköprü Caddesi, 6B"
+    },
+    {
+      "id": 56865,
+      "ad": "METEHAN ECZANESİ",
+      "tel": "2164757900",
+      "adres": "Uğur Mumcu Mah. Fatih Sultan Mehmet Cad. No:32-A"
+    },
+    {
+      "id": 62516,
+      "ad": "MUTLULUK ECZANESİ",
+      "tel": "5451985907",
+      "adres": "Topselvi Mahallesi,Topselvi Caddesi,No:95/K"
+    },
+    {
+      "id": 29644,
+      "ad": "MİMOZA ECZANESİ",
+      "tel": "2163895345",
+      "adres": "ÇARŞI MAH. KARTAL YOLU CAD. HEDİYE SOK. NO:5A"
+    },
+    {
+      "id": 55778,
+      "ad": "NESLİHAN ECZANESİ",
+      "tel": "2164883657",
+      "adres": "Atalar Mah. Üsküdar Cad. No:103/A"
+    },
+    {
+      "id": 56729,
+      "ad": "NOKTA ECZANESİ",
+      "tel": "2165178457",
+      "adres": "Karlıktepe Mah. İnönü Cad. No:57A"
+    },
+    {
+      "id": 63293,
+      "ad": "NUR ECZANESİ",
+      "tel": "5559972025",
+      "adres": "Orta Mahallesi,Yalnız Selvi Caddesi, 16A"
+    },
+    {
+      "id": 13301,
+      "ad": "OKÇU ECZANESİ",
+      "tel": "2163771307",
+      "adres": "HÜRRIYET MAH. ABDI IPEKÇI CAD. NO:33/6"
+    },
+    {
+      "id": 49468,
+      "ad": "ONUR ECZANESİ",
+      "tel": "2163052202",
+      "adres": "Orhantepe Mah. Bankalar Sok. No:33/A"
+    },
+    {
+      "id": 13291,
+      "ad": "ORHANTEPE",
+      "tel": "2163716473",
+      "adres": "ORHANTEPE MH. ZEYBEK SK.NO:16/A KARTAL"
+    },
+    {
+      "id": 62756,
+      "ad": "PAPATYA ECZANESİ",
+      "tel": "2167551415",
+      "adres": "Petroliş Mahallesi,Nirengi Sokak,No:11/A"
+    },
+    {
+      "id": 52772,
+      "ad": "PELİN DOĞAN ECZANESİ",
+      "tel": "5059526275",
+      "adres": "CEVİZLİ MAH. KÖROĞLU CAD. NO:3/A"
+    },
+    {
+      "id": 50806,
+      "ad": "PELİN ECZANESİ",
+      "tel": "2164525344",
+      "adres": "Çarşı Mahallesi, Gökdemir Sokak, 9/B"
+    },
+    {
+      "id": 64905,
+      "ad": "POLEN ECZANESİ",
+      "tel": "2164883266",
+      "adres": "Hürriyet Mahallesi, Olimpiyat Caddesi, No:67F"
+    },
+    {
+      "id": 13293,
+      "ad": "RAHMANLAR SIFA ECZANESI",
+      "tel": "2163740330",
+      "adres": "ÜSKÜDAR CAD. KAYAKARDESLER IS MERKEZI NO:116/57"
+    },
+    {
+      "id": 61538,
+      "ad": "REFERANS ECZANESİ",
+      "tel": "2164733780",
+      "adres": "Atalar Mahallesi,Kartopu Sokak, No:13/P"
+    },
+    {
+      "id": 61967,
+      "ad": "RÜYA ECZANESİ",
+      "tel": "2164881521",
+      "adres": "Yalı Mahallesi,Topel Sokak,No:3/A"
+    },
+    {
+      "id": 13333,
+      "ad": "SAADET ECZANESI",
+      "tel": "2164519068",
+      "adres": "ATATÜRK CAD. NO:30/1 SOGANLIK"
+    },
+    {
+      "id": 61548,
+      "ad": "SACİDE ECZANESİ",
+      "tel": "2165042453",
+      "adres": "Karlıktepe Mahallesi,Soğanlık Caddesi,No:34/A"
+    },
+    {
+      "id": 13392,
+      "ad": "SAIDE",
+      "tel": "2164731425",
+      "adres": "TOPSELVI MH. GENÇ SK. NO:29/A"
+    },
+    {
+      "id": 49301,
+      "ad": "SELVİ ECZANESİ",
+      "tel": "2163091909",
+      "adres": "Cumhuriyet Mah. Adnan Kahveci Cad. No:86/B"
+    },
+    {
+      "id": 43408,
+      "ad": "SELİN ECZANESİ",
+      "tel": "2164755485",
+      "adres": "Uğur Mumcu Mah. Safahat Cad. No:8A"
+    },
+    {
+      "id": 56535,
+      "ad": "SERENAY ECZANESİ",
+      "tel": "2163837036",
+      "adres": "Orhantepe Mah. 30 Ağustos Cad. No:21/A"
+    },
+    {
+      "id": 13356,
+      "ad": "SEÇIL ECZANESI",
+      "tel": "2164880507",
+      "adres": "PETROL-IS MAH. KIZILAY BULVARI NO:79/2"
+    },
+    {
+      "id": 38227,
+      "ad": "SOĞANLIK ECZANESİ",
+      "tel": "2163098920",
+      "adres": "ORTA MAH. VEZİRKÖPRÜ CAD. ZEMİN KAT NO:7"
+    },
+    {
+      "id": 45899,
+      "ad": "SU",
+      "tel": "",
+      "adres": "CEVİZLİ MAHALLESİ SEYİTGAZİ SOKAK NO:16/AKARTAL"
+    },
+    {
+      "id": 65555,
+      "ad": "SU ECZANESİ",
+      "tel": "5318987199",
+      "adres": "Cevizli Mah. Seyitgazi Sok. No:16/A"
+    },
+    {
+      "id": 49263,
+      "ad": "TAMİRHANE ECZANESİ",
+      "tel": "2163525055",
+      "adres": "Orhantepe Mahallesi Bankalar Caddesi, 14/A"
+    },
+    {
+      "id": 13253,
+      "ad": "TOPSELVI YAGMUR",
+      "tel": "2164887959",
+      "adres": "YUNUS MH. BOSTAN CD. NO:36/A-B KARTAL ISTANBUL"
+    },
+    {
+      "id": 13355,
+      "ad": "TOROS ECZANESI",
+      "tel": "2164880334",
+      "adres": "ESENTEPE MAH. TOROS CAD. NO:32/B"
+    },
+    {
+      "id": 51869,
+      "ad": "TURKUAZ ECZANESİ",
+      "tel": "2163770778",
+      "adres": "Gümüşpınar Mahallesi Atatürk Caddesi, 107/B 34880 Kartal/İstanbul"
+    },
+    {
+      "id": 13278,
+      "ad": "TÜRAY ECZANESI",
+      "tel": "2163533601",
+      "adres": "KIZILAY BULVARI NO:32 TOPRAKYOL"
+    },
+    {
+      "id": 61616,
+      "ad": "TÜRKAYDIN ECZANESİ",
+      "tel": "2166522779",
+      "adres": "Yukarı Mahalle,Kızılay Bulvarı No:38/B"
+    },
+    {
+      "id": 37615,
+      "ad": "VATAN ECZANESİ",
+      "tel": "2163522538",
+      "adres": "CEVİZLİ MAH. DENİZER CAD. NO:25D"
+    },
+    {
+      "id": 13365,
+      "ad": "YAGMUR",
+      "tel": "2165172889",
+      "adres": "KARLIKTEPE MAH. FAHRI KORUTÜRK CD. NO:13/A"
+    },
+    {
+      "id": 15790,
+      "ad": "YAKACIK DERMAN ECZANESİ",
+      "tel": "2165767642",
+      "adres": "ÇARSI MH. KARTAL CD.ENIS AKAYGEN SK.NO:9/27 KARTAL"
+    },
+    {
+      "id": 13303,
+      "ad": "YAKACIK ECZANESİ",
+      "tel": "2163771376",
+      "adres": "KARTAL CAD. NO:22 YAKACIK"
+    },
+    {
+      "id": 28823,
+      "ad": "YAKACIK İNCİ ECZANESİ",
+      "tel": "2164519091",
+      "adres": "Gümüşpınar Mahallesi Yalı Sokak, 5/1C"
+    },
+    {
+      "id": 13286,
+      "ad": "YAVUZ SELIM ECZANESI",
+      "tel": "2163538619",
+      "adres": "ÇAVUSOGLU MAH. KÜLTÜR CAD. NO:26/A"
+    },
+    {
+      "id": 32147,
+      "ad": "YAZICI 1988 ECZANESI",
+      "tel": "2163890139",
+      "adres": "Atalar Mahallesi Köroğlu Caddesi, 34/A"
+    },
+    {
+      "id": 54025,
+      "ad": "YAŞAM ECZANESİ",
+      "tel": "2163053733",
+      "adres": "Orhantepe Mah. Bankalar Cad. No:26/B"
+    },
+    {
+      "id": 13344,
+      "ad": "YEKTA ECZANESI",
+      "tel": "2164598681",
+      "adres": "MUSTAFA KEMAL CAD. NO:28/A"
+    },
+    {
+      "id": 13297,
+      "ad": "YENI MESUT ECZANESI",
+      "tel": "2163743004",
+      "adres": "ÜSKÜDAR CAD. AS IS MERKEZI NO:27/C"
+    },
+    {
+      "id": 62350,
+      "ad": "YENİ ATALAR ECZANESİ",
+      "tel": "2165176720",
+      "adres": "Petrol İş Mah. Rahvanlar Cad. No:60A"
+    },
+    {
+      "id": 45104,
+      "ad": "YENİ EKİN ECZANESİ",
+      "tel": "2163773110",
+      "adres": "Hürriyet Mah. Peker Sok. No:3A"
+    },
+    {
+      "id": 34250,
+      "ad": "YENİ İNCİ ECZANESİ",
+      "tel": "2165177749",
+      "adres": "KARLIKTEPE MH. HUZURTEPE SK. NO:10A"
+    },
+    {
+      "id": 49075,
+      "ad": "YENİ ŞİFA ECZANESİ",
+      "tel": "2163098344",
+      "adres": "Hürriyet Mahallesi Abdi İpekçi Caddesi, 19-21/A 34876 Kurfalı"
+    },
+    {
+      "id": 13323,
+      "ad": "YILDIZ ECZANESI",
+      "tel": "2163993438",
+      "adres": "SELANIK CAD. KONYA SOK. NO:10/1"
+    },
+    {
+      "id": 56612,
+      "ad": "ZEHRA IŞIK ECZANESİ",
+      "tel": "2163059080",
+      "adres": "Cevizli Mah. Mustafa Kemal Cad. No:42/A"
+    },
+    {
+      "id": 57819,
+      "ad": "ZERRİN ECZANESİ",
+      "tel": "2163772552",
+      "adres": "Yakacık Yeni Mahallesi,Samandıra Caddesi,No:21/B"
+    },
+    {
+      "id": 46838,
+      "ad": "ZEYNEP ECZANESİ",
+      "tel": "2163090989",
+      "adres": "Hürriyet Mah. Adnan Kahveci Bulvarı Türkeli Sk. No:2-1"
+    },
+    {
+      "id": 59005,
+      "ad": "ZEYNEPNUR ECZANESİ",
+      "tel": "2163062725",
+      "adres": "Karlıktepe Mahallesi, Tecerdağı Caddesi, 2A"
+    },
+    {
+      "id": 40738,
+      "ad": "ÇARŞI ECZANESİ",
+      "tel": "2163061077",
+      "adres": "Kordonboyu Mahallesi Ankara Caddesi, 56"
+    },
+    {
+      "id": 13270,
+      "ad": "ÇAĞRI ECZANESİ",
+      "tel": "2163095805",
+      "adres": "CUMHURIYET MAH. ZEYTINLIK CAD. NO:37/A"
+    },
+    {
+      "id": 45601,
+      "ad": "ÇINAR ECZANESİ",
+      "tel": "2163535312",
+      "adres": "YUKARI MAH. ÇIRÇIR CAD. No:21/A"
+    },
+    {
+      "id": 49690,
+      "ad": "ÇORUH ECZANESİ",
+      "tel": "2163899700",
+      "adres": "Yukarı Mahallesi Üsküdar Caddesi, 13/B"
+    },
+    {
+      "id": 13280,
+      "ad": "ÖMER LÜTFÜ ECZANESI",
+      "tel": "2164732830",
+      "adres": "ANKARA CAD. NO:25"
+    },
+    {
+      "id": 42762,
+      "ad": "ÖMÜR ECZANESİ",
+      "tel": "2163065353",
+      "adres": "Yalı Mah. Tufan Sok. No:22B"
+    },
+    {
+      "id": 13370,
+      "ad": "ÖZLEM KOÇAK ECZANESI",
+      "tel": "2165179844",
+      "adres": "PETROL-IS MAH. RAHMANLAR CAD. NO:56/A"
+    },
+    {
+      "id": 13283,
+      "ad": "ÜMIT ECZANESI",
+      "tel": "2163536239",
+      "adres": "KARLIKTEPE MAH. INÖNÜ CAD. NO:26"
+    },
+    {
+      "id": 35413,
+      "ad": "İNCİR ECZANESİ",
+      "tel": "2163830821",
+      "adres": "ORHANTEPE MAH. SARAYLAR CAD. NO:80A"
+    },
+    {
+      "id": 26824,
+      "ad": "İSTANBUL",
+      "tel": "2163705457",
+      "adres": "Soğanlık Yeni Mahallesi Atatürk Caddesi, 3"
+    },
+    {
+      "id": 43669,
+      "ad": "İSTMARİNA ECZANESİ",
+      "tel": "2165194544",
+      "adres": "Kordonboyu Mah. Ankara Cad. No:147/6 İç Kapı No:223"
+    },
+    {
+      "id": 60853,
+      "ad": "ŞEYDA ECZANESİ",
+      "tel": "2166297090",
+      "adres": "Orhantepe Mah. Pazar Sok. No:5E"
+    },
+    {
+      "id": 53017,
+      "ad": "ŞULE ECZANESİ",
+      "tel": "2163063019",
+      "adres": "Petrol İş Mah. Rahvanlar Cad. No:47/A"
+    },
+    {
+      "id": 31451,
+      "ad": "ŞURUP ECZANESİ",
+      "tel": "2164882629",
+      "adres": "KARLIKTEPE MAH. FAHRİ KORUTÜRK CAD. NO:19/1"
+    }
+  ]
+}
