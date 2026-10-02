@@ -100,6 +100,10 @@ KONFIG_YOLU = os.path.join(REPO_KOKU, "config", "eczane-kaynaklari.json")
 DATA_KLASORU = os.path.join(REPO_KOKU, "data")
 EKLENENLER_LOG_YOLU = os.path.join(DATA_KLASORU, "collectapi-eklenenler-log.txt")
 
+# CollectAPI'ye bu saatten (Istanbul yerel saati) ONCE hic sorulmaz - Enver'in
+# istegi (2 Ekim): gunun ilk saatlerinde veri henuz tam/guncel olmayabiliyor.
+COLLECTAPI_EN_ERKEN_SAAT = 14
+
 # NobetciEczanePano.ino icindeki AY_ADLARI ile birebir ayni (ASCII, Turkce karakter yok)
 AY_ADLARI = ["Ocak", "Subat", "Mart", "Nisan", "Mayis", "Haziran",
              "Temmuz", "Agustos", "Eylul", "Ekim", "Kasim", "Aralik"]
@@ -435,6 +439,14 @@ def main():
 
             if onbellek_bugune_ait:
                 collectapi_sonuc = collectapi_onbellek_oku(onbellek_yolu, bugun_tarih_iso)
+            elif simdi_istanbul().hour < COLLECTAPI_EN_ERKEN_SAAT:
+                # Enver'in istegi (2 Ekim): gunun ilk calismasi gece yarisindan
+                # hemen sonra oluyor - bu saatte hem teknikzeka hem CollectAPI
+                # verisi henuz guncellenmemis/bos donebiliyor. Bu yuzden
+                # COLLECTAPI_EN_ERKEN_SAAT'ten (14:00) once hic denenmez,
+                # onbellek de yazilmaz - saat 14:00'i gecince ilk calisma
+                # tazeden ceker ve o GUNUN onbellegini olusturur.
+                collectapi_sonuc = None
             else:
                 print(f"[{etiket}] CollectAPI onbellegi bugune ait degil, tazeden cekiliyor...")
                 collectapi_sonuc = collectapi_il_ilce_cek(collectapi_key, api_il, api_ilce)
