@@ -40,9 +40,36 @@ Tazelik kontrolu (21 Eylul'de kesfedildi - Enver'in istegi geregi eklendi):
   geldi). Bu, API'nin kendi veri eksikligi - script'in bir hatasi degil.
   Ikinci bir kaynaktan (eczaneler.gen.tr) otomatik capraz kontrol DENENDI ama
   o site Cloudflare bot korumasi ("Just a moment...") kullaniyor, otomatik
-  script'ten asla gecilemiyor - bu yuzden VAZGECILDI. Enver boyle bir eksikligi
-  fark ettiginde panel uzerinden "Manuel Nobetci Girisi" ile o ilce icin
-  listeyi elle girip MANUEL moda alabilir (zaten var olan bir ozellik).
+  script'ten asla gecilemiyor - bu yuzden VAZGECILDI.
+
+2 Ekim guncellemesi: CollectAPI'nin "dutyPharmacy" servisi ikinci kaynak
+  olarak ENTEGRE EDILDI (asagida "CollectAPI entegrasyonu" bolumune bak).
+  teknikzeka'nin eksik biraktigi "Yeni Sifa Eczanesi" (Maltepe) orneginde
+  CollectAPI'nin dogru veriyi verdigi dogrulandi (Enver, Eczacilar
+  Odasi'ndan teyit etti). teknikzeka HALA ANA/ZORUNLU kaynak - CollectAPI
+  SADECE EKLEME yapar, teknikzeka basarisiz olursa guvenlik kurali (yukarida)
+  aynen gecerli: hicbir dosya yazilmaz. CollectAPI basarisiz olursa veya
+  anahtar tanimli degilse, sadece ekleme adimi atlanir - teknikzeka verisi
+  yine de yazilir, panel hicbir zaman "CollectAPI yok diye" veri kaybetmez.
+  Enver boyle bir eksiklik fark ettiginde panel uzerinden "Manuel Nobetci
+  Girisi" ile o ilce icin listeyi elle girip MANUEL moda alabilir (zaten var
+  olan bir ozellik) - CollectAPI entegrasyonu bunun YERINE degil, EK bir
+  guvenlik katmani olarak eklendi.
+
+CollectAPI entegrasyonu (kota tasarrufu):
+  CollectAPI ucretsiz pakette ayda sadece 100 istek hakki var. Saatlik
+  calisan bu script'in HER calismasinda CollectAPI'yi cagirmak (gunde 24 kez
+  x ilce sayisi) kotayi gunler icinde tuketir. Bu yuzden CollectAPI sonucu
+  GUNLUK ONBELLEGE ALINIR: data/<il>-<ilce>-collectapi-onbellek.json
+  dosyasina o GUNUN (Istanbul saatiyle) collectapi sonucu yazilir; ayni gun
+  icindeki sonraki calismalar API'yi TEKRAR CAGIRMAZ, onbellekten okur.
+  Boylece gunde il/ilce basina sadece 1 CollectAPI istegi harcanir (2 ilce
+  icin ayda ~60 istek - ucretsiz kotanin icinde). "teknikzeka'da olmayan
+  CollectAPI kaydi" farki HER calismada onbellekteki veriyle YENIDEN
+  hesaplanir (API'ye tekrar sormadan) - boylece gun icinde teknikzeka'nin
+  nobetciyi "yakaladigi" bir an olursa cift kayit olusmaz.
+  CollectAPI'den eklenen her eczane data/collectapi-eklenenler-log.txt
+  dosyasina kaydedilir (seffaflik/izlenebilirlik icin).
 
 Bu script sadece dosyalari GUNCELLER; commit/push islemini cagiran GitHub
 Actions workflow'u (.github/workflows/nobetci-sync.yml) yapar.
@@ -55,6 +82,7 @@ import time
 import urllib.request
 import urllib.parse
 import urllib.error
+import zlib
 from datetime import datetime
 
 try:
@@ -64,11 +92,13 @@ except Exception:
     ISTANBUL_TZ = None
 
 API_TABAN_URL = "https://api.teknikzeka.net/eczane/api.php"
+COLLECTAPI_URL = "https://api.collectapi.com/health/dutyPharmacy"
 
 BU_DOSYA_KLASORU = os.path.dirname(os.path.abspath(__file__))
 REPO_KOKU = os.path.dirname(BU_DOSYA_KLASORU)
 KONFIG_YOLU = os.path.join(REPO_KOKU, "config", "eczane-kaynaklari.json")
 DATA_KLASORU = os.path.join(REPO_KOKU, "data")
+EKLENENLER_LOG_YOLU = os.path.join(DATA_KLASORU, "collectapi-eklenenler-log.txt")
 
 # NobetciEczanePano.ino icindeki AY_ADLARI ile birebir ayni (ASCII, Turkce karakter yok)
 AY_ADLARI = ["Ocak", "Subat", "Mart", "Nisan", "Mayis", "Haziran",
@@ -182,10 +212,110 @@ def _api_hata_mesaji(durum_kodu, govde_ham, ek=None):
 
 
 def normallestir(metin):
-    """Ilce adlarini karsilastirmak icin buyuk harfe cevirir ve bosluklari sadelestirir."""
+    """Ilce/isim karsilastirmak icin buyuk harfe cevirir ve bosluklari sadelestirir.
+
+    Python'un yerlesik str.upper() Turkce'ye duyarli DEGIL: "i".upper() ->
+    ASCII "I" doner, Turkce noktali "I" (yani "İ") degil. Iki farkli
+    kaynaktan (teknikzeka / CollectAPI) gelen ayni eczane ismi farkli
+    sekilde Turkce harflerle yazilmis olabilir (orn. "YAKACIK" / "YAKACİK") -
+    bu fark yuzunden ayni eczane "farkli/yeni" sanilmasin diye "I/İ/ı/i"
+    harflerinin hepsi TEK bir kanonik harfe ("I") cevrilip SONRA geri kalani
+    upper() yapilir."""
     if metin is None:
         return ""
-    return " ".join(str(metin).strip().upper().split())
+    metin = str(metin).strip()
+    metin = metin.replace("İ", "I").replace("ı", "I").replace("i", "I")
+    return " ".join(metin.upper().split())
+
+
+def sentetik_id_uret(isim_norm):
+    """CollectAPI kayitlarinin kendi 'id' alani yok - panelin/Flutter uygulamasinin
+    beklediği 'id' formatini saglamak icin isimden SABIT (deterministik) bir
+    sentetik id uretilir. zlib.crc32 kullanilir - Python'un yerlesik hash()
+    FONKSIYONU KULLANILMAZ, cunku hash() PYTHONHASHSEED ile process basina
+    rastgele tuzlanir, yani ayni isim icin her calistirmada FARKLI deger
+    doner - bu da panelde ayni eczanenin surekli "yeni" kayit gibi
+    gorunmesine/ID kaymasina yol acar. 9_000_000 araligi teknikzeka'nin
+    kendi id'leriyle (genelde kucuk sayilar) cakismasin diye secildi."""
+    return 9_000_000 + (zlib.crc32(isim_norm.encode("utf-8")) % 900_000)
+
+
+def collectapi_il_ilce_cek(api_key, api_il, api_ilce, deneme_sayisi=2):
+    """CollectAPI dutyPharmacy'den bir ilcenin BUGUNKU nobetci listesini ceker.
+
+    2 Ekim'de GitHub Actions'tan ilk denemede "HTTP 403 Forbidden" alindi,
+    Enver'in kendi bilgisayarindan (PowerShell) ayni anahtarla sorunsuzdu -
+    teknikzeka'da daha once yasanan "bulut IP / script User-Agent engeli"
+    durumunun benzeri. Gercek tarayici gibi gorunen User-Agent/Accept
+    eklenerek cozuldu (karsilastirma scriptinde de ayni cozum kullanildi).
+
+    Basarili olursa [{"ad","tel","adres"}, ...] listesi doner.
+    Basarisiz olursa None doner (CAGIRAN TARAF bunu "bu calismada ekleme
+    yapilamadi" olarak yorumlar - teknikzeka verisini ASLA etkilemez)."""
+    parametreler = urllib.parse.urlencode({"il": api_il, "ilce": api_ilce})
+    url = f"{COLLECTAPI_URL}?{parametreler}"
+    headers = {
+        "authorization": f"apikey {api_key}",
+        "content-type": "application/json",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                      "(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+        "Accept": "application/json, text/plain, */*",
+    }
+    for deneme in range(1, deneme_sayisi + 1):
+        try:
+            istek = urllib.request.Request(url, headers=headers)
+            with urllib.request.urlopen(istek, timeout=20) as yanit:
+                govde = yanit.read().decode("utf-8", errors="replace")
+            veri = json.loads(govde)
+            if not veri.get("success"):
+                print(f"  CollectAPI: success=false - {govde[:200]!r}")
+                return None
+            sonuc = veri.get("result", [])
+            return [
+                {
+                    "ad": (k.get("name") or "").strip(),
+                    "tel": (k.get("phone") or "").strip(),
+                    "adres": (k.get("address") or "").strip(),
+                }
+                for k in sonuc if k.get("name")
+            ]
+        except Exception as hata:
+            print(f"  CollectAPI HATA (deneme {deneme}/{deneme_sayisi}): {hata}")
+            if deneme < deneme_sayisi:
+                time.sleep(2 * deneme)
+                continue
+            return None
+    return None
+
+
+def collectapi_onbellek_oku(onbellek_yolu, bugun_tarih_iso):
+    """Bugune ait gecerli bir onbellek varsa CollectAPI sonucunu (liste) dondurur,
+    yoksa None dondurur (cagiran taraf tazeden cekmesi gerektigini anlar)."""
+    if not os.path.isfile(onbellek_yolu):
+        return None
+    try:
+        with open(onbellek_yolu, "r", encoding="utf-8") as f:
+            veri = json.load(f)
+    except Exception:
+        return None
+    if veri.get("tarih_iso") != bugun_tarih_iso:
+        return None
+    return veri.get("collectapi_sonuc")  # None (basarisiz gun) veya liste olabilir
+
+
+def collectapi_onbellek_yaz(onbellek_yolu, bugun_tarih_iso, sonuc):
+    """sonuc: basarili cekimde liste, basarisiz cekimde None (aynI gun icinde
+    tekrar tekrar basarisiz denemeyle kota tuketilmesin diye basarisizlik da
+    onbellege yazilir - o gun bir daha denenmez, ertesi gun otomatik tekrar dener)."""
+    os.makedirs(os.path.dirname(onbellek_yolu), exist_ok=True)
+    with open(onbellek_yolu, "w", encoding="utf-8") as f:
+        json.dump({"tarih_iso": bugun_tarih_iso, "collectapi_sonuc": sonuc}, f, ensure_ascii=False, indent=2)
+
+
+def eklenen_log_yaz(zaman_damgasi, etiket, ad):
+    os.makedirs(DATA_KLASORU, exist_ok=True)
+    with open(EKLENENLER_LOG_YOLU, "a", encoding="utf-8") as f:
+        f.write(f"{zaman_damgasi} | {etiket} | CollectAPI'den eklendi (teknikzeka'da yoktu): {ad}\n")
 
 
 def workdate_bugun_mu(workdate_degeri, bugun_tarih_iso):
@@ -283,6 +413,52 @@ def main():
             print(f"[{etiket}] ATLANDI: eslesen kayitlarda gecerli id yok. Mevcut dosyalar korunuyor.")
             atlanan_sayisi += 1
             continue
+
+        # --- CollectAPI ile birlestirme (2 Ekim) ---
+        # teknikzeka verisi ZATEN gecerli ve yazilmaya hazir (yukaridaki satirlar).
+        # Buradan sonrasi SADECE EKLEME yapar - herhangi bir hata/eksiklik olursa
+        # teknikzeka verisi ETKILENMEDEN asagida yine de yazilir.
+        collectapi_key = os.environ.get("COLLECTAPI_KEY", "").strip()
+        if collectapi_key:
+            bugun_tarih_iso = simdi_istanbul().strftime("%Y-%m-%d")
+            onbellek_yolu = os.path.join(DATA_KLASORU, f"{il_slug}-{ilce_slug}-collectapi-onbellek.json")
+
+            # Onbellek bugune mi ait diye dogrudan dosyadan bak (yoksa/bozuksa/
+            # farkli gune aitse None donuyor - bu durumda tazeden cekilir).
+            onbellek_bugune_ait = False
+            if os.path.isfile(onbellek_yolu):
+                try:
+                    with open(onbellek_yolu, "r", encoding="utf-8") as f:
+                        onbellek_bugune_ait = (json.load(f).get("tarih_iso") == bugun_tarih_iso)
+                except Exception:
+                    onbellek_bugune_ait = False
+
+            if onbellek_bugune_ait:
+                collectapi_sonuc = collectapi_onbellek_oku(onbellek_yolu, bugun_tarih_iso)
+            else:
+                print(f"[{etiket}] CollectAPI onbellegi bugune ait degil, tazeden cekiliyor...")
+                collectapi_sonuc = collectapi_il_ilce_cek(collectapi_key, api_il, api_ilce)
+                collectapi_onbellek_yaz(onbellek_yolu, bugun_tarih_iso, collectapi_sonuc)
+
+            if collectapi_sonuc:
+                mevcut_isimler_norm = {normallestir(e["ad"]) for e in eczaneler}
+                zaman_damgasi = simdi_istanbul().strftime("%Y-%m-%d %H:%M")
+                for aday in collectapi_sonuc:
+                    aday_isim_norm = normallestir(aday["ad"])
+                    if not aday_isim_norm or aday_isim_norm in mevcut_isimler_norm:
+                        continue
+                    yeni_id = sentetik_id_uret(aday_isim_norm)
+                    eczaneler.append({
+                        "id": yeni_id,
+                        "ad": aday["ad"],
+                        "tel": aday["tel"],
+                        "adres": aday["adres"],
+                    })
+                    idler.append(yeni_id)
+                    mevcut_isimler_norm.add(aday_isim_norm)
+                    print(f"[{etiket}] CollectAPI'den EKLENDI: {aday['ad']} (teknikzeka'da yoktu)")
+                    eklenen_log_yaz(zaman_damgasi, etiket, aday["ad"])
+        # --- CollectAPI birlestirme sonu ---
 
         liste_yolu = os.path.join(DATA_KLASORU, f"{il_slug}-{ilce_slug}-liste.json")
         gunluk_yolu = os.path.join(DATA_KLASORU, f"{il_slug}-{ilce_slug}.json")
