@@ -1,0 +1,51 @@
+name: Nobetci Eczane Kaynak Karsilastirma (test)
+
+# Bu workflow ANA senkronizasyonu (nobetci-sync.yml) ETKILEMEZ, ona dokunmaz.
+# Tek isi: gunde 1 kez teknikzeka.net ile CollectAPI'yi karsilastirip
+# data/karsilastirma-log.txt dosyasina bir satir eklemek. Amac: birkac gun
+# izleyip CollectAPI'nin teknikzeka'nin kacirdigi bir gunu yakalayip
+# yakalayamadigini gormek (2 Ekim konusmasi).
+#
+# CollectAPI ucretsiz pakette ayda 100 istek hakki var, bu yuzden GUNDE 1
+# KEZ calisir (saatlik degil) - 2 ilce x gunde 1 = ayda ~60 istek, kotanin
+# icinde kalir.
+
+on:
+  schedule:
+    # Her gun 07:00 UTC = 10:00 Istanbul. Vardiya degisimi (tipik 09:00-19:00
+    # arasi) icin gunun nobetcisi genelde bu saatte netlesmis olur.
+    - cron: "0 7 * * *"
+  workflow_dispatch: {}
+    # Elle "Run workflow" ile de tetiklenebilir (test icin kullanisli).
+
+permissions:
+  contents: write
+
+jobs:
+  karsilastir:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Depoyu indir
+        uses: actions/checkout@v4
+
+      - name: Python kur
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Kaynaklari karsilastir
+        env:
+          COLLECTAPI_KEY: ${{ secrets.COLLECTAPI_KEY }}
+        run: python scripts/karsilastir.py
+
+      - name: Log dosyasini commit+push yap
+        run: |
+          git config user.name "nobetci-eczane-bot"
+          git config user.email "nobetci-eczane-bot@users.noreply.github.com"
+          git add data/karsilastirma-log.txt
+          if git diff --cached --quiet; then
+            echo "Degisiklik yok, commit atilmayacak."
+          else
+            git commit -m "Kaynak karsilastirma log guncellemesi"
+            git push
+          fi
