@@ -1,0 +1,2 @@
+2026-10-02 21:13 | istanbul-kartal | karsilastirilamadi (biri hata) | teknikzeka(4): KURAL ECZANESİ, MANZARA ADALAR ECZANESİ, YAKACIK ECZANESİ, ÖZLEM KOÇAK ECZANESI | collectapi(-): HATA
+2026-10-02 21:13 | istanbul-maltepe | karsilastirilamadi (biri hata) | teknikzeka(2): FULYA ECZANESİ, NİDA ECZANESİ | collectapi(-): HATA
