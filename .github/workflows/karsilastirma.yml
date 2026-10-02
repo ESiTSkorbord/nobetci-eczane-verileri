@@ -12,9 +12,10 @@ name: Nobetci Eczane Kaynak Karsilastirma (test)
 
 on:
   schedule:
-    # Her gun 07:00 UTC = 10:00 Istanbul. Vardiya degisimi (tipik 09:00-19:00
-    # arasi) icin gunun nobetcisi genelde bu saatte netlesmis olur.
-    - cron: "0 7 * * *"
+    # Her gun 11:30 UTC = 14:30 Istanbul. (Enver'in istegi: 10:00 cok erken -
+    # senkronizasyon/guncelleme henuz tamamlanmamis olabiliyor, bos donuyor.
+    # 14:00-15:00 araligi tercih edildi.)
+    - cron: "30 11 * * *"
   workflow_dispatch: {}
     # Elle "Run workflow" ile de tetiklenebilir (test icin kullanisli).
 
