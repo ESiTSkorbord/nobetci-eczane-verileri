@@ -108,12 +108,24 @@ def teknikzeka_cek(api_il, api_ilce):
 
 
 def collectapi_cek(api_key, api_il, api_ilce):
-    """CollectAPI dutyPharmacy'den isim listesi dondurur. Hata/kota biterse None."""
+    """CollectAPI dutyPharmacy'den isim listesi dondurur. Hata/kota biterse None.
+
+    2 Ekim'de GitHub Actions'tan ilk denemede "HTTP 403 Forbidden" alindi,
+    ama Enver'in kendi bilgisayarindan (PowerShell) ayni anahtarla sorunsuz
+    calisti. teknikzeka.net'te daha once yasadigimiz ayni durumun benzeri:
+    bazi servisler bulut/GitHub Actions IP araliklarini veya "script benzeri"
+    User-Agent'i engelliyor olabilir. Bu yuzden gercek bir tarayici gibi
+    gorunen User-Agent/Accept eklendi, ve 403 alinirsa govde onizlemesi
+    (varsa) log'a yazilir ki bir sonraki calismada kesin sebep gorulebilsin.
+    """
     parametreler = urllib.parse.urlencode({"il": api_il, "ilce": api_ilce})
     url = f"{COLLECTAPI_URL}?{parametreler}"
     headers = {
         "authorization": f"apikey {api_key}",
         "content-type": "application/json",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                      "(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+        "Accept": "application/json, text/plain, */*",
     }
     try:
         istek = urllib.request.Request(url, headers=headers)
@@ -124,6 +136,14 @@ def collectapi_cek(api_key, api_il, api_ilce):
             print(f"  CollectAPI HATA: success=false - {govde[:200]!r}")
             return None
         sonuc = veri.get("result", [])
+    except urllib.error.HTTPError as hata:
+        onizleme = ""
+        try:
+            onizleme = hata.read().decode("utf-8", errors="replace")[:200]
+        except Exception:
+            pass
+        print(f"  CollectAPI HATA: HTTP {hata.code} - govde onizleme: {onizleme!r}")
+        return None
     except Exception as hata:
         print(f"  CollectAPI HATA: {hata}")
         return None
