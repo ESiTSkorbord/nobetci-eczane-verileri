@@ -1,22 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 43459,
-      "ad": "ALAÇAYIR ECZANESİ",
-      "tel": "2163873292",
-      "adres": "Petrol İş Mah. Rahvanlar Cad. No:29B"
+      "id": 34527,
+      "ad": "KURAL ECZANESİ",
+      "tel": "2163090900",
+      "adres": "ORTA MAH. YUSUF EFENDİ SOK. NO : 8A"
     },
     {
-      "id": 56865,
-      "ad": "METEHAN ECZANESİ",
-      "tel": "2164757900",
-      "adres": "Uğur Mumcu Mah. Fatih Sultan Mehmet Cad. No:32-A"
+      "id": 51187,
+      "ad": "MANZARA ADALAR ECZANESİ",
+      "tel": "",
+      "adres": "Karlıktepe Mah. Yakacık Cad. No:67B D Blok İç Kapı No:2"
     },
     {
-      "id": 45601,
-      "ad": "ÇINAR ECZANESİ",
-      "tel": "2163535312",
-      "adres": "YUKARI MAH. ÇIRÇIR CAD. No:21/A"
+      "id": 13303,
+      "ad": "YAKACIK ECZANESİ",
+      "tel": "2163771376",
+      "adres": "KARTAL CAD. NO:22 YAKACIK"
+    },
+    {
+      "id": 13370,
+      "ad": "ÖZLEM KOÇAK ECZANESI",
+      "tel": "2165179844",
+      "adres": "PETROL-IS MAH. RAHMANLAR CAD. NO:56/A"
     }
   ]
 }

@@ -1,22 +1,16 @@
 {
   "eczaneler": [
     {
-      "id": 57375,
-      "ad": "CANKATAR ECZANESİ",
-      "tel": "5436405295",
-      "adres": "Zümrütevler Mah. Cansev Sok. No:111/B-10"
+      "id": 61102,
+      "ad": "FULYA ECZANESİ",
+      "tel": "5067715099",
+      "adres": "Cevizli Mah. Bağdat Cad. No:442/A"
     },
     {
-      "id": 56073,
-      "ad": "HİPOKRAT ECZANESİ",
-      "tel": "0",
-      "adres": "Bağlarbaşı Mah. FeyzullaSh Cad. No:28/A"
-    },
-    {
-      "id": 41012,
-      "ad": "ÇAĞATAY ECZANESİ",
-      "tel": "2164898270",
-      "adres": "İdealtepe Mahallesi Bağdat Caddesi, 176/14"
+      "id": 46639,
+      "ad": "NİDA ECZANESİ",
+      "tel": "2164176432",
+      "adres": "ÇINAR MAH. KADİR HAS CAD. NO:40/A"
     }
   ]
 }
