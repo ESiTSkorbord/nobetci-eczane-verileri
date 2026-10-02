@@ -1,23 +1,17 @@
 name: Nobetci Eczane Kaynak Karsilastirma (test)
 
-# Bu workflow ANA senkronizasyonu (nobetci-sync.yml) ETKILEMEZ, ona dokunmaz.
-# Tek isi: gunde 1 kez teknikzeka.net ile CollectAPI'yi karsilastirip
-# data/karsilastirma-log.txt dosyasina bir satir eklemek. Amac: birkac gun
-# izleyip CollectAPI'nin teknikzeka'nin kacirdigi bir gunu yakalayip
-# yakalayamadigini gormek (2 Ekim konusmasi).
-#
-# CollectAPI ucretsiz pakette ayda 100 istek hakki var, bu yuzden GUNDE 1
-# KEZ calisir (saatlik degil) - 2 ilce x gunde 1 = ayda ~60 istek, kotanin
-# icinde kalir.
+# 2 Ekim guncellemesi: CollectAPI artik senkronize.py icinde GERCEK
+# ENTEGRASYON olarak devrede (bkz. nobetci-sync.yml + scripts/senkronize.py,
+# data/collectapi-eklenenler-log.txt). Bu workflow'un gunluk otomatik
+# calismasi KAPATILDI - CollectAPI'yi gunde 2. kez (hem burada hem
+# senkronize.py'de) cagirip ucretsiz kotayi (ayda 100 istek) gereksiz yere
+# iki katina cikarmamak icin. Dosya SILINMEDI, "Run workflow" ile ELLE
+# istenildiginde hala calistirilabilir (orn. ileride baska bir il/ilce
+# eklenince tekrar dogrulama yapmak icin kullanisli).
 
 on:
-  schedule:
-    # Her gun 11:30 UTC = 14:30 Istanbul. (Enver'in istegi: 10:00 cok erken -
-    # senkronizasyon/guncelleme henuz tamamlanmamis olabiliyor, bos donuyor.
-    # 14:00-15:00 araligi tercih edildi.)
-    - cron: "30 11 * * *"
   workflow_dispatch: {}
-    # Elle "Run workflow" ile de tetiklenebilir (test icin kullanisli).
+    # Sadece elle "Run workflow" ile calistirilir - otomatik cron KAPALI.
 
 permissions:
   contents: write
