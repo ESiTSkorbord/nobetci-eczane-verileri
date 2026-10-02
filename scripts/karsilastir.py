@@ -63,9 +63,21 @@ def simdi_istanbul():
 
 
 def normallestir(metin):
+    """Buyuk harfe cevirir ve bosluklari sadelestirir.
+
+    Python'un yerlesik str.upper() Turkce'ye duyarli DEGIL: "i".upper() ->
+    ASCII "I" doner, Turkce noktali "I" (yani "İ") degil. Bu yuzden
+    teknikzeka'nin ("İ" ile yazilmis) "YAKACIK" ismi ile CollectAPI'nin
+    ayni kelimeyi farkli sekilde yazmasi durumunda sahte "FARK VAR"
+    uyarisi cikabiliyor (2 Ekim'de Kartal'da tam bu yasandi). Cozum:
+    "I/İ/ı/i" harflerinin hepsini TEK bir kanonik harfe ("I") cevirip
+    SONRA geri kalanini upper() yapmak - senkronize.py'de daha once
+    bulunup kullanilan ayni yontem."""
     if metin is None:
         return ""
-    return " ".join(str(metin).strip().upper().split())
+    metin = str(metin).strip()
+    metin = metin.replace("İ", "I").replace("ı", "I").replace("i", "I")
+    return " ".join(metin.upper().split())
 
 
 def workdate_bugun_mu(workdate_degeri, bugun_tarih_iso):
