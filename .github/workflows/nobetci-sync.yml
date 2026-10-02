@@ -40,6 +40,8 @@ jobs:
           python-version: "3.11"
 
       - name: Nobetci verisini senkronize et
+        env:
+          COLLECTAPI_KEY: ${{ secrets.COLLECTAPI_KEY }}
         run: python scripts/senkronize.py
 
       - name: Degisiklik varsa commit+push yap
