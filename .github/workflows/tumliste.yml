@@ -1,0 +1,49 @@
+name: Nobetci Eczane - Tum Liste Cekme (Manuel Girisi icin)
+
+# Bu workflow ANA nobetci senkronizasyonunu (nobetci-sync.yml) ETKILEMEZ,
+# ona dokunmaz, ayri dosyalar uretir (data/*-tumliste.json).
+#
+# Amac: Flutter uygulamasindaki "Manuel Nobetci Girisi" ekranini alfabetik
+# tiklenebilir checklist'e cevirmek icin, panelin kurulu oldugu ilcenin
+# TUM eczane listesini (nobetci olsun olmasin) hazir tutmak.
+#
+# Tam liste sik degismez (yeni eczane acilmadikca), bu yuzden GUNLUK/SAATLIK
+# degil, HAFTADA 1 kez calisir - gereksiz API yukunden kacinmak icin.
+
+on:
+  schedule:
+    # Her Pazar 03:00 UTC = 06:00 Istanbul (sakin saat).
+    - cron: "0 3 * * 0"
+  workflow_dispatch: {}
+    # Elle "Run workflow" ile de tetiklenebilir (test icin / yeni bir ilce
+    # eklendiginde ilk listeyi hemen olusturmak icin kullanisli).
+
+permissions:
+  contents: write
+
+jobs:
+  tumliste:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Depoyu indir
+        uses: actions/checkout@v4
+
+      - name: Python kur
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Tum eczane listelerini cek
+        run: python scripts/tumliste_cek.py
+
+      - name: Degisiklik varsa commit+push yap
+        run: |
+          git config user.name "nobetci-eczane-bot"
+          git config user.email "nobetci-eczane-bot@users.noreply.github.com"
+          git add data/*-tumliste.json
+          if git diff --cached --quiet; then
+            echo "Degisiklik yok, commit atilmayacak."
+          else
+            git commit -m "Tum eczane listesi guncellemesi (manuel girisi icin)"
+            git push
+          fi
