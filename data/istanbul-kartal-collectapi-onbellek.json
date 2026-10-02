@@ -1,0 +1,25 @@
+{
+  "tarih_iso": "2026-10-02",
+  "collectapi_sonuc": [
+    {
+      "ad": "YAKACİK ECZANESİ",
+      "tel": "+902163771376",
+      "adres": "Çarşı Mahallesi, Kartal Caddesi, 10C"
+    },
+    {
+      "ad": "ÖZLEM KOÇAK ECZANESİ",
+      "tel": "+902165179844",
+      "adres": "Petroliş Mahallesi, Rahvanlar Caddesi, 44/A"
+    },
+    {
+      "ad": "KURAL ECZANESİ",
+      "tel": "+902163090900",
+      "adres": "Orta Mahallesi, Yusuf Efendi Sokak, 8A"
+    },
+    {
+      "ad": "MANZARA ADALAR ECZANESİ",
+      "tel": "+905416299524",
+      "adres": "Karlıktepe Mahallesi, Yakacık Caddesi, 67B-2"
+    }
+  ]
+}
