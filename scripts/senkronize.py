@@ -232,6 +232,23 @@ def normallestir(metin):
     return " ".join(metin.upper().split())
 
 
+def telefon_normallestir(ham):
+    """Karsilastirma icin telefonu sade 10 rakama indirir ("0"/"90" ulke
+    kodu onekleri atilir). 3 Ekim: isim bazli eslestirme ("YELKEN" ile
+    "YELKEN ECZANESI" gibi) yeterli degildi - CollectAPI ayni eczaneyi
+    teknikzeka'dan FARKLI yazilmis bir isimle dondurebiliyor, bu da panelde
+    AYNI eczanenin IKI KERE gorunmesine yol aciyordu. Telefon numarasi
+    (ulke kodu/basta sifir farki disinda) HER ZAMAN aynidir, bu yuzden asil
+    eslestirme anahtari artik bu - isim eslestirmesi SADECE ek bir guvenlik
+    katmani olarak duruyor (telefon bos/eksikse hala ise yarar)."""
+    rakamlar = "".join(ch for ch in str(ham or "") if ch.isdigit())
+    if len(rakamlar) == 11 and rakamlar[0] == "0":
+        rakamlar = rakamlar[1:]
+    elif len(rakamlar) == 12 and rakamlar[:2] == "90":
+        rakamlar = rakamlar[2:]
+    return rakamlar if len(rakamlar) == 10 else ""
+
+
 def sentetik_id_uret(isim_norm):
     """CollectAPI kayitlarinin kendi 'id' alani yok - panelin/Flutter uygulamasinin
     beklediği 'id' formatini saglamak icin isimden SABIT (deterministik) bir
@@ -454,10 +471,19 @@ def main():
 
             if collectapi_sonuc:
                 mevcut_isimler_norm = {normallestir(e["ad"]) for e in eczaneler}
+                mevcut_telefonlar_norm = {
+                    telefon_normallestir(e["tel"]) for e in eczaneler if telefon_normallestir(e["tel"])
+                }
                 zaman_damgasi = simdi_istanbul().strftime("%Y-%m-%d %H:%M")
                 for aday in collectapi_sonuc:
                     aday_isim_norm = normallestir(aday["ad"])
-                    if not aday_isim_norm or aday_isim_norm in mevcut_isimler_norm:
+                    aday_tel_norm = telefon_normallestir(aday["tel"])
+                    # Asil eslestirme TELEFON uzerinden (bkz. telefon_normallestir
+                    # ustundeki aciklama) - isim eslestirmesi sadece telefon
+                    # bos/eksik oldugunda devreye giren ek bir guvenlik agi.
+                    zaten_var = (aday_tel_norm and aday_tel_norm in mevcut_telefonlar_norm) or \
+                                (aday_isim_norm and aday_isim_norm in mevcut_isimler_norm)
+                    if not aday_isim_norm or zaten_var:
                         continue
                     yeni_id = sentetik_id_uret(aday_isim_norm)
                     eczaneler.append({
@@ -468,6 +494,8 @@ def main():
                     })
                     idler.append(yeni_id)
                     mevcut_isimler_norm.add(aday_isim_norm)
+                    if aday_tel_norm:
+                        mevcut_telefonlar_norm.add(aday_tel_norm)
                     print(f"[{etiket}] CollectAPI'den EKLENDI: {aday['ad']} (teknikzeka'da yoktu)")
                     eklenen_log_yaz(zaman_damgasi, etiket, aday["ad"])
         # --- CollectAPI birlestirme sonu ---
