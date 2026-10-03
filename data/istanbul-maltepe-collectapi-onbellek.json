@@ -1,20 +1,20 @@
 {
-  "tarih_iso": "2026-10-02",
+  "tarih_iso": "2026-10-03",
   "collectapi_sonuc": [
     {
-      "ad": "NİDA ECZANESİ",
-      "tel": "+902164176432",
-      "adres": "Çınar Mahallesi, Kadir Has Caddesi, 40/A"
+      "ad": "ÖRS ECZANESİ",
+      "tel": "",
+      "adres": "Çınar Mahallesi Kadir Has Caddesi No:28/B"
     },
     {
-      "ad": "YENİ ŞİFA ECZANESİ",
-      "tel": "2163993436",
-      "adres": "Zümrütevler Mahallesi Karaca Caddesi No:23/B"
+      "ad": "YELKEN ECZANESİ",
+      "tel": "+902164213666",
+      "adres": "Başıbüyük Mahallesi, Başıbüyük Caddesi, 10A"
     },
     {
-      "ad": "FULYA ECZANESİ",
-      "tel": "5067715099",
-      "adres": "Cevizli Mahallesi Bağdat Caddesi No:No:442/A"
+      "ad": "YEŞİM ECZANESİ",
+      "tel": "+902163993329",
+      "adres": "Altayçeşme Mahallesi, Begonya Sokak, 11/B"
     }
   ]
 }
