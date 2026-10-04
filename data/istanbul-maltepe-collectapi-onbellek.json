@@ -1,20 +1,30 @@
 {
-  "tarih_iso": "2026-10-03",
+  "tarih_iso": "2026-10-04",
   "collectapi_sonuc": [
     {
-      "ad": "ÖRS ECZANESİ",
-      "tel": "",
-      "adres": "Çınar Mahallesi Kadir Has Caddesi No:28/B"
+      "ad": "HAZAN ECZANESİ",
+      "tel": "2163520486",
+      "adres": "Feyzullah Mahallesi Bağdat Caddesi No:324-C"
     },
     {
-      "ad": "YELKEN ECZANESİ",
-      "tel": "+902164213666",
-      "adres": "Başıbüyük Mahallesi, Başıbüyük Caddesi, 10A"
+      "ad": "PERVİN ECZANESİ",
+      "tel": "+902164896161",
+      "adres": "Çınar Mahallesi, Rezzan Has Sokak, 3E"
     },
     {
-      "ad": "YEŞİM ECZANESİ",
-      "tel": "+902163993329",
-      "adres": "Altayçeşme Mahallesi, Begonya Sokak, 11/B"
+      "ad": "ASLAN ECZANESİ",
+      "tel": "2163830968",
+      "adres": "Cevizli Mahallesi Toros Caddesi No:65/A-B"
+    },
+    {
+      "ad": "DEMİRTÜRK ECZANESİ",
+      "tel": "+902164212777",
+      "adres": "Başıbüyük Mahallesi, Başıbüyük Caddesi, 4/B"
+    },
+    {
+      "ad": "GLOBAL ECZANESİ",
+      "tel": "+902165735577",
+      "adres": "Fındıklı Mahallesi, Gazi Mustafa Kemal Caddesi, 37B"
     }
   ]
 }
