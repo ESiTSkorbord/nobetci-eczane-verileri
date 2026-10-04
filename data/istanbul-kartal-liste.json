@@ -1,28 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 40925,
-      "ad": "GÜRBÜZ ECZANESİ",
-      "tel": "2163522520",
-      "adres": "Cevizli Mah. Cevizli D-100 Güney Yanyol Cad. No:2 Kuriş Kule Dükkan No:14"
+      "id": 54913,
+      "ad": "CEMİL ECZANESI",
+      "tel": "2163770848",
+      "adres": "ORTA MAH. KAPTANIDERYA CAD. NO:40/B"
     },
     {
-      "id": 51869,
-      "ad": "TURKUAZ ECZANESİ",
-      "tel": "2163770778",
-      "adres": "Gümüşpınar Mahallesi Atatürk Caddesi, 107/B 34880 Kartal/İstanbul"
+      "id": 55075,
+      "ad": "HALE ECZANESİ",
+      "tel": "",
+      "adres": "Esentepe Mah. Bulut Sok. No:4B"
     },
     {
-      "id": 45104,
-      "ad": "YENİ EKİN ECZANESİ",
-      "tel": "2163773110",
-      "adres": "Hürriyet Mah. Peker Sok. No:3A"
+      "id": 55778,
+      "ad": "NESLİHAN ECZANESİ",
+      "tel": "2164883657",
+      "adres": "Atalar Mah. Üsküdar Cad. No:103/A"
     },
     {
-      "id": 13283,
-      "ad": "ÜMIT ECZANESI",
-      "tel": "2163536239",
-      "adres": "KARLIKTEPE MAH. INÖNÜ CAD. NO:26"
+      "id": 57819,
+      "ad": "ZERRİN ECZANESİ",
+      "tel": "2163772552",
+      "adres": "Yakacık Yeni Mahallesi,Samandıra Caddesi,No:21/B"
     }
   ]
 }

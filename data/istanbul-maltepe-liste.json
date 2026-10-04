@@ -1,34 +1,34 @@
 {
   "eczaneler": [
     {
-      "id": 41489,
-      "ad": "YELKEN",
-      "tel": "2164213666",
-      "adres": "Başıbüyük Mahallesi Başıbüyük Caddesi, 10A"
+      "id": 55780,
+      "ad": "ASLAN ECZANESİ",
+      "tel": "0",
+      "adres": "Cevizli Mah. Toros Cad. No:65/A-B"
     },
     {
-      "id": 14638,
-      "ad": "YESIM",
-      "tel": "2163993329",
-      "adres": "Altayçeşme Mah. Begonya Sk . 11 B"
+      "id": 47704,
+      "ad": "DEMİRTÜRK ECZANESİ",
+      "tel": "2164212777",
+      "adres": "BAŞIBÜYÜK MAH. BAŞIBÜYÜK CAD. NO:4-B MALTEPE"
     },
     {
-      "id": 56863,
-      "ad": "ÖRS ECZANESİ",
-      "tel": "2164170239",
-      "adres": "Çınar Mah. Kadir Has Cad. No:28/B"
+      "id": 44494,
+      "ad": "GLOBAL ECZANESİ",
+      "tel": "2165735577",
+      "adres": "FINDIKLI MAH. GAZİ MUSTAFA KEMAL CAD. NO:37B"
     },
     {
-      "id": 9334838,
-      "ad": "YELKEN ECZANESİ",
-      "tel": "+902164213666",
-      "adres": "Başıbüyük Mahallesi, Başıbüyük Caddesi, 10A"
+      "id": 62513,
+      "ad": "HAZAN ECZANESİ",
+      "tel": "2163520486",
+      "adres": "Feyzullah Mah. Bağdat Cad. No:324-C"
     },
     {
-      "id": 9738289,
-      "ad": "YEŞİM ECZANESİ",
-      "tel": "+902163993329",
-      "adres": "Altayçeşme Mahallesi, Begonya Sokak, 11/B"
+      "id": 38903,
+      "ad": "PERVİN ECZANESİ",
+      "tel": "2164896161",
+      "adres": "Çınar Mahallesi Rezzan Has Sokak, 3E"
     }
   ]
 }
