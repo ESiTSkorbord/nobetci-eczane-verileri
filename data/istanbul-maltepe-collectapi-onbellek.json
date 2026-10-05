@@ -1,30 +1,20 @@
 {
-  "tarih_iso": "2026-10-04",
+  "tarih_iso": "2026-10-05",
   "collectapi_sonuc": [
     {
-      "ad": "HAZAN ECZANESİ",
-      "tel": "2163520486",
-      "adres": "Feyzullah Mahallesi Bağdat Caddesi No:324-C"
+      "ad": "PALLADİUM CADDE ECZANESİ",
+      "tel": "2165190550",
+      "adres": "Çınar Mahallesi Rıfkı Tongsir Caddesi No:No:113E-A"
     },
     {
-      "ad": "PERVİN ECZANESİ",
-      "tel": "+902164896161",
-      "adres": "Çınar Mahallesi, Rezzan Has Sokak, 3E"
+      "ad": "AYFER ECZANESİ",
+      "tel": "2164277041",
+      "adres": "Zümrütevler Mahallesi Tülin Caddesi No:42/A"
     },
     {
-      "ad": "ASLAN ECZANESİ",
-      "tel": "2163830968",
-      "adres": "Cevizli Mahallesi Toros Caddesi No:65/A-B"
-    },
-    {
-      "ad": "DEMİRTÜRK ECZANESİ",
-      "tel": "+902164212777",
-      "adres": "Başıbüyük Mahallesi, Başıbüyük Caddesi, 4/B"
-    },
-    {
-      "ad": "GLOBAL ECZANESİ",
-      "tel": "+902165735577",
-      "adres": "Fındıklı Mahallesi, Gazi Mustafa Kemal Caddesi, 37B"
+      "ad": "İSTANBUL ECZANESİ",
+      "tel": "2163525420",
+      "adres": "Altayçeşme Mahallesi Bağdat Caddesi No:No:377A"
     }
   ]
 }
