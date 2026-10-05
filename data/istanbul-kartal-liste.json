@@ -1,28 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 54913,
-      "ad": "CEMİL ECZANESI",
-      "tel": "2163770848",
-      "adres": "ORTA MAH. KAPTANIDERYA CAD. NO:40/B"
+      "id": 48889,
+      "ad": "ANATOLİUM ECZANESİ",
+      "tel": "2164515151",
+      "adres": "Soğanlık Yeni Mah. Soğanlık D100 Kuzey Yanyol Cad. B Blok No:72/185"
     },
     {
-      "id": 55075,
-      "ad": "HALE ECZANESİ",
-      "tel": "",
-      "adres": "Esentepe Mah. Bulut Sok. No:4B"
+      "id": 51676,
+      "ad": "BERRAK ECZANESİ",
+      "tel": "2163875087",
+      "adres": "Atalar Mah. Tecerdağı Cad. No:61/B"
     },
     {
-      "id": 55778,
-      "ad": "NESLİHAN ECZANESİ",
-      "tel": "2164883657",
-      "adres": "Atalar Mah. Üsküdar Cad. No:103/A"
+      "id": 13301,
+      "ad": "OKÇU ECZANESİ",
+      "tel": "2163771307",
+      "adres": "HÜRRIYET MAH. ABDI IPEKÇI CAD. NO:33/6"
     },
     {
-      "id": 57819,
-      "ad": "ZERRİN ECZANESİ",
-      "tel": "2163772552",
-      "adres": "Yakacık Yeni Mahallesi,Samandıra Caddesi,No:21/B"
+      "id": 49468,
+      "ad": "ONUR ECZANESİ",
+      "tel": "2163052202",
+      "adres": "Orhantepe Mah. Bankalar Sok. No:33/A"
     }
   ]
 }
