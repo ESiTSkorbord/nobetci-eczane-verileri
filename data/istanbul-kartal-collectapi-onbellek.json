@@ -1,25 +1,30 @@
 {
-  "tarih_iso": "2026-10-05",
+  "tarih_iso": "2026-10-06",
   "collectapi_sonuc": [
     {
-      "ad": "BERRAK ECZANESİ",
-      "tel": "+902163875087",
-      "adres": "Atalar Mahallesi, Tecerdağı Caddesi, 61/B"
+      "ad": "SAADET ECZANESİ",
+      "tel": "+902164519068",
+      "adres": "Soğanlık Yeni Mahallesi, Atatürk Caddesi, 30/A"
     },
     {
-      "ad": "OKÇU ECZANESİ",
-      "tel": "+902163771307",
-      "adres": "Hürriyet Mahallesi, Abdi İpekçi Caddesi, 33/C"
+      "ad": "PELİN DOĞAN ECZANESİ",
+      "tel": "+905347847994",
+      "adres": "Cevizli Mahallesi, Köroğlu Caddesi, 3/A"
     },
     {
-      "ad": "ANATOLİUM ECZANESİ",
-      "tel": "+902164515151",
-      "adres": "Soğanlık Yeni Mahallesi, Soğanlık E-5 Yanyol Caddesi, 72/185"
+      "ad": "SAİDE ECZANESİ",
+      "tel": "+902164731425",
+      "adres": "Topselvi Mahallesi Genç Sokak No:13-A"
     },
     {
-      "ad": "ONUR ECZANESİ",
-      "tel": "+902163052202",
-      "adres": "Orhantepe Mahallesi, Bankalar Caddesi, 33/A"
+      "ad": "CAN ECZANESİ",
+      "tel": "+902163771331",
+      "adres": "Hürriyet Mahallesi, Abdi İpekçi Caddesi, 25-A"
+    },
+    {
+      "ad": "KORDONBOYU ECZANESİ",
+      "tel": "2163532540",
+      "adres": "Kordonboyu Mahallesi Ankara Caddesi No:59B"
     }
   ]
 }

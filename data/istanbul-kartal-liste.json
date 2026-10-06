@@ -1,28 +1,34 @@
 {
   "eczaneler": [
     {
-      "id": 48889,
-      "ad": "ANATOLİUM ECZANESİ",
-      "tel": "2164515151",
-      "adres": "Soğanlık Yeni Mah. Soğanlık D100 Kuzey Yanyol Cad. B Blok No:72/185"
+      "id": 50213,
+      "ad": "CAN ECZANESİ",
+      "tel": "2163771331",
+      "adres": "Hürriyet Mah. Abdi İpekçi Cad. No:25-A"
     },
     {
-      "id": 51676,
-      "ad": "BERRAK ECZANESİ",
-      "tel": "2163875087",
-      "adres": "Atalar Mah. Tecerdağı Cad. No:61/B"
+      "id": 55718,
+      "ad": "KORDONBOYU ECZANESİ",
+      "tel": "2163532540",
+      "adres": "Kordonboyu Mah. Ankara Cad .No:59B"
     },
     {
-      "id": 13301,
-      "ad": "OKÇU ECZANESİ",
-      "tel": "2163771307",
-      "adres": "HÜRRIYET MAH. ABDI IPEKÇI CAD. NO:33/6"
+      "id": 52772,
+      "ad": "PELİN DOĞAN ECZANESİ",
+      "tel": "5059526275",
+      "adres": "CEVİZLİ MAH. KÖROĞLU CAD. NO:3/A"
     },
     {
-      "id": 49468,
-      "ad": "ONUR ECZANESİ",
-      "tel": "2163052202",
-      "adres": "Orhantepe Mah. Bankalar Sok. No:33/A"
+      "id": 13333,
+      "ad": "SAADET ECZANESI",
+      "tel": "2164519068",
+      "adres": "ATATÜRK CAD. NO:30/1 SOGANLIK"
+    },
+    {
+      "id": 13392,
+      "ad": "SAIDE",
+      "tel": "2164731425",
+      "adres": "TOPSELVI MH. GENÇ SK. NO:29/A"
     }
   ]
 }
