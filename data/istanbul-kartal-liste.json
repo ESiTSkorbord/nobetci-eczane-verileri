@@ -1,34 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 50213,
-      "ad": "CAN ECZANESİ",
-      "tel": "2163771331",
-      "adres": "Hürriyet Mah. Abdi İpekçi Cad. No:25-A"
+      "id": 41653,
+      "ad": "ADA ECZANESİ",
+      "tel": "2163771122",
+      "adres": "Soğanlık Yeni Mah. Mimar Sinan Cad. No:40A"
     },
     {
-      "id": 55718,
-      "ad": "KORDONBOYU ECZANESİ",
-      "tel": "2163532540",
-      "adres": "Kordonboyu Mah. Ankara Cad .No:59B"
+      "id": 13335,
+      "ad": "HATİCE ECZANESİ",
+      "tel": "2164521490",
+      "adres": "Çarşı Mahallesi\r\nTarihi Ayazma Caddesi, 2J\r\n34876 Yakacık"
     },
     {
-      "id": 52772,
-      "ad": "PELİN DOĞAN ECZANESİ",
-      "tel": "5059526275",
-      "adres": "CEVİZLİ MAH. KÖROĞLU CAD. NO:3/A"
+      "id": 58421,
+      "ad": "MARİN KARTAL ECZANESİ",
+      "tel": "2164885419",
+      "adres": "Petroliş Mahallesi Üsküdar Caddesi, 90/B"
     },
     {
-      "id": 13333,
-      "ad": "SAADET ECZANESI",
-      "tel": "2164519068",
-      "adres": "ATATÜRK CAD. NO:30/1 SOGANLIK"
-    },
-    {
-      "id": 13392,
-      "ad": "SAIDE",
-      "tel": "2164731425",
-      "adres": "TOPSELVI MH. GENÇ SK. NO:29/A"
+      "id": 32147,
+      "ad": "YAZICI 1988 ECZANESI",
+      "tel": "2163890139",
+      "adres": "Atalar Mahallesi Köroğlu Caddesi, 34/A"
     }
   ]
 }
