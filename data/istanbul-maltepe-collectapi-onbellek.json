@@ -1,20 +1,15 @@
 {
-  "tarih_iso": "2026-10-06",
+  "tarih_iso": "2026-10-07",
   "collectapi_sonuc": [
     {
-      "ad": "SİMLA ECZANESİ",
-      "tel": "+902164892174",
-      "adres": "Altıntepe Mahallesi, Bağdat Caddesi, 76"
+      "ad": "GÜLSUYU ECZANESİ",
+      "tel": "02163763187",
+      "adres": "GÜLSUYU MAH.ESKİ ÜSKÜDAR CAD. NO.45/B"
     },
     {
-      "ad": "ALİ ECZANESİ",
-      "tel": "+902164427012",
-      "adres": "Zümrütevler Mahallesi, Gül Caddesi, 24/A"
-    },
-    {
-      "ad": "KİRAZ ECZANESİ",
-      "tel": "+902164416725",
-      "adres": "Altayçeşme Mahallesi, Adalı Sokak, 9/B"
+      "ad": "BANDIRMA ECZANESİ",
+      "tel": "02163994370",
+      "adres": "CEVİZLİ MAH. BAĞDAT CAD. NO:553A"
     }
   ]
 }

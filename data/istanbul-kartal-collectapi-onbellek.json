@@ -1,30 +1,25 @@
 {
-  "tarih_iso": "2026-10-06",
+  "tarih_iso": "2026-10-07",
   "collectapi_sonuc": [
     {
-      "ad": "SAADET ECZANESİ",
-      "tel": "+902164519068",
-      "adres": "Soğanlık Yeni Mahallesi, Atatürk Caddesi, 30/A"
+      "ad": "ADA ECZANESİ",
+      "tel": "02163771122",
+      "adres": "Soğanlık Yeni Mah. Mimar Sinan Cad. No:40/A"
     },
     {
-      "ad": "PELİN DOĞAN ECZANESİ",
-      "tel": "+905347847994",
-      "adres": "Cevizli Mahallesi, Köroğlu Caddesi, 3/A"
+      "ad": "MARİN KARTAL ECZANESİ",
+      "tel": "02164885419",
+      "adres": "Petrol İş Mah. Üsküdar Cad. No:90/B"
     },
     {
-      "ad": "SAİDE ECZANESİ",
-      "tel": "+902164731425",
-      "adres": "Topselvi Mahallesi Genç Sokak No:13-A"
+      "ad": "HATİCE ECZANESİ",
+      "tel": "02164522029",
+      "adres": "YAKACIK ÇARŞI MAH. TARİHİ AYAZMA CD. NO:2 J"
     },
     {
-      "ad": "CAN ECZANESİ",
-      "tel": "+902163771331",
-      "adres": "Hürriyet Mahallesi, Abdi İpekçi Caddesi, 25-A"
-    },
-    {
-      "ad": "KORDONBOYU ECZANESİ",
-      "tel": "2163532540",
-      "adres": "Kordonboyu Mahallesi Ankara Caddesi No:59B"
+      "ad": "YAZICI 1988 ECZANESİ",
+      "tel": "02163890139",
+      "adres": "ATALAR MAH. KÖROĞLU CD.NO:34/A"
     }
   ]
 }
