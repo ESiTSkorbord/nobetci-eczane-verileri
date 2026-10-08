@@ -12,6 +12,12 @@
       "ilce_slug": "maltepe",
       "api_il": "ISTANBUL",
       "api_ilce": "MALTEPE"
+    },
+    {
+      "il_slug": "ankara",
+      "ilce_slug": "cankaya",
+      "api_il": "ANKARA",
+      "api_ilce": "ÇANKAYA"
     }
   ]
 }
