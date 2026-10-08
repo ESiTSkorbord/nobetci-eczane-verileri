@@ -1,0 +1,4300 @@
+{
+  "eczaneler": [
+    {
+      "id": 51645,
+      "ad": "1071",
+      "tel": "3122862186",
+      "adres": "KIZILIRMAK MAH. 1443. CAD. NO:25-B BLOK-4"
+    },
+    {
+      "id": 17411,
+      "ad": "2000",
+      "tel": "3124268960",
+      "adres": "HOSDERE CAD. NO:23/B YUKARI AYRANCI"
+    },
+    {
+      "id": 55256,
+      "ad": "7.CADDE",
+      "tel": "3122326969",
+      "adres": "BAHÇELİEVLER MAH. AŞKABAT CADDESİ NO:29/4"
+    },
+    {
+      "id": 17273,
+      "ad": "96 LAR",
+      "tel": "3124311864",
+      "adres": "INCESU CAD. NO:6/K SEYRANBAGLARI-KOLEJ"
+    },
+    {
+      "id": 52450,
+      "ad": "ABBASOĞLU",
+      "tel": "3123252281",
+      "adres": "REMZİ OĞUZARIK MAH. TUNALI HİLMİ CAD. NO:84/E"
+    },
+    {
+      "id": 18496,
+      "ad": "ADİL",
+      "tel": "3124806889",
+      "adres": "HARBIYE MAH.HÜRRIYET CAD. NO:67/C DIKMEN"
+    },
+    {
+      "id": 43047,
+      "ad": "AHİLER",
+      "tel": "3124912080",
+      "adres": "YUKARI DİKMEN MAH. 630.SOK.NO:7/A"
+    },
+    {
+      "id": 59173,
+      "ad": "AKAR",
+      "tel": "3122294384",
+      "adres": "KIZILAY MAH. NECATİBEY CAD. NO:53/A"
+    },
+    {
+      "id": 18835,
+      "ad": "AKAY",
+      "tel": "3124240477",
+      "adres": "KAVAKLIDERE MAH. ESAT CAD. NO:13/E"
+    },
+    {
+      "id": 40014,
+      "ad": "AKAY BESTEKAR",
+      "tel": "3124181913",
+      "adres": "ESAT CAD. NO:14/C BAKANLIKLAR"
+    },
+    {
+      "id": 61495,
+      "ad": "AKBULUT",
+      "tel": "3124460046",
+      "adres": "BARBAROS MAH. ESAT CAD. NO:96-98 D"
+    },
+    {
+      "id": 18464,
+      "ad": "AKCAN",
+      "tel": "3124422239",
+      "adres": "YILDIZEVLER MAH. CEZAYIR CAD. NO:18"
+    },
+    {
+      "id": 43702,
+      "ad": "AKER",
+      "tel": "3122858222",
+      "adres": "MUTLUKENT MAH.ANGORA BULVARI NO:54/A"
+    },
+    {
+      "id": 37157,
+      "ad": "AKGÜL",
+      "tel": "3122877710",
+      "adres": "İşçi Blokları Mah. 1524. Sok. No:36/B"
+    },
+    {
+      "id": 43886,
+      "ad": "AKKILIÇ",
+      "tel": "3124351027",
+      "adres": "MAHMUT ESAT BOZKURT CAD. NO:3/A ÇANKAYA"
+    },
+    {
+      "id": 17740,
+      "ad": "AKSOY",
+      "tel": "3124821114",
+      "adres": "DIKMEN CAD. NO:306/B DIKMEN"
+    },
+    {
+      "id": 62643,
+      "ad": "AKTUĞ",
+      "tel": "3124406274",
+      "adres": "AYRANCI MAH.HOŞDERE CAD.NO:118/B"
+    },
+    {
+      "id": 17410,
+      "ad": "AKÇAY",
+      "tel": "3124471185",
+      "adres": "BÜYÜK ESAT MAH. SEYYAH SOK. NO:1/B"
+    },
+    {
+      "id": 49244,
+      "ad": "ALACAATLI",
+      "tel": "3122391176",
+      "adres": "ALACAATLI MAH. ALACAATLI CAD. KÜMEEVLERİ NO:135/B"
+    },
+    {
+      "id": 45148,
+      "ad": "ALARA",
+      "tel": "3122314052",
+      "adres": "KORKUTREİS MAH. GMK BULVARI NO:34/C"
+    },
+    {
+      "id": 17538,
+      "ad": "ALAÇAM",
+      "tel": "3124285395",
+      "adres": "ASAGI AYRANCI MAH. GÜVENLIK CAD. NO:32/B"
+    },
+    {
+      "id": 65257,
+      "ad": "ALP",
+      "tel": "3126580903",
+      "adres": "CEYHUN ATUF KANSU CAD. NO:33/B"
+    },
+    {
+      "id": 18655,
+      "ad": "ALPAN",
+      "tel": "3122414030",
+      "adres": "PROF.DR. AHMET TANER KISLALI MAH. 2760. CAD. NO:20/A ÇAYYOLU-ÇANKAYA"
+    },
+    {
+      "id": 18482,
+      "ad": "ALPER ARMAĞAN",
+      "tel": "3124429390",
+      "adres": "HILAL MAH. CEZAYIR CAD. NO:19/A"
+    },
+    {
+      "id": 37466,
+      "ad": "ALTIN ORAN",
+      "tel": "3126667280",
+      "adres": "İLKBAHAR MAH. KÜME EVLERİ SİNPAŞ ALTIN ORAN KULE 3. BLOK NO:247 ÇANKAYA"
+    },
+    {
+      "id": 17338,
+      "ad": "ALTINAY",
+      "tel": "3124352727",
+      "adres": "KIBRIS CAD. UMUT SOK. NO:11/B KURTULUS"
+    },
+    {
+      "id": 25829,
+      "ad": "ALTINIŞIK",
+      "tel": "3122253828",
+      "adres": "Angora evleri Mah. Denizkızı cad. No:2/5 Çankaya/Ankara"
+    },
+    {
+      "id": 18203,
+      "ad": "ALTINKAN",
+      "tel": "3122225747",
+      "adres": "BAHÇELIEVLER MAH. AZERBAYCAN CAD.NO:36/F BAHÇELİEVLER"
+    },
+    {
+      "id": 18036,
+      "ad": "ALİBEY",
+      "tel": "3124733364",
+      "adres": "ÇETIN EMEÇ BULVARI CEVIZLIDERE MAH. CEVIZLIDERE CAD. NO:29/A BALGAT"
+    },
+    {
+      "id": 37816,
+      "ad": "ANA DEVA",
+      "tel": "3124390969",
+      "adres": "AZİZİYE MAH.HOSDERE CAD. NO:157 YUKARI AYRANCI"
+    },
+    {
+      "id": 52381,
+      "ad": "ANADOLU",
+      "tel": "3125036648",
+      "adres": "KEKLİKPINARI MAH. DİKMEN CAD.906.SOKAK NO:3/A 1071 MANZARA EVLERİ D BLOK DÜKKAN NO:17"
+    },
+    {
+      "id": 48874,
+      "ad": "ANAVRİN",
+      "tel": "3125771777",
+      "adres": "ÜMİT MAH. 2479. CAD. NO:2/39"
+    },
+    {
+      "id": 38632,
+      "ad": "ANEMON",
+      "tel": "3122878061",
+      "adres": "BARIŞ SİTESİ 2099.SOK. BÜYÜK TİCARET MERKEZİ NO:2/6 BİLKENT"
+    },
+    {
+      "id": 59691,
+      "ad": "ANGORA BULVAR",
+      "tel": "3124891020",
+      "adres": "MUTLUKENT MAH. ANGORA BULVARI NO:29/C"
+    },
+    {
+      "id": 17385,
+      "ad": "ANIL-S",
+      "tel": "3124825646",
+      "adres": "SOKULLU MEHMET PASA CAD. NO:16/A DIKMEN"
+    },
+    {
+      "id": 24187,
+      "ad": "ANIT",
+      "tel": "3122306048",
+      "adres": "MALTEPE MAH. GENÇLIK CAD.NEYZEN TEVFIK SOK.NO:125/B"
+    },
+    {
+      "id": 48304,
+      "ad": "ANITTEPE DOĞA",
+      "tel": "3128201885",
+      "adres": "TURGUT REİS CAD. NO:29/12 ANITTEPE"
+    },
+    {
+      "id": 50778,
+      "ad": "ANKA",
+      "tel": "3122292898",
+      "adres": "GAZİ MUSTAFA KEMAL BULVARI NO:47/A MALTEPE"
+    },
+    {
+      "id": 62386,
+      "ad": "ANKA ŞİFA",
+      "tel": "3122850135",
+      "adres": "OĞUZLAR MAH. 1387. CAD. NO:13/C"
+    },
+    {
+      "id": 44615,
+      "ad": "ANKARA",
+      "tel": "3122400300",
+      "adres": "MUTLUKENT MAH. ANGORA BULVARI 2015.CAD. NO:4/15  BEYSUKENT-ÇANKAYA"
+    },
+    {
+      "id": 63450,
+      "ad": "ANKARALILAR",
+      "tel": "5446454174",
+      "adres": "ÇAYYOLU MAH. ANKARARLILAR CAD. NI:21/15"
+    },
+    {
+      "id": 18455,
+      "ad": "ANKUVA",
+      "tel": "3122664277",
+      "adres": "ORTADOGU MAH. BILKENT BULVARI 4. CAD. ANKUVA AVM NO:16"
+    },
+    {
+      "id": 18470,
+      "ad": "ANİTTA",
+      "tel": "3122176600",
+      "adres": "YASAMKENT MAH. 3297.CAD.BESA KARİNA PLAZA NO:2R/9"
+    },
+    {
+      "id": 42809,
+      "ad": "ARDA ERMAN",
+      "tel": "3122121131",
+      "adres": "YUKARI BAHÇELIEVLER MAH. TAŞKENT CAD. NO:106/A"
+    },
+    {
+      "id": 58804,
+      "ad": "AREN",
+      "tel": "3124400105",
+      "adres": "BÜYÜKESAT MAH. UĞUR MUMCU CAD. NO:52/A GOP"
+    },
+    {
+      "id": 17474,
+      "ad": "ARIKAN",
+      "tel": "3122843545",
+      "adres": "ZIYABEY CAD. NO:52/C BALGAT"
+    },
+    {
+      "id": 17508,
+      "ad": "ARIKOL",
+      "tel": "3124177385",
+      "adres": "SELANIK CAD. NO:19/B KIZILAY"
+    },
+    {
+      "id": 49428,
+      "ad": "ARISOY",
+      "tel": "3125773288",
+      "adres": "ORAN MAH. KUDÜS CAD. ONE TOWER AVM NO:6/A-(Z08)"
+    },
+    {
+      "id": 56061,
+      "ad": "ARVEN",
+      "tel": "5339692809",
+      "adres": "KONUTKENT MAH. DUMLUPINAR BULVARI NO:399z/022"
+    },
+    {
+      "id": 17676,
+      "ad": "ARZUM",
+      "tel": "3124806222",
+      "adres": "AYDINLAR MAH. DIKMEN CAD. NO:250/B DIKMEN"
+    },
+    {
+      "id": 17956,
+      "ad": "ASAL",
+      "tel": "3124464323",
+      "adres": "100. YIL MAH. BAGLAR CAD. NO:228/C KÜÇÜKESAT"
+    },
+    {
+      "id": 18713,
+      "ad": "ASLAN",
+      "tel": "3123201120",
+      "adres": "FAKÜLTELER MAH. TELLIKAYA SOK. NO:3/B-C ÇANKAYA"
+    },
+    {
+      "id": 18290,
+      "ad": "ASLIGÜL",
+      "tel": "3124337077",
+      "adres": "ÖNCEBECI MAH. KIBRIS CAD. UMUT SOK. NO:4/11 KURTULUS"
+    },
+    {
+      "id": 17824,
+      "ad": "ASMABAHÇE",
+      "tel": "3122403515",
+      "adres": "KORU MAH.2597.SOK.NO:3/8 ÇANKAYA"
+    },
+    {
+      "id": 17403,
+      "ad": "ASYA",
+      "tel": "3124339904",
+      "adres": "MESRUTIYET CAD. NO:46/C KIZILAY"
+    },
+    {
+      "id": 59842,
+      "ad": "ASİL",
+      "tel": "3125620202",
+      "adres": "FAKÜLTELER MAH. CEMAL GÜRSEL CAD.NO:81/C-A"
+    },
+    {
+      "id": 36405,
+      "ad": "ATA",
+      "tel": "3122317890",
+      "adres": "ŞEHİT GÖNENÇ CAD. NO:18/9 MALTEPE"
+    },
+    {
+      "id": 41766,
+      "ad": "ATABEK",
+      "tel": "3124426944",
+      "adres": "AZİZİYE MAH. CİNNAH. CAD. NO:52/B"
+    },
+    {
+      "id": 18364,
+      "ad": "ATAHAN",
+      "tel": "3122134455",
+      "adres": "BAHÇELIEVLER MAH. 7. CAD. NO:5"
+    },
+    {
+      "id": 49146,
+      "ad": "ATAKAN",
+      "tel": "3124784182",
+      "adres": "AŞAĞI ÖVEÇLER MAH. 1333. CAD. NO:5"
+    },
+    {
+      "id": 18320,
+      "ad": "ATAKULE",
+      "tel": "3124415659",
+      "adres": "AZIZIYE MAH. PIYADE SOK. NO:26/A"
+    },
+    {
+      "id": 34386,
+      "ad": "ATASELİN",
+      "tel": "3124955055",
+      "adres": "KIRKKONAKLAR MAH. 329.CAD.NO:29/C ÇANKAYA"
+    },
+    {
+      "id": 57781,
+      "ad": "ATG",
+      "tel": "3125777720",
+      "adres": "ETİ MAH. CELAL BAYAR BUL. NO:78/120 ATG AVM"
+    },
+    {
+      "id": 18480,
+      "ad": "ATLAS",
+      "tel": "3124832417",
+      "adres": "HÜRRIYET CAD. NO:67/A"
+    },
+    {
+      "id": 50973,
+      "ad": "AURA",
+      "tel": "3122868086",
+      "adres": "BALGAT MAH. ZIYABEY CAD. 1417. SOK. NO:3/A"
+    },
+    {
+      "id": 51217,
+      "ad": "AY GÜNEŞ",
+      "tel": "3124667744",
+      "adres": "GÜVENEVLER MAH.YEŞİLYURT SOKAK NO:38/D"
+    },
+    {
+      "id": 64899,
+      "ad": "AYBALA",
+      "tel": "5302387801",
+      "adres": "AŞAĞI ÖVEÇLER MAH. KABİL CAD. NO:30/B"
+    },
+    {
+      "id": 29575,
+      "ad": "AYDEMİR",
+      "tel": "3124381764",
+      "adres": "HOŞDERE CADDESİ NO:183/A YUKARI AYRANCI ÇANKAYA/ ANKARA"
+    },
+    {
+      "id": 62266,
+      "ad": "AYDIN",
+      "tel": "3122300658",
+      "adres": "CEBECİ MAH. TELLİKAYA SOK.NO:6/A"
+    },
+    {
+      "id": 18111,
+      "ad": "AYDINKENT",
+      "tel": "3124833675",
+      "adres": "AŞAĞI ÖVEÇLER MAH. 1071 MALAZGİRT BULVARI NO:1/A"
+    },
+    {
+      "id": 47811,
+      "ad": "AYDINLAR",
+      "tel": "3124832888",
+      "adres": "AYDINLAR MAH. DİKMEN CAD. NO:310/C"
+    },
+    {
+      "id": 26177,
+      "ad": "AYFER",
+      "tel": "3124830804",
+      "adres": "İlkadım Mah. Sinan Cad. No:49/C Çankaya/Ankara"
+    },
+    {
+      "id": 53893,
+      "ad": "AYFER MURATLI",
+      "tel": "3124188114",
+      "adres": "KAVAKLIDERE MAH. BESTEKAR CAD. NO:3/C"
+    },
+    {
+      "id": 54810,
+      "ad": "AYGÜN",
+      "tel": "3124818990",
+      "adres": "İLKADIM MAH. DİKMEN CAD. MİMAR SOK. NO:12/B"
+    },
+    {
+      "id": 17537,
+      "ad": "AYKUT",
+      "tel": "3122230728",
+      "adres": "EMEK MAH.BISKEK CAD.(8.CAD.)NO.68 EMEK"
+    },
+    {
+      "id": 44844,
+      "ad": "AYLİN",
+      "tel": "3122151525",
+      "adres": "BAHÇELİEVLER MAH. BAHRİYE ÜÇOK CAD. NO:19/B BAHÇELİEVLER"
+    },
+    {
+      "id": 17735,
+      "ad": "AYRANCI",
+      "tel": "3124674799",
+      "adres": "AYRANCI MAH.GÜVENLIK CAD. NO:39/A ASAGI AYRANCI"
+    },
+    {
+      "id": 45278,
+      "ad": "AYSEGÜLÜN",
+      "tel": "3124369641",
+      "adres": "GÜZELTEPE MAH. HOŞDERE CAD. HALİT ZİYA SOK. NO:4/B ÇANKAYA"
+    },
+    {
+      "id": 61086,
+      "ad": "AYSEN",
+      "tel": "",
+      "adres": "Ertuğrul Gazi Mah. Münzeviler Cad. No: 20/A"
+    },
+    {
+      "id": 55255,
+      "ad": "AYTAÇ",
+      "tel": "3122303530",
+      "adres": "BAHÇELİEVLER MAH. AŞKABAT CADDESİ NO:58/A"
+    },
+    {
+      "id": 55961,
+      "ad": "AYÇA",
+      "tel": "3124270055",
+      "adres": "GÜVENEVLER MAH.HÜSEYİN ONAT SOKAK NO:14/A"
+    },
+    {
+      "id": 18050,
+      "ad": "AYŞEN",
+      "tel": "3122858517",
+      "adres": "MUSTAFA KEMAL MAH. BARIS SITESI 2104.SOK. NO:14/C ÇANKAYA/ANKARA"
+    },
+    {
+      "id": 18792,
+      "ad": "AYŞENUR",
+      "tel": "3122856292",
+      "adres": "ÇUKURAMBAR MAH. 1425. CAD. NO:9/B BALGAT"
+    },
+    {
+      "id": 60249,
+      "ad": "AYŞİN",
+      "tel": "5064882646",
+      "adres": "EMEK MAH.VELİ NECDET ARIĞ CAD.NO:18/A"
+    },
+    {
+      "id": 17373,
+      "ad": "AZİM",
+      "tel": "3122231884",
+      "adres": "YUKARI BAHÇELİEVLER MAH. AZERBAYCAN CAD. No:110/C"
+    },
+    {
+      "id": 60244,
+      "ad": "AŞKIN",
+      "tel": "3124962814",
+      "adres": "BIRLIK MAH. 410.SOK. NO:7/B"
+    },
+    {
+      "id": 18349,
+      "ad": "AŞİYAN",
+      "tel": "3124727081",
+      "adres": "CEVIZLIDERE CAD. 1254. SOK. NO:6/24 BALGAT ÇANKAYA"
+    },
+    {
+      "id": 58937,
+      "ad": "BADE",
+      "tel": "3125118420",
+      "adres": "YAŞAMKENT MAH.3158.CADDE NO:12/B-40"
+    },
+    {
+      "id": 18526,
+      "ad": "BADEMLİ",
+      "tel": "3124369662",
+      "adres": "BAGCILAR MAH. SEMSETTIN GÜNALTAY CAD. NO:132/A"
+    },
+    {
+      "id": 17381,
+      "ad": "BAHAR",
+      "tel": "3122409656",
+      "adres": "KONUTKENT MAH.2965.CAD.KONUTKENT 1 ÇARŞISI NO:24/25"
+    },
+    {
+      "id": 31884,
+      "ad": "BAHAR SOYSAL",
+      "tel": "3124404554",
+      "adres": "SİMON BOLİVAR CAD. NO.15/2 ÇANKAYA"
+    },
+    {
+      "id": 18227,
+      "ad": "BAHÇELİEVLER",
+      "tel": "3122131284",
+      "adres": "3. CAD.ŞEVKET SÜREYYA AYDEMİR SOK. NO:4/C BAHÇELIEVLER"
+    },
+    {
+      "id": 18103,
+      "ad": "BAL",
+      "tel": "3124810651",
+      "adres": "MÜRSEL ULUÇ MAH. 752. CAD. NO:110/B"
+    },
+    {
+      "id": 27040,
+      "ad": "BALGAT HAKAN",
+      "tel": "3122843030",
+      "adres": "BALGAT MAH CEYHUN ATIF KANSU CAD NO 36/16 ÇANKAYA"
+    },
+    {
+      "id": 17822,
+      "ad": "BALGAT MERKEZ",
+      "tel": "3124721499",
+      "adres": "EHLIBEYT MAH. 1242.CAD. NO:2/C BALGAT/ÇANKAYA/ANKARA"
+    },
+    {
+      "id": 65622,
+      "ad": "BANKALAR",
+      "tel": "3124822429",
+      "adres": "HARBİYE MAH. DİKMEN CAD. NO:210/B"
+    },
+    {
+      "id": 17225,
+      "ad": "BARIŞ",
+      "tel": "3124252017",
+      "adres": "ZEYTİN DALI CAD. NO:18/E AŞAĞI AYRANCI"
+    },
+    {
+      "id": 46350,
+      "ad": "BARTUM",
+      "tel": "3125576020",
+      "adres": "ALACAATLI MAH. 4841.CAD. NO:1/C"
+    },
+    {
+      "id": 51835,
+      "ad": "BATUGÜL",
+      "tel": "3124901100",
+      "adres": "HİLMİ ÇAYIROĞLU SOKAK NO:14/A ATATÜRK SİTESİ ORAN"
+    },
+    {
+      "id": 62808,
+      "ad": "BATURALP",
+      "tel": "5334273106",
+      "adres": "İLKADIM MAH.DİKMEN CAD.NO:191/B-C"
+    },
+    {
+      "id": 64636,
+      "ad": "BAYRAK",
+      "tel": "5372708610",
+      "adres": "ÖN CEBECİ MAH. KIBRIS CAD. NO:22/A"
+    },
+    {
+      "id": 18082,
+      "ad": "BAŞAK",
+      "tel": "3122237862",
+      "adres": "EMEK MAH. BOSNA HERSEK CAD. 92.SOK. NO:19/E"
+    },
+    {
+      "id": 56366,
+      "ad": "BAŞAK YAĞMUR",
+      "tel": "3124679959",
+      "adres": "AYRANCI MAH. HOŞDERE CAD. NO:94/B"
+    },
+    {
+      "id": 56459,
+      "ad": "BAŞKENT",
+      "tel": "3124396221",
+      "adres": "YILDIZEVLER MAH. TURAN GÜNEŞ BULVARI NO:48/D"
+    },
+    {
+      "id": 64102,
+      "ad": "BAŞKENT GÖZDE",
+      "tel": "3122120211",
+      "adres": "KIZILAY MAH. KUMRULAR CAD. NO:14/B"
+    },
+    {
+      "id": 42913,
+      "ad": "BAŞTÜRK",
+      "tel": "3122317790",
+      "adres": "GÜZELALTAN SOK. NO:1/C MALTEPE ÇANKAYA/ ANKARA"
+    },
+    {
+      "id": 17599,
+      "ad": "BELEN",
+      "tel": "3123201488",
+      "adres": "DUMLUPINAR CAD. GEÇIM SOK. NO:13/A KURTULUS"
+    },
+    {
+      "id": 18251,
+      "ad": "BELİT",
+      "tel": "3122239112",
+      "adres": "BAHÇELIEVLER MAH. 54. CAD. NO:58/A"
+    },
+    {
+      "id": 18491,
+      "ad": "BENSAN",
+      "tel": "3122301071",
+      "adres": "KIZILAY MAH. IZMIR-1 CAD. NO:11/B"
+    },
+    {
+      "id": 34876,
+      "ad": "BENSU",
+      "tel": "3124911002",
+      "adres": "MÜRSEL ULUÇ MAH. 970. SOK. NO:3/B ÇANKAYA"
+    },
+    {
+      "id": 57204,
+      "ad": "BERCAN İLHAN",
+      "tel": "5343563394",
+      "adres": "BEYTEPE MAH. KANUNİ SULTAN SÜLEYMAN BUL. NO:67/A-A"
+    },
+    {
+      "id": 18495,
+      "ad": "BERNA MATARACI",
+      "tel": "3122403565",
+      "adres": "PROF.DR.AHMET TANER KISLALI MAH. S.SALTOGLU BULVARI NO:38/6"
+    },
+    {
+      "id": 39063,
+      "ad": "BERİL BULUT",
+      "tel": "3125045152",
+      "adres": "Beytepe Mah. 5387. Cad. No:27/D-2"
+    },
+    {
+      "id": 59736,
+      "ad": "BERİLYA",
+      "tel": "3122351979",
+      "adres": "ÜMİTKÖY MAH. 2494. CAD. NO:70/12"
+    },
+    {
+      "id": 42061,
+      "ad": "BERİN",
+      "tel": "3123158115",
+      "adres": "KORKUTREİS MAH. STRAZBURG CAD. NO:29/A SIHHİYE"
+    },
+    {
+      "id": 63385,
+      "ad": "BERİSA",
+      "tel": "3124962212",
+      "adres": "Oran Mah. Hamdullah Suphi Tanrıöver Sok. No:21 P/45"
+    },
+    {
+      "id": 65501,
+      "ad": "BESAKULE",
+      "tel": "3122863202",
+      "adres": "ÇUKURAMBAR MAH. 1480 SOK. BESAKULE İŞ MERKEZİ B BLOK NO:2/4"
+    },
+    {
+      "id": 54911,
+      "ad": "BESTE",
+      "tel": "3124481778",
+      "adres": "KÜÇÜKESAT MAH. ESAT CAD. NO:111/D"
+    },
+    {
+      "id": 53440,
+      "ad": "BESTEKAR",
+      "tel": "3124661965",
+      "adres": "REMZİ OĞUZ ARIK MAH. BESTEKAR CAD.NO:96/A"
+    },
+    {
+      "id": 18327,
+      "ad": "BETÜL",
+      "tel": "3124820684",
+      "adres": "HARBIYE MAH. SOKULLU MEHMET PASA CAD. NO:101/B-C"
+    },
+    {
+      "id": 29494,
+      "ad": "BETÜL ÖNDER",
+      "tel": "3124760090",
+      "adres": "DİKMEN CAD. NO.381/C ÇANKAYA"
+    },
+    {
+      "id": 18133,
+      "ad": "BEYAZGÜL",
+      "tel": "3124362178",
+      "adres": "BÜLBÜLDERESI CAD. NO:110/F KÜÇÜKESAT"
+    },
+    {
+      "id": 25935,
+      "ad": "BEYSUKENT",
+      "tel": "3122352255",
+      "adres": "Mutlukent Mah.Dicle Cad. No:39/B Beysukent"
+    },
+    {
+      "id": 30767,
+      "ad": "BEYSUPARK",
+      "tel": "3122253702",
+      "adres": "ÇAYYOLU MAH.DORUKKENT SİTESİ KÜMEEVLERİ NO :209/5 ÇANKAYA"
+    },
+    {
+      "id": 52617,
+      "ad": "BEYTEPE",
+      "tel": "3122270011",
+      "adres": "BEYTEPE MAH. ERTUĞRUL GAZİ BULVARI NO:29/A"
+    },
+    {
+      "id": 42315,
+      "ad": "BEYZA",
+      "tel": "3122196110",
+      "adres": "Mustafa Kemal Mah. 2120.Cad. No:7/B"
+    },
+    {
+      "id": 30086,
+      "ad": "BEYZAM",
+      "tel": "3124720266",
+      "adres": "CEVİZLİDERE MAH. 1066.CAD. NO:36/C ÇANKAYA/ ANKARA"
+    },
+    {
+      "id": 64465,
+      "ad": "BEŞEVLER",
+      "tel": "3124250780",
+      "adres": "BAHÇELİEVLER MAH. PROF. DR. MUAMMER AKSOY CAD. NO:5/C ÇANKAYA"
+    },
+    {
+      "id": 34144,
+      "ad": "BEŞPARMAK",
+      "tel": "3124471070",
+      "adres": "ASIKPASA MAH.VEDAT DALOKAY CAD.NO:42/6 ÇANKAYA"
+    },
+    {
+      "id": 18211,
+      "ad": "BONCUK",
+      "tel": "3122211191",
+      "adres": "BAHÇELIEVLER MAH. 3. CAD. NO:47/A"
+    },
+    {
+      "id": 55588,
+      "ad": "BORA",
+      "tel": "3122317252",
+      "adres": "KIZILAY MAH.SÜMER 2 SOKAK No:29/B"
+    },
+    {
+      "id": 61759,
+      "ad": "BORA İPEK",
+      "tel": "3124725518",
+      "adres": "HARBİYE MAH. SOKULLU MEHMET PAŞA CAD.NO:37/D"
+    },
+    {
+      "id": 49715,
+      "ad": "BORABAY",
+      "tel": "3124794699",
+      "adres": "ÖVEÇLER MAH. KABİL CAD. NO:19/B"
+    },
+    {
+      "id": 37833,
+      "ad": "BOTANİCA",
+      "tel": "3124313133",
+      "adres": "CUMHURİYET MAH. SAKARYA CAD. NO.6/E ÇANKAYA"
+    },
+    {
+      "id": 57380,
+      "ad": "BOTANİK",
+      "tel": "3124915055",
+      "adres": "ORAN MAH. FERİT RECAİ ERTUĞRUL2/F"
+    },
+    {
+      "id": 50592,
+      "ad": "BOZDAĞ",
+      "tel": "3128095755",
+      "adres": "KORKUTREİS MAH. GMK BULVARI NO:40/C"
+    },
+    {
+      "id": 35685,
+      "ad": "BUKET",
+      "tel": "3122200208",
+      "adres": "KIZILIRMAK MAH. 1450.SOK. NO: 9/C ÇANKAYA"
+    },
+    {
+      "id": 18285,
+      "ad": "BUKET YAZAN",
+      "tel": "3124961854",
+      "adres": "BIRLIK MAH. 448. CAD. NO:23/A"
+    },
+    {
+      "id": 40012,
+      "ad": "BULVAR",
+      "tel": "3126667313",
+      "adres": "YILDIZEVLER MAH. ŞEHİT MUSTAFA DOĞAN CAD. 719. SOK. NO:1"
+    },
+    {
+      "id": 59334,
+      "ad": "BULVAR BEYTEPE",
+      "tel": "5010014999",
+      "adres": "BEYTEPE MAH. KANUNİ SULTAN SÜLEYMAN BULVARI NO:72/AF"
+    },
+    {
+      "id": 58343,
+      "ad": "BULVAR KIZILAY",
+      "tel": "3122304343",
+      "adres": "MEŞRUTİYET MAH. YÜKSEL CAD. 3/A"
+    },
+    {
+      "id": 18773,
+      "ad": "BURAKCAN",
+      "tel": "3124963636",
+      "adres": "BIRLIK MAH. 392. SOK. NO:6/A"
+    },
+    {
+      "id": 60886,
+      "ad": "BURCU",
+      "tel": "5453300845",
+      "adres": "ÇAMLITEPE MAH. CEMAL GÜRSEL CAD. NO:34/B"
+    },
+    {
+      "id": 54208,
+      "ad": "BURCU DEMİRCİOĞLU",
+      "tel": "3123260757",
+      "adres": "KARAPINAR MAH. DİKMEN CAD. NO:422/B"
+    },
+    {
+      "id": 49463,
+      "ad": "BÜLBÜL",
+      "tel": "3124826505",
+      "adres": "AYDINLAR MAH. DİKMEN CAD. NO:310/A-B"
+    },
+    {
+      "id": 38073,
+      "ad": "BÜLTEN",
+      "tel": "3124266547",
+      "adres": "3158. CAD. NO:32-C-15   YAŞAMKENT"
+    },
+    {
+      "id": 62593,
+      "ad": "BÜYÜK",
+      "tel": "3124812783",
+      "adres": "ilkadım Mah. Dikmen Cad. Vezinli Sok. No:12/A"
+    },
+    {
+      "id": 17654,
+      "ad": "BÜYÜK ÜNAL",
+      "tel": "3124306319",
+      "adres": "MITHATPASA CAD. NO:13/B SIHHIYE"
+    },
+    {
+      "id": 51623,
+      "ad": "BÜŞRA",
+      "tel": "3125111237",
+      "adres": "BEYTEPE MAH. ORHANGAZİ BULVARI NO:45/H"
+    },
+    {
+      "id": 18047,
+      "ad": "BİHTER",
+      "tel": "3122135960",
+      "adres": "YUKARI BAHÇELİEVLER MAH. ŞEHİT H.TEMEL KUĞULUOĞLU CAD. NO:36/C"
+    },
+    {
+      "id": 17988,
+      "ad": "BİLGESU",
+      "tel": "3124790813",
+      "adres": "OSMAN TEMIZ MAH. ILKER 1. CAD. NO:24/A DIKMEN"
+    },
+    {
+      "id": 64337,
+      "ad": "BİLKENT",
+      "tel": "3122666588",
+      "adres": "ÜNİVERSİTELER MAH. 1597. CAD. ANKUVA AVM 12/12 ÇANKAYA/ANKARA"
+    },
+    {
+      "id": 50948,
+      "ad": "BİLKENT ALP",
+      "tel": "3125437034",
+      "adres": "BEYTEPE MAH. 1790. CAD. NO:21/B"
+    },
+    {
+      "id": 41513,
+      "ad": "BİLİR",
+      "tel": "3124362199",
+      "adres": "BARBAROS MAH. ABAY KUNANBAY CAD. NO.52/B"
+    },
+    {
+      "id": 62095,
+      "ad": "BİRLİK",
+      "tel": "3124959696",
+      "adres": "BİRLİK MAH. PODGORİSTA CAD. NO:10/A"
+    },
+    {
+      "id": 51273,
+      "ad": "BİRSENİN",
+      "tel": "3122234410",
+      "adres": "YUKARI BAHÇELİEVLER MAH. KAZAKİSTAN CAD.NO:101/B"
+    },
+    {
+      "id": 49295,
+      "ad": "BİRSU",
+      "tel": "3124720306",
+      "adres": "AŞAĞI ÖVEÇLER MAH. 1324.CAD. NO:5/6-7"
+    },
+    {
+      "id": 17972,
+      "ad": "BİZİM ZİYA",
+      "tel": "3124811191",
+      "adres": "SOKULLU MEHMET PASA CAD. NO.125/B DIKMEN"
+    },
+    {
+      "id": 25799,
+      "ad": "CADDE",
+      "tel": "3124680707",
+      "adres": "İzmir 1. Cadde No:20/D Kızılay"
+    },
+    {
+      "id": 50810,
+      "ad": "CADDE CEVİZLİDERE",
+      "tel": "3124726611",
+      "adres": "CEVİZLİDERE MAH. CEVİZLİDERE CAD. NO:60/A"
+    },
+    {
+      "id": 43049,
+      "ad": "CADDE DİKMEN",
+      "tel": "3124757517",
+      "adres": "KARAPINAR MAH. DİKMEN CAD. NO:420/B"
+    },
+    {
+      "id": 59944,
+      "ad": "CADDE KIBRIS",
+      "tel": "3124333847",
+      "adres": "ÖN CEBECİ MAH.KIBRIS CAD. NO:26/A-B"
+    },
+    {
+      "id": 33759,
+      "ad": "CADDE PARK",
+      "tel": "3122404642",
+      "adres": "PROF.DR. AHMET TANER KIŞLALI MAH. 2864.CAD. NO:44/H"
+    },
+    {
+      "id": 65039,
+      "ad": "CADDE RÜYA",
+      "tel": "3124500633",
+      "adres": "CEVİZLİDERE MAH. CEYHUN ATUF KANSU CAD. NO:146/B"
+    },
+    {
+      "id": 65237,
+      "ad": "CADDE TUNALI",
+      "tel": "5051084637",
+      "adres": "Remzi Oğuz Arık Mah. Tunalı Hilmi Cad. No:106/A"
+    },
+    {
+      "id": 43737,
+      "ad": "CADDE TUNUS",
+      "tel": "3122120684",
+      "adres": "KAVAKLIDERE MAH. TUNUS CAD. NO:15/A"
+    },
+    {
+      "id": 61769,
+      "ad": "CADDE iZMİR",
+      "tel": "5462304938",
+      "adres": "KIZILAY MAH: İZMİR 1- CAD. NO:9/B"
+    },
+    {
+      "id": 52716,
+      "ad": "CADDE ÇAYYOLU",
+      "tel": "3122404420",
+      "adres": "PROF.DR.AHMET TANER KIŞLALI MAH.DOĞAN TAŞDELEN BULVARI NO:179/C"
+    },
+    {
+      "id": 65659,
+      "ad": "CAN DOĞA",
+      "tel": "3124465938",
+      "adres": "MURAT MAH. YAVUZEVLER SOK. NO:13/B"
+    },
+    {
+      "id": 44026,
+      "ad": "CAN ECE",
+      "tel": "3122156679",
+      "adres": "SANCAK MAH. TURAN GÜNEŞ BULVARI NO:3/A"
+    },
+    {
+      "id": 62922,
+      "ad": "CAN KÖSE",
+      "tel": "5322660576",
+      "adres": "Beytepe Mah. Piri Reis Cad. No:16/A Çankaya"
+    },
+    {
+      "id": 63491,
+      "ad": "CAN YENİLER",
+      "tel": "5325765699",
+      "adres": "İLKER MAH. İLKER CAD. NO:181/B"
+    },
+    {
+      "id": 25213,
+      "ad": "CANBERK",
+      "tel": "3124175282",
+      "adres": "Bestekar Sokak No:13/E-D Çankaya/Ankara"
+    },
+    {
+      "id": 65553,
+      "ad": "CANBEYLİ",
+      "tel": "3125043299",
+      "adres": "Ayrancı Mah. Yaylagül Sokak No:8/C  Ankara/Çankaya"
+    },
+    {
+      "id": 34639,
+      "ad": "CANDAŞ",
+      "tel": "3124385979",
+      "adres": "YUKARI AYRANCI MAH. HOŞDERE CAD. NO:82/C ÇANKAYA"
+    },
+    {
+      "id": 17726,
+      "ad": "CANHAN",
+      "tel": "3122223114",
+      "adres": "EMEK MAH. BISKEK CAD. (8. CAD) NO:183/B"
+    },
+    {
+      "id": 17498,
+      "ad": "CANKAT",
+      "tel": "3124270831",
+      "adres": "TUNALI HILMI CAD. BÜLTEN SOK. NO:29/B KAVAKLIDERE"
+    },
+    {
+      "id": 53400,
+      "ad": "CEMREN",
+      "tel": "3122850557",
+      "adres": "ÇUKURAMBAR MAH. 1459. CAD. NO:22/B"
+    },
+    {
+      "id": 49896,
+      "ad": "CEPA",
+      "tel": "3122196464",
+      "adres": "MUSTAFA KEMAL MAH. CEPA AVM 17. SOK. B-1 NO:2"
+    },
+    {
+      "id": 43977,
+      "ad": "CEVİZLİDERE",
+      "tel": "3124733727",
+      "adres": "CEVİZLİDERE MAH. CEYHUN ATUF KANSU CAD. NO:167/A"
+    },
+    {
+      "id": 52952,
+      "ad": "CEVİZLİDERE HUZUR",
+      "tel": "3124731030",
+      "adres": "HUZUR MAH. CEVİZLİDERE CAD. 1283. SOK. NO:10/A"
+    },
+    {
+      "id": 17148,
+      "ad": "CEYLAN",
+      "tel": "3124387897",
+      "adres": "HOSDERE CAD. NO:146/A YUKARI AYRANCI"
+    },
+    {
+      "id": 18151,
+      "ad": "CEYLİN",
+      "tel": "3124753334",
+      "adres": "KEKLIKPINARI MAH. DIKMEN CAD. NO:479/A"
+    },
+    {
+      "id": 17439,
+      "ad": "COŞKUN",
+      "tel": "3124177899",
+      "adres": "SARAÇOĞLU MAH. KUMRULAR CAD. NO:8/E KIZILAY"
+    },
+    {
+      "id": 60274,
+      "ad": "CUBES ÇUKURAMBAR",
+      "tel": "3125446404",
+      "adres": "ÇUKURAMBAR MAH. 1424. CAD. CUBES ANKARA B2 BLOK NO:6/2-7"
+    },
+    {
+      "id": 17577,
+      "ad": "CÜCELOĞLU",
+      "tel": "3124361620",
+      "adres": "100. YIL MAH.REŞİT GALİP CAD. NO:14/A ÇANKAYA"
+    },
+    {
+      "id": 57537,
+      "ad": "CİHAN",
+      "tel": "3124468114",
+      "adres": "GÖKTÜRK MAH. BAĞLAR CAD. NO:113/19-C"
+    },
+    {
+      "id": 47593,
+      "ad": "CİHANGİR",
+      "tel": "3125444469",
+      "adres": "İLKBAHAR MAH. DOĞUKENT BULVARI 4. CAD. C2 BLOK NO:146"
+    },
+    {
+      "id": 17483,
+      "ad": "CİNNAH",
+      "tel": "3124277150",
+      "adres": "CINNAH CAD. FARABI SOK. NO:30/A"
+    },
+    {
+      "id": 18043,
+      "ad": "DALDAL",
+      "tel": "3122203103",
+      "adres": "1489. CAD. NO:3/B ODC AVM YÜZÜNCÜ YIL"
+    },
+    {
+      "id": 17231,
+      "ad": "DAYIOĞLU",
+      "tel": "3124375920",
+      "adres": "BAYRAKTAR MAH. AKHISAR SOK. NO:5/B ÇANKAYA/ANKARA"
+    },
+    {
+      "id": 25901,
+      "ad": "DEFNE NİL",
+      "tel": "3122412848",
+      "adres": "Yaşamkent Mah. 3250. Cad. Ankamodern C Blok No:20/13 ÇANKAYA/ANKARA"
+    },
+    {
+      "id": 17196,
+      "ad": "DEMİR",
+      "tel": "3124286840",
+      "adres": "GÜVENLIK CAD. NO:74/A ASAGI AYRANCI"
+    },
+    {
+      "id": 45437,
+      "ad": "DEMİRCAN",
+      "tel": "3125113300",
+      "adres": "YAŞAMKENT MAH. 3250 CAD. ANKA MEYDAN AVM NO:26C/39"
+    },
+    {
+      "id": 17243,
+      "ad": "DEMİRCİOĞLU",
+      "tel": "3124827702",
+      "adres": "SOKULLU MEHMET PASA CAD. NO:47/D SOKULLU"
+    },
+    {
+      "id": 52522,
+      "ad": "DEMİRTEPE ARGUN",
+      "tel": "3122326030",
+      "adres": "MALTEPE MAH. ÖZVEREN CADDESİ NO:13/20 B"
+    },
+    {
+      "id": 58877,
+      "ad": "DENİZ",
+      "tel": "5064846522",
+      "adres": "YILDIZEVLER MAH.TURAN GÜNEŞ BULVARI NO:28/C"
+    },
+    {
+      "id": 46870,
+      "ad": "DENİZ KUZUDİŞLİ",
+      "tel": "3125129612",
+      "adres": "ALACAATLI MAH. 338/1. CAD. C BLOK NO:36 C-N/14"
+    },
+    {
+      "id": 63591,
+      "ad": "DENİZİM",
+      "tel": "3122851307",
+      "adres": "Nasuh Akar Mahallesi Ziya Bey Caddesi 1407.Sokak Dostlar Sitesi C Blok No:1A"
+    },
+    {
+      "id": 17433,
+      "ad": "DENİZİN",
+      "tel": "3122134990",
+      "adres": "BAHÇELIEVLER MAH. TASKENT CAD. NO:11/A"
+    },
+    {
+      "id": 17522,
+      "ad": "DERYA",
+      "tel": "3124187950",
+      "adres": "BÜKLÜM SOK. NO:30/D KAVAKLIDERE"
+    },
+    {
+      "id": 38883,
+      "ad": "DERİN",
+      "tel": "3124364878",
+      "adres": "ALACAATLI MAH. ALACAATLI CAD.CAD. SİNPAŞ İNCEK BLUE ÇARŞI NO:65/232 İNCEK"
+    },
+    {
+      "id": 64279,
+      "ad": "DEVA",
+      "tel": "5538418106",
+      "adres": "100.Yıl Mahallesi Reşit Galip Caddesi No:6/B"
+    },
+    {
+      "id": 17843,
+      "ad": "DEVRAN",
+      "tel": "3122222718",
+      "adres": "Emek Mah. Kırım Cad. No:24/B (10.Cad) LiparisSit."
+    },
+    {
+      "id": 55971,
+      "ad": "DORUK",
+      "tel": "3124767938",
+      "adres": "HUZUR MAH.DİKMEN CAD.NO:398/D"
+    },
+    {
+      "id": 62725,
+      "ad": "DOĞA",
+      "tel": "3122870616",
+      "adres": "İŞÇİ BLOKLARI MAH.ŞEHİT HASAN CELAL GÜZEL CAD.NO:25/B"
+    },
+    {
+      "id": 57364,
+      "ad": "DOĞRU",
+      "tel": "5075918388",
+      "adres": "ERTUĞRULGAZİ MAH. MÜNVEZİVİLER CAD. NO:30/B"
+    },
+    {
+      "id": 61785,
+      "ad": "DURU",
+      "tel": "3122306419",
+      "adres": "KIZILAY MAH. FEVZİ ÇAKMAK 2. SOK. NO:41-A/G"
+    },
+    {
+      "id": 25696,
+      "ad": "DURU TUNA",
+      "tel": "3123194757",
+      "adres": "Aşıkpaşa Mah. Vedat Dolakay Cad.No:46/B G.O.P/Ankara"
+    },
+    {
+      "id": 52833,
+      "ad": "DÖRT MEVSİM",
+      "tel": "3124959305",
+      "adres": "BİRLİK MAH. 401.CADDE NO:14/B"
+    },
+    {
+      "id": 18280,
+      "ad": "DÜZGÜN",
+      "tel": "3122321880",
+      "adres": "YÜCETEPE MAH. 84.CAD.NO.38/A ÇANKAYA"
+    },
+    {
+      "id": 17827,
+      "ad": "DİDEM",
+      "tel": "3124731699",
+      "adres": "CEVIZLIDERE MAH. 1255.SOK. NO:11/A BALGAT"
+    },
+    {
+      "id": 45593,
+      "ad": "DİDİM",
+      "tel": "3122382299",
+      "adres": "BEYTEPE MAH. 5365. SOK. KOZ BEYTEPE SİTESİ A BLOK NO:42"
+    },
+    {
+      "id": 18528,
+      "ad": "DİKMEN ESRA",
+      "tel": "3124792059",
+      "adres": "AYDINLAR MAH. HÜRRIYET CAD. NO:196/10"
+    },
+    {
+      "id": 17535,
+      "ad": "DİKMEN GÜL",
+      "tel": "3124765588",
+      "adres": "DIKMEN CAD. NO:376/C DIKMEN"
+    },
+    {
+      "id": 17562,
+      "ad": "DİKMEN MERKEZ",
+      "tel": "3124828019",
+      "adres": "NACİ ÇAKIR MAH. 760.SOK.NO:15/A  ÇANKAYA/ ANKARA"
+    },
+    {
+      "id": 42781,
+      "ad": "DİKMEN VADİ",
+      "tel": "3124511262",
+      "adres": "NACİ ÇAKIR MAH. SİNAN CAD. NO:16/A  DİKMEN"
+    },
+    {
+      "id": 35737,
+      "ad": "DİKMEN ÖMÜR",
+      "tel": "3124829694",
+      "adres": "HARBİYE MAH. DİKMEN CAD. NO:240/A ÇANKAYA"
+    },
+    {
+      "id": 56976,
+      "ad": "DİLA",
+      "tel": "3124420667",
+      "adres": "YILDIZEVLER MAH. RABİNDRANATH TAGORE CAD. NO:8/B"
+    },
+    {
+      "id": 25994,
+      "ad": "DİLARA",
+      "tel": "3124460836",
+      "adres": "Büyük Esat Mah.Uğur Mumcu Cad. No:46/5 Çankaya/Ankara"
+    },
+    {
+      "id": 17645,
+      "ad": "DİLEKCAN",
+      "tel": "3122315623",
+      "adres": "MALTEPE MAH. ONUR SOK. NO:31/13 KIZILAY"
+    },
+    {
+      "id": 18064,
+      "ad": "ECE",
+      "tel": "3124342460",
+      "adres": "BAGLAR CAD. NO:78/B SEYRANBAGLARI"
+    },
+    {
+      "id": 56796,
+      "ad": "ECE YAĞMUR",
+      "tel": "5431180606",
+      "adres": "İLKBAHAR MAH. DOĞUKENT CAD. NO:733B/C"
+    },
+    {
+      "id": 17711,
+      "ad": "ECECAN",
+      "tel": "3124417477",
+      "adres": "SIMON BOLIVAR CAD. 4. BASIN SITESI NO:24/A"
+    },
+    {
+      "id": 50901,
+      "ad": "ECEM",
+      "tel": "3124963830",
+      "adres": "SANCAK MAH. KONRAD ADENAUER CAD. NO:32/A"
+    },
+    {
+      "id": 61426,
+      "ad": "ECEM TAŞ",
+      "tel": "5075163505",
+      "adres": "EMEK MAH.KAZAKİSTAN CAD.NO:72/B"
+    },
+    {
+      "id": 65921,
+      "ad": "ECESER",
+      "tel": "3125170553",
+      "adres": "KIZILAY MAH. KIZILAY AVM ATATÜRK BULVARI NO:96/Z01"
+    },
+    {
+      "id": 54328,
+      "ad": "EDA NİSA",
+      "tel": "3122136154",
+      "adres": "BAHÇELİEVLER MAH.AŞKABAT CADDESİ (eski 7.cad) NO:72/C"
+    },
+    {
+      "id": 26098,
+      "ad": "EDA SEYHAN",
+      "tel": "3124468379",
+      "adres": "Boztepe Mah. Şemsettin Günaltay Cad.No:15/A Çankaya/Ankara"
+    },
+    {
+      "id": 45126,
+      "ad": "EFFECT",
+      "tel": "3125111511",
+      "adres": "ORAN MAH. ZÜHTÜ TİĞREL CAD.NO:1/5/35 (Kuzu Effect AVM)"
+    },
+    {
+      "id": 65968,
+      "ad": "EGE",
+      "tel": "3124161124",
+      "adres": "100. Yıl Mahallesi Horasan Sokak NO:17/A"
+    },
+    {
+      "id": 26152,
+      "ad": "EGE SENA",
+      "tel": "3122359811",
+      "adres": "ÜMİT MAH. MEKSİKA CADDESİ NO:39/A ÇANKAYA/ ANKARA"
+    },
+    {
+      "id": 17614,
+      "ad": "EKİN",
+      "tel": "3124805554",
+      "adres": "ÖVEÇLER MAH. MIMAR SOK. NO:60/A ÇANKAYA"
+    },
+    {
+      "id": 17350,
+      "ad": "ELÇİM",
+      "tel": "3124791677",
+      "adres": "ILKADIM MAH. DIKMEN CAD. SINAN SOK. NO:61/D DIKMEN"
+    },
+    {
+      "id": 34358,
+      "ad": "ELİF",
+      "tel": "3122456116",
+      "adres": "Keklikpınarı Mah. 882. Cad. No:1/B Dikmen/ Çankaya/ ANKARA"
+    },
+    {
+      "id": 26049,
+      "ad": "ELİF ESLEM",
+      "tel": "3122868647",
+      "adres": "Muhsin Yazıcıoğlu Cad. 1436. Sok. No:1/35 Çankaya/Ankara"
+    },
+    {
+      "id": 36499,
+      "ad": "ELİF ULUTAŞ",
+      "tel": "3122867961",
+      "adres": "KIZILIRMAK MAH. UFUK ÜNİVERSİTESİ CAD. 1445.SOK. NO:2 A BLOK NO:7"
+    },
+    {
+      "id": 56523,
+      "ad": "ELİF ÇATLI",
+      "tel": "3124827503",
+      "adres": "HARBİYE MAHALLESİ SALKIM SÖĞÜT CAD. NO:32"
+    },
+    {
+      "id": 56649,
+      "ad": "ELİFİN",
+      "tel": "3124813144",
+      "adres": "AYDINLAR MAH. DİKMEN CAD. NO:258/A"
+    },
+    {
+      "id": 18092,
+      "ad": "EMEK",
+      "tel": "3122121363",
+      "adres": "EMEK MAH. BOSNA HERSEK CAD. NO:8/A"
+    },
+    {
+      "id": 51017,
+      "ad": "EMEK SAĞLIK",
+      "tel": "3122211770",
+      "adres": "EMEK MAH. KIRIM CAD. NO:80/C"
+    },
+    {
+      "id": 17908,
+      "ad": "EMEK ŞİFA",
+      "tel": "3122225001",
+      "adres": "EMEK MAH. 8. CAD. NO:66 EMEK"
+    },
+    {
+      "id": 57998,
+      "ad": "EMRE",
+      "tel": "5354374444",
+      "adres": "ALACAATLI MAH. KANUNİ SULTAN SÜLEYMAN BULVARI BO:139/11"
+    },
+    {
+      "id": 61980,
+      "ad": "EMİR",
+      "tel": "3124313111",
+      "adres": "FİDANLIK MAH. ZİYAGÖKALP CAD. NO:31/A"
+    },
+    {
+      "id": 59315,
+      "ad": "ENES",
+      "tel": "3124176676",
+      "adres": "KOCATEPE MAH. İNKİLAP SOK. NO:22/E"
+    },
+    {
+      "id": 18624,
+      "ad": "ERAY",
+      "tel": "3122173727",
+      "adres": "YASAMKENT MAH. 3207. CAD. NO:1/A ÇANKAYA (TEL 05072539679)"
+    },
+    {
+      "id": 17747,
+      "ad": "ERCAN",
+      "tel": "3124420077",
+      "adres": "MESNEVI SOK. NO:11/A"
+    },
+    {
+      "id": 66001,
+      "ad": "ERDİL",
+      "tel": "",
+      "adres": "BALGAT MAH. 1416. SOK. NO: 5/B"
+    },
+    {
+      "id": 17182,
+      "ad": "ERGEN",
+      "tel": "3122291245",
+      "adres": "GENÇLIK CAD. NO:97/D ANITTEPE"
+    },
+    {
+      "id": 18883,
+      "ad": "ERGUVAN",
+      "tel": "3122358486",
+      "adres": "MUTLUKENT MAH. 1920. CAD. NO:81/A ÇANKAYA"
+    },
+    {
+      "id": 17640,
+      "ad": "EROĞLU",
+      "tel": "3122850515",
+      "adres": "ZIYABEY CAD. NO:40/B BALGAT"
+    },
+    {
+      "id": 17423,
+      "ad": "ERSÖZ",
+      "tel": "3124951010",
+      "adres": "BIRLIK MAH. 450.CADDE NO:70/A ÇANKAYA/ ANKARA"
+    },
+    {
+      "id": 59454,
+      "ad": "ESMA",
+      "tel": "3125776770",
+      "adres": "100.YIL MAH.REŞİT GALİP CAD.NO:13/B"
+    },
+    {
+      "id": 17145,
+      "ad": "ESİN",
+      "tel": "3124262859",
+      "adres": "YESILYURT SOK. NO:18/B ASAGI AYRANCI"
+    },
+    {
+      "id": 26099,
+      "ad": "ESİN KURANEL",
+      "tel": "3124363555",
+      "adres": "G.O.P Mah Uğur Mumcu Cad.No:55/5"
+    },
+    {
+      "id": 41578,
+      "ad": "EVREN",
+      "tel": "3124735217",
+      "adres": "CEVİZLİDERE MAH.CEYHUN ATUF KANSU CAD.NO:167/C"
+    },
+    {
+      "id": 17524,
+      "ad": "EVRENSEL",
+      "tel": "3124175555",
+      "adres": "KAVAKLIDERE MAH. BÜKLÜM SOK. NO:23/A"
+    },
+    {
+      "id": 59806,
+      "ad": "EYLÜL",
+      "tel": "3122299679",
+      "adres": "Kızılay Mah. Sümer 2 Cad. No:25/A"
+    },
+    {
+      "id": 18101,
+      "ad": "FARABİ",
+      "tel": "3124263695",
+      "adres": "ÜSKÜP CAD. NO:1/A"
+    },
+    {
+      "id": 25697,
+      "ad": "FAZİLET",
+      "tel": "3123176000",
+      "adres": "ziya gökalp cad. no:22/b Kızılay/Ankara"
+    },
+    {
+      "id": 17480,
+      "ad": "FERİDE",
+      "tel": "3124361855",
+      "adres": "NENEHATUN CAD. NO:63/A  GAZİOSMANPAŞA ÇANKAYA"
+    },
+    {
+      "id": 62938,
+      "ad": "FEZA",
+      "tel": "3124729535",
+      "adres": "EHLIBEYT MAH. CEYHUN ATIF KANSU CAD. NO:127/C"
+    },
+    {
+      "id": 17174,
+      "ad": "FIRAT",
+      "tel": "3124675278",
+      "adres": "TUNALI HILMI CAD. NO:95/D"
+    },
+    {
+      "id": 62024,
+      "ad": "FLORA",
+      "tel": "3124300161",
+      "adres": "ÖNCEBECİ MAH.ZİYAGÖKALP CAD.NO:74/A"
+    },
+    {
+      "id": 59646,
+      "ad": "FULYA",
+      "tel": "3124318472",
+      "adres": "AŞIKPAŞA MAH. VEDAT DOLAKAY CAD.NO:3/A"
+    },
+    {
+      "id": 17964,
+      "ad": "FİKRET",
+      "tel": "3124266506",
+      "adres": "KAVAKLIDERE MAH. TUNALI HILMI CAD. NO:109/B"
+    },
+    {
+      "id": 18430,
+      "ad": "FİKRET ACAR",
+      "tel": "3124951188",
+      "adres": "BIRLIK MAH. 450. CAD. NO:60/A"
+    },
+    {
+      "id": 17195,
+      "ad": "FİLİZ",
+      "tel": "3122222483",
+      "adres": "7. CAD. (ASKABAT CAD.)61.SOK NO:29 BAHÇELIEVLER"
+    },
+    {
+      "id": 57899,
+      "ad": "FİLİZ KÖKSOY",
+      "tel": "3124756283",
+      "adres": "ATA MAH. LİZBON CADDESİ NO:121/B"
+    },
+    {
+      "id": 42110,
+      "ad": "FİTOFARM",
+      "tel": "3125034008",
+      "adres": "Kızılırmak Mah. Ufuk Üniversitesi Cad. Başkent Gaz Kule No:13/A-1"
+    },
+    {
+      "id": 42173,
+      "ad": "GALLERİA",
+      "tel": "3122357001",
+      "adres": "Mutlukent Mah. 2432. Cad. A Blok No:26  Ümitköy"
+    },
+    {
+      "id": 49725,
+      "ad": "GAZİ BULVAR",
+      "tel": "3122307090",
+      "adres": "ETİ MAH. GAZİ MUSTAFA KEMAL BULVARI NO:80/B"
+    },
+    {
+      "id": 61459,
+      "ad": "GAZİ DEMİR",
+      "tel": "5056167197",
+      "adres": "EMEK MAH. BİŞKEK CAD. NO:1BB"
+    },
+    {
+      "id": 17685,
+      "ad": "GAZİLER",
+      "tel": "3122231405",
+      "adres": "EMEK BISKEK CAD. (8. CAD.) NO:1/C"
+    },
+    {
+      "id": 18599,
+      "ad": "GENÇTOY",
+      "tel": "3123262687",
+      "adres": "OGUZLAR MAH. BARIS MANÇO CAD. NO:17/E BALGAT/ÇANKAYA"
+    },
+    {
+      "id": 18494,
+      "ad": "GEREK",
+      "tel": "3124170235",
+      "adres": "KARANFIL SOK. NO:77/A BAKANLIKLAR"
+    },
+    {
+      "id": 58473,
+      "ad": "GORDİON",
+      "tel": "3122367130",
+      "adres": "KORU MAHALLESİ ANKARALILAR CADDESİ GORDİON AVM NO:2/B"
+    },
+    {
+      "id": 47090,
+      "ad": "GÖKBALA",
+      "tel": "3129115546",
+      "adres": "EHLİBEYT MAH. CEYHUN ATUF KANSU CAD. NO:91/E"
+    },
+    {
+      "id": 17981,
+      "ad": "GÖKMEN",
+      "tel": "3122405605",
+      "adres": "PROF.DR.AHMET TANER KIŞLALI MAH. SAFRANBOLU CAD. NO:14 /Z01 ÇANKAYA/ ANKARA"
+    },
+    {
+      "id": 58959,
+      "ad": "GÖKSU",
+      "tel": "3122131897",
+      "adres": "BAHÇELİEVLER MAH. KAZAKİSTAN CAD. NO:1/19"
+    },
+    {
+      "id": 62939,
+      "ad": "GÖKŞEN",
+      "tel": "3124963038",
+      "adres": "Birlik Mah. 448. Cad. No:52/A Çankaya/Ankara"
+    },
+    {
+      "id": 59231,
+      "ad": "GÖNÜL",
+      "tel": "5337670112",
+      "adres": "ALACAATLI MAH. 3316.SOK.TERRA SİTESİ E BLOK NO:2E/F"
+    },
+    {
+      "id": 59094,
+      "ad": "GÖZEN",
+      "tel": "3124339906",
+      "adres": "TINAZTEPE MAH. BÜLBÜLDERESİ CAD. NO:20/A"
+    },
+    {
+      "id": 45637,
+      "ad": "GÖZÜKARA",
+      "tel": "3124818826",
+      "adres": "HARBİYE MAH. TAVUSKUŞU SOK. NO:7/14-15"
+    },
+    {
+      "id": 54092,
+      "ad": "GÜL",
+      "tel": "3124469496",
+      "adres": "KÜÇÜKESAT MAH. ESAT CAD. NO:99/B"
+    },
+    {
+      "id": 56026,
+      "ad": "GÜLBAHAR",
+      "tel": "3124333437",
+      "adres": "İNCESU MAH.İNCESU CAD.NO:73/A"
+    },
+    {
+      "id": 18269,
+      "ad": "GÜLDAL",
+      "tel": "3124950425",
+      "adres": "BIRLIK MAH. 401. SOK. NO:9/A"
+    },
+    {
+      "id": 57038,
+      "ad": "GÜLDEN",
+      "tel": "5059340008",
+      "adres": "SÖĞÜTÖZÜ MAH. 2181. CAD. NO:2/E"
+    },
+    {
+      "id": 17369,
+      "ad": "GÜLSEVİN",
+      "tel": "3124684616",
+      "adres": "YUKARI AYRANCI MAH. ELÇİ CAD. NO:24/B"
+    },
+    {
+      "id": 56495,
+      "ad": "GÜLŞAH",
+      "tel": "3124430871",
+      "adres": "YILDIZEVLER MAH. KİŞİNEV CAD. NO:7/B"
+    },
+    {
+      "id": 43434,
+      "ad": "GÜMÜŞ",
+      "tel": "3122876610",
+      "adres": "ZİYABEY CAD. NO:54  BALGAT"
+    },
+    {
+      "id": 18721,
+      "ad": "GÜN",
+      "tel": "3124727778",
+      "adres": "CEVIZLIDERE MAH. 1283 SOK. NO:6/A"
+    },
+    {
+      "id": 17859,
+      "ad": "GÜNAL",
+      "tel": "3124354829",
+      "adres": "SEYRANBAGLARI MAH. BAGLAR CAD. NO:79/C"
+    },
+    {
+      "id": 26148,
+      "ad": "GÜNDOĞAN",
+      "tel": "3124906215",
+      "adres": "Turan Güneş Bulvarı 645. Sok. No:3/C Dikmen/ANKARA"
+    },
+    {
+      "id": 50664,
+      "ad": "GÜNEBAKAN",
+      "tel": "3124834200",
+      "adres": "AYDINLAR MAH. DİKMEN CAD. NO:302/9"
+    },
+    {
+      "id": 17798,
+      "ad": "GÜNER",
+      "tel": "3122236565",
+      "adres": "EMEK MAH. 21.SOK. NO:40/B ÇANKAYA/ANKARA"
+    },
+    {
+      "id": 17230,
+      "ad": "GÜRBÜZER",
+      "tel": "3124820805",
+      "adres": "DIKMEN CAD. NO:140/D DIKMEN"
+    },
+    {
+      "id": 61381,
+      "ad": "GÜVEN",
+      "tel": "3124260222",
+      "adres": "GÜVENEVLER MAH. KUVEYT CAD. NO:1/A"
+    },
+    {
+      "id": 17876,
+      "ad": "GÜZELTEPE",
+      "tel": "3122392327",
+      "adres": "DODURGA MAHALLESİ ODABAŞI CAD. GÜZELTEPE SİTESİ 16/6B ÇANKAYA/ ANKARA"
+    },
+    {
+      "id": 17364,
+      "ad": "GÜÇLÜ",
+      "tel": "3124766060",
+      "adres": "DIKMEN CAD. NO:392/A DIKMEN"
+    },
+    {
+      "id": 61546,
+      "ad": "GİZEM ELİF",
+      "tel": "3124361982",
+      "adres": "GÖKTÜRK MAH. 115. CAD. NO:6/D"
+    },
+    {
+      "id": 46678,
+      "ad": "HACER",
+      "tel": "3124729493",
+      "adres": "CEVİZLİDERE MAH. 1218.CADDE NO:2/C"
+    },
+    {
+      "id": 42793,
+      "ad": "HACETTEPE CEREN",
+      "tel": "5331683333",
+      "adres": "SAĞLIK MAH. CELAL BAYAR BULVARI NO:19/19A/19B"
+    },
+    {
+      "id": 26096,
+      "ad": "HALİDE",
+      "tel": "3124730507",
+      "adres": "YUKARI ÖVEÇLER MAH.1283. SOK. NO:9/A"
+    },
+    {
+      "id": 46840,
+      "ad": "HASBAHÇEM",
+      "tel": "3122220307",
+      "adres": "BAHÇELİEVLER MAH. TAŞKENT CAD. (1. CAD) NO:3/A(14-15)"
+    },
+    {
+      "id": 54993,
+      "ad": "HATIRA",
+      "tel": "3124180296",
+      "adres": "KIZILAY MAH.KUMRULAR CADDESİ NO:12/A"
+    },
+    {
+      "id": 59197,
+      "ad": "HATKO",
+      "tel": "3124909395",
+      "adres": "AHLATLIBEL MAH.1835.CAD.NO:88/B"
+    },
+    {
+      "id": 30011,
+      "ad": "HATTUŞA GÜLİZ",
+      "tel": "3124798486",
+      "adres": "OSMAN TEMİZ MAH. DİKMEN CAD. NO:309/C ÇANKAYA/ ANKARA"
+    },
+    {
+      "id": 50764,
+      "ad": "HAZAN",
+      "tel": "3122238353",
+      "adres": "SOKULLU MEHMET PAŞA MAH. SOKULLU MEHMET PAŞA CAD. NO:32/B"
+    },
+    {
+      "id": 48126,
+      "ad": "HAZAR",
+      "tel": "3122132191",
+      "adres": "BAHÇELİEVLER MAH. TAŞKENT CAD. (1. CAD) NO:83/12"
+    },
+    {
+      "id": 34131,
+      "ad": "HAZİRAN",
+      "tel": "3124823499",
+      "adres": "MALAZGİRT MAH. DİKMEN CAD. NO:375/D"
+    },
+    {
+      "id": 45950,
+      "ad": "HAŞMET",
+      "tel": "3124316070",
+      "adres": "FİDANLIK MAH. ZİYA GÖKALP CAD. NO:43/B"
+    },
+    {
+      "id": 36349,
+      "ad": "HEKİMKÖY",
+      "tel": "3122350111",
+      "adres": "MUTLUKENT MAH. 1920.CAD.NO:59/A ÇANKAYA"
+    },
+    {
+      "id": 18651,
+      "ad": "HEMŞİN",
+      "tel": "3124345303",
+      "adres": "ÖNCEBECI MAH. MAHMUT ESAT BOZKURT CAD. SERVI SOK. NO:29/B ÇANKAYA"
+    },
+    {
+      "id": 36489,
+      "ad": "HÜLYA AKKAN",
+      "tel": "3122866660",
+      "adres": "BALGAT MAH. ZİYABEY CAD. NO:12/15 ÇANKAYA"
+    },
+    {
+      "id": 46146,
+      "ad": "HÜLYAM",
+      "tel": "3122412523",
+      "adres": "AHMET TANER KIŞLALI MAH. BANGA BANDHU ŞEYH MUCİBURRAHMAN BULVARI NO:94/D-12/C"
+    },
+    {
+      "id": 65469,
+      "ad": "HÜMA",
+      "tel": "5396833817",
+      "adres": "Yücetepe Mah. İlk Sok. No:6/B"
+    },
+    {
+      "id": 17318,
+      "ad": "HÜNER",
+      "tel": "3124391491",
+      "adres": "PORTAKAL ÇIÇEGI SOK. NO:3/A ASAGI AYRANCI"
+    },
+    {
+      "id": 64080,
+      "ad": "HÜRRİYET",
+      "tel": "5337132905",
+      "adres": "KAVAKLIDERE MAH. ESAT CAD. NO:60/A"
+    },
+    {
+      "id": 37025,
+      "ad": "HİKMET",
+      "tel": "3124320062",
+      "adres": "Öncebeci Mah. Umut Sok.No:5/D"
+    },
+    {
+      "id": 43066,
+      "ad": "HİLAL",
+      "tel": "3124400661",
+      "adres": "HİLAL MAH. ALEKSANDER DUBÇEK CAD. NO:34/10-11"
+    },
+    {
+      "id": 61938,
+      "ad": "HİLALİN",
+      "tel": "3122130896",
+      "adres": "AYDINLAR MAH.DİKMEN CAD.NO:330/A"
+    },
+    {
+      "id": 18104,
+      "ad": "HİTİT",
+      "tel": "3122305042",
+      "adres": "KORKUT REIS MAH. NECATIBEY CAD. NO:2/B SIHHIYE"
+    },
+    {
+      "id": 33956,
+      "ad": "IRMAK",
+      "tel": "3123637575",
+      "adres": "CEBECİ MAH. CEMAL GÜRSEL CAD. NO:90/A"
+    },
+    {
+      "id": 58193,
+      "ad": "KADIOĞLU",
+      "tel": "3122127877",
+      "adres": "BAHÇELİEVLER MAH.TAŞKENT CAD.NO:58/A"
+    },
+    {
+      "id": 60824,
+      "ad": "KAHRAMANOĞLU",
+      "tel": "3125110066",
+      "adres": "BAHÇELİEVLER MAH. KAZAKİSTAN CAD. NO:19/A"
+    },
+    {
+      "id": 62227,
+      "ad": "KAMPÜS",
+      "tel": "5456547486",
+      "adres": "Üniversiteler Mah. 1596. Cad. No:76/Z07"
+    },
+    {
+      "id": 18139,
+      "ad": "KAPTAN",
+      "tel": "3124769300",
+      "adres": "KEKLIKPINARI MAH. DIKMEN CAD. NO:463/B"
+    },
+    {
+      "id": 60020,
+      "ad": "KARACA",
+      "tel": "3129990198",
+      "adres": "BÜYÜKESAT MAH. UĞUR MUMCU CADDESİ NO:63/8 GAZİOSMANPAŞA"
+    },
+    {
+      "id": 62337,
+      "ad": "KARAGÖZ",
+      "tel": "3124311753",
+      "adres": "SAĞLIK MAH.TUNA CAD.SAĞLIK 1 SOKAK NO:37/A"
+    },
+    {
+      "id": 17360,
+      "ad": "KARAKOYUNLU",
+      "tel": "3124194769",
+      "adres": "YENISEHIR MAH. MILLI MÜDAFAA CAD. KUMRULAR SOK. NO:6/C KIZILAY"
+    },
+    {
+      "id": 48751,
+      "ad": "KARDELEN",
+      "tel": "3124194477",
+      "adres": "KAVAKLIDERE MAH. BÜKLÜM SOK. NO:5/A"
+    },
+    {
+      "id": 17506,
+      "ad": "KARDEŞLER",
+      "tel": "3124376046",
+      "adres": "MUHSIN ERTUGRUL MAH. BAGLAR CAD. NO:162/25 SEYRANBAĞLARI-"
+    },
+    {
+      "id": 26149,
+      "ad": "KARUM",
+      "tel": "3124285088",
+      "adres": "İran Cad. Karum İş Merkezi No:21/260  Çankaya/Ankara"
+    },
+    {
+      "id": 17223,
+      "ad": "KARYAĞDI",
+      "tel": "3124383949",
+      "adres": "ABIDIN DAVER SOK. NO:41/2"
+    },
+    {
+      "id": 64235,
+      "ad": "KASIMPATI",
+      "tel": "5424281365",
+      "adres": "İncesu Mah. İncesu Cad. No:67/B gsm 0542 428 13 65"
+    },
+    {
+      "id": 41642,
+      "ad": "KAVAKLIDERE PINAR",
+      "tel": "3124263636",
+      "adres": "REMZİ OĞUZ MAH. ATATÜRK BULVARI NO:199/H"
+    },
+    {
+      "id": 53842,
+      "ad": "KENT",
+      "tel": "3122850232",
+      "adres": "BALGAT MAH. ZİYABEY CAD. NO:63/B"
+    },
+    {
+      "id": 18408,
+      "ad": "KENTPARK",
+      "tel": "3122199059",
+      "adres": "MUSTAFA KEMAL MAH. ESKISEHIRYOLU 7. KM. KENTPARK ALISVERIS MERKEZI NO:164/Z53 ÇANKAYA"
+    },
+    {
+      "id": 41683,
+      "ad": "KIRKKONAKLAR",
+      "tel": "3124962930",
+      "adres": "KIRKKONAKLAR MAH.316.CAD. NO:12/B"
+    },
+    {
+      "id": 26356,
+      "ad": "KIRMIZI",
+      "tel": "3124959030",
+      "adres": "Kırıkkonaklar Mah. 450. Cad. No:72/A Çankaya/Ankara"
+    },
+    {
+      "id": 17317,
+      "ad": "KIVANÇ",
+      "tel": "3124680580",
+      "adres": "AYRANCI MAH. ELÇI CAD. NO:19/E YUKARI AYRANCI"
+    },
+    {
+      "id": 61535,
+      "ad": "KIZILAY FIRAT",
+      "tel": "3123859585",
+      "adres": "MEŞRUTİYET CAD.ERGENE APT.NO:20/D"
+    },
+    {
+      "id": 52505,
+      "ad": "KIZILAY MERKEZ",
+      "tel": "3124252420",
+      "adres": "MEŞRUTİYET MAH. MEŞRUTİYET CAD. NO:3/A"
+    },
+    {
+      "id": 17578,
+      "ad": "KORU",
+      "tel": "3122407332",
+      "adres": "KORU MAH. MESA PLAZA ALIŞVERİŞ MERKEZİ IHLAMUR CAD. NO:2/40 ÇANKAYA/ ANKARA"
+    },
+    {
+      "id": 64240,
+      "ad": "KOZA",
+      "tel": "3124414841",
+      "adres": "KAZIM ÖZALP MAH.KOZA CADDESİ BORANOĞLU APT.NO:16/B"
+    },
+    {
+      "id": 18419,
+      "ad": "KOZA SAĞLIK",
+      "tel": "3122121733",
+      "adres": "MEBUSEVLERI MAH. ANIT CAD. NO:14"
+    },
+    {
+      "id": 18219,
+      "ad": "KOÇ",
+      "tel": "3122354623",
+      "adres": "ÜMIT MAH. MEKSIKA CAD. NO:56/2"
+    },
+    {
+      "id": 43127,
+      "ad": "KOÇYİĞİT",
+      "tel": "3124394145",
+      "adres": "KAZIM ÖZALP MAH. UĞUR MUMCU CAD. NO:18/1 GAZİOSMANPAŞA"
+    },
+    {
+      "id": 36622,
+      "ad": "KULE",
+      "tel": "3122858555",
+      "adres": "SÖĞÜTÖZÜ MAH. SÖĞÜTÖZÜ CAD. KOÇ KULELERİ D BLOK NO:3 ÇANKAYA"
+    },
+    {
+      "id": 52152,
+      "ad": "KUMRU",
+      "tel": "5301398292",
+      "adres": "YILDIZEVLER MAH. 714. SOK. NO:6/B1-27"
+    },
+    {
+      "id": 44120,
+      "ad": "KUMRULAR",
+      "tel": "3124258778",
+      "adres": "KUMRULAR CAD. NO:6/A KIZILAY"
+    },
+    {
+      "id": 65385,
+      "ad": "KUTAY",
+      "tel": "5331967831",
+      "adres": "MÜRSEL ULUÇ MAH. İLKER CAD. NO:156/B"
+    },
+    {
+      "id": 55258,
+      "ad": "KUTLU",
+      "tel": "3122310744",
+      "adres": "KIZILAY MAH. GAZİ MUSTAFA KEMAL BULVARI NO:29/A"
+    },
+    {
+      "id": 17970,
+      "ad": "KÖROĞLU",
+      "tel": "3124363696",
+      "adres": "UGUR MUMCU CAD. NO:87/8 GAZIOSMANPASA"
+    },
+    {
+      "id": 18849,
+      "ad": "KÜBRAM",
+      "tel": "3124413690",
+      "adres": "SANCAK MAH. SEMA YAZAR SOK. NO:10/A ÇANKAYA"
+    },
+    {
+      "id": 65845,
+      "ad": "KÜÇÜKESAT",
+      "tel": "3124189980",
+      "adres": "BARBAROS MAH. ESAT CAD. NO:66/D"
+    },
+    {
+      "id": 18277,
+      "ad": "KİŞİOĞLU",
+      "tel": "3124960775",
+      "adres": "BIRLIK MAH. 441. CAD. 486. SOK. NO:3/A"
+    },
+    {
+      "id": 30562,
+      "ad": "LAL",
+      "tel": "3124962016",
+      "adres": "Şemsettin Günaltay Cad. No:300/C Kırkkonaklar/Çankaya/ANKARA"
+    },
+    {
+      "id": 17955,
+      "ad": "LALAHAN",
+      "tel": "3122239006",
+      "adres": "BAHÇELİEVLER MAH. BAHRİYE ÜÇOK CAD. No:21/B"
+    },
+    {
+      "id": 26105,
+      "ad": "LALEM",
+      "tel": "3124740414",
+      "adres": "Huzur Mah. 1066. Cad. No:35/A Çankaya/ANKARA"
+    },
+    {
+      "id": 63769,
+      "ad": "LARA",
+      "tel": "5462851571",
+      "adres": "ÇUKURAMBAR MAH. EROL YAŞAR TÜRKALP CAD. NO:18/C"
+    },
+    {
+      "id": 45297,
+      "ad": "LAVANTA",
+      "tel": "3122844245",
+      "adres": "KIZILIRMAK MAH. 1450.SOK.ATM B BLOK NO:1/115 ÇUKURAMBAR"
+    },
+    {
+      "id": 17533,
+      "ad": "LAÇİN",
+      "tel": "3122128521",
+      "adres": "YUKARI BAHÇELİEVLER MAH. WİLHELM THOMSEN CAD. NO:3/A"
+    },
+    {
+      "id": 50109,
+      "ad": "LEMAN",
+      "tel": "3122129796",
+      "adres": "EMEK MAH. KAZAKISTAN CAD. NO:138/A"
+    },
+    {
+      "id": 18841,
+      "ad": "LEVENT",
+      "tel": "3124395217",
+      "adres": "SANCAK MAH. TIFLIS CAD. NO:53/E ÇANKAYA"
+    },
+    {
+      "id": 26813,
+      "ad": "LORD",
+      "tel": "3122220776",
+      "adres": "Yukarı Bahçelievler Mah. Aşkabat Cad.\r\nNo:70G"
+    },
+    {
+      "id": 18231,
+      "ad": "LOTUS",
+      "tel": "3124360696",
+      "adres": "MAHATMA GANDİ SOK. NO:46/A GAZİOSMANPAŞA"
+    },
+    {
+      "id": 56586,
+      "ad": "LOTUS ANGORA",
+      "tel": "3122363696",
+      "adres": "MUTLUKENT MAH. ANGORA BULVARI NO:154/A"
+    },
+    {
+      "id": 17451,
+      "ad": "LÜNET",
+      "tel": "3124195880",
+      "adres": "TUNALI HILMI CAD. NO:56/B KAVAKLIDERE"
+    },
+    {
+      "id": 56648,
+      "ad": "LİMON ÇİÇEĞİ",
+      "tel": "3124838112",
+      "adres": "SOKULLU MEHMET PAŞA CAD. NO:57/C DİKMEN"
+    },
+    {
+      "id": 29761,
+      "ad": "MADENOĞLU",
+      "tel": "3122152690",
+      "adres": "BAHÇELİEVLER MAH. KAZAKİSTAN CADDESİ NO:1/A ÇANKAYA/ ANKARA"
+    },
+    {
+      "id": 18672,
+      "ad": "MALTEPE",
+      "tel": "3122315227",
+      "adres": "MALTEPE MAH. GMK BULVARI NO:77/A ÇANKAYA"
+    },
+    {
+      "id": 18398,
+      "ad": "MATARACI",
+      "tel": "3122351230",
+      "adres": "Mutlukent Mah. 2432.Cadde No:91 Ümitköy"
+    },
+    {
+      "id": 50726,
+      "ad": "MAVİ DÜŞ",
+      "tel": "3125140088",
+      "adres": "KIZILIRMAK MAH. 1450. SOK. NO:18/75"
+    },
+    {
+      "id": 64094,
+      "ad": "MAVİ GÜNEŞ",
+      "tel": "3125771966",
+      "adres": "BEYTEPE MAH. KANUNİ SULTAN SÜLEYMAN BLV. NO:46/A"
+    },
+    {
+      "id": 52991,
+      "ad": "MAYA",
+      "tel": "3125119767",
+      "adres": "ÇAYYOLU MAH. 266/1 SOK. NO:3EA/2"
+    },
+    {
+      "id": 26118,
+      "ad": "MAYIS",
+      "tel": "3124821033",
+      "adres": "Aydınlar Mah. Hürriyet Cad.No:180/A  Çankaya/Ankara"
+    },
+    {
+      "id": 41161,
+      "ad": "MAİDAN KUZUCU",
+      "tel": "3125027077",
+      "adres": "MUSTAFA KEMAL MAH.MAIDAN İŞ VE YAŞAM MERKEZİ ESKİŞEHİR YOLU BİLKENT KAVŞAĞI NO:4 A BLOK A/185"
+    },
+    {
+      "id": 56992,
+      "ad": "MEBUSEVLERİ",
+      "tel": "3122223257",
+      "adres": "AYTEN SOK. NO:18/A MEBUSEVLERI TANDOGAN"
+    },
+    {
+      "id": 52442,
+      "ad": "MEDİCAGO KIZILAY",
+      "tel": "3124313141",
+      "adres": "CUMHURİYET MAH. ATATÜRK BULVARI BÜYÜK ÇARŞI NO:67/K KIZILAY"
+    },
+    {
+      "id": 32828,
+      "ad": "MEHMET",
+      "tel": "3124825676",
+      "adres": "OSMAN TEMİZ MAH. 1030.SOK. NO.5/A DİKMEN /ÇANKAYA"
+    },
+    {
+      "id": 62431,
+      "ad": "MELİKE",
+      "tel": "3124818424",
+      "adres": "Ata Mah. Kabil Cad. No:118/C"
+    },
+    {
+      "id": 18583,
+      "ad": "MELİS",
+      "tel": "3124414417",
+      "adres": "SANCAK MAH. KAHIRE CAD. NO:36/A"
+    },
+    {
+      "id": 60014,
+      "ad": "MELİSA",
+      "tel": "5057795806",
+      "adres": "KEKLİK PINARI MAH. DİKMEN CAD. NO:411/B"
+    },
+    {
+      "id": 44254,
+      "ad": "MELİTA",
+      "tel": "3123109685",
+      "adres": "MUSTAFA KEMAL MAH. DUMLUPINAR BULVARI MAHALL D1 BLOK NO:274-8C MAHALL/ ÇANKAYA/ ANKARA"
+    },
+    {
+      "id": 17858,
+      "ad": "MENEVİŞ",
+      "tel": "3124262803",
+      "adres": "MENEVIS SOK. NO:41/A ASAGI AYRANCI"
+    },
+    {
+      "id": 60325,
+      "ad": "MERAY",
+      "tel": "3124808089",
+      "adres": "ŞEHİT CEVDET ÖZDEMİR MAH. SOKULLU MEHMET PAŞA CAD. NO:148/A"
+    },
+    {
+      "id": 17618,
+      "ad": "MERGÜN",
+      "tel": "3124824693",
+      "adres": "HARBİYE MAH. DİKMEN CAD. SALKIMSÖGÜT SOK. NO:6 DIKMEN"
+    },
+    {
+      "id": 47604,
+      "ad": "MERT YAŞAM",
+      "tel": "3122172804",
+      "adres": "ALACAATLI MAH. PARK CAD.NO:65/7"
+    },
+    {
+      "id": 57004,
+      "ad": "MERVE",
+      "tel": "3124829564",
+      "adres": "DİKMEN CAD. ZARİF SOK. NO:2/C"
+    },
+    {
+      "id": 31768,
+      "ad": "MERVE BAYSAL",
+      "tel": "3122357274",
+      "adres": "ÇAYYOLU MAH. ÇAYYOLU KÜMEEVLERİ NO:34/A ÇANKAYA"
+    },
+    {
+      "id": 65649,
+      "ad": "MESA UFUK",
+      "tel": "3124399575",
+      "adres": "BÜYÜKESAT MAH. 422 SOK. NO:4/D"
+    },
+    {
+      "id": 17542,
+      "ad": "METROPOL",
+      "tel": "3122153125",
+      "adres": "DEGOL CAD. NO:7/12 TANDOGAN"
+    },
+    {
+      "id": 18575,
+      "ad": "MEVLANA",
+      "tel": "3123194781",
+      "adres": "FAKÜLTELER MAH. CEMAL GÜRSEL CAD. NO:57/A"
+    },
+    {
+      "id": 63446,
+      "ad": "MEYAN",
+      "tel": "3122121726",
+      "adres": "EMEK MAH. BİŞKEK CAD. 4. SOK. NO:4/A"
+    },
+    {
+      "id": 50837,
+      "ad": "MEYDAN KIZILAY",
+      "tel": "3124324343",
+      "adres": "CUMHURİYET MAH. ZİYA GÖKALP CAD. NO:9/B"
+    },
+    {
+      "id": 17894,
+      "ad": "MEŞRUTİYET",
+      "tel": "3124312063",
+      "adres": "MESRUTIYET CAD. NO:41/B KIZILAY"
+    },
+    {
+      "id": 17977,
+      "ad": "MOGAN",
+      "tel": "3124908081",
+      "adres": "MÜRSEL ULUÇ MAH.950.SOK.NO.16A (A-2 BLOK) ÇANKAYA"
+    },
+    {
+      "id": 17215,
+      "ad": "MUMCU",
+      "tel": "3124310323",
+      "adres": "TUNA CAD. NO:14/A Yenişehir-Çankaya"
+    },
+    {
+      "id": 38427,
+      "ad": "MURATLI",
+      "tel": "3124650008",
+      "adres": "BARBAROS MAH.BÜKLÜM CAD. NO:89/10 ÇANKAYA"
+    },
+    {
+      "id": 28864,
+      "ad": "MUSTAFA KEMAL",
+      "tel": "3122197255",
+      "adres": "Mustafa Kemal Mah.2129. Sok. No:8/BA Çankaya/Ankara"
+    },
+    {
+      "id": 63672,
+      "ad": "MUTLUKENT",
+      "tel": "5333015404",
+      "adres": "Mutlukent Mah. 1920. Cad. No:49/A"
+    },
+    {
+      "id": 18594,
+      "ad": "MÜJDE",
+      "tel": "3124337487",
+      "adres": "DOGUS MAH. BALLIBABA SOK. NO:51/C ÇANKAYA"
+    },
+    {
+      "id": 45793,
+      "ad": "MİMOZA",
+      "tel": "3124420440",
+      "adres": "SANCAK MAH. TİFLİS CAD. NO:31/A"
+    },
+    {
+      "id": 42028,
+      "ad": "MİR",
+      "tel": "3123124456",
+      "adres": "PROF.DR.AHMET TANER KIŞLALI MAH. ALACAATLI CAD. NO:30/6 Çankaya/Ankara"
+    },
+    {
+      "id": 18534,
+      "ad": "MİRAY",
+      "tel": "3124836321",
+      "adres": "ÖVEÇLER MAH. AHMET HASIM CAD. NO:80/A"
+    },
+    {
+      "id": 61857,
+      "ad": "MİTHATPAŞA",
+      "tel": "5010043222",
+      "adres": "Cumhuriyet Mah. Mithatpaşa Cad. No:24/E"
+    },
+    {
+      "id": 18115,
+      "ad": "MİTHATPAŞA PLUS",
+      "tel": "3124663394",
+      "adres": "KAVAKLIDERE MAH. TUNALI HILMI CAD. NO:70/5"
+    },
+    {
+      "id": 54891,
+      "ad": "MİTHATPAŞA İSKENDER",
+      "tel": "5333012999",
+      "adres": "CUMHURİYET MAH. MİTHATPAŞA CAD. NO:26/3"
+    },
+    {
+      "id": 51083,
+      "ad": "NARÇİÇEĞİ",
+      "tel": "3122153726",
+      "adres": "YUKARI BAHÇELİEVLER MAH.TAŞKENT CAD.NO:81"
+    },
+    {
+      "id": 18797,
+      "ad": "NATURA",
+      "tel": "3122201956",
+      "adres": "ÇUKURAMBAR MAH. 1459. CAD. NO:24/A"
+    },
+    {
+      "id": 56902,
+      "ad": "NATUREL",
+      "tel": "5302453060",
+      "adres": "ALACAATLI MAH.KANUNİ SULTAN SÜLEYMAN BULVARI NO:128/BF"
+    },
+    {
+      "id": 56208,
+      "ad": "NAZ",
+      "tel": "5414681435",
+      "adres": "TUNALI HİLMİ CAD.BUĞDAY SOK.NO:6/9"
+    },
+    {
+      "id": 26744,
+      "ad": "NAZAN",
+      "tel": "3124407580",
+      "adres": "AZİZİYE MAH. HOŞDERE CAD. NO.119/B ÇANKAYA"
+    },
+    {
+      "id": 17228,
+      "ad": "NAZAR",
+      "tel": "3124465989",
+      "adres": "SEYRANBAGLARI MAH. BAGLAR CAD. NO:155/B"
+    },
+    {
+      "id": 18880,
+      "ad": "NAZLI",
+      "tel": "3124389816",
+      "adres": "SANCAK MAH. TIFLIS CAD. NO:45/B ÇANKAYA"
+    },
+    {
+      "id": 54164,
+      "ad": "NAZLICAN",
+      "tel": "3124781213",
+      "adres": "HARBİYE MAH. MİMAR CAD. NO:26/C"
+    },
+    {
+      "id": 57820,
+      "ad": "NEFES",
+      "tel": "3128305348",
+      "adres": "BALGAT MAH. ZİYABEY CAD. NO:75/B"
+    },
+    {
+      "id": 30173,
+      "ad": "NEHİR MURAT",
+      "tel": "3124356763",
+      "adres": "SEYRANBAĞLARI CAD. BAĞLAR CAD. no.75/D ÇANKAYA"
+    },
+    {
+      "id": 61607,
+      "ad": "NENEHATUN",
+      "tel": "",
+      "adres": "100. Yıl Mah. Reşit Galip Cad. Billur Sok. 55/A"
+    },
+    {
+      "id": 18169,
+      "ad": "NES",
+      "tel": "3124727248",
+      "adres": "ÖVEÇLER MAH. 1314. CAD. NO:13/B ÇANKAYA"
+    },
+    {
+      "id": 63646,
+      "ad": "NEV201",
+      "tel": "3125143700",
+      "adres": "EHLİBEYT MAH. MEVLANA BUL. NO:201A/94"
+    },
+    {
+      "id": 60223,
+      "ad": "NEVA",
+      "tel": "3124362799",
+      "adres": "MUHSİN ERTUĞRUL MAH. BELLİGÜN CADDESİ NO:12/C"
+    },
+    {
+      "id": 55647,
+      "ad": "NEVBAHAR",
+      "tel": "5335628352",
+      "adres": "SAĞLIK MAH.ATATÜRK BULVARI NO:47/1-2"
+    },
+    {
+      "id": 53690,
+      "ad": "NEXT LEVEL",
+      "tel": "5059385410",
+      "adres": "KIZILIRMAK MAH. DUMLUPINAR BULVARI NEXT LEVEL AVM. 3-C/1-48"
+    },
+    {
+      "id": 59242,
+      "ad": "NEZİH",
+      "tel": "3123410808",
+      "adres": "CEBECİ MAH. CEMAL GÜRSEL CAD. NO:119/B"
+    },
+    {
+      "id": 62027,
+      "ad": "NOVA",
+      "tel": "5404220207",
+      "adres": "KÜÇÜKESAT MAH. ESAT CAD. NO:135/D"
+    },
+    {
+      "id": 51910,
+      "ad": "NOVA ALTINORAN",
+      "tel": "3125127766",
+      "adres": "İLKBAHAR MAH. GALİP ERDEM CAD. TURAN GÜNEŞ BULVARI NO:54 ALTINORAN SİTESİ KULE NO:2/242"
+    },
+    {
+      "id": 63054,
+      "ad": "NOVA ÇINAR",
+      "tel": "3124331728",
+      "adres": "MUSTAFA KEMAL MAH. BULVARI NO:274/8B"
+    },
+    {
+      "id": 41085,
+      "ad": "NUR",
+      "tel": "3124906803",
+      "adres": "ORAN MAH. HAMDULLAH SUPHI TANRIÖVER SOK. NO:23 A/128"
+    },
+    {
+      "id": 17806,
+      "ad": "NURDAN",
+      "tel": "3124198750",
+      "adres": "ESATOGLU MAH. ESAT CAD. NO:87/A"
+    },
+    {
+      "id": 62387,
+      "ad": "NURTEN SAYDAN",
+      "tel": "5326134237",
+      "adres": "Lizbon Cad. No:105/B"
+    },
+    {
+      "id": 55361,
+      "ad": "NİDA",
+      "tel": "3122420491",
+      "adres": "KORU MAH. 2598. SOK. EMA ASMABAHÇE SİTE ÇARŞISI NO:4/E ÇAYYOLU"
+    },
+    {
+      "id": 55081,
+      "ad": "NİHAL",
+      "tel": "3124415838",
+      "adres": "HİLAL MAH. CEZAYİR CAD. NO:5/D"
+    },
+    {
+      "id": 18182,
+      "ad": "NİHAN",
+      "tel": "3122232576",
+      "adres": "EMEK MAH. 10. CAD. (KIRIM CAD.)NO:80/34"
+    },
+    {
+      "id": 17144,
+      "ad": "NİLGÜN",
+      "tel": "3124313120",
+      "adres": "MITHATPASA CAD. NO:56/B KIZILAY"
+    },
+    {
+      "id": 59702,
+      "ad": "NİLHAN",
+      "tel": "5334254324",
+      "adres": "KIZILIRMAK MAH. 1450. SOK. NO:16/64"
+    },
+    {
+      "id": 54949,
+      "ad": "NİSAN",
+      "tel": "3124833816",
+      "adres": "İLKADIM MAH.DİKMEN CAD.VEZİNLİ SOKAK NO:12/A-B"
+    },
+    {
+      "id": 50120,
+      "ad": "NİŞANTAŞI",
+      "tel": "3122877252",
+      "adres": "ÇUKURAMBAR MAH. 1458. SOK. NO:23/B"
+    },
+    {
+      "id": 17757,
+      "ad": "ODEF",
+      "tel": "3122404979",
+      "adres": "KORU MAH. 2432.CAD.NO:192/Z04"
+    },
+    {
+      "id": 61290,
+      "ad": "OKSİJEN",
+      "tel": "3125112657",
+      "adres": "MUSTAFA KEMAL MAH. 2150. SOK. NO:5B-13"
+    },
+    {
+      "id": 64504,
+      "ad": "OKUR",
+      "tel": "3124768308",
+      "adres": "KARAPINAR MAH.1181. SOK. NO:11"
+    },
+    {
+      "id": 57511,
+      "ad": "OLCAY",
+      "tel": "3124822545",
+      "adres": "AYDINLAR MAH.DİKMEN CADDESİ NO:280/A"
+    },
+    {
+      "id": 59437,
+      "ad": "OLGUNLAR",
+      "tel": "5540277288",
+      "adres": "TINAZTEPE MAH.OLGUNLAR CAD.56/C"
+    },
+    {
+      "id": 64466,
+      "ad": "ONUR",
+      "tel": "5079984061",
+      "adres": "Güzeltepe Mah. Ahmet Rasim Sok. No:33/C(13)"
+    },
+    {
+      "id": 64033,
+      "ad": "ORAKLI",
+      "tel": "5336484606",
+      "adres": "HARBİYE MAH. DİKMEN CAD. NO:200/A ÇANKAYA"
+    },
+    {
+      "id": 26157,
+      "ad": "ORAN AKARSU",
+      "tel": "3124912582",
+      "adres": "Yukarı Dikmen Mah.630 Sok. No:7/D Dikmen/Ankara"
+    },
+    {
+      "id": 23958,
+      "ad": "ORAN BAYRAM",
+      "tel": "3124900789",
+      "adres": "TURAN GÜNES BULVARI NO:175/25-A ORAN"
+    },
+    {
+      "id": 48864,
+      "ad": "ORAN GÜLCEM",
+      "tel": "3124908404",
+      "adres": "DUMLUPINAR MAH.TURAN GÜNEŞ BULVARI NO:175/C ORAN"
+    },
+    {
+      "id": 40749,
+      "ad": "ORGANİK",
+      "tel": "3124832111",
+      "adres": "Beytepe Mah. Kanuni Sultan Süleyman Bulvarı 5315.Sok. No:4 Officium Beytepe B Blok 2"
+    },
+    {
+      "id": 17810,
+      "ad": "ORTADOĞU",
+      "tel": "3122101891",
+      "adres": "ÜNİVERSİTELER MAH. ODTÜ KÜMEEVLERİ NO:143 ÇANKAYA/ANKARA"
+    },
+    {
+      "id": 56257,
+      "ad": "ORUÇ",
+      "tel": "3122840871",
+      "adres": "BALGAT MAH. CEYHAN ATUF KANSU CAD. NO:30/B"
+    },
+    {
+      "id": 35725,
+      "ad": "OSMAN COŞKUN",
+      "tel": "3122150160",
+      "adres": "YUKARI BAHÇELİEVLER MAH. FEVZİ ÇAKMAK CAD. ŞEHİT H.TEMEL KUĞULUOĞLU SOK. NO:38/A"
+    },
+    {
+      "id": 49118,
+      "ad": "OYMAN",
+      "tel": "3124262146",
+      "adres": "REMZİ OĞUZ ARIK MAH.GÜVENLİK CAD.NO:61/C"
+    },
+    {
+      "id": 17532,
+      "ad": "OZAN",
+      "tel": "3122356775",
+      "adres": "Ümit Mah. 2432.Cadde Çamlıca Evleri Sitesi A/2 Blok No:11/A Ümitköy"
+    },
+    {
+      "id": 17413,
+      "ad": "OZAN ÜLKÜ",
+      "tel": "3124174780",
+      "adres": "OLGUNLAR SOK. NO:26/A BAKANLIKLAR"
+    },
+    {
+      "id": 18265,
+      "ad": "PALA",
+      "tel": "3124430371",
+      "adres": "SANCAK MAH. TIFLIS CAD. 553. SOK. NO:8/9"
+    },
+    {
+      "id": 18147,
+      "ad": "PANORA",
+      "tel": "3124918167",
+      "adres": "TURAN GÜNES BULVARI PANORA AVYM NO:182/9"
+    },
+    {
+      "id": 34708,
+      "ad": "PAPATYA",
+      "tel": "3124400865",
+      "adres": "HİLAL MAH. CEZAYİR CAD. NO:19/B ÇANKAYA"
+    },
+    {
+      "id": 64880,
+      "ad": "PARK",
+      "tel": "3124269608",
+      "adres": "REMZİ OĞUZ ARIK MAH. TUNALI HİLMİ CAD. NO:114/C"
+    },
+    {
+      "id": 49362,
+      "ad": "PARK DİLEK",
+      "tel": "3125775867",
+      "adres": "Prof. Dr. Ahmet Taner Kışlalı Mah. 2864. Cad. No:34/1"
+    },
+    {
+      "id": 35696,
+      "ad": "PARK ORAN",
+      "tel": "3124904525",
+      "adres": "TURAN GÜNEŞ BULVARI KUDÜS CAD. PARK ORAN OFİS NO E-64"
+    },
+    {
+      "id": 58995,
+      "ad": "PARK YILDIZ",
+      "tel": "3122176020",
+      "adres": "YAŞAMKENT MAH. 3158. CAD. NO:55"
+    },
+    {
+      "id": 63560,
+      "ad": "PARLA",
+      "tel": "3124959593",
+      "adres": "MUSTAFA KEMAL MAH. 2127. CAD. NO:21D-47 VEGA CENTER"
+    },
+    {
+      "id": 62734,
+      "ad": "PARLAK",
+      "tel": "3121111111",
+      "adres": "BAHÇELİEVLER MAH. TAŞKENT CAD.NO:75/B"
+    },
+    {
+      "id": 60361,
+      "ad": "PARÇAL",
+      "tel": "3129790081",
+      "adres": "BEYTEPE MAH. KANUNİ SULTAN SÜLEYMAN BULVARI NO:67AJ"
+    },
+    {
+      "id": 18319,
+      "ad": "PERA",
+      "tel": "3124361144",
+      "adres": "UGUR MUMCU CAD. NO:91/1 G.O.P."
+    },
+    {
+      "id": 63829,
+      "ad": "PHARMA LİFE",
+      "tel": "3124661155",
+      "adres": "KIZILAY MAH. GMK BULVARI NO:14/D"
+    },
+    {
+      "id": 45264,
+      "ad": "PINAR KAYNAR",
+      "tel": "3122402030",
+      "adres": "PROF.DR.AHMET TANER KIŞLALI MAH. ALACAATLI CAD. NO:12/10"
+    },
+    {
+      "id": 59109,
+      "ad": "PIRIL",
+      "tel": "3124902196",
+      "adres": "ZÜLFÜ TİGREL CADDESİ AKIN-1 BLOK NO:9/A ÇANKAYA"
+    },
+    {
+      "id": 40541,
+      "ad": "PLATİN",
+      "tel": "3124323070",
+      "adres": "BEYTEPE MAH. KANUNİ SULTAN SÜLEYMAN BULVARI PLATİN BEYTEPE KONUTLARI SİTESİ No:65/A-44"
+    },
+    {
+      "id": 26112,
+      "ad": "PRESTİJ",
+      "tel": "3124474544",
+      "adres": "Aşıkpaşa Mah. .Vedat Dolakay Cad.No:46/A"
+    },
+    {
+      "id": 54350,
+      "ad": "PİLÜL",
+      "tel": "3124422288",
+      "adres": "YILDIZEVLER MAH. TURAN GÜNES CAD. NO:22/39-40-41-42"
+    },
+    {
+      "id": 17646,
+      "ad": "RANA",
+      "tel": "3124271864",
+      "adres": "GÜVENLIK CAD. NO:65/C ASAGI AYRANCI"
+    },
+    {
+      "id": 55928,
+      "ad": "RAUF BEY",
+      "tel": "3123323211",
+      "adres": "ÜNİVERSİTELER MAH.1597.CADDE KÜMEEVLERİ NO:52D6/29-30 (BİLKENT1-ÇAMLIK SİTESİ)"
+    },
+    {
+      "id": 58036,
+      "ad": "REYHAN ATASOY",
+      "tel": "3122299391",
+      "adres": "Eti Mah. Gazi Mustafa Kemal Bulvarı No:118/A Maltepe/ANKARA"
+    },
+    {
+      "id": 58759,
+      "ad": "REZZAN",
+      "tel": "5347729791",
+      "adres": "Kazım Özalp Mah. Kuleli Cad. No:89/B GOP"
+    },
+    {
+      "id": 18152,
+      "ad": "RÜYA",
+      "tel": "3124806837",
+      "adres": "SEHIT OSMAN TEMIZ MAH.İLKER CAD.NO:80/B DIKMEN"
+    },
+    {
+      "id": 17235,
+      "ad": "SABUNCUOĞLU",
+      "tel": "3124330533",
+      "adres": "SAĞLIK MAH. SÜLEYMAN SIRRI CAD. NO:19/A SIHHIYE"
+    },
+    {
+      "id": 18757,
+      "ad": "SAFA",
+      "tel": "3122879309",
+      "adres": "KIZILIRMAK MAH. 1443. CAD. NO:15/5 SÖGÜTÖZÜ ÇANKAYA"
+    },
+    {
+      "id": 49947,
+      "ad": "SAFİRTEPE",
+      "tel": "3122853233",
+      "adres": "MUSTAFA KEMAL MAH. DUMLUPINAR BULVARI NO:266/B-12"
+    },
+    {
+      "id": 37843,
+      "ad": "SAKARYA BULVAR",
+      "tel": "3124302950",
+      "adres": "MEŞRUTİYET MAH. ATATÜRK BULVARI No:143/B"
+    },
+    {
+      "id": 17478,
+      "ad": "SALKIM SÖĞÜT",
+      "tel": "3124818583",
+      "adres": "DIKMEN CAD. SALKIM SÖGÜT SOK. NO:14/A DIKMEN"
+    },
+    {
+      "id": 17745,
+      "ad": "SAMET",
+      "tel": "3123638086",
+      "adres": "CEBECI MAH. YENI ANKARA SOK. N0:27/5 IÇCEBECI"
+    },
+    {
+      "id": 48937,
+      "ad": "SANTRA",
+      "tel": "3122402525",
+      "adres": "ÇAYYOLU MAH. 2673.CADDE NO:8/A-B"
+    },
+    {
+      "id": 57353,
+      "ad": "SARAY",
+      "tel": "5412306457",
+      "adres": "Hacı Veli Bektaş Cad. Next Level Çayyolu Güney Ada A Blok No:8/A-117"
+    },
+    {
+      "id": 58434,
+      "ad": "SARP",
+      "tel": "3124790090",
+      "adres": "AYDINLAR MAH. HÜRRİYET CAD. NO:164/A-B"
+    },
+    {
+      "id": 17203,
+      "ad": "SAY",
+      "tel": "3123191113",
+      "adres": "TALATPASA BULVARI NO:170/B DIKIMEVI/ÇANKAYA"
+    },
+    {
+      "id": 17181,
+      "ad": "SAĞLIK",
+      "tel": "3124314947",
+      "adres": "MITHATPASA CAD. NO:13/C"
+    },
+    {
+      "id": 18324,
+      "ad": "SEFEROĞLU",
+      "tel": "3122356630",
+      "adres": "MUTLUKENT MAH. 1920. CAD. NO:71"
+    },
+    {
+      "id": 49419,
+      "ad": "SEHER",
+      "tel": "3124474849",
+      "adres": "GAZİOSMANPAŞA MAH. UĞUR MUMCU CAD.NO:64/1A"
+    },
+    {
+      "id": 30020,
+      "ad": "SELDA YILDIRIM",
+      "tel": "3124430658",
+      "adres": "AZİZİYE MAH. HOŞDERE CAD. NO:189/A ÇANKAYA/ ANKARA"
+    },
+    {
+      "id": 60230,
+      "ad": "SENA",
+      "tel": "3125027362",
+      "adres": "BALGAT MAH. ZİYABEY CAD. NO:14/A"
+    },
+    {
+      "id": 44553,
+      "ad": "SERA",
+      "tel": "3122173002",
+      "adres": "YAŞAMKENT MAH.3250 CAD. NO:6/A/114"
+    },
+    {
+      "id": 65050,
+      "ad": "SERAP DEMİRAL",
+      "tel": "5418189958",
+      "adres": "BİRLİK MAH. 448. CAD. NO:36/3"
+    },
+    {
+      "id": 17807,
+      "ad": "SEREN",
+      "tel": "3124900263",
+      "adres": "ORAN MAH. TURAN GÜNES BULVARI NO:140/A"
+    },
+    {
+      "id": 18358,
+      "ad": "SERENAY",
+      "tel": "3122196485",
+      "adres": "MUSTAFA KEMAL MAH.2124. SOK.NO:16-13/B"
+    },
+    {
+      "id": 56919,
+      "ad": "SERİMER",
+      "tel": "3124310494",
+      "adres": "SAĞLIK MAH. ADNAN SAYGUN CAD. NO:8/A-B"
+    },
+    {
+      "id": 63486,
+      "ad": "SEVER SAĞLIK",
+      "tel": "3122322535",
+      "adres": "MALTEPE MAH. ONUR SOKAK NO:38/C"
+    },
+    {
+      "id": 17575,
+      "ad": "SEVİL",
+      "tel": "3124678587",
+      "adres": "G.O.P. MAH. ARJANTIN CAD. NO:34/6"
+    },
+    {
+      "id": 27432,
+      "ad": "SEVİLAY",
+      "tel": "3122854864",
+      "adres": "MEVLANA BULVARI NO:139 B BLOK 89 BALGAT/ÇANKAYA ANKARA"
+    },
+    {
+      "id": 17841,
+      "ad": "SEVİM ÜNAL",
+      "tel": "3124273557",
+      "adres": "ASAGI AYRANCI MAH. GÜVENLIK CAD. NO:73/C ASAGI AYRANCI"
+    },
+    {
+      "id": 34073,
+      "ad": "SEVİN",
+      "tel": "3124909092",
+      "adres": "YUKARI DİKMEN MAH.TURAN GÜNEŞ BULVARI 636.CAD. NAZLICALAR SİTESİ NO:10/A ORAN /ÇANKAYA"
+    },
+    {
+      "id": 42690,
+      "ad": "SEVİNÇ",
+      "tel": "3124737698",
+      "adres": "CEYHUN ATUF KANSU CAD. NO:104/L"
+    },
+    {
+      "id": 62258,
+      "ad": "SEYMEN",
+      "tel": "3124752035",
+      "adres": "KARAPINAR MAH.DİKMEN CAD.NO:434/B"
+    },
+    {
+      "id": 47609,
+      "ad": "SEYRANBAĞLARI ENES",
+      "tel": "3124373008",
+      "adres": "UMUT MAH. TEKMAN CAD. NO:6/B"
+    },
+    {
+      "id": 59234,
+      "ad": "SEZENLER",
+      "tel": "3122292906",
+      "adres": "KORKUT REİS MAH. SEZENLER CAD. NO:3/B KIZILAY"
+    },
+    {
+      "id": 55903,
+      "ad": "SIHHİYE",
+      "tel": "5421164337",
+      "adres": "KORKUTREİS MAH. ATATÜRK BULVARI NO:44/A"
+    },
+    {
+      "id": 18229,
+      "ad": "SILAM",
+      "tel": "3123204700",
+      "adres": "IÇ CEBECI MAH. SÜNGÜBAYIR SOK. NO:3/B"
+    },
+    {
+      "id": 36394,
+      "ad": "SONAT",
+      "tel": "3122359577",
+      "adres": "MUTLUKENT MAH. MUTLUKÖY SİTESİ 1960.CAD. 11.BLOK NO:19/C  ÇANKAYA"
+    },
+    {
+      "id": 51145,
+      "ad": "SOYDAN",
+      "tel": "3123096666",
+      "adres": "İŞÇİ BLOKLARI MAH. MUHSİYAZICIOĞLU CAD. NO:43/B BAGİ'S PLAZA"
+    },
+    {
+      "id": 18113,
+      "ad": "SOYDAŞ",
+      "tel": "3124812627",
+      "adres": "ÖVEÇLER MAH. SOKULLU MEHMET PASA CAD. MIMAR SOK. NO:60/B"
+    },
+    {
+      "id": 60232,
+      "ad": "SU",
+      "tel": "3124186654",
+      "adres": "KIZILAY MAH. KUMRULAR CAD. NO:16/A"
+    },
+    {
+      "id": 55810,
+      "ad": "SUDE",
+      "tel": "3124951995",
+      "adres": "GÖKKUŞAĞI MAH. CEVİZLİDERE CAD. NO:100/B"
+    },
+    {
+      "id": 60356,
+      "ad": "SUN",
+      "tel": "3122131678",
+      "adres": "EMEK MAH.12.CADDE NO:18/B"
+    },
+    {
+      "id": 17512,
+      "ad": "SÜTÇÜOĞLU",
+      "tel": "3124339313",
+      "adres": "KÜLTÜR MAH. ZIYA GÖKALP CAD. NO:28/18 KIZILAY"
+    },
+    {
+      "id": 26523,
+      "ad": "SİM",
+      "tel": "3124767688",
+      "adres": "HUZUR MAH.DİKMEN CAD. NO:382/39 ÇANKAYA/ANKARA"
+    },
+    {
+      "id": 18274,
+      "ad": "SİMKENT",
+      "tel": "3124960648",
+      "adres": "KIRKKONAKLAR MAH. 316. CAD. NO:8/36"
+    },
+    {
+      "id": 27773,
+      "ad": "SİNDE",
+      "tel": "3123292819",
+      "adres": "Dikmen Cad. No:305/A Çankaya"
+    },
+    {
+      "id": 46562,
+      "ad": "TAN",
+      "tel": "5492477770",
+      "adres": "BEYTEPE MAH.1745.SOKAK NO:13/A"
+    },
+    {
+      "id": 17484,
+      "ad": "TARHAN",
+      "tel": "3124795544",
+      "adres": "NACI ÇAKIR MAH. SINAN CAD. NO:98/E DIKMEN"
+    },
+    {
+      "id": 26424,
+      "ad": "TAURUS AVM",
+      "tel": "3122665276",
+      "adres": "Taurus Balgat AVM Konya Yolu Mevlana Bulvarı No:190/15 Balgat"
+    },
+    {
+      "id": 43802,
+      "ad": "TAŞKAN",
+      "tel": "3122367576",
+      "adres": "KORU MAH. ANKARALILAR CAD.GORDİON KONUTLARI ALTI 47/A1 BLOK NO:6-1G ÇAYYOLU"
+    },
+    {
+      "id": 34361,
+      "ad": "TAŞKENT",
+      "tel": "3122227980",
+      "adres": "Gökkuşağı Mah. Ceyhun Atıf Kansu Cad. No:209/A"
+    },
+    {
+      "id": 17583,
+      "ad": "TAŞÇI",
+      "tel": "3124671868",
+      "adres": "GÜNESEVLER MAH. YESILYURT SOK. NO:27/C ASAGI AYRANCI"
+    },
+    {
+      "id": 45671,
+      "ad": "TEKNOKENT",
+      "tel": "3122270370",
+      "adres": "ÜNİVERSİTELER MAH. 1596. CAD. 6. ARGE A BLOK BİNA:6/A OFİS NO:1 BEYTEPE-ÇANKAYA"
+    },
+    {
+      "id": 53773,
+      "ad": "TEMEL",
+      "tel": "3122290415",
+      "adres": "ALACAATLI MAH. ŞEHİT EREN BÜLBÜL CAD. B BLOK NO:39/5-E"
+    },
+    {
+      "id": 18206,
+      "ad": "TEPE",
+      "tel": "3124180396",
+      "adres": "KIZILAY MAH. MENEKŞE 1 CAD. NO:10A/A"
+    },
+    {
+      "id": 52771,
+      "ad": "TEZEL",
+      "tel": "3128090830",
+      "adres": "BİRLİK MAH. PODGORİTSA CADDESİ NO:29/8"
+    },
+    {
+      "id": 45650,
+      "ad": "TOHUM",
+      "tel": "3124172969",
+      "adres": "KAVAKLIDERE MAH. BÜKLÜM CAD. NO:6/18"
+    },
+    {
+      "id": 41167,
+      "ad": "TOPALOĞLU",
+      "tel": "3122302120",
+      "adres": "KORKUTREİS MAH. CİHAN SOK.NO:1/B"
+    },
+    {
+      "id": 45592,
+      "ad": "TORUN",
+      "tel": "3125115060",
+      "adres": "PROF. DR. AHMET TANER KIŞLALI MAH.ALACAATLI CAD. NO:36/1"
+    },
+    {
+      "id": 60149,
+      "ad": "TUBA KEVSER",
+      "tel": "3124837133",
+      "adres": "AYDINLAR MAH. HÜRRİYET CAD.NO:184/A-B"
+    },
+    {
+      "id": 18202,
+      "ad": "TUGAN",
+      "tel": "3124380198",
+      "adres": "YILDIZEVLER MAH. TURAN GÜNES BULVARI 91. SOK. NO:5/D"
+    },
+    {
+      "id": 53421,
+      "ad": "TUNALI",
+      "tel": "3124180500",
+      "adres": "KAVAKLIDERE MAH.TUNALI HİLMİ CADDESİ NO:52/F"
+    },
+    {
+      "id": 17927,
+      "ad": "TURAL",
+      "tel": "3124274343",
+      "adres": "HOSDERE CAD. NO:37/B YUKARI AYRANCI"
+    },
+    {
+      "id": 26021,
+      "ad": "TURUNÇ",
+      "tel": "3122151737",
+      "adres": "Mareşal Çakmak Cad.No:6/B Beşevler/Ankara"
+    },
+    {
+      "id": 48408,
+      "ad": "TUTKUN",
+      "tel": "3122173636",
+      "adres": "ALACAATLI MAH. ŞEHİT EREN BÜLBÜL CAD.BEKER PLAZA NO:42/B219"
+    },
+    {
+      "id": 64762,
+      "ad": "TUĞBA",
+      "tel": "3124383726",
+      "adres": "SANCAK MAH. KAHİRE CAD. NO:22/A"
+    },
+    {
+      "id": 63885,
+      "ad": "TÜFEKCİOĞLU",
+      "tel": "3124800002",
+      "adres": "OSMAN TEMİZ MAH. İLKER CAD. NO:38/A"
+    },
+    {
+      "id": 47483,
+      "ad": "TÜRKÖZÜ",
+      "tel": "3124370779",
+      "adres": "METİN OKTAY MAH. ZİYA ORALAY CAD. NO:194/10"
+    },
+    {
+      "id": 17697,
+      "ad": "TÜRKÜ",
+      "tel": "3124818217",
+      "adres": "SOKULLU MEHMET PASA CAD. NO:115 DIKMEN"
+    },
+    {
+      "id": 18886,
+      "ad": "UMUR",
+      "tel": "3122408866",
+      "adres": "YASAMKENT MAH. 3059. SOK. NO:8/B ÇANKAYA"
+    },
+    {
+      "id": 18483,
+      "ad": "UYDUKENT",
+      "tel": "3122391007",
+      "adres": "ALACAATLI MAH. ALACAATLI CAD. NO:201/A"
+    },
+    {
+      "id": 27303,
+      "ad": "UÇAK",
+      "tel": "3122131230",
+      "adres": "BAHÇELİEVLER MAH.AŞKABAT CAD.(7.CADDE) NO:10/08 ÇANKAYA"
+    },
+    {
+      "id": 42060,
+      "ad": "UĞRAK",
+      "tel": "3122227976",
+      "adres": "CUMHURİYET MAH. MİTHATPAŞA CAD.NO:34/A ÇANKAYA/ ANKARA"
+    },
+    {
+      "id": 54579,
+      "ad": "UĞUR",
+      "tel": "3122307595",
+      "adres": "KORKUTREİS MAH. CİHAN SOK. NO:22/3"
+    },
+    {
+      "id": 63728,
+      "ad": "VADİ ORAN",
+      "tel": "3125444077",
+      "adres": "YUKARI DİKMEN MAH. 786. CAD. NO:145/DJ"
+    },
+    {
+      "id": 64242,
+      "ad": "VANİLYA",
+      "tel": "5334168260",
+      "adres": "ALACAATLI MAH. KANUNİ SULTAN SÜLEYMAN BULV. NO:152/A-C"
+    },
+    {
+      "id": 18030,
+      "ad": "VAROL",
+      "tel": "3124255575",
+      "adres": "MESRUTIYET CAD. NO:19/B KIZILAY"
+    },
+    {
+      "id": 18499,
+      "ad": "VATAN",
+      "tel": "3122847900",
+      "adres": "SÖGÜTÖZÜ CAD. 2176. SOK. NO:5/48 SÖGÜTÖZÜ"
+    },
+    {
+      "id": 17376,
+      "ad": "VEFA",
+      "tel": "3124822674",
+      "adres": "SOKULLU MEHMET PASA CAD. NO:79/A SOKULLU"
+    },
+    {
+      "id": 60777,
+      "ad": "VENA",
+      "tel": "5324379227",
+      "adres": "BALGAT MAH. AV. ÖZDEMİR ÖZOK SOK. NO:6/B"
+    },
+    {
+      "id": 17455,
+      "ad": "VENÜS",
+      "tel": "3124463435",
+      "adres": "KOZA SOK. NO:129/C G.O.P"
+    },
+    {
+      "id": 61618,
+      "ad": "VERA MAHAL",
+      "tel": "3122850580",
+      "adres": "MUSTAFA KEMAL MAH. DUMLUPINAR BULVARI MAHALL ANKARA No:274 B BLOK NO:7/C ÇANKAYA"
+    },
+    {
+      "id": 63568,
+      "ad": "VERESELİ AKTAŞ",
+      "tel": "3122221211",
+      "adres": "4. Cad. (Kazakistan Cad.) No:3/B Emek / Çankaya/ANKARA"
+    },
+    {
+      "id": 61825,
+      "ad": "VERESELİ KORCAN",
+      "tel": "3129117483",
+      "adres": "ÜNİVERSİTELER MAH. BİLKENT PARK SİT. NO:T1/2"
+    },
+    {
+      "id": 59125,
+      "ad": "VERESELİ MEHTAP UYSAL",
+      "tel": "5322906689",
+      "adres": "BEYTEPE MAH. KANUNİ SULTAN SÜLEYMAN BULVARI KENT FORM İŞ MERKEZİ NO:14/C-3"
+    },
+    {
+      "id": 61499,
+      "ad": "VERESELİ YENİ ŞİFA",
+      "tel": "3122394409",
+      "adres": "DODURGA MAH. ODABAŞI CAD. NO:11/3 E"
+    },
+    {
+      "id": 65772,
+      "ad": "VERESELİ ÖMÜR",
+      "tel": "3122664140",
+      "adres": "BİLKENT ÜNİVERSİTESİ SAĞLIK MERKEZİ BİNASI C BLOK"
+    },
+    {
+      "id": 17308,
+      "ad": "VOLKAN",
+      "tel": "3122228969",
+      "adres": "EMEK MAH. BİŞKEK CAD. (8. CAD.) NO:121/11 EMEK"
+    },
+    {
+      "id": 17367,
+      "ad": "VUSLAT",
+      "tel": "3124323906",
+      "adres": "TOPRAKLIK MAH. KIBRIS CAD. TUZCULAR SOK. NO:4/C ÇANKAYA/ ANKARA"
+    },
+    {
+      "id": 53839,
+      "ad": "VİOLA",
+      "tel": "3125132665",
+      "adres": "YUKARI DİKMEN MAH.648. CAD. NO:20A/3"
+    },
+    {
+      "id": 48752,
+      "ad": "VİTA",
+      "tel": "3122233349",
+      "adres": "EMEK MAH. BİŞKEK CAD.NO:133-135/B"
+    },
+    {
+      "id": 48237,
+      "ad": "VİTAL FARMA",
+      "tel": "3125036606",
+      "adres": "İŞÇİ BLOKLARI MAH. MUHSİN YAZICIOĞLU CAD. NO:57/6"
+    },
+    {
+      "id": 59985,
+      "ad": "VİTALİS",
+      "tel": "5357456483",
+      "adres": "KONUTKENT MAH. DUMLUPINAR BUL. NO:381-AV 30 NO'LU İŞYERİ"
+    },
+    {
+      "id": 51754,
+      "ad": "VİTRİN",
+      "tel": "3125147000",
+      "adres": "BEYTEPE MAH. KANUNİ SULTAN SÜLEYMAN BULVARI NO:42/K"
+    },
+    {
+      "id": 61396,
+      "ad": "YALIM",
+      "tel": "3124672747",
+      "adres": "YILDIZEVLER MAH.SUKARNO CAD. NO:50/B"
+    },
+    {
+      "id": 17198,
+      "ad": "YALÇIN",
+      "tel": "3122237689",
+      "adres": "BISKEK CAD. (8. CAD.) NO:187/2-B EMEK"
+    },
+    {
+      "id": 49728,
+      "ad": "YALÇIN EROĞLU",
+      "tel": "3122405550",
+      "adres": "PROF. DR. AHMET TANER KIŞLALI MAH. ALACAATLI CAD. NO:16/9"
+    },
+    {
+      "id": 18267,
+      "ad": "YAMAN",
+      "tel": "3122361348",
+      "adres": "MUTLUKENT MAH.2432.CAD.NO.79 ÜMITKÖY"
+    },
+    {
+      "id": 35984,
+      "ad": "YAVEROĞLU",
+      "tel": "3124798797",
+      "adres": "İLKADIM MAH.DİKMEN CAD.NO:171/B ÇANKAYA/ANKARA"
+    },
+    {
+      "id": 57634,
+      "ad": "YAZBAHAR",
+      "tel": "3122157249",
+      "adres": "BAHÇELİEVLER MAH. TAŞKENT CAD. 67/A"
+    },
+    {
+      "id": 18117,
+      "ad": "YAĞIZ",
+      "tel": "3124797160",
+      "adres": "HUZUR MAH. LİZBON CADDESİ NO:104/A ÖVEÇLER/DİKMEN/ÇANKAYA/ANKARA"
+    },
+    {
+      "id": 17467,
+      "ad": "YAĞMUR",
+      "tel": "3124177138",
+      "adres": "KUMRULAR SOK. NO:8/D KIZILAY"
+    },
+    {
+      "id": 18128,
+      "ad": "YAŞAM",
+      "tel": "3124390319",
+      "adres": "GÜZELTEPE MAH. HOSDERE CAD. NO:176/A"
+    },
+    {
+      "id": 18609,
+      "ad": "YAŞAMKENT",
+      "tel": "3122175517",
+      "adres": "YASAMKENT MAH. 3059. SOK. NO:4/A ÇAYYOLU/ÇANKAYA"
+    },
+    {
+      "id": 63566,
+      "ad": "YAŞAMKENT ASYA",
+      "tel": "3125440545",
+      "adres": "YAŞAMKENT MAH. 3256. SOK. NO:6/24"
+    },
+    {
+      "id": 48896,
+      "ad": "YAŞAMKENT ATA",
+      "tel": "3122176060",
+      "adres": "YASAMKENT MAH.3222.CADDE NO:2/D GÖZÜMPARK YAŞAM MERKEZİ ÇAYYOLU"
+    },
+    {
+      "id": 38677,
+      "ad": "YAŞAMKENT DOĞA",
+      "tel": "3122173917",
+      "adres": "YAŞAMKENT MAH. 3300. CAD.No:6/A DAİRE 2-3"
+    },
+    {
+      "id": 65191,
+      "ad": "YAŞAMKENT FEYZA",
+      "tel": "3123531342",
+      "adres": "Yaşamkent Mah. 3207 Cad. No:69 Çankaya/Ankara"
+    },
+    {
+      "id": 61386,
+      "ad": "YAŞAMKENT KULE",
+      "tel": "3128098123",
+      "adres": "KONUTKENT MAH.3028 CAD. NO:16-B -19"
+    },
+    {
+      "id": 55195,
+      "ad": "YAŞAMKENT MİNE",
+      "tel": "3125024050",
+      "adres": "ALACAATLI MAH. MEHMET RİFAT BÖREKÇİ CAD. NO:35/B-E"
+    },
+    {
+      "id": 52134,
+      "ad": "YAŞAMKENT ÖZGE",
+      "tel": "3122171313",
+      "adres": "YAŞAMKENT MAH. MEHMET RİFAT BÖREKÇİ CAD.BESA NOVA PLAZA NO:16/13"
+    },
+    {
+      "id": 47413,
+      "ad": "YDA CENTER",
+      "tel": "3125444044",
+      "adres": "KIZILIRMAK MAH.DUMLUPINAR BULVARI NO:9A/41"
+    },
+    {
+      "id": 65871,
+      "ad": "YENİ",
+      "tel": "3122842782",
+      "adres": "İŞÇİ BLOKLARI MAH. ALİ METİN TOKDEMİR CAD. ARMAĞAN SİTESİ A BLOK NO:33/D"
+    },
+    {
+      "id": 43996,
+      "ad": "YENİ ATA",
+      "tel": "3124769290",
+      "adres": "ATA MAH. 1072. CAD. NO:2/A DİKMEN"
+    },
+    {
+      "id": 35185,
+      "ad": "YENİ AYÇİN",
+      "tel": "3122122227",
+      "adres": "YUKARI BAHÇELİEVLER MAH. AZERBAYCAN CAD. ŞEHİT H TEMEL KUĞULUOĞLU SOK. NO:16/A ÇANKAYA/ANKARA"
+    },
+    {
+      "id": 18053,
+      "ad": "YENİ BAHAR",
+      "tel": "3126286301",
+      "adres": "TUNUS CAD. NO:85/C KAVAKLIDERE"
+    },
+    {
+      "id": 26857,
+      "ad": "YENİ BALGAT ESER",
+      "tel": "3122872994",
+      "adres": "Oğuzlar Mah. Barış Manço Cad. NO:6/9  Balgat/Çankaya"
+    },
+    {
+      "id": 17546,
+      "ad": "YENİ BAYRAMOĞLU",
+      "tel": "3124356969",
+      "adres": "MARMARA SOK. NO:20/A SIHHIYE"
+    },
+    {
+      "id": 17567,
+      "ad": "YENİ BUKET",
+      "tel": "3124689148",
+      "adres": "YESILYURT SOK. NO:57/C ASAGI AYRANCI"
+    },
+    {
+      "id": 18560,
+      "ad": "YENİ CEVŞEN",
+      "tel": "3124790660",
+      "adres": "ILKER MAH. 1. CAD. 761. SOK. NO:9/B"
+    },
+    {
+      "id": 17916,
+      "ad": "YENİ DOSTLAR",
+      "tel": "3124191593",
+      "adres": "KOCATEPE MAH. MESRUTIYET CAD. NO:32/B KIZILAY"
+    },
+    {
+      "id": 61705,
+      "ad": "YENİ GÖKKUŞAĞI",
+      "tel": "3122858203",
+      "adres": "ÇİĞDEM MAH. 1553.SOK. NO:19/A"
+    },
+    {
+      "id": 48790,
+      "ad": "YENİ MARTI",
+      "tel": "3124460588",
+      "adres": "KAZIM ÖZALP MAH. FİLİSTİN CAD. NO:10/C"
+    },
+    {
+      "id": 17974,
+      "ad": "YENİ MERKEZ",
+      "tel": "3122294172",
+      "adres": "GENÇLIK CAD. NO:133/A ANITTEPE"
+    },
+    {
+      "id": 18715,
+      "ad": "YENİ MUTLU",
+      "tel": "3124181291",
+      "adres": "KAVAKLIDERE MAH. TUNUS CAD. NO:9/1ÇANKAYA"
+    },
+    {
+      "id": 17134,
+      "ad": "YENİ NAZ",
+      "tel": "3122846283",
+      "adres": "İŞÇİ BLOKLARI MAH. 1516. CAD. EZGİ SİTESİ ALTI  100.YIL"
+    },
+    {
+      "id": 34096,
+      "ad": "YENİ NİSAN",
+      "tel": "3124734003",
+      "adres": "CEVIZLIDERE MAH. CEYHUN ATUF KANSU CAD.NO:174/19 BALGAT/ÇANKAYA/ANKARA"
+    },
+    {
+      "id": 17319,
+      "ad": "YENİ OLCAY",
+      "tel": "3124677991",
+      "adres": "UÇARLI SOK. NO:31/C YUKARI AYRANCI"
+    },
+    {
+      "id": 18854,
+      "ad": "YENİ OYAK",
+      "tel": "3124959911",
+      "adres": "BIRLIK MAH. 414. SOK. NO:4/A"
+    },
+    {
+      "id": 17744,
+      "ad": "YENİ SENA",
+      "tel": "3124804587",
+      "adres": "DIKMEN CAD. NO:303/A DIKMEN"
+    },
+    {
+      "id": 18807,
+      "ad": "YENİ SEVGİ",
+      "tel": "3122846858",
+      "adres": "ISCI BLOKLARI MAH. 1516.CAD. NO:68/D YÜZÜNCÜYIL"
+    },
+    {
+      "id": 17849,
+      "ad": "YENİ YUNUS EMRE",
+      "tel": "3122321392",
+      "adres": "KIZILAY MAH. SÜMER 2 CAD. No:25/11"
+    },
+    {
+      "id": 61547,
+      "ad": "YENİ YÜKSELİŞ",
+      "tel": "3122293909",
+      "adres": "ETİ MAH. GMK BULVARI NO:72/C MALTEPE"
+    },
+    {
+      "id": 45061,
+      "ad": "YENİ ZENCEFİL",
+      "tel": "3124272779",
+      "adres": "UÇARLI SOK.NO:31/A YUKARI AYRANCI"
+    },
+    {
+      "id": 49193,
+      "ad": "YENİ ÇANKAYA",
+      "tel": "3124411870",
+      "adres": "HOŞDERE CAD. NO:166/A YUKARI AYRANCI"
+    },
+    {
+      "id": 64948,
+      "ad": "YENİ ÇARE",
+      "tel": "3123639186",
+      "adres": "ERTUĞRUL GAZİ MAH. MÜNZEVİLER CAD. NO:22/E ÇANKAYA/ANKARA"
+    },
+    {
+      "id": 61212,
+      "ad": "YENİ ÇAYYOLU",
+      "tel": "3122404010",
+      "adres": "PROF.DR.AHMET TANER KIŞLALI MAH.2864.CADDE NO:25/C/13"
+    },
+    {
+      "id": 18109,
+      "ad": "YENİ ÜMİT",
+      "tel": "3122324391",
+      "adres": "KORKUTREIS MAH. CIHAN SOK. NO:20/A"
+    },
+    {
+      "id": 17638,
+      "ad": "YENİ İLKER",
+      "tel": "3124901128",
+      "adres": "MÜRSEL ULUÇ MAH.950.CAD. NO:18/A ÇANKAYA/ ANKARA"
+    },
+    {
+      "id": 49100,
+      "ad": "YENİ ŞİMŞEK",
+      "tel": "3124688414",
+      "adres": "AYRANCI MAH.ŞİMŞEK CADDESİ NO:20/D"
+    },
+    {
+      "id": 17494,
+      "ad": "YENİYAKA",
+      "tel": "3122852359",
+      "adres": "NASUH AKAR MAH.SÜLEYMAN HACI ABDULLAHOĞLU  CAD. NO:11/A"
+    },
+    {
+      "id": 52560,
+      "ad": "YEŞİL",
+      "tel": "3124464047",
+      "adres": "KONUTKENT MAH. DOĞAN TAŞDELEN BULVARI No:256/A"
+    },
+    {
+      "id": 62491,
+      "ad": "YEŞİL IŞIK",
+      "tel": "5337620096",
+      "adres": "BARBAROS MAH. ABAY KUNANBAY CAD. NO:37/A"
+    },
+    {
+      "id": 18048,
+      "ad": "YEŞİLBAĞ",
+      "tel": "3122354884",
+      "adres": "Mutlukent Mah. 2074. Sok. No:11"
+    },
+    {
+      "id": 17453,
+      "ad": "YEŞİLYURT",
+      "tel": "3124284875",
+      "adres": "YESILYURT SOK. NO:51/A ASAGI AYRANCI"
+    },
+    {
+      "id": 62416,
+      "ad": "YILDIZ",
+      "tel": "5015295022",
+      "adres": "YAKUPABDAL MAH. KÜME EVLER NO:404/1/A"
+    },
+    {
+      "id": 35810,
+      "ad": "YUMLU",
+      "tel": "3124764076",
+      "adres": "KARAPINAR MAH. 844.CAD. NO:10/30 ÇANKAYA"
+    },
+    {
+      "id": 17275,
+      "ad": "YUNUS",
+      "tel": "3124316786",
+      "adres": "FIDANLIK MAH. TUNA CAD. NO:32/A"
+    },
+    {
+      "id": 17151,
+      "ad": "YÜCETEPE",
+      "tel": "3122302582",
+      "adres": "YÜCETEPE MAH. GENÇLİK CAD. ILK SOK. NO:31/A ANITTEPE"
+    },
+    {
+      "id": 17399,
+      "ad": "YÜZÜNCÜ YIL",
+      "tel": "3122853116",
+      "adres": "İŞÇİ BLOKLARI MAH.1427.CAD.NO:48/A YÜZÜNCÜYIL"
+    },
+    {
+      "id": 17541,
+      "ad": "ZAİM",
+      "tel": "3124916743",
+      "adres": "ILKBAHAR MAH. KONRAD ADENAUER CAD. NO:60/A"
+    },
+    {
+      "id": 43975,
+      "ad": "ZEHRA",
+      "tel": "3124429452",
+      "adres": "YILDIZEVLER MAH. RABİNDRANATH TAGORE CAD. NO:16/B YILDIZ"
+    },
+    {
+      "id": 56343,
+      "ad": "ZEHRA KARAKAYA",
+      "tel": "3123655070",
+      "adres": "KÜLTÜR MAH. ATAÇ-2 SOK. NO:71/A"
+    },
+    {
+      "id": 17595,
+      "ad": "ZELİHA GÜVEN",
+      "tel": "3122357636",
+      "adres": "ÜMIT MAH. ÜMITKENT ÇARSISI NO:4 ÇANKAYA"
+    },
+    {
+      "id": 18452,
+      "ad": "ZEREN",
+      "tel": "3122875748",
+      "adres": "100. YIL ISÇI BLOKLARI MAH. 1524. SOK. NO:30/A"
+    },
+    {
+      "id": 63874,
+      "ad": "ZEYNEP",
+      "tel": "3124802881",
+      "adres": "ÇUKURAMBAR MAH. 1424. CAD. B2 BLOK NO:6/2-8"
+    },
+    {
+      "id": 64354,
+      "ad": "ZEYNEP AZRA",
+      "tel": "3124803484",
+      "adres": "BİRLİK MAH. 393. CAD. NO:29/A"
+    },
+    {
+      "id": 62806,
+      "ad": "ZEYNEP ESİM",
+      "tel": "3122221758",
+      "adres": "Bahçelievler Mah. 52. Sok. No:3/B"
+    },
+    {
+      "id": 65341,
+      "ad": "ZEYNEP NAZ",
+      "tel": "3122202626",
+      "adres": "SANCAK MAH. TURAN GÜNEŞ BULVARI NO:11/B"
+    },
+    {
+      "id": 62580,
+      "ad": "ÇAKIR",
+      "tel": "3124285244",
+      "adres": "Barbaros Mah. Abay Kunanbay Cad. No:23/B"
+    },
+    {
+      "id": 17832,
+      "ad": "ÇAKMAK",
+      "tel": "3124426748",
+      "adres": "ASAGI ÖVEÇLER MAH. 1314.SOK. NO:36/C ÇANKAYA"
+    },
+    {
+      "id": 25827,
+      "ad": "ÇALIŞ",
+      "tel": "3122324239",
+      "adres": "Cevizlidere Mah. Cevizlidere Cad. No:44/B Çankaya/Ankara"
+    },
+    {
+      "id": 17167,
+      "ad": "ÇAMLICA",
+      "tel": "3122231681",
+      "adres": "EMEK MAH. 9.CAD. NO:14 ÇANKAYA"
+    },
+    {
+      "id": 45445,
+      "ad": "ÇANKAYA",
+      "tel": "3124729709",
+      "adres": "AYRANCI MAH.HOŞDERE CAD. NO:47/A"
+    },
+    {
+      "id": 18735,
+      "ad": "ÇAVDAR",
+      "tel": "3122362856",
+      "adres": "ÇAYYOLU MAH. NECATIBEY SOK. NO:31/1 ÇANKAYA"
+    },
+    {
+      "id": 32082,
+      "ad": "ÇAY",
+      "tel": "3124281006",
+      "adres": "AYRANCI MAH. HOŞDERE CAD. NO:78/B ÇANKAYA"
+    },
+    {
+      "id": 18135,
+      "ad": "ÇAYYOLU",
+      "tel": "3122359822",
+      "adres": "ÇAYYOLU MAH. 2432. CAD. NO:151/B ÇANKAYA/ ANKARA"
+    },
+    {
+      "id": 28715,
+      "ad": "ÇAYYOLU BORA",
+      "tel": "3122383818",
+      "adres": "ALACAATLI MAH. ALACAATLI CAD. MERCAN İŞ SİTESİ 15 C BLOK NO:5 ÇAYYOLU ÇANKAYA/ ANKARA"
+    },
+    {
+      "id": 25773,
+      "ad": "ÇAYYOLU KUZUCU",
+      "tel": "3122411570",
+      "adres": "Koru Mah.Ahmet Taner Kışlalı Cad. North Star İş Merkezi No:4/31 Çankaya/Ankara"
+    },
+    {
+      "id": 18595,
+      "ad": "ÇAYYOLU PARK",
+      "tel": "3122412122",
+      "adres": "PROF.DR.AHMET TANER KISLALI MAH. 2864 CAD.  NO:40 ÇANKAYA/ANKARA"
+    },
+    {
+      "id": 18340,
+      "ad": "ÇAĞATAY",
+      "tel": "3124950024",
+      "adres": "KIRKKONAKLAR MAH. ŞEMSETTİN GÜNALTAY CAD. NO:229/B ÇANKAYA"
+    },
+    {
+      "id": 18586,
+      "ad": "ÇAĞLA",
+      "tel": "3122313646",
+      "adres": "YÜCETEPE MAH. 84. CAD. NO:38/A ANITTEPE"
+    },
+    {
+      "id": 55594,
+      "ad": "ÇAĞLA 365",
+      "tel": "3124500277",
+      "adres": "365 AVM BİRLİK MAH. 428.CADDE NO:41/B2-02"
+    },
+    {
+      "id": 17311,
+      "ad": "ÇAĞLAYAN",
+      "tel": "3122401642",
+      "adres": "MESA KORU SITESI KAVAKLI CAD. TIC. MER. NO:14 ÇAYYOLU"
+    },
+    {
+      "id": 41087,
+      "ad": "ÇELİKKAN",
+      "tel": "3124808927",
+      "adres": "SOKULLU MEHMET PASA CAD. NO:95/A-11 DİKMEN"
+    },
+    {
+      "id": 17357,
+      "ad": "ÇETİN",
+      "tel": "3122236238",
+      "adres": "EMEK MAH. BOSNA HERSEK CAD. NO:22/D"
+    },
+    {
+      "id": 42316,
+      "ad": "ÇEVRE",
+      "tel": "3124276067",
+      "adres": "ÜSKÜP CAD.(ÇEVRE SOK.) NO:10/3 KAVAKLIDERE-ÇANKAYA/ANKARA"
+    },
+    {
+      "id": 18370,
+      "ad": "ÇEVİK",
+      "tel": "3124761640",
+      "adres": "HUZUR MAH. 1109. SOK. NO:3/B"
+    },
+    {
+      "id": 58706,
+      "ad": "ÇINAR",
+      "tel": "3123123334",
+      "adres": "SÖĞÜTÖZÜ MAH. 2176.CAD. PLATİN TOWER 7/K"
+    },
+    {
+      "id": 57783,
+      "ad": "ÇINARALTI",
+      "tel": "3124333319",
+      "adres": "KOCATEPE MAH. MİTHATPAŞA CAD. NO:44/B"
+    },
+    {
+      "id": 62031,
+      "ad": "ÇUKURAMBAR MİNE",
+      "tel": "3123601398",
+      "adres": "KIZILIRMAK MAH. 1443. SOK. USTA 1071 PLAZA NO:25/10"
+    },
+    {
+      "id": 17766,
+      "ad": "ÇİSE",
+      "tel": "3124240619",
+      "adres": "KOCATEPE MAH. DR. MEDIHA ELDEM SOK. NO:81/30"
+    },
+    {
+      "id": 17547,
+      "ad": "ÇİÇEK",
+      "tel": "3124781075",
+      "adres": "OSMAN TEMIZ MAH. 1036. SOK. NO:2/A"
+    },
+    {
+      "id": 61690,
+      "ad": "ÇİĞDEM",
+      "tel": "3122860385",
+      "adres": "ÇİĞDEM MAH. 1588.CAD.NO:3/C"
+    },
+    {
+      "id": 18628,
+      "ad": "ÇİĞDEMKENT",
+      "tel": "3122842729",
+      "adres": "ÇIGDEM MAH. 1551. CAD. NO:3/13 ÇANKAYA"
+    },
+    {
+      "id": 18416,
+      "ad": "ÖMÜR SERAP",
+      "tel": "3124950899",
+      "adres": "BIRLIK MAH. 490. SOK. NO:1/C"
+    },
+    {
+      "id": 35218,
+      "ad": "ÖVEÇLER",
+      "tel": "3124769112",
+      "adres": "HUZUR MAH. LİZBON CAD. NO:112/B(8) ÇANKAYA/ANKARA"
+    },
+    {
+      "id": 47573,
+      "ad": "ÖVEÇLER CAN",
+      "tel": "3124808447",
+      "adres": "AŞAĞI ÖVEÇLER MAH. KABİL CAD. NO:18/D"
+    },
+    {
+      "id": 44049,
+      "ad": "ÖVEÇLER YAŞAM",
+      "tel": "3129699601",
+      "adres": "AŞAĞI ÖVEÇLER MAH. KABİL CAD. NO:64/B"
+    },
+    {
+      "id": 18893,
+      "ad": "ÖVGÜ",
+      "tel": "3124793529",
+      "adres": "SEHIT CEVDET ÖZDEMIR MAH. 1346. SOK. NO:2/A"
+    },
+    {
+      "id": 18263,
+      "ad": "ÖVÜNÇ",
+      "tel": "3124961831",
+      "adres": "BIRLIK MAH. 435. CAD. NO:61/E ÇANKAYA/ANKARA"
+    },
+    {
+      "id": 56488,
+      "ad": "ÖYKÜ",
+      "tel": "3124252626",
+      "adres": "ESATOĞLU MAH: ESAT CAD: NO:91/D"
+    },
+    {
+      "id": 58382,
+      "ad": "ÖZDEMİR",
+      "tel": "3124734206",
+      "adres": "HUZUR MAH. 1218 CADDE 13/A"
+    },
+    {
+      "id": 51179,
+      "ad": "ÖZDORA",
+      "tel": "3122130894",
+      "adres": "BAHÇLİEVLER MH.54.CADDE NO:39/C"
+    },
+    {
+      "id": 49325,
+      "ad": "ÖZEK",
+      "tel": "3125570124",
+      "adres": "BEYTEPE MAH. 5387. CAD. 175. SOK. NO:151B/6"
+    },
+    {
+      "id": 53016,
+      "ad": "ÖZERVARLI",
+      "tel": "3124383436",
+      "adres": "SANCAK MAH. CİDDE CAD. NO:12/A"
+    },
+    {
+      "id": 17407,
+      "ad": "ÖZGE",
+      "tel": "3122101464",
+      "adres": "ODTÜ ALISVERIS MERKEZI NO:6"
+    },
+    {
+      "id": 18606,
+      "ad": "ÖZGENAZ",
+      "tel": "3122407799",
+      "adres": "YASAMKENT MAH. 3059. SOK. NO:14 ÇANKAYA/ ANKARA"
+    },
+    {
+      "id": 55462,
+      "ad": "ÖZGÜR",
+      "tel": "3122222255",
+      "adres": "BAHÇELİEVLER MAH.AZERBAYCAN CAD.NO:92/C"
+    },
+    {
+      "id": 37666,
+      "ad": "ÖZGÜR DORUK",
+      "tel": "3122154509",
+      "adres": "KAZAKİSTAN CAD. NO:3/A EMEK"
+    },
+    {
+      "id": 56484,
+      "ad": "ÖZGÜR ŞAHİN",
+      "tel": "3129998901",
+      "adres": "YAŞAMKENT MAH. 3408. CAD. YAŞAM KULE KONUTLARI A BLOK NO:138"
+    },
+    {
+      "id": 18000,
+      "ad": "ÖZLEMİN",
+      "tel": "3124965364",
+      "adres": "BİRLİK MAH. (391.CAD.) SEHİT KURBANİ AKBOĞA SOK. NO:35/8"
+    },
+    {
+      "id": 17794,
+      "ad": "ÖZNUR BUDAK",
+      "tel": "3122308210",
+      "adres": "GMK BULVARI YUVAM APT. NO:149/C"
+    },
+    {
+      "id": 17752,
+      "ad": "ÖZSAN",
+      "tel": "3122270198",
+      "adres": "BEYTEPE KÖYÜ ŞEHIT ASTEĞMEN MUSTAFA TAYYARCAN CAD. NO:1/B"
+    },
+    {
+      "id": 17591,
+      "ad": "ÖZSOY",
+      "tel": "3124953475",
+      "adres": "BIRLIK MAH. 392.SOK. NO:4/D"
+    },
+    {
+      "id": 18063,
+      "ad": "ÖZÇINAR",
+      "tel": "3124801205",
+      "adres": "AYDINLAR MAH. HÜRRIYET CAD. NO:165 DIKMEN"
+    },
+    {
+      "id": 44295,
+      "ad": "ÜLGEN",
+      "tel": "3122222415",
+      "adres": "OĞUZHAN MAH. CEYHUN ATUF KANSU CAD. NO:61/B BALGAT"
+    },
+    {
+      "id": 17630,
+      "ad": "ÜLKÜ",
+      "tel": "3124188929",
+      "adres": "KOCATEPE MAH. MESRUTIYET CAD. NO:23/B-23/C KIZILAY"
+    },
+    {
+      "id": 18810,
+      "ad": "ÜMİTKÖY",
+      "tel": "3122363730",
+      "adres": "ÇAYYOLU MAH.2432. CAD. NO:145/ ÇANKAYA"
+    },
+    {
+      "id": 64082,
+      "ad": "ÜMİTKÖY AKÇAY",
+      "tel": "3122353586",
+      "adres": "ÜMİT MAH. 2499. SOK. NO:7/D"
+    },
+    {
+      "id": 18860,
+      "ad": "ÜMİTKÖY MERKEZ",
+      "tel": "3122363515",
+      "adres": "ÜMIT MAH. 2494. SOK. NO:13 ÇANKAYA/ ANKARA"
+    },
+    {
+      "id": 59725,
+      "ad": "ÜNLÜ AKAY",
+      "tel": "3124258555",
+      "adres": "KAVAKLIDERE MAH. TUNUS CAD. NO:10E"
+    },
+    {
+      "id": 17335,
+      "ad": "ÜNSAL",
+      "tel": "3124267263",
+      "adres": "GÜVENLIK CAD. NO:95/15 ASAGI AYRANCI"
+    },
+    {
+      "id": 63013,
+      "ad": "ÜNİVERSİTE",
+      "tel": "3124800507",
+      "adres": "İLKER MAH. İLKER CAD. NO: 185/A"
+    },
+    {
+      "id": 18070,
+      "ad": "İBRAHİM ETHEM",
+      "tel": "3124728890",
+      "adres": "CEVİZLİDERE CAD. NO:17/A BALGAT"
+    },
+    {
+      "id": 61720,
+      "ad": "İKSİR",
+      "tel": "3122415907",
+      "adres": "PROF.DR.AHMET TANER KIŞLALI MAH. ESAT CAD.SALTOĞLU BULVARI NO:35/2"
+    },
+    {
+      "id": 18851,
+      "ad": "İLAÇ",
+      "tel": "3124840042",
+      "adres": "KAVAKLIDERE MAH. SIMSEK SOK. NO:30/A-B ÇANKAYA"
+    },
+    {
+      "id": 64488,
+      "ad": "İLGİN",
+      "tel": "5439114345",
+      "adres": "BAHÇELİEVLER MAH. TAŞKENT CAD. NO:58/B ÇANKAYA/ANKARA"
+    },
+    {
+      "id": 17557,
+      "ad": "İLKE",
+      "tel": "3122222865",
+      "adres": "EMEK MAH. BOSNA HERSEK CAD. NO:24/C"
+    },
+    {
+      "id": 48816,
+      "ad": "İLKE DALDAL",
+      "tel": "3125034311",
+      "adres": "MUSTAFA KEMAL MAH.DUMLUPINAR BULVARI NO:274/6T MAHALL"
+    },
+    {
+      "id": 31226,
+      "ad": "İLKEM",
+      "tel": "3124961705",
+      "adres": "BİRLİK MAH. 435.CAD. NO:40/A ÇANKAYA"
+    },
+    {
+      "id": 49327,
+      "ad": "İLKNUR",
+      "tel": "3122870425",
+      "adres": "İŞÇİ BLOKLARI MAH. 1516. CAD. NO:64/B"
+    },
+    {
+      "id": 18722,
+      "ad": "İLKPINAR",
+      "tel": "3123264185",
+      "adres": "IÇCEBECI MAH. TELLIKAYA SOK. NO:2/A  ÇANKAYA"
+    },
+    {
+      "id": 55494,
+      "ad": "İNCEK PRESTİJ",
+      "tel": "3125043001",
+      "adres": "ALACAATLI MAH.3341 SOKAK NO:1/8-B"
+    },
+    {
+      "id": 53740,
+      "ad": "İNCESU TARMAN",
+      "tel": "3124316580",
+      "adres": "ÖN CEBECİ MAH. MAHMUT ESAT BOZKURT CAD. NO:25/A"
+    },
+    {
+      "id": 17828,
+      "ad": "İPEK",
+      "tel": "3124752053",
+      "adres": "KARAPINAR MAH.CEVIZLIDERE CAD. NO:122/A DIKMEN"
+    },
+    {
+      "id": 64448,
+      "ad": "İPEKYOL",
+      "tel": "3125579977",
+      "adres": "İŞÇİ BLOKLARI MAH. MUHSİN YAZICIOĞLU CAD. NO:59 BC ÇANKAYA/ANKARA"
+    },
+    {
+      "id": 63083,
+      "ad": "İPEĞİM",
+      "tel": "3124265015",
+      "adres": "AYRANCI MAH. KUZGUN CAD. NO:12/C"
+    },
+    {
+      "id": 57089,
+      "ad": "İREM",
+      "tel": "3124341061",
+      "adres": "TOPRAKLIK MAH. KIBRIS CAD. NO:64/A"
+    },
+    {
+      "id": 65192,
+      "ad": "İREM CAN",
+      "tel": "3125116611",
+      "adres": "BİRLİK MAH. 393. CAD. NO:25/A ÇANKAYA/ANKARA"
+    },
+    {
+      "id": 18024,
+      "ad": "İSMET ÖZMEN",
+      "tel": "3124407994",
+      "adres": "YILDIZEVLER MAH. TURAN GÜNES BULVARI CEZAYİR CAD.NO:3/B"
+    },
+    {
+      "id": 64944,
+      "ad": "İYİ YAŞA",
+      "tel": "5400064445",
+      "adres": "ALACAATLI MAH. 3346. CAD. NO.30/D ÇANKAYA/ANKARA"
+    },
+    {
+      "id": 52742,
+      "ad": "ŞAHİKA",
+      "tel": "3124178521",
+      "adres": "ESATOĞLU MAH.BÜLBÜLDERESİ CAD.NO:76/C"
+    },
+    {
+      "id": 18751,
+      "ad": "ŞATIR",
+      "tel": "3124784227",
+      "adres": "ÖVEÇLER MAH. KABIL  CAD. NO:68/C"
+    },
+    {
+      "id": 65337,
+      "ad": "ŞEHİR MELEK",
+      "tel": "3125440634",
+      "adres": "ÜNİVERSİTELER MAH. ŞEHİT MUSTAFA TAYYARCAN CAD. NO:6/8 ÇANKAYA"
+    },
+    {
+      "id": 17164,
+      "ad": "ŞENER",
+      "tel": "3124314344",
+      "adres": "BAYINDIR SOK. NO:30/A KIZILAY"
+    },
+    {
+      "id": 57075,
+      "ad": "ŞENLER",
+      "tel": "3124370907",
+      "adres": "MURAT MAH.BAĞLAR CAD.NO:195/C"
+    },
+    {
+      "id": 17162,
+      "ad": "ŞEREF",
+      "tel": "3124187553",
+      "adres": "MESRUTIYET CAD. NO:12/51 KIZILAY"
+    },
+    {
+      "id": 18913,
+      "ad": "ŞEVVAL",
+      "tel": "3124481803",
+      "adres": "ASIKPASA MAH. ZIYA ORALAY CAD. NO:367/A ÇANKAYA"
+    },
+    {
+      "id": 17754,
+      "ad": "ŞUBE",
+      "tel": "3122236946",
+      "adres": "BAHÇELIEVLER MAH. TASKENT CAD. NO:36/A"
+    },
+    {
+      "id": 63687,
+      "ad": "ŞİMAL",
+      "tel": "3122353420",
+      "adres": "Mutlukent Mah. Doğan Taşdelen Bulvarı No:43/C"
+    },
+    {
+      "id": 17555,
+      "ad": "ŞİRİNLER",
+      "tel": "3124764933",
+      "adres": "HUZUR MAH.DIKMEN CAD. NO:402/21 ÇANKAYA/ANKARA"
+    }
+  ]
+}
