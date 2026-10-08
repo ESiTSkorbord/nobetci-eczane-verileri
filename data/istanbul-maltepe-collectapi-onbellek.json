@@ -1,15 +1,20 @@
 {
-  "tarih_iso": "2026-10-07",
+  "tarih_iso": "2026-10-08",
   "collectapi_sonuc": [
     {
-      "ad": "GÜLSUYU ECZANESİ",
-      "tel": "02163763187",
-      "adres": "GÜLSUYU MAH.ESKİ ÜSKÜDAR CAD. NO.45/B"
+      "ad": "YAĞMUR ECZANESİ",
+      "tel": "02167591011",
+      "adres": "İDEALTEPE MAH. BAĞDAT CAD. NO:220B"
     },
     {
-      "ad": "BANDIRMA ECZANESİ",
-      "tel": "02163994370",
-      "adres": "CEVİZLİ MAH. BAĞDAT CAD. NO:553A"
+      "ad": "DOĞUŞKENT ECZANESİ",
+      "tel": "02163057450",
+      "adres": "GİRNE MAH. ÇİFTLİKLİ SOK. NO:13F"
+    },
+    {
+      "ad": "BÖLGEM ECZANESİ",
+      "tel": "02163835544",
+      "adres": "ALTAYÇEŞME MAH. SERİ SOK. C BLOK NO: 18-22CE"
     }
   ]
 }
