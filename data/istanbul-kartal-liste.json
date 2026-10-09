@@ -1,28 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 37660,
-      "ad": "KARTAL PLUS ECZANESİ",
-      "tel": "2162250891",
-      "adres": "Orta Mahallesi Yalnız Selvi Caddesi, 21A"
+      "id": 56740,
+      "ad": "21 MAYIS ECZANESİ",
+      "tel": "2163741602",
+      "adres": "Petrol İş Mah. Kızılay Bulv. No:21/C"
     },
     {
-      "id": 64905,
-      "ad": "POLEN ECZANESİ",
-      "tel": "2164883266",
-      "adres": "Hürriyet Mahallesi, Olimpiyat Caddesi, No:67F"
+      "id": 50127,
+      "ad": "CEYLAN ECZANESİ",
+      "tel": "2163772149",
+      "adres": "Soğanlık Yeni Mah. Beytalı Cad. No:40/A"
     },
     {
-      "id": 61538,
-      "ad": "REFERANS ECZANESİ",
-      "tel": "2164733780",
-      "adres": "Atalar Mahallesi,Kartopu Sokak, No:13/P"
+      "id": 50783,
+      "ad": "LİLYUM ECZANESİ",
+      "tel": "2162088200",
+      "adres": "ATALAR MAH. HALİTPAŞA CAD. NO:80-82B"
     },
     {
-      "id": 43669,
-      "ad": "İSTMARİNA ECZANESİ",
-      "tel": "2165194544",
-      "adres": "Kordonboyu Mah. Ankara Cad. No:147/6 İç Kapı No:223"
+      "id": 49301,
+      "ad": "SELVİ ECZANESİ",
+      "tel": "2163091909",
+      "adres": "Cumhuriyet Mah. Adnan Kahveci Cad. No:86/B"
     }
   ]
 }
