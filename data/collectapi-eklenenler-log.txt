@@ -21,3 +21,5 @@
 2026-10-03 21:00 | istanbul-maltepe | CollectAPI'den eklendi (teknikzeka'da yoktu): YEŞİM ECZANESİ
 2026-10-03 23:01 | istanbul-maltepe | CollectAPI'den eklendi (teknikzeka'da yoktu): YELKEN ECZANESİ
 2026-10-03 23:01 | istanbul-maltepe | CollectAPI'den eklendi (teknikzeka'da yoktu): YEŞİM ECZANESİ
+2026-10-10 14:00 | istanbul-maltepe | CollectAPI'den eklendi (teknikzeka'da yoktu): PERVİN ECZANESİ
+2026-10-10 14:00 | istanbul-maltepe | CollectAPI'den eklendi (teknikzeka'da yoktu): ŞİFA ECZANESİ
