@@ -1,28 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 56740,
-      "ad": "21 MAYIS ECZANESİ",
-      "tel": "2163741602",
-      "adres": "Petrol İş Mah. Kızılay Bulv. No:21/C"
+      "id": 13254,
+      "ad": "AKIN ECZANESİ",
+      "tel": "2162904175",
+      "adres": "UGUR MUMCU MH. SEYH SAMIL CD. UPCITY CENTER NO:15 F-3/2"
     },
     {
-      "id": 50127,
-      "ad": "CEYLAN ECZANESİ",
-      "tel": "2163772149",
-      "adres": "Soğanlık Yeni Mah. Beytalı Cad. No:40/A"
+      "id": 59703,
+      "ad": "AVRUPA PLUS ECZANESİ",
+      "tel": "0",
+      "adres": "Esentepe Mah. İnönü Cad. No:151/A"
     },
     {
-      "id": 50783,
-      "ad": "LİLYUM ECZANESİ",
-      "tel": "2162088200",
-      "adres": "ATALAR MAH. HALİTPAŞA CAD. NO:80-82B"
+      "id": 34688,
+      "ad": "DEMİRAY ECZANESİ",
+      "tel": "2163097099",
+      "adres": "ORTA MAH. YUSUF EFENDİ SOK. NO:4C"
     },
     {
-      "id": 49301,
-      "ad": "SELVİ ECZANESİ",
-      "tel": "2163091909",
-      "adres": "Cumhuriyet Mah. Adnan Kahveci Cad. No:86/B"
+      "id": 54498,
+      "ad": "DOĞU ECZANESİ",
+      "tel": "2163710350",
+      "adres": "Orhantepe Mah. Çınar Cad. No:55D"
     }
   ]
 }

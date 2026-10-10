@@ -1,22 +1,22 @@
 {
   "eczaneler": [
     {
-      "id": 15728,
-      "ad": "AYBERK",
-      "tel": "2164419442",
-      "adres": "CEVIZLI MAH. BAGDAT CAD. ERCIYES SOK. NO:3/1 MALTEPE"
+      "id": 15692,
+      "ad": "SIFA",
+      "tel": "2164570707",
+      "adres": "MIMARSINAN CAD.HAVUZLAR SK.NO.9 MALTEPE"
     },
     {
-      "id": 15752,
-      "ad": "AYSEN TURAN",
-      "tel": "2164893541",
-      "adres": "KÜÇÜKYALI MH. RÜSTÜ SARP CD. 28/11"
+      "id": 59392,
+      "ad": "YENİ GÜLER ECZANESİ",
+      "tel": "5348263075",
+      "adres": "Gülensu Mahallesi,Akar Sokak No:2/A"
     },
     {
-      "id": 15605,
-      "ad": "KUL ECZANESI",
-      "tel": "2163058454",
-      "adres": "ATATÜRK CAD.NO.27/1 ZÜMRÜTEVLER/MALTEPE"
+      "id": 62270,
+      "ad": "ZEYTİNDALI ECZANESİ",
+      "tel": "5319936297",
+      "adres": "Çınar Mah. Mustafa Kemal Atatürk Cad. No:20/D"
     }
   ]
 }
