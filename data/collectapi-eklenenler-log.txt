@@ -29,3 +29,5 @@
 2026-10-10 16:00 | istanbul-maltepe | CollectAPI'den eklendi (teknikzeka'da yoktu): ŞİFA ECZANESİ
 2026-10-10 17:00 | istanbul-maltepe | CollectAPI'den eklendi (teknikzeka'da yoktu): PERVİN ECZANESİ
 2026-10-10 17:00 | istanbul-maltepe | CollectAPI'den eklendi (teknikzeka'da yoktu): ŞİFA ECZANESİ
+2026-10-10 18:00 | istanbul-maltepe | CollectAPI'den eklendi (teknikzeka'da yoktu): PERVİN ECZANESİ
+2026-10-10 18:00 | istanbul-maltepe | CollectAPI'den eklendi (teknikzeka'da yoktu): ŞİFA ECZANESİ
