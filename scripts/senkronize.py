@@ -71,6 +71,21 @@ CollectAPI entegrasyonu (kota tasarrufu):
   CollectAPI'den eklenen her eczane data/collectapi-eklenenler-log.txt
   dosyasina kaydedilir (seffaflik/izlenebilirlik icin).
 
+11 Ekim guncellemesi (Enver'in bulgusu): teknikzeka API'si Pazar sabahi 09:00'da
+  yeni vardiyaya gecmiyor, test sayfasi (UYANDIR_URL) elle acilinca guncelleniyor.
+  Yeni davranis:
+  - Tam gun nobet gunlerinde (Pazar, resmi tatil, diniTatiller.txt) 09:00-09:20
+    arasi YOGUN mod: veri eskiyse test sayfasini acip en fazla 5 dk yeniden dener,
+    CollectAPI'ye (yedek kaynak) de sorar, sonucu data/sync-durum.json'a yazar
+    (uygulama bunu ana ekranda gosterir).
+  - Diger saatlerde HAFIF yeniden deneme (en fazla 2 dk): tam gun gunlerinde
+    10:00'dan, diger gunlerde 14:00'dan sonra.
+  - teknikzeka ESKI/YOK ve yedek kaynak ONCEKI LISTEDEN FARKLI ise yedek kaynak
+    ANA kaynak olur (ID'ler ilcenin tumliste.json'undan eslestirilir).
+  - Yedek kaynak onceki listeyle AYNIYSA "henuz guncellenmemis" sayilir, dunku
+    liste yeni nobetci diye yazilmaz.
+  - 2028 vb. bayramlar: sadece diniTatiller.txt'ye eklenir, kod degismez.
+
 Bu script sadece dosyalari GUNCELLER; commit/push islemini cagiran GitHub
 Actions workflow'u (.github/workflows/nobetci-sync.yml) yapar.
 """
@@ -83,7 +98,7 @@ import urllib.request
 import urllib.parse
 import urllib.error
 import zlib
-from datetime import datetime
+from datetime import datetime, date
 
 try:
     from zoneinfo import ZoneInfo
@@ -102,7 +117,19 @@ EKLENENLER_LOG_YOLU = os.path.join(DATA_KLASORU, "collectapi-eklenenler-log.txt"
 
 # CollectAPI'ye bu saatten (Istanbul yerel saati) ONCE hic sorulmaz - Enver'in
 # istegi (2 Ekim): gunun ilk saatlerinde veri henuz tam/guncel olmayabiliyor.
-COLLECTAPI_EN_ERKEN_SAAT = 14
+COLLECTAPI_EN_ERKEN_SAAT = 15  # 11 Ekim: Enver'in istegiyle 14 -> 15
+
+# 11 Ekim guncellemesi - UYANDIR + YENIDEN DENE + YEDEK KAYNAK
+UYANDIR_URL = "https://api.teknikzeka.net/eczane/"   # Enver'in elle actigi TEST SAYFASI
+DINI_TATIL_YOLU = os.path.join(REPO_KOKU, "diniTatiller.txt")  # ESP'nin okudugu AYNI dosya
+DURUM_YOLU = os.path.join(DATA_KLASORU, "sync-durum.json")     # uygulamanin okudugu durum dosyasi
+RESMI_TATILLER = {(1, 1), (4, 23), (5, 1), (5, 19), (7, 15), (8, 30), (10, 29)}  # firmware ile AYNI
+YOGUN_PENCERE_DK = 20        # tam gun nobet gunlerinde 09:00-09:20 arasi calisma = YOGUN mod
+YOGUN_MAX_SN = 300           # YOGUN: en fazla 5 dk uyandirma/yeniden deneme
+YOGUN_ARALIK_SN = 45
+HAFIF_MAX_SN = 120           # HAFIF: en fazla 2 dk
+HAFIF_ARALIK_SN = 60
+YOGUN_GUNLUK_CAGRI_SINIRI = 2  # CollectAPI kota korumasi (ilce basina, sabah modu)
 
 # NobetciEczanePano.ino icindeki AY_ADLARI ile birebir ayni (ASCII, Turkce karakter yok)
 AY_ADLARI = ["Ocak", "Subat", "Mart", "Nisan", "Mayis", "Haziran",
@@ -348,6 +375,238 @@ def workdate_bugun_mu(workdate_degeri, bugun_tarih_iso):
     return str(workdate_degeri)[:10] == bugun_tarih_iso
 
 
+# ---------------------------------------------------------------------------
+# 11 Ekim guncellemesi: UYANDIR + YENIDEN DENE + YEDEK KAYNAK + DURUM DOSYASI
+# ---------------------------------------------------------------------------
+
+def dini_tatil_araliklarini_oku():
+    """Repo kokundeki diniTatiller.txt'yi okur (ESP'nin okudugu AYNI dosya).
+    Satir formati: "YYYY-MM-DD,YYYY-MM-DD,Aciklama". "#" ile baslayan/bos
+    satirlar atlanir. Yeni yilin (orn. 2028) bayram tarihleri bu dosyaya
+    eklenince kod DEGISMEDEN otomatik devreye girer."""
+    araliklar = []
+    if not os.path.isfile(DINI_TATIL_YOLU):
+        return araliklar
+    try:
+        with open(DINI_TATIL_YOLU, "r", encoding="utf-8") as f:
+            for satir in f:
+                satir = satir.strip()
+                if not satir or satir.startswith("#"):
+                    continue
+                parcalar = satir.split(",")
+                if len(parcalar) < 2:
+                    continue
+                try:
+                    bas = date.fromisoformat(parcalar[0].strip())
+                    bit = date.fromisoformat(parcalar[1].strip())
+                except ValueError:
+                    continue
+                araliklar.append((bas, bit))
+    except Exception as hata:
+        print(f"UYARI: diniTatiller.txt okunamadi ({hata}), sadece pazar/resmi tatiller sayilacak.")
+    return araliklar
+
+
+def tam_gun_nobet_gunu_mu(gun):
+    """Pazar, resmi tatil (sabit tarihli) veya diniTatiller.txt'deki bir
+    aralik gunu mu? Bu gunlerde nobet sabah 09:00'da yeni vardiyaya gecer."""
+    if gun.weekday() == 6:
+        return True
+    if (gun.month, gun.day) in RESMI_TATILLER:
+        return True
+    for bas, bit in dini_tatil_araliklarini_oku():
+        if bas <= gun <= bit:
+            return True
+    return False
+
+
+def bekleme_politikasi(simdi):
+    """(en_fazla_bekleme_sn, deneme_araligi_sn, yogun_mod) dondurur.
+    YOGUN: tam gun nobet gunlerinde 09:00-09:20 arasi calisma (vardiya degisimi).
+    HAFIF: tam gun gunlerinde 10:00'dan sonra, diger gunlerde 14:00'dan sonra.
+    Digerlerinde (hafta ici sabah vb.) API'nin guncel olmamasi NORMAL - bekleme yok."""
+    tam = tam_gun_nobet_gunu_mu(simdi.date())
+    if tam and simdi.hour == 9 and simdi.minute < YOGUN_PENCERE_DK:
+        return YOGUN_MAX_SN, YOGUN_ARALIK_SN, True
+    if tam and simdi.hour >= 10:
+        return HAFIF_MAX_SN, HAFIF_ARALIK_SN, False
+    if (not tam) and simdi.hour >= 14:
+        return HAFIF_MAX_SN, HAFIF_ARALIK_SN, False
+    return 0, 0, False
+
+
+def test_sayfasini_uyandir():
+    """teknikzeka'nin TEST SAYFASINI acar (Enver'in elle yaptigi islem - sayfa
+    ziyareti API'nin verisini yeniliyor gibi gorunuyor). Hata onemsenmez."""
+    try:
+        istek = urllib.request.Request(UYANDIR_URL, headers={
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                          "(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+            "Accept": "text/html,application/xhtml+xml,*/*",
+        })
+        with urllib.request.urlopen(istek, timeout=20) as yanit:
+            yanit.read(2048)
+        print("  Test sayfasi acildi (API uyandirma).")
+    except Exception as hata:
+        print(f"  Test sayfasi acilamadi ({hata}) - onemli degil.")
+
+
+def ilceler_taze_mi(il_verisi, ilce_norm_listesi, bugun_iso):
+    for ilce_norm in ilce_norm_listesi:
+        if not any(normallestir(k.get("district")) == ilce_norm and
+                   workdate_bugun_mu(k.get("workdate"), bugun_iso) for k in il_verisi):
+            return False
+    return True
+
+
+def il_verisini_taze_cek(api_il, ilce_norm_listesi, bugun_iso, max_sn, aralik_sn):
+    """Ilk cagri basarisizsa hata firlatir (cagiran yedek kaynaga gecer).
+    Veri eskiyse (max_sn > 0 ise) test sayfasini acip aralik_sn arayla yeniden
+    dener; sure dolunca eldeki son veriyi dondurur."""
+    veri = api_dan_il_verisini_cek(api_il)
+    if max_sn <= 0:
+        return veri
+    baslangic = time.time()
+    deneme = 0
+    while not ilceler_taze_mi(veri, ilce_norm_listesi, bugun_iso):
+        gecen = time.time() - baslangic
+        if gecen + aralik_sn > max_sn:
+            print(f"  [{api_il}] {int(gecen)} sn icinde guncel veri gelmedi, bekleme sona erdi.")
+            break
+        deneme += 1
+        print(f"  [{api_il}] veri henuz bugune ait degil - uyandirma + yeniden deneme {deneme} ({int(gecen)} sn gecti)")
+        test_sayfasini_uyandir()
+        time.sleep(aralik_sn)
+        try:
+            veri = api_dan_il_verisini_cek(api_il)
+        except Exception as hata:
+            print(f"  yeniden deneme basarisiz: {hata}")
+    return veri
+
+
+def json_oku(yol, varsayilan):
+    try:
+        with open(yol, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return varsayilan
+
+
+def onceki_liste_oku(liste_yolu):
+    veri = json_oku(liste_yolu, {})
+    liste = veri.get("eczaneler") if isinstance(veri, dict) else None
+    return liste if isinstance(liste, list) else []
+
+
+def onceki_idler_oku(gunluk_yolu):
+    veri = json_oku(gunluk_yolu, {})
+    idler = veri.get("nobetciler") if isinstance(veri, dict) else None
+    return set(idler) if isinstance(idler, list) else set()
+
+
+def tumliste_oku(il_slug, ilce_slug):
+    veri = json_oku(os.path.join(DATA_KLASORU, f"{il_slug}-{ilce_slug}-tumliste.json"), {})
+    liste = veri.get("eczaneler") if isinstance(veri, dict) else None
+    return liste if isinstance(liste, list) else []
+
+
+def tumlisteden_bul(aday, tumliste):
+    """CollectAPI kaydini ilcenin tam listesindeki GERCEK kayitla eslestirir
+    (once telefon, sonra isim) - boylece 'kendi eczanem' ID'si bozulmaz."""
+    aday_tel = telefon_normallestir(aday.get("tel"))
+    aday_isim = normallestir(aday.get("ad"))
+    if aday_tel:
+        for k in tumliste:
+            if telefon_normallestir(k.get("tel")) == aday_tel:
+                return k
+    if aday_isim:
+        for k in tumliste:
+            if normallestir(k.get("ad")) == aday_isim:
+                return k
+    return None
+
+
+def collectapi_yedek_al(api_key, il_slug, ilce_slug, api_il, api_ilce, bugun_iso, simdi, yogun):
+    """Yedek kaynak sonucu (liste) ya da None.
+    YOGUN modda (vardiya degisimi sabahi): saat kapisi YOK, gunde en fazla
+    YOGUN_GUNLUK_CAGRI_SINIRI cagri (kota korumasi), sonuc 'sabah' onbellegine yazilir.
+    Diger modlarda: eski davranis - COLLECTAPI_EN_ERKEN_SAAT'ten sonra gunde 1 cagri."""
+    if not api_key:
+        return None
+    if yogun:
+        yol = os.path.join(DATA_KLASORU, f"{il_slug}-{ilce_slug}-collectapi-sabah.json")
+        onb = json_oku(yol, {})
+        if onb.get("tarih_iso") != bugun_iso:
+            onb = {"tarih_iso": bugun_iso, "cagri_sayisi": 0, "son_sonuc": None}
+        if onb.get("cagri_sayisi", 0) >= YOGUN_GUNLUK_CAGRI_SINIRI:
+            print(f"[{il_slug}-{ilce_slug}] CollectAPI sabah cagri siniri doldu, onbellekteki sonuc kullaniliyor.")
+            return onb.get("son_sonuc")
+        print(f"[{il_slug}-{ilce_slug}] CollectAPI (vardiya sabahi) cekiliyor...")
+        sonuc = collectapi_il_ilce_cek(api_key, api_il, api_ilce)
+        onb["cagri_sayisi"] = onb.get("cagri_sayisi", 0) + 1
+        if sonuc is not None:
+            onb["son_sonuc"] = sonuc
+        os.makedirs(os.path.dirname(yol), exist_ok=True)
+        with open(yol, "w", encoding="utf-8") as f:
+            json.dump(onb, f, ensure_ascii=False, indent=2)
+        return sonuc if sonuc is not None else onb.get("son_sonuc")
+
+    onbellek_yolu = os.path.join(DATA_KLASORU, f"{il_slug}-{ilce_slug}-collectapi-onbellek.json")
+    bugune_ait = json_oku(onbellek_yolu, {}).get("tarih_iso") == bugun_iso
+    if bugune_ait:
+        return collectapi_onbellek_oku(onbellek_yolu, bugun_iso)
+    if simdi.hour < COLLECTAPI_EN_ERKEN_SAAT:
+        return None
+    print(f"[{il_slug}-{ilce_slug}] CollectAPI onbellegi bugune ait degil, tazeden cekiliyor...")
+    sonuc = collectapi_il_ilce_cek(api_key, api_il, api_ilce)
+    collectapi_onbellek_yaz(onbellek_yolu, bugun_iso, sonuc)
+    return sonuc
+
+
+def yedegi_listeye_ekle(eczaneler, idler, yedek_sonuc, tumliste, etiket, neden):
+    """Yedek kaynaktaki, listede OLMAYAN eczaneleri ekler (telefon/isim eslesmesi).
+    Eklenen sayisini dondurur."""
+    mevcut_isimler = {normallestir(e["ad"]) for e in eczaneler}
+    mevcut_tel = {telefon_normallestir(e["tel"]) for e in eczaneler if telefon_normallestir(e["tel"])}
+    zaman_damgasi = simdi_istanbul().strftime("%Y-%m-%d %H:%M")
+    eklenen = 0
+    for aday in yedek_sonuc:
+        isim_norm = normallestir(aday.get("ad"))
+        tel_norm = telefon_normallestir(aday.get("tel"))
+        if not isim_norm:
+            continue
+        if (tel_norm and tel_norm in mevcut_tel) or isim_norm in mevcut_isimler:
+            continue
+        gercek = tumlisteden_bul(aday, tumliste)
+        if gercek is not None and gercek.get("id") is not None:
+            kayit = {"id": gercek["id"], "ad": gercek.get("ad") or aday["ad"],
+                     "tel": gercek.get("tel") or aday["tel"], "adres": gercek.get("adres") or aday["adres"]}
+        else:
+            kayit = {"id": sentetik_id_uret(isim_norm), "ad": aday["ad"], "tel": aday["tel"], "adres": aday["adres"]}
+        if kayit["id"] in idler:
+            continue
+        eczaneler.append(kayit)
+        idler.append(kayit["id"])
+        mevcut_isimler.add(isim_norm)
+        if tel_norm:
+            mevcut_tel.add(tel_norm)
+        eklenen += 1
+        print(f"[{etiket}] CollectAPI'den EKLENDI ({neden}): {aday['ad']}")
+        eklenen_log_yaz(zaman_damgasi, etiket, aday["ad"])
+    return eklenen
+
+
+def durum_dosyasini_yaz(durumlar, simdi):
+    os.makedirs(DATA_KLASORU, exist_ok=True)
+    with open(DURUM_YOLU, "w", encoding="utf-8") as f:
+        json.dump({
+            "tarih": simdi.strftime("%Y-%m-%d"),
+            "zaman": simdi_istanbul().strftime("%H:%M"),
+            "ilceler": durumlar,
+        }, f, ensure_ascii=False, indent=2)
+    print(f"Durum dosyasi yazildi: {DURUM_YOLU}")
+
+
 def main():
     if not os.path.isfile(KONFIG_YOLU):
         print(f"HATA: konfig dosyasi bulunamadi: {KONFIG_YOLU}", file=sys.stderr)
@@ -363,9 +622,25 @@ def main():
 
     os.makedirs(DATA_KLASORU, exist_ok=True)
 
-    # Ayni ili paylasan satirlar icin API'yi bir kere cagir (cache)
-    il_cache = {}
+    simdi = simdi_istanbul()
+    bugun_tarih_iso = simdi.strftime("%Y-%m-%d")
+    max_sn, aralik_sn, yogun = bekleme_politikasi(simdi)
+    if os.environ.get("YOGUN_ZORLA", "").strip() == "1":
+        # TEST icin: workflow'a gecici olarak YOGUN_ZORLA: "1" ortam degiskeni eklenirse
+        # saat/gun ne olursa olsun yogun mod calisir (durum dosyasi da yazilir).
+        max_sn, aralik_sn, yogun = YOGUN_MAX_SN, YOGUN_ARALIK_SN, True
+    print(f"Mod: {'YOGUN (tam gun nobeti vardiya sabahi)' if yogun else 'normal'} - "
+          f"eski veride en fazla {max_sn} sn uyandirma/yeniden deneme.")
 
+    collectapi_key = os.environ.get("COLLECTAPI_KEY", "").strip()
+
+    il_ilceleri = {}
+    for k in kaynaklar:
+        if k.get("api_il") and k.get("api_ilce"):
+            il_ilceleri.setdefault(k["api_il"], []).append(normallestir(k["api_ilce"]))
+
+    il_cache = {}
+    durumlar = {}
     basarili_sayisi = 0
     atlanan_sayisi = 0
     tarih_metni = bugunun_tarih_metni()
@@ -383,38 +658,25 @@ def main():
             atlanan_sayisi += 1
             continue
 
-        try:
-            if api_il not in il_cache:
-                print(f"[{api_il}] API'den cekiliyor...")
-                il_cache[api_il] = api_dan_il_verisini_cek(api_il)
-            il_verisi = il_cache[api_il]
-        except Exception as hata:
-            print(f"[{etiket}] ATLANDI: '{api_il}' icin API cagrisi basarisiz oldu ({hata}). "
-                  f"Mevcut dosyalar korunuyor.")
-            atlanan_sayisi += 1
-            continue
+        if api_il not in il_cache:
+            print(f"[{api_il}] API'den cekiliyor...")
+            try:
+                il_cache[api_il] = il_verisini_taze_cek(api_il, il_ilceleri[api_il], bugun_tarih_iso, max_sn, aralik_sn)
+            except Exception as hata:
+                print(f"[{etiket}] teknikzeka API cagrisi basarisiz ({hata}) - yedek kaynak denenecek.")
+                il_cache[api_il] = []
+        il_verisi = il_cache[api_il]
 
         hedef_ilce_norm = normallestir(api_ilce)
-        bugun_tarih_iso = simdi_istanbul().strftime("%Y-%m-%d")
-
-        # Once ilceye gore filtrele, SONRA "workdate bugune mi ait" diye tazelik
-        # kontrolu yap - vardiya gece yarisini gectigi icin (bkz. dosya basindaki
-        # "Tazelik kontrolu" notu) sadece ilce eslesmesi yeterli degil.
         ilce_eslesenler = [k for k in il_verisi if normallestir(k.get("district")) == hedef_ilce_norm]
         eslesenler = [k for k in ilce_eslesenler if workdate_bugun_mu(k.get("workdate"), bugun_tarih_iso)]
 
-        if not ilce_eslesenler:
-            print(f"[{etiket}] ATLANDI: '{api_ilce}' icin API'den hic nobetci kaydi donmedi. "
-                  f"Mevcut dosyalar korunuyor.")
-            atlanan_sayisi += 1
-            continue
-
-        if not eslesenler:
-            print(f"[{etiket}] ATLANDI: '{api_ilce}' icin kayit var ama hicbirinin workdate'i "
-                  f"bugune ({bugun_tarih_iso}) ait degil - vardiya henuz baslamamis/API henuz "
-                  f"guncellenmemis olabilir. Mevcut dosyalar korunuyor.")
-            atlanan_sayisi += 1
-            continue
+        liste_yolu = os.path.join(DATA_KLASORU, f"{il_slug}-{ilce_slug}-liste.json")
+        gunluk_yolu = os.path.join(DATA_KLASORU, f"{il_slug}-{ilce_slug}.json")
+        onceki_liste = onceki_liste_oku(liste_yolu)
+        onceki_idler = onceki_idler_oku(gunluk_yolu)
+        onceki_tel = {telefon_normallestir(e.get("tel")) for e in onceki_liste if telefon_normallestir(e.get("tel"))}
+        onceki_isimler = {normallestir(e.get("ad")) for e in onceki_liste}
 
         eczaneler = []
         idler = []
@@ -429,88 +691,75 @@ def main():
                 "adres": (kayit.get("address") or "").strip(),
             })
             idler.append(eid)
+        teknikzeka_taze = bool(eczaneler)
 
-        if not eczaneler:
-            print(f"[{etiket}] ATLANDI: eslesen kayitlarda gecerli id yok. Mevcut dosyalar korunuyor.")
-            atlanan_sayisi += 1
-            continue
+        if teknikzeka_taze:
+            print(f"[{etiket}] teknikzeka verisi GUNCEL ({len(eczaneler)} eczane).")
+        elif ilce_eslesenler:
+            print(f"[{etiket}] teknikzeka: kayit var ama workdate bugune ({bugun_tarih_iso}) ait degil (API henuz guncellenmemis).")
+        else:
+            print(f"[{etiket}] teknikzeka: '{api_ilce}' icin hic kayit donmedi.")
 
-        # --- CollectAPI ile birlestirme (2 Ekim) ---
-        # teknikzeka verisi ZATEN gecerli ve yazilmaya hazir (yukaridaki satirlar).
-        # Buradan sonrasi SADECE EKLEME yapar - herhangi bir hata/eksiklik olursa
-        # teknikzeka verisi ETKILENMEDEN asagida yine de yazilir.
-        collectapi_key = os.environ.get("COLLECTAPI_KEY", "").strip()
-        if collectapi_key:
-            bugun_tarih_iso = simdi_istanbul().strftime("%Y-%m-%d")
-            onbellek_yolu = os.path.join(DATA_KLASORU, f"{il_slug}-{ilce_slug}-collectapi-onbellek.json")
-
-            # Onbellek bugune mi ait diye dogrudan dosyadan bak (yoksa/bozuksa/
-            # farkli gune aitse None donuyor - bu durumda tazeden cekilir).
-            onbellek_bugune_ait = False
-            if os.path.isfile(onbellek_yolu):
-                try:
-                    with open(onbellek_yolu, "r", encoding="utf-8") as f:
-                        onbellek_bugune_ait = (json.load(f).get("tarih_iso") == bugun_tarih_iso)
-                except Exception:
-                    onbellek_bugune_ait = False
-
-            if onbellek_bugune_ait:
-                collectapi_sonuc = collectapi_onbellek_oku(onbellek_yolu, bugun_tarih_iso)
-            elif simdi_istanbul().hour < COLLECTAPI_EN_ERKEN_SAAT:
-                # Enver'in istegi (2 Ekim): gunun ilk calismasi gece yarisindan
-                # hemen sonra oluyor - bu saatte hem teknikzeka hem CollectAPI
-                # verisi henuz guncellenmemis/bos donebiliyor. Bu yuzden
-                # COLLECTAPI_EN_ERKEN_SAAT'ten (14:00) once hic denenmez,
-                # onbellek de yazilmaz - saat 14:00'i gecince ilk calisma
-                # tazeden ceker ve o GUNUN onbellegini olusturur.
-                collectapi_sonuc = None
+        # --- YEDEK KAYNAK (CollectAPI) ---
+        yedek_sonuc = collectapi_yedek_al(collectapi_key, il_slug, ilce_slug, api_il, api_ilce,
+                                          bugun_tarih_iso, simdi, yogun)
+        yedek_degisti = False
+        if yedek_sonuc:
+            cr_tel = {telefon_normallestir(a.get("tel")) for a in yedek_sonuc if telefon_normallestir(a.get("tel"))}
+            cr_isimler = {normallestir(a.get("ad")) for a in yedek_sonuc}
+            if not onceki_liste:
+                yedek_degisti = True
+            elif cr_tel and onceki_tel:
+                yedek_degisti = (cr_tel != onceki_tel)
             else:
-                print(f"[{etiket}] CollectAPI onbellegi bugune ait degil, tazeden cekiliyor...")
-                collectapi_sonuc = collectapi_il_ilce_cek(collectapi_key, api_il, api_ilce)
-                collectapi_onbellek_yaz(onbellek_yolu, bugun_tarih_iso, collectapi_sonuc)
+                yedek_degisti = (cr_isimler != onceki_isimler)
+            print(f"[{etiket}] CollectAPI {len(yedek_sonuc)} kayit dondu; onceki listeden "
+                  f"{'FARKLI (guncellenmis gorunuyor)' if yedek_degisti else 'AYNI (henuz guncellenmemis olabilir)'}.")
 
-            if collectapi_sonuc:
-                mevcut_isimler_norm = {normallestir(e["ad"]) for e in eczaneler}
-                mevcut_telefonlar_norm = {
-                    telefon_normallestir(e["tel"]) for e in eczaneler if telefon_normallestir(e["tel"])
-                }
-                zaman_damgasi = simdi_istanbul().strftime("%Y-%m-%d %H:%M")
-                for aday in collectapi_sonuc:
-                    aday_isim_norm = normallestir(aday["ad"])
-                    aday_tel_norm = telefon_normallestir(aday["tel"])
-                    # Asil eslestirme TELEFON uzerinden (bkz. telefon_normallestir
-                    # ustundeki aciklama) - isim eslestirmesi sadece telefon
-                    # bos/eksik oldugunda devreye giren ek bir guvenlik agi.
-                    zaten_var = (aday_tel_norm and aday_tel_norm in mevcut_telefonlar_norm) or \
-                                (aday_isim_norm and aday_isim_norm in mevcut_isimler_norm)
-                    if not aday_isim_norm or zaten_var:
-                        continue
-                    yeni_id = sentetik_id_uret(aday_isim_norm)
-                    eczaneler.append({
-                        "id": yeni_id,
-                        "ad": aday["ad"],
-                        "tel": aday["tel"],
-                        "adres": aday["adres"],
-                    })
-                    idler.append(yeni_id)
-                    mevcut_isimler_norm.add(aday_isim_norm)
-                    if aday_tel_norm:
-                        mevcut_telefonlar_norm.add(aday_tel_norm)
-                    print(f"[{etiket}] CollectAPI'den EKLENDI: {aday['ad']} (teknikzeka'da yoktu)")
-                    eklenen_log_yaz(zaman_damgasi, etiket, aday["ad"])
-        # --- CollectAPI birlestirme sonu ---
+        kaynak_etiketi = None
+        eklenen = 0
+        not_metni = None
+        if teknikzeka_taze:
+            kaynak_etiketi = "teknikzeka"
+            if yedek_sonuc and (yedek_degisti or not yogun):
+                eklenen = yedegi_listeye_ekle(eczaneler, idler, yedek_sonuc, tumliste_oku(il_slug, ilce_slug), etiket, "teknikzeka'da yoktu")
+                if eklenen:
+                    kaynak_etiketi = "teknikzeka+collectapi"
+            elif yedek_sonuc and yogun and not yedek_degisti:
+                not_metni = "yedek kaynak henuz guncellenmemis"
+        elif yedek_sonuc and yedek_degisti:
+            tumliste = tumliste_oku(il_slug, ilce_slug)
+            eklenen = yedegi_listeye_ekle(eczaneler, idler, yedek_sonuc, tumliste, etiket,
+                                          "teknikzeka guncel degil - ANA KAYNAK olarak")
+            if eczaneler:
+                kaynak_etiketi = "collectapi"
 
-        liste_yolu = os.path.join(DATA_KLASORU, f"{il_slug}-{ilce_slug}-liste.json")
-        gunluk_yolu = os.path.join(DATA_KLASORU, f"{il_slug}-{ilce_slug}.json")
+        if kaynak_etiketi is None:
+            print(f"[{etiket}] ATLANDI: guncel veri alinamadi (ne teknikzeka ne yedek). Mevcut dosyalar korunuyor.")
+            atlanan_sayisi += 1
+            durumlar[etiket] = {"durum": "guncellenemedi"}
+            continue
 
         with open(liste_yolu, "w", encoding="utf-8") as f:
             json.dump({"eczaneler": eczaneler}, f, ensure_ascii=False, indent=2)
-
         with open(gunluk_yolu, "w", encoding="utf-8") as f:
             json.dump({"tarih": tarih_metni, "nobetciler": idler}, f, ensure_ascii=False, indent=2)
 
-        print(f"[{etiket}] OK: {len(eczaneler)} eczane yazildi.")
+        durumlar[etiket] = {
+            "durum": "guncellendi",
+            "kaynak": kaynak_etiketi,
+            "eczane_sayisi": len(eczaneler),
+            "eklenen": eklenen,
+            "liste_degisti": set(idler) != onceki_idler,
+        }
+        if not_metni:
+            durumlar[etiket]["not"] = not_metni
+
+        print(f"[{etiket}] OK ({kaynak_etiketi}): {len(eczaneler)} eczane yazildi.")
         basarili_sayisi += 1
+
+    if yogun:
+        durum_dosyasini_yaz(durumlar, simdi)
 
     print(f"\nOzet: {basarili_sayisi} basarili, {atlanan_sayisi} atlandi.")
 
