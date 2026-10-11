@@ -1,20 +1,25 @@
 {
-  "tarih_iso": "2026-10-10",
+  "tarih_iso": "2026-10-11",
   "collectapi_sonuc": [
     {
-      "ad": "PERVİN ECZANESİ",
-      "tel": "02164896161",
-      "adres": "ÇINAR MAH. MUSTAFA KEMAL ATATÜRK CAD. NO:20D"
+      "ad": "ELİT ECZANESİ",
+      "tel": "02164410106",
+      "adres": "FEYZULLAH MH. NİLÜFER SK. NO:15/1"
     },
     {
-      "ad": "YENİ GÜLER ECZANESİ",
-      "tel": "02164274926",
-      "adres": "Gülensu Mah. Akar Sok. No:2/A"
+      "ad": "BAL ECZANESİ",
+      "tel": "02165735577",
+      "adres": "ALTINTEPE MAH. GALİP BEY CAD. NO:47A MALTEPE/İSTANBUL"
     },
     {
-      "ad": "ŞİFA ECZANESİ",
-      "tel": "02163999288",
-      "adres": "FEYZULLAH MAH. MİMARSİNAN CAD.HAVUZLAR SK.NO.9/2"
+      "ad": "NİLÜFER ECZANESİ",
+      "tel": "02163830017",
+      "adres": "CEVİZLİ MAH. BAĞDAT CAD. YAVUZ SOK. NO:12/1-C"
+    },
+    {
+      "ad": "MALTEPE MÜZEYYEN ECZANESİ",
+      "tel": "",
+      "adres": "ZÜMRÜTEVLER MAH GÜL CAD NO:18-20B"
     }
   ]
 }
