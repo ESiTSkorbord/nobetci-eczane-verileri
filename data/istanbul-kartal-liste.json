@@ -1,28 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 13254,
-      "ad": "AKIN ECZANESİ",
-      "tel": "2162904175",
-      "adres": "UGUR MUMCU MH. SEYH SAMIL CD. UPCITY CENTER NO:15 F-3/2"
+      "id": 13274,
+      "ad": "DOLUNAY ECZANESI",
+      "tel": "2163530805",
+      "adres": "YUKARI MAH. ÇIRÇIR CAD. NO:15/1"
     },
     {
-      "id": 59703,
-      "ad": "AVRUPA PLUS ECZANESİ",
-      "tel": "0",
-      "adres": "Esentepe Mah. İnönü Cad. No:151/A"
+      "id": 13271,
+      "ad": "HÜMA ECZANESI",
+      "tel": "2163096215",
+      "adres": "ATATÜRK CAD. NO:93/1"
     },
     {
-      "id": 34688,
-      "ad": "DEMİRAY ECZANESİ",
-      "tel": "2163097099",
-      "adres": "ORTA MAH. YUSUF EFENDİ SOK. NO:4C"
+      "id": 40364,
+      "ad": "IHLAMUR ECZANESİ",
+      "tel": "2164762303",
+      "adres": "UGUR MUMCU MAH. SEYH SAMIL CD. NO:44/A-1KARTAL"
     },
     {
-      "id": 54498,
-      "ad": "DOĞU ECZANESİ",
-      "tel": "2163710350",
-      "adres": "Orhantepe Mah. Çınar Cad. No:55D"
+      "id": 56612,
+      "ad": "ZEHRA IŞIK ECZANESİ",
+      "tel": "2163059080",
+      "adres": "Cevizli Mah. Mustafa Kemal Cad. No:42/A"
     }
   ]
 }

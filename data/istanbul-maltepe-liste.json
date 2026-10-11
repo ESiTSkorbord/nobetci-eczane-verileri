@@ -1,34 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 15692,
-      "ad": "SIFA",
-      "tel": "2164570707",
-      "adres": "MIMARSINAN CAD.HAVUZLAR SK.NO.9 MALTEPE"
+      "id": 59780,
+      "ad": "BAL ECZANESİ",
+      "tel": "2163669618",
+      "adres": "Altıntepe Mahallesi,Galipbey Caddesi,No:47/A"
     },
     {
-      "id": 59392,
-      "ad": "YENİ GÜLER ECZANESİ",
-      "tel": "5348263075",
-      "adres": "Gülensu Mahallesi,Akar Sokak No:2/A"
+      "id": 15716,
+      "ad": "ELİT ECZANESİ",
+      "tel": "2164410106",
+      "adres": "Feyzullah Mahallesi,Dumlupınar Caddesi, Nilüfer Sokak No:15/A"
     },
     {
-      "id": 62270,
-      "ad": "ZEYTİNDALI ECZANESİ",
-      "tel": "5319936297",
-      "adres": "Çınar Mah. Mustafa Kemal Atatürk Cad. No:20/D"
+      "id": 61608,
+      "ad": "MALTEPE MÜZEYYEN ECZANESİ",
+      "tel": "0",
+      "adres": "Zümrütevler Mahallesi,Gül Caddesi No:18-20/B"
     },
     {
-      "id": 9093734,
-      "ad": "PERVİN ECZANESİ",
-      "tel": "02164896161",
-      "adres": "ÇINAR MAH. MUSTAFA KEMAL ATATÜRK CAD. NO:20D"
-    },
-    {
-      "id": 9790071,
-      "ad": "ŞİFA ECZANESİ",
-      "tel": "02163999288",
-      "adres": "FEYZULLAH MAH. MİMARSİNAN CAD.HAVUZLAR SK.NO.9/2"
+      "id": 47375,
+      "ad": "NİLÜFER ECZANESİ",
+      "tel": "2163830017",
+      "adres": "Cevizli Mah. Bağdat Cad. Yavuz Sk. No:12/1-C"
     }
   ]
 }
