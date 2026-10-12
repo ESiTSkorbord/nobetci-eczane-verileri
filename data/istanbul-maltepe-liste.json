@@ -1,28 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 59780,
-      "ad": "BAL ECZANESİ",
-      "tel": "2163669618",
-      "adres": "Altıntepe Mahallesi,Galipbey Caddesi,No:47/A"
+      "id": 60855,
+      "ad": "ADALAR ECZANESİ",
+      "tel": "5324409555",
+      "adres": "Çınar Mah. Kadir Has Cad. No:55EB"
     },
     {
-      "id": 15716,
-      "ad": "ELİT ECZANESİ",
-      "tel": "2164410106",
-      "adres": "Feyzullah Mahallesi,Dumlupınar Caddesi, Nilüfer Sokak No:15/A"
+      "id": 63607,
+      "ad": "CADDE ECZANESİ",
+      "tel": "2164410046",
+      "adres": "Yakacık Çarşı Mah. Kartal Cad., A Blok No:68-70/H"
     },
     {
-      "id": 61608,
-      "ad": "MALTEPE MÜZEYYEN ECZANESİ",
-      "tel": "0",
-      "adres": "Zümrütevler Mahallesi,Gül Caddesi No:18-20/B"
+      "id": 60117,
+      "ad": "ÇAĞDAŞ ECZANESİ",
+      "tel": "2164274926",
+      "adres": "Gülensu Mahallesi,Akar Sokak,No:4"
     },
     {
-      "id": 47375,
-      "ad": "NİLÜFER ECZANESİ",
-      "tel": "2163830017",
-      "adres": "Cevizli Mah. Bağdat Cad. Yavuz Sk. No:12/1-C"
+      "id": 15650,
+      "ad": "ÇINAR",
+      "tel": "2163714845",
+      "adres": "BAGDAT CAD.NO.183/2 MALTEPE/IST."
     }
   ]
 }
