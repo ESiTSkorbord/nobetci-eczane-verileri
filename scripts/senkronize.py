@@ -114,6 +114,7 @@ REPO_KOKU = os.path.dirname(BU_DOSYA_KLASORU)
 KONFIG_YOLU = os.path.join(REPO_KOKU, "config", "eczane-kaynaklari.json")
 DATA_KLASORU = os.path.join(REPO_KOKU, "data")
 EKLENENLER_LOG_YOLU = os.path.join(DATA_KLASORU, "collectapi-eklenenler-log.txt")
+HARIC_YOLU = os.path.join(DATA_KLASORU, "haric-eczaneler.json")  # 12 Ekim: elle hariç tutulan (hatali) eczaneler
 
 # CollectAPI'ye bu saatten (Istanbul yerel saati) ONCE hic sorulmaz - Enver'in
 # istegi (2 Ekim): gunun ilk saatlerinde veri henuz tam/guncel olmayabiliyor.
@@ -563,6 +564,45 @@ def collectapi_yedek_al(api_key, il_slug, ilce_slug, api_il, api_ilce, bugun_iso
     return sonuc
 
 
+def haric_listesi_oku(etiket):
+    """data/haric-eczaneler.json -> {"istanbul-maltepe": [63607, "BIR ECZANE ADI"], ...}
+    Bir ilce icin listedeki id (sayi) ya da ad (metin) eslesen eczaneler nobetci listesine
+    HIC alinmaz (kaynak API hatali ilce veriyorsa). Dosya yoksa/bozuksa bos doner.
+    Doner: (id_kumesi, normallesmis_isim_kumesi)"""
+    veri = json_oku(HARIC_YOLU, {})
+    girdiler = veri.get(etiket, []) if isinstance(veri, dict) else []
+    idler, isimler = set(), set()
+    for g in girdiler:
+        if isinstance(g, bool):
+            continue
+        if isinstance(g, int):
+            idler.add(g)
+        elif isinstance(g, str) and g.strip():
+            if g.strip().isdigit():
+                idler.add(int(g.strip()))
+            else:
+                isimler.add(normallestir(g))
+    return idler, isimler
+
+
+def haric_olanlari_cikar(eczaneler, idler, etiket):
+    """Hariç listesindeki eczaneleri yerinde cikarir; cikarilan sayisini dondurur."""
+    haric_idler, haric_isimler = haric_listesi_oku(etiket)
+    if not haric_idler and not haric_isimler:
+        return 0
+    kalan, kalan_idler, cikan = [], [], 0
+    for e in eczaneler:
+        if e.get("id") in haric_idler or normallestir(e.get("ad")) in haric_isimler:
+            cikan += 1
+            print(f"[{etiket}] HARIC TUTULDU (haric-eczaneler.json): {e.get('ad')} (id {e.get('id')})")
+            continue
+        kalan.append(e)
+        kalan_idler.append(e.get("id"))
+    eczaneler[:] = kalan
+    idler[:] = kalan_idler
+    return cikan
+
+
 def yedegi_listeye_ekle(eczaneler, idler, yedek_sonuc, tumliste, etiket, neden):
     """Yedek kaynaktaki, listede OLMAYAN eczaneleri ekler (telefon/isim eslesmesi).
     Eklenen sayisini dondurur."""
@@ -733,6 +773,8 @@ def main():
                                           "teknikzeka guncel degil - ANA KAYNAK olarak")
             if eczaneler:
                 kaynak_etiketi = "collectapi"
+
+        haric_olanlari_cikar(eczaneler, idler, etiket)
 
         if kaynak_etiketi is None:
             print(f"[{etiket}] ATLANDI: guncel veri alinamadi (ne teknikzeka ne yedek). Mevcut dosyalar korunuyor.")
