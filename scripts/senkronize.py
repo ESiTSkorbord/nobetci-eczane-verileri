@@ -114,6 +114,7 @@ REPO_KOKU = os.path.dirname(BU_DOSYA_KLASORU)
 KONFIG_YOLU = os.path.join(REPO_KOKU, "config", "eczane-kaynaklari.json")
 DATA_KLASORU = os.path.join(REPO_KOKU, "data")
 EKLENENLER_LOG_YOLU = os.path.join(DATA_KLASORU, "collectapi-eklenenler-log.txt")
+DUZELTME_YOLU = os.path.join(DATA_KLASORU, "duzeltmeler.json")  # 12 Ekim: kaynaktaki yanlis tel/adres/ad elle duzeltme
 HARIC_YOLU = os.path.join(DATA_KLASORU, "haric-eczaneler.json")  # 12 Ekim: elle hariç tutulan (hatali) eczaneler
 
 # CollectAPI'ye bu saatten (Istanbul yerel saati) ONCE hic sorulmaz - Enver'in
@@ -258,6 +259,17 @@ def normallestir(metin):
     metin = str(metin).strip()
     metin = metin.replace("İ", "I").replace("ı", "I").replace("i", "I")
     return " ".join(metin.upper().split())
+
+
+def isim_anahtari(metin):
+    """Eczane ismini KARSILASTIRMA icin sadelestirir: normallestir + sondaki 'ECZANESI'/
+    'ECZANE'/'ECZ.' eki atilir. 12 Ekim: teknikzeka 'CINAR', CollectAPI 'CINAR ECZANESI'
+    yazdigi icin ayni eczane iki ayri kayit sanilip listeye cift ekleniyordu."""
+    n = normallestir(metin)
+    parcalar = n.split()
+    while len(parcalar) > 1 and parcalar[-1] in ("ECZANESI", "ECZANE", "ECZ", "ECZ."):
+        parcalar.pop()
+    return " ".join(parcalar)
 
 
 def telefon_normallestir(ham):
@@ -515,14 +527,14 @@ def tumlisteden_bul(aday, tumliste):
     """CollectAPI kaydini ilcenin tam listesindeki GERCEK kayitla eslestirir
     (once telefon, sonra isim) - boylece 'kendi eczanem' ID'si bozulmaz."""
     aday_tel = telefon_normallestir(aday.get("tel"))
-    aday_isim = normallestir(aday.get("ad"))
+    aday_isim = isim_anahtari(aday.get("ad"))
     if aday_tel:
         for k in tumliste:
             if telefon_normallestir(k.get("tel")) == aday_tel:
                 return k
     if aday_isim:
         for k in tumliste:
-            if normallestir(k.get("ad")) == aday_isim:
+            if isim_anahtari(k.get("ad")) == aday_isim:
                 return k
     return None
 
@@ -581,7 +593,7 @@ def haric_listesi_oku(etiket):
             if g.strip().isdigit():
                 idler.add(int(g.strip()))
             else:
-                isimler.add(normallestir(g))
+                isimler.add(isim_anahtari(g))
     return idler, isimler
 
 
@@ -592,7 +604,7 @@ def haric_olanlari_cikar(eczaneler, idler, etiket):
         return 0
     kalan, kalan_idler, cikan = [], [], 0
     for e in eczaneler:
-        if e.get("id") in haric_idler or normallestir(e.get("ad")) in haric_isimler:
+        if e.get("id") in haric_idler or isim_anahtari(e.get("ad")) in haric_isimler:
             cikan += 1
             print(f"[{etiket}] HARIC TUTULDU (haric-eczaneler.json): {e.get('ad')} (id {e.get('id')})")
             continue
@@ -603,15 +615,36 @@ def haric_olanlari_cikar(eczaneler, idler, etiket):
     return cikan
 
 
+def duzeltmeleri_uygula(eczaneler, etiket):
+    """data/duzeltmeler.json -> {"istanbul-maltepe": {"15650": {"adres": "...", "tel": "...", "ad": "..."}}}
+    Kaynak API'nin yanlis/eski yazdigi alanlari ID'ye gore ezer (sadece verilen alanlar).
+    Dosya yoksa/bozuksa hicbir sey yapmaz. Uygulanan kayit sayisini dondurur."""
+    veri = json_oku(DUZELTME_YOLU, {})
+    ilce = veri.get(etiket, {}) if isinstance(veri, dict) else {}
+    if not isinstance(ilce, dict) or not ilce:
+        return 0
+    uygulanan = 0
+    for e in eczaneler:
+        d = ilce.get(str(e.get("id")))
+        if not isinstance(d, dict):
+            continue
+        for alan in ("ad", "tel", "adres"):
+            if isinstance(d.get(alan), str) and d[alan].strip():
+                e[alan] = d[alan].strip()
+        uygulanan += 1
+        print(f"[{etiket}] DUZELTME uygulandi (duzeltmeler.json): id {e.get('id')}")
+    return uygulanan
+
+
 def yedegi_listeye_ekle(eczaneler, idler, yedek_sonuc, tumliste, etiket, neden):
     """Yedek kaynaktaki, listede OLMAYAN eczaneleri ekler (telefon/isim eslesmesi).
     Eklenen sayisini dondurur."""
-    mevcut_isimler = {normallestir(e["ad"]) for e in eczaneler}
+    mevcut_isimler = {isim_anahtari(e["ad"]) for e in eczaneler}
     mevcut_tel = {telefon_normallestir(e["tel"]) for e in eczaneler if telefon_normallestir(e["tel"])}
     zaman_damgasi = simdi_istanbul().strftime("%Y-%m-%d %H:%M")
     eklenen = 0
     for aday in yedek_sonuc:
-        isim_norm = normallestir(aday.get("ad"))
+        isim_norm = isim_anahtari(aday.get("ad"))
         tel_norm = telefon_normallestir(aday.get("tel"))
         if not isim_norm:
             continue
@@ -622,7 +655,7 @@ def yedegi_listeye_ekle(eczaneler, idler, yedek_sonuc, tumliste, etiket, neden):
             kayit = {"id": gercek["id"], "ad": gercek.get("ad") or aday["ad"],
                      "tel": gercek.get("tel") or aday["tel"], "adres": gercek.get("adres") or aday["adres"]}
         else:
-            kayit = {"id": sentetik_id_uret(isim_norm), "ad": aday["ad"], "tel": aday["tel"], "adres": aday["adres"]}
+            kayit = {"id": sentetik_id_uret(normallestir(aday.get("ad"))), "ad": aday["ad"], "tel": aday["tel"], "adres": aday["adres"]}
         if kayit["id"] in idler:
             continue
         eczaneler.append(kayit)
@@ -716,7 +749,7 @@ def main():
         onceki_liste = onceki_liste_oku(liste_yolu)
         onceki_idler = onceki_idler_oku(gunluk_yolu)
         onceki_tel = {telefon_normallestir(e.get("tel")) for e in onceki_liste if telefon_normallestir(e.get("tel"))}
-        onceki_isimler = {normallestir(e.get("ad")) for e in onceki_liste}
+        onceki_isimler = {isim_anahtari(e.get("ad")) for e in onceki_liste}
 
         eczaneler = []
         idler = []
@@ -746,7 +779,7 @@ def main():
         yedek_degisti = False
         if yedek_sonuc:
             cr_tel = {telefon_normallestir(a.get("tel")) for a in yedek_sonuc if telefon_normallestir(a.get("tel"))}
-            cr_isimler = {normallestir(a.get("ad")) for a in yedek_sonuc}
+            cr_isimler = {isim_anahtari(a.get("ad")) for a in yedek_sonuc}
             if not onceki_liste:
                 yedek_degisti = True
             elif cr_tel and onceki_tel:
@@ -775,6 +808,7 @@ def main():
                 kaynak_etiketi = "collectapi"
 
         haric_olanlari_cikar(eczaneler, idler, etiket)
+        duzeltmeleri_uygula(eczaneler, etiket)
 
         if kaynak_etiketi is None:
             print(f"[{etiket}] ATLANDI: guncel veri alinamadi (ne teknikzeka ne yedek). Mevcut dosyalar korunuyor.")
