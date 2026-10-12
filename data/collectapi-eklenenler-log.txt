@@ -51,3 +51,4 @@
 2026-10-12 18:00 | istanbul-kartal | CollectAPI'den eklendi (teknikzeka'da yoktu): CEVİZ ECZANESİ
 2026-10-12 19:00 | istanbul-kartal | CollectAPI'den eklendi (teknikzeka'da yoktu): CEVİZ ECZANESİ
 2026-10-12 20:01 | istanbul-kartal | CollectAPI'den eklendi (teknikzeka'da yoktu): CEVİZ ECZANESİ
+2026-10-12 21:00 | istanbul-kartal | CollectAPI'den eklendi (teknikzeka'da yoktu): CEVİZ ECZANESİ
