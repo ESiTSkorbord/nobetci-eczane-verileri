@@ -1,28 +1,22 @@
 {
   "eczaneler": [
     {
-      "id": 44720,
-      "ad": "DİLŞAT ECZANESİ",
-      "tel": "2163876540",
-      "adres": "Karlıktepe Mah. Yaşar Doğu Cad. No:3A"
+      "id": 13399,
+      "ad": "HANIMELI",
+      "tel": "2164882578",
+      "adres": "ATALAR MAH.ATALAR CAD.SIRIN SK.NO:2/B KARTAL"
     },
     {
-      "id": 13387,
-      "ad": "GÜMÜŞPINAR",
-      "tel": "2166719444",
-      "adres": "GÜMÜSPINAR MH. DEFNELI CD. NO:10/1 KARTAL"
+      "id": 13330,
+      "ad": "HÜRRİYET ECZANESİ",
+      "tel": "2164520042",
+      "adres": "HÜRRIYET MAH. ABDI IPEKÇI CAD. NO:50/B"
     },
     {
-      "id": 56535,
-      "ad": "SERENAY ECZANESİ",
-      "tel": "2163837036",
-      "adres": "Orhantepe Mah. 30 Ağustos Cad. No:21/A"
-    },
-    {
-      "id": 9806802,
-      "ad": "CEVİZ ECZANESİ",
-      "tel": "02164410046",
-      "adres": "YAKACIK ÇARŞI MAH. KARTAL CAD. A BLOK NO:68-70/H"
+      "id": 34250,
+      "ad": "YENİ İNCİ ECZANESİ",
+      "tel": "2165177749",
+      "adres": "KARLIKTEPE MH. HUZURTEPE SK. NO:10A"
     }
   ]
 }

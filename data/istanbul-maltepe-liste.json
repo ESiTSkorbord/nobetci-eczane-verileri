@@ -1,22 +1,22 @@
 {
   "eczaneler": [
     {
-      "id": 60855,
-      "ad": "ADALAR ECZANESİ",
-      "tel": "5324409555",
-      "adres": "Çınar Mah. Kadir Has Cad. No:55EB"
+      "id": 42823,
+      "ad": "ALTINTEPE ECZANESİ",
+      "tel": "2163661573",
+      "adres": "Altıntepe Mah. Emin Ali Paşa Cad. No:13B"
     },
     {
-      "id": 60117,
-      "ad": "ÇAĞDAŞ ECZANESİ",
-      "tel": "2164274926",
-      "adres": "Gülensu Mahallesi,Akar Sokak,No:4"
+      "id": 65632,
+      "ad": "GÜLBİN ECZANESİ",
+      "tel": "2163711441",
+      "adres": "Altayçeşme Mahallesi,Çamlı Sokak, No:4-6/D"
     },
     {
-      "id": 15650,
-      "ad": "ÇINAR ECZANESİ",
-      "tel": "2163714845",
-      "adres": "Bağlarbaşı Mahallesi,Bağdat Caddesi,No:467/2"
+      "id": 15776,
+      "ad": "ONUR",
+      "tel": "2165898282",
+      "adres": "ZÜMRÜTEVLER MH. NIL CD. ÇAGLAYAN SK. NO:29/2"
     }
   ]
 }
