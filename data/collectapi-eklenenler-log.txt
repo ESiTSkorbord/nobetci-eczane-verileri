@@ -56,3 +56,4 @@
 2026-10-12 23:00 | istanbul-kartal | CollectAPI'den eklendi (teknikzeka'da yoktu): CEVİZ ECZANESİ
 2026-10-13 15:00 | istanbul-kartal | CollectAPI'den eklendi (teknikzeka'da yoktu): FATİH ECZANESİ
 2026-10-13 16:01 | istanbul-kartal | CollectAPI'den eklendi (teknikzeka'da yoktu): FATİH ECZANESİ
+2026-10-13 17:01 | istanbul-kartal | CollectAPI'den eklendi (teknikzeka'da yoktu): FATİH ECZANESİ
