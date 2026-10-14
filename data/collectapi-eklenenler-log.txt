@@ -77,3 +77,5 @@
 2026-10-14 20:01 | istanbul-maltepe | CollectAPI'den eklendi (teknikzeka'da yoktu): CANKATAR ECZANESİ
 2026-10-14 21:01 | istanbul-kartal | CollectAPI'den eklendi (teknikzeka'da yoktu): AYDIN ECZANESİ
 2026-10-14 21:01 | istanbul-maltepe | CollectAPI'den eklendi (teknikzeka'da yoktu): CANKATAR ECZANESİ
+2026-10-14 22:01 | istanbul-kartal | CollectAPI'den eklendi (teknikzeka'da yoktu): AYDIN ECZANESİ
+2026-10-14 22:01 | istanbul-maltepe | CollectAPI'den eklendi (teknikzeka'da yoktu): CANKATAR ECZANESİ
