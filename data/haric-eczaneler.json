@@ -1,3 +1,9 @@
 {
-  "istanbul-maltepe": [63607]
+  "istanbul-maltepe": [
+    63607,
+    {
+      "id": 15659,
+      "bitis": "2026-10-15"
+    }
+  ]
 }
