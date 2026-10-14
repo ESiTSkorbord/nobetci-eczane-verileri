@@ -587,6 +587,18 @@ def haric_listesi_oku(etiket):
     for g in girdiler:
         if isinstance(g, bool):
             continue
+        if isinstance(g, dict):
+            # {"id": 15659, "bitis": "2026-10-15"} -> bitis tarihinden (dahil) sonra hariclik OTOMATIK kalkar
+            bitis = g.get("bitis")
+            if isinstance(bitis, str) and bitis.strip():
+                try:
+                    if simdi_istanbul().date() > date.fromisoformat(bitis.strip()):
+                        continue
+                except ValueError:
+                    pass
+            g = g.get("id") if g.get("id") is not None else g.get("ad")
+            if g is None or isinstance(g, bool):
+                continue
         if isinstance(g, int):
             idler.add(g)
         elif isinstance(g, str) and g.strip():
@@ -628,6 +640,15 @@ def duzeltmeleri_uygula(eczaneler, etiket):
         d = ilce.get(str(e.get("id")))
         if not isinstance(d, dict):
             continue
+        # Istege bagli "bitis": "YYYY-MM-DD" -> duzeltme bu tarihten (dahil) sonra OTOMATIK devre disi
+        # (kaynak API'nin SADECE o gun yanlis yazdigi kayitlar icin; kalici duzeltmelerde "bitis" yazilmaz).
+        bitis = d.get("bitis")
+        if isinstance(bitis, str) and bitis.strip():
+            try:
+                if simdi_istanbul().date() > date.fromisoformat(bitis.strip()):
+                    continue
+            except ValueError:
+                pass
         for alan in ("ad", "tel", "adres"):
             if isinstance(d.get(alan), str) and d[alan].strip():
                 e[alan] = d[alan].strip()
