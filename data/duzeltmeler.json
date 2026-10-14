@@ -4,5 +4,18 @@
       "ad": "ÇINAR ECZANESİ",
       "adres": "Bağlarbaşı Mahallesi,Bağdat Caddesi,No:467/2"
     }
+  },
+  "istanbul-kartal": {
+    "13352": {
+      "adres": "Uğur Mumcu Mahallesi, Şeyh Şamil Caddesi, No:40/D"
+    },
+    "26824": {
+      "ad": "İSTANBUL ECZANESİ"
+    },
+    "61616": {
+      "ad": "AYDIN ECZANESİ",
+      "tel": "2163706081",
+      "adres": "Orhantepe Mahallesi, Bankalar Caddesi, No:45/A"
+    }
   }
 }
