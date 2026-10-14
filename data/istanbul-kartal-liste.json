@@ -1,28 +1,22 @@
 {
   "eczaneler": [
     {
-      "id": 13399,
-      "ad": "HANIMELI",
-      "tel": "2164882578",
-      "adres": "ATALAR MAH.ATALAR CAD.SIRIN SK.NO:2/B KARTAL"
+      "id": 48121,
+      "ad": "CİHAN ECZANESİ",
+      "tel": "2167558585",
+      "adres": "ESENTEPE MAH. ANADOLU CAD NO:5/2H"
     },
     {
-      "id": 13330,
-      "ad": "HÜRRİYET ECZANESİ",
-      "tel": "2164520042",
-      "adres": "HÜRRIYET MAH. ABDI IPEKÇI CAD. NO:50/B"
+      "id": 13352,
+      "ad": "ERBAŞ ECZANESİ",
+      "tel": "5442428488",
+      "adres": "UGUR MUMCU MAH. SEYH SAMIL CAD. NO:54/C"
     },
     {
-      "id": 34250,
-      "ad": "YENİ İNCİ ECZANESİ",
-      "tel": "2165177749",
-      "adres": "KARLIKTEPE MH. HUZURTEPE SK. NO:10A"
-    },
-    {
-      "id": 9875907,
-      "ad": "FATİH ECZANESİ",
-      "tel": "02165668822",
-      "adres": "Soğanlık Yeni Mah. Mimar Sinan  Cd. No:35A,35/B,35/C"
+      "id": 26824,
+      "ad": "İSTANBUL",
+      "tel": "2163705457",
+      "adres": "Soğanlık Yeni Mahallesi Atatürk Caddesi, 3"
     }
   ]
 }
