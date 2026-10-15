@@ -99,3 +99,5 @@
 2026-10-15 21:01 | istanbul-maltepe | CollectAPI'den eklendi (teknikzeka'da yoktu): PERVİN ECZANESİ
 2026-10-15 22:01 | istanbul-maltepe | CollectAPI'den eklendi (teknikzeka'da yoktu): ADATEPE POYRAZ ECZANESİ
 2026-10-15 22:01 | istanbul-maltepe | CollectAPI'den eklendi (teknikzeka'da yoktu): PERVİN ECZANESİ
+2026-10-15 23:00 | istanbul-maltepe | CollectAPI'den eklendi (teknikzeka'da yoktu): ADATEPE POYRAZ ECZANESİ
+2026-10-15 23:00 | istanbul-maltepe | CollectAPI'den eklendi (teknikzeka'da yoktu): PERVİN ECZANESİ
