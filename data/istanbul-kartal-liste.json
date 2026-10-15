@@ -1,28 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 48121,
-      "ad": "CİHAN ECZANESİ",
-      "tel": "2167558585",
-      "adres": "ESENTEPE MAH. ANADOLU CAD NO:5/2H"
+      "id": 48345,
+      "ad": "KARTAL ECZANESİ",
+      "tel": "2164880045",
+      "adres": "Gümüşpınar Mahallesi Defneli Caddesi, 4/1A"
     },
     {
-      "id": 13352,
-      "ad": "ERBAŞ ECZANESİ",
-      "tel": "5442428488",
-      "adres": "Uğur Mumcu Mahallesi, Şeyh Şamil Caddesi, No:40/D"
+      "id": 56865,
+      "ad": "METEHAN ECZANESİ",
+      "tel": "2164757900",
+      "adres": "Uğur Mumcu Mah. Fatih Sultan Mehmet Cad. No:32-A"
     },
     {
-      "id": 26824,
-      "ad": "İSTANBUL ECZANESİ",
-      "tel": "2163705457",
-      "adres": "Soğanlık Yeni Mahallesi Atatürk Caddesi, 3"
+      "id": 37615,
+      "ad": "VATAN ECZANESİ",
+      "tel": "2163522538",
+      "adres": "CEVİZLİ MAH. DENİZER CAD. NO:25D"
     },
     {
-      "id": 61616,
-      "ad": "AYDIN ECZANESİ",
-      "tel": "2163706081",
-      "adres": "Orhantepe Mahallesi, Bankalar Caddesi, No:45/A"
+      "id": 43669,
+      "ad": "İSTMARİNA ECZANESİ",
+      "tel": "2165194544",
+      "adres": "Kordonboyu Mah. Ankara Cad. No:147/6 İç Kapı No:223"
     }
   ]
 }
