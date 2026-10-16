@@ -103,3 +103,4 @@
 2026-10-15 23:00 | istanbul-maltepe | CollectAPI'den eklendi (teknikzeka'da yoktu): PERVİN ECZANESİ
 2026-10-16 15:01 | istanbul-maltepe | CollectAPI'den eklendi (teknikzeka'da yoktu): DİDEM TOPRAK ECZANESİ
 2026-10-16 16:01 | istanbul-maltepe | CollectAPI'den eklendi (teknikzeka'da yoktu): DİDEM TOPRAK ECZANESİ
+2026-10-16 17:01 | istanbul-maltepe | CollectAPI'den eklendi (teknikzeka'da yoktu): DİDEM TOPRAK ECZANESİ
