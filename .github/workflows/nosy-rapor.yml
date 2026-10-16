@@ -1,0 +1,51 @@
+name: NosyAPI Uyusmazlik Raporu
+
+# SADECE rapor yazar (test/ klasoru). data/ klasorune ve panele dokunmaz.
+# Nosy guncelleme saatleri: 09:00 10:00 11:00 13:00 15:00 17:00 19:30 (Istanbul)
+# Calisma saatleri (UTC): 08:30 = 11:30 Istanbul, 16:45 = 19:45 Istanbul
+# Pazar ayrica 06:15 UTC = 09:15 Istanbul (pazar nobet degisimi 09:00)
+# Kredi: ilce basina 1. 2 ilce x 2 calisma x 30 gun = 120 kredi/ay (limit 500).
+
+on:
+  schedule:
+    - cron: "30 8 * * *"
+    - cron: "45 16 * * *"
+    - cron: "15 6 * * 0"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nosy-rapor
+  cancel-in-progress: false
+
+jobs:
+  rapor:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Depoyu indir
+        uses: actions/checkout@v4
+
+      - name: Python kur
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Nosy raporu
+        env:
+          NOSY_KEY: ${{ secrets.NOSY_KEY }}
+        run: python scripts/nosy_rapor.py
+
+      - name: Raporu depoya yaz
+        run: |
+          git config user.name "nobetci-eczane-bot"
+          git config user.email "nobetci-eczane-bot@users.noreply.github.com"
+          git add test/
+          if git diff --cached --quiet; then
+            echo "Degisiklik yok."
+          else
+            git commit -m "Nosy uyusmazlik raporu"
+            git pull --rebase
+            git push
+          fi
