@@ -9,3 +9,8 @@
 [istanbul-kartal] UYUSUYOR | Nosy=5 bizim=5 (bizim liste tarihi: 16 Ekim Cuma) | kredi=1
 [istanbul-maltepe] FARK VAR | Nosy=2 bizim=3 (bizim liste tarihi: 16 Ekim Cuma) | kredi=1
     Sadece BIZDE var   : CEMRE ECZANESİ
+
+=== 2026-10-16 19:59 ===
+[istanbul-kartal] UYUSUYOR | Nosy=5 bizim=5 (bizim liste tarihi: 16 Ekim Cuma) | kredi=1
+[istanbul-maltepe] FARK VAR | Nosy=2 bizim=4 (bizim liste tarihi: 16 Ekim Cuma) | kredi=1
+    Sadece BIZDE var   : CEMRE ECZANESİ, DİDEM TOPRAK ECZANESİ

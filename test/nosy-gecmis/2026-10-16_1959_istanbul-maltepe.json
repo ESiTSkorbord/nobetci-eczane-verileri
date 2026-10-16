@@ -1,0 +1,49 @@
+{
+ "alindi": "2026-10-16 19:59",
+ "http": 200,
+ "yanit": {
+  "status": "success",
+  "message": "ok",
+  "messageTR": "ok",
+  "systemTime": 1792169954,
+  "endpoint": "pharmacies-on-duty",
+  "rowCount": 2,
+  "creditUsed": 1,
+  "data": [
+   {
+    "pharmacyID": 48226,
+    "cityId": 34,
+    "districtId": 1364,
+    "pharmacyName": "Örnek Eczanesi",
+    "address": "Zümrütevler Mahallesi, Çiğdem Sokak, 26/2-3",
+    "city": "İstanbul",
+    "district": "Maltepe",
+    "town": "Zümrütevler",
+    "directions": null,
+    "phone": "+902165890498",
+    "phone2": null,
+    "pharmacyDutyStart": null,
+    "pharmacyDutyEnd": null,
+    "latitude": 40.9346727033053,
+    "longitude": 29.1501791856828
+   },
+   {
+    "pharmacyID": 55790,
+    "cityId": 34,
+    "districtId": 1364,
+    "pharmacyName": "Merve Eczanesi",
+    "address": "Feyzullah Mahallesi Mimar Sinan Caddesi No:No:6/A",
+    "city": "İstanbul",
+    "district": "Maltepe",
+    "town": "Feyzullah",
+    "directions": "Cumhuriyet Merkez Cami Yanı Sahile İnen Trafiğe Açık Cadde",
+    "phone": "2163711191",
+    "phone2": null,
+    "pharmacyDutyStart": null,
+    "pharmacyDutyEnd": null,
+    "latitude": 40.9250489458435,
+    "longitude": 29.1294138455063
+   }
+  ]
+ }
+}
