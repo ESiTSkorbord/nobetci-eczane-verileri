@@ -1,0 +1,6 @@
+
+=== 2026-10-16 12:00 ===
+[istanbul-kartal] FARK VAR | Nosy=0 bizim=4 | kredi=0
+    Sadece BIZDE var   : KARTAL ECZANESİ, METEHAN ECZANESİ, VATAN ECZANESİ, İSTMARİNA ECZANESİ
+[istanbul-maltepe] FARK VAR | Nosy=0 bizim=4 | kredi=0
+    Sadece BIZDE var   : ANIL ECZANESİ, BAŞIBÜYÜK ECZANESİ, ELA ECZANESİ, YİĞİT ECZANESİ

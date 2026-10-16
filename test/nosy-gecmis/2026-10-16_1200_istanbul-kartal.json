@@ -1,0 +1,14 @@
+{
+ "alindi": "2026-10-16 12:00",
+ "http": 200,
+ "yanit": {
+  "status": "success",
+  "message": "ok",
+  "messageTR": "ok",
+  "systemTime": 1792141215,
+  "endpoint": "pharmacies-on-duty",
+  "rowCount": 0,
+  "creditUsed": 0,
+  "data": []
+ }
+}
