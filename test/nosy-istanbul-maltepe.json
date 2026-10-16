@@ -1,0 +1,14 @@
+{
+ "alindi": "2026-10-16 11:37",
+ "http": 401,
+ "yanit": {
+  "status": "failure",
+  "message": "Unable to find a valid record associated with your account",
+  "messageTR": "Hesabınıza Tanımlı Uygun Kayıt Bulunamadı",
+  "systemTime": 1792139824,
+  "endpoint": "pharmacies-on-duty",
+  "rowCount": 0,
+  "creditUsed": 0,
+  "data": []
+ }
+}
