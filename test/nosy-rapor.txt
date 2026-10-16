@@ -4,3 +4,8 @@
     Sadece BIZDE var   : KARTAL ECZANESİ, METEHAN ECZANESİ, VATAN ECZANESİ, İSTMARİNA ECZANESİ
 [istanbul-maltepe] FARK VAR | Nosy=0 bizim=4 | kredi=0
     Sadece BIZDE var   : ANIL ECZANESİ, BAŞIBÜYÜK ECZANESİ, ELA ECZANESİ, YİĞİT ECZANESİ
+
+=== 2026-10-16 12:03 ===
+[istanbul-kartal] UYUSUYOR | Nosy=5 bizim=5 (bizim liste tarihi: 16 Ekim Cuma) | kredi=1
+[istanbul-maltepe] FARK VAR | Nosy=2 bizim=3 (bizim liste tarihi: 16 Ekim Cuma) | kredi=1
+    Sadece BIZDE var   : CEMRE ECZANESİ
