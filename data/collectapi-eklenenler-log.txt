@@ -104,3 +104,4 @@
 2026-10-16 15:01 | istanbul-maltepe | CollectAPI'den eklendi (teknikzeka'da yoktu): DİDEM TOPRAK ECZANESİ
 2026-10-16 16:01 | istanbul-maltepe | CollectAPI'den eklendi (teknikzeka'da yoktu): DİDEM TOPRAK ECZANESİ
 2026-10-16 17:01 | istanbul-maltepe | CollectAPI'den eklendi (teknikzeka'da yoktu): DİDEM TOPRAK ECZANESİ
+2026-10-16 18:01 | istanbul-maltepe | CollectAPI'den eklendi (teknikzeka'da yoktu): DİDEM TOPRAK ECZANESİ
