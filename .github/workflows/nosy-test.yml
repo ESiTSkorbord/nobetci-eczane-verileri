@@ -1,0 +1,39 @@
+name: NosyAPI Deneme
+
+# SADECE elle calistirilir (Actions sekmesi > Run workflow).
+# data/ klasorune dokunmaz, sadece test/ klasorune yazar.
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Depoyu indir
+        uses: actions/checkout@v4
+
+      - name: Python kur
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: NosyAPI deneme
+        env:
+          NOSY_KEY: ${{ secrets.NOSY_KEY }}
+        run: python scripts/nosy_test.py
+
+      - name: Test sonucunu depoya yaz
+        run: |
+          git config user.name "nobetci-eczane-bot"
+          git config user.email "nobetci-eczane-bot@users.noreply.github.com"
+          git add test/
+          if git diff --cached --quiet; then
+            echo "Degisiklik yok."
+          else
+            git commit -m "NosyAPI test sonucu"
+            git push
+          fi
