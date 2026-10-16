@@ -108,7 +108,7 @@ def main():
     for k in config.get("kaynaklar", []):
         il, ilce = k["il_slug"], k["ilce_slug"]
         etiket = "%s-%s" % (il, ilce)
-        kod, veri = nosy_cek(k["api_il"], k["api_ilce"])
+        kod, veri = nosy_cek(il, ilce)  # kucuk harfli slug (istanbul / kartal): NosyAPI boyle calisiyor
         with open("test/nosy-gecmis/%s_%s.json" % (dosya_oneki, etiket), "w", encoding="utf-8") as f:
             json.dump({"alindi": zaman_metni, "http": kod, "yanit": veri}, f,
                       ensure_ascii=False, indent=1)
@@ -116,8 +116,12 @@ def main():
             satirlar.append("[%s] NOSY HATA http=%s  %s" % (etiket, kod, (veri or {}).get("messageTR", "")))
             continue
         nosy = [(n.get("pharmacyName", ""), n.get("phone", "")) for n in kayitlar(veri)]
+        if not nosy:
+            satirlar.append("[%s] NOSY BOS dondu (0 kayit) - karsilastirma yapilmadi | kredi=%s" % (etiket, veri.get("creditUsed")))
+            continue
         bizim_veri = json_oku("data/%s-liste.json" % etiket, {})
         bizim = [(b.get("ad", ""), b.get("tel", "")) for b in bizim_veri.get("eczaneler", [])]
+        bizim_tarih = json_oku("data/%s.json" % etiket, {}).get("tarih", "?")
 
         nosy_k = [anahtarlar(a, t) for a, t in nosy]
         bizim_k = [anahtarlar(a, t) for a, t in bizim]
@@ -127,8 +131,8 @@ def main():
         durum = "UYUSUYOR" if not sadece_nosy and not sadece_bizim else "FARK VAR"
         if durum == "FARK VAR":
             fark_var = True
-        satirlar.append("[%s] %s | Nosy=%d bizim=%d | kredi=%s" % (
-            etiket, durum, len(nosy), len(bizim), veri.get("creditUsed")))
+        satirlar.append("[%s] %s | Nosy=%d bizim=%d (bizim liste tarihi: %s) | kredi=%s" % (
+            etiket, durum, len(nosy), len(bizim), bizim_tarih, veri.get("creditUsed")))
         if sadece_nosy:
             satirlar.append("    Sadece NOSY'de var : " + ", ".join(sadece_nosy))
         if sadece_bizim:
