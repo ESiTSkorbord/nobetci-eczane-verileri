@@ -1,25 +1,20 @@
 {
-  "tarih_iso": "2026-10-15",
+  "tarih_iso": "2026-10-16",
   "collectapi_sonuc": [
     {
-      "ad": "BAŞIBÜYÜK ECZANESİ",
-      "tel": "02164212025",
-      "adres": "Başıbüyük Mah. Açar Sok No:4/A Maltepe / İstanbul"
+      "ad": "DİDEM TOPRAK ECZANESİ",
+      "tel": "02163995393",
+      "adres": "Feyzullah Mah. Mimar Sinan Cad. No:6/A"
     },
     {
-      "ad": "ELA ECZANESİ",
-      "tel": "02163671895",
-      "adres": "FINDIKLI MAH. GAZİ MUSTAFA KEMAL CAD. NO:17-19/D"
+      "ad": "ÖRNEK ECZANESİ",
+      "tel": "02165890498",
+      "adres": "ZÜMRÜTEVLER MAH. ÇİĞDEM SOK. No: 26A"
     },
     {
-      "ad": "ADATEPE POYRAZ ECZANESİ",
-      "tel": "02163711441",
-      "adres": "FEYZULLAH MAH. OĞUZHANLI CAD. No: 15D"
-    },
-    {
-      "ad": "PERVİN ECZANESİ",
-      "tel": "02164896161",
-      "adres": "Çınar Mah. Rezzan Has Sok. No:9D"
+      "ad": "EMRE ECZANESİ",
+      "tel": "02166296699",
+      "adres": "AYDINEVLER MAH. SELÇUKBEY CAD. NO:32A"
     }
   ]
 }

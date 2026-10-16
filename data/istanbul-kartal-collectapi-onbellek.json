@@ -1,25 +1,30 @@
 {
-  "tarih_iso": "2026-10-15",
+  "tarih_iso": "2026-10-16",
   "collectapi_sonuc": [
     {
-      "ad": "KARTAL CADDE ECZANESİ",
-      "tel": "02164880045",
-      "adres": "GÜMÜŞPINAR MAH.DEFNELİ CAD.NO:4/1-A"
+      "ad": "SOĞANLIK ECZANESİ",
+      "tel": "02163098920",
+      "adres": "ORTA MAH. VEZİRKÖPRÜ CAD. NO:7 ZEMİN KAT"
     },
     {
-      "ad": "METEHAN ECZANESİ",
-      "tel": "02164757900",
-      "adres": "Uğur Mumcu Mah. Fatih Sultan Mehmet Cad. No:32/A"
+      "ad": "YAĞMUR ECZANESİ",
+      "tel": "02164887959",
+      "adres": "YUNUS MAH. BOSTAN CAD. NO:44/A"
     },
     {
-      "ad": "İSTMARİNA ECZANESİ",
-      "tel": "02165194544",
-      "adres": "KORDONBOYU MAH. ANKARA CAD. NO:147/6 İÇ KAPI NO:223"
+      "ad": "GÜLNİHAL ECZANESİ",
+      "tel": "02163741715",
+      "adres": "PETROL İŞ MAH. KIZILAY BULVARI NO:25A"
     },
     {
-      "ad": "VATAN ECZANESİ",
-      "tel": "02163522538",
-      "adres": "Orhantepe Mah. Şehit Hakan Kurban Cad. 100.Yıl Sitesi A BLok No:39B"
+      "ad": "DEMİRCİOĞLU ECZANESİ",
+      "tel": "02164885073",
+      "adres": "ATALAR MAH. ÜSKÜDAR CAD. NO:152/A"
+    },
+    {
+      "ad": "MERCAN ECZANESİ",
+      "tel": "02164757688",
+      "adres": "UĞUR MUMCU MAH. FATİH SULTAN MEHMET CAD. NO:31B"
     }
   ]
 }
