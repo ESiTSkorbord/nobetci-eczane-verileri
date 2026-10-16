@@ -1,28 +1,34 @@
 {
   "eczaneler": [
     {
-      "id": 48345,
-      "ad": "KARTAL ECZANESİ",
-      "tel": "2164880045",
-      "adres": "Gümüşpınar Mahallesi Defneli Caddesi, 4/1A"
+      "id": 39288,
+      "ad": "DEMİRCİOĞLU ECZANESİ",
+      "tel": "2164885073",
+      "adres": "ATALAR MAH. ÜSKÜDAR CAD. NO:152/A"
     },
     {
-      "id": 56865,
-      "ad": "METEHAN ECZANESİ",
-      "tel": "2164757900",
-      "adres": "Uğur Mumcu Mah. Fatih Sultan Mehmet Cad. No:32-A"
+      "id": 13296,
+      "ad": "GÜLNIHAL ECZANESI",
+      "tel": "2163741715",
+      "adres": "KIZILAY BULVARI NO:25/A"
     },
     {
-      "id": 37615,
-      "ad": "VATAN ECZANESİ",
-      "tel": "2163522538",
-      "adres": "CEVİZLİ MAH. DENİZER CAD. NO:25D"
+      "id": 40178,
+      "ad": "MERCAN ECZANESİ",
+      "tel": "2164757688",
+      "adres": "Uğur Mumcu Mah. Şeyh Şamil Cad. No:31F"
     },
     {
-      "id": 43669,
-      "ad": "İSTMARİNA ECZANESİ",
-      "tel": "2165194544",
-      "adres": "Kordonboyu Mah. Ankara Cad. No:147/6 İç Kapı No:223"
+      "id": 38227,
+      "ad": "SOĞANLIK ECZANESİ",
+      "tel": "2163098920",
+      "adres": "ORTA MAH. VEZİRKÖPRÜ CAD. ZEMİN KAT NO:7"
+    },
+    {
+      "id": 13253,
+      "ad": "TOPSELVI YAGMUR",
+      "tel": "2164887959",
+      "adres": "YUNUS MH. BOSTAN CD. NO:36/A-B KARTAL ISTANBUL"
     }
   ]
 }

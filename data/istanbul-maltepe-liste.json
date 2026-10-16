@@ -1,28 +1,22 @@
 {
   "eczaneler": [
     {
-      "id": 43306,
-      "ad": "ANIL ECZANESİ",
-      "tel": "2165193510",
-      "adres": "Feyzullah Mah. Oğuzhanlı Cad. No:15D"
+      "id": 64430,
+      "ad": "CEMRE ECZANESİ",
+      "tel": "2166296699",
+      "adres": "Aydınevler Mahallesi Selçukbey Caddesi, 32/A"
     },
     {
-      "id": 39510,
-      "ad": "BAŞIBÜYÜK ECZANESİ",
-      "tel": "2164212025",
-      "adres": "Başıbüyük Mah. Açar Sok. No:4/A"
+      "id": 64770,
+      "ad": "MERVE ECZANESİ",
+      "tel": "2163711191",
+      "adres": "Feyzullah Mahallesi,Mimar Sinan Caddesi, No:6/A"
     },
     {
-      "id": 56362,
-      "ad": "ELA ECZANESİ",
-      "tel": "2167552252",
-      "adres": "Fındıklı Mahallesi Gazi Mustafa Kemal Caddesi, 17-19/D"
-    },
-    {
-      "id": 46637,
-      "ad": "YİĞİT ECZANESİ",
-      "tel": "2165184985",
-      "adres": "ÇINAR MAH. REZZAN HAS. SOK. NO:9/D"
+      "id": 15773,
+      "ad": "ÖRNEK",
+      "tel": "2165890498",
+      "adres": "ZÜMRÜTEVLER MAH.ÇIGDEM SK.BIRLIK APT.22/2-3 MALTEPE"
     }
   ]
 }
