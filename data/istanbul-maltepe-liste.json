@@ -1,28 +1,22 @@
 {
   "eczaneler": [
     {
-      "id": 64430,
-      "ad": "CEMRE ECZANESİ",
-      "tel": "2166296699",
-      "adres": "Aydınevler Mahallesi Selçukbey Caddesi, 32/A"
+      "id": 15648,
+      "ad": "AKGÜL",
+      "tel": "2163705734",
+      "adres": "ZÜMRÜTEVLER MAH. GÜL CAD. NO:13/A MALTEPE"
     },
     {
-      "id": 64770,
-      "ad": "MERVE ECZANESİ",
-      "tel": "2163711191",
-      "adres": "Feyzullah Mahallesi,Mimar Sinan Caddesi, No:6/A"
+      "id": 52631,
+      "ad": "NİDA CADDE ECZANESİ",
+      "tel": "2164177417",
+      "adres": "Çınar Mah. Bağdat Cad. No:136/C"
     },
     {
-      "id": 15773,
-      "ad": "ÖRNEK",
-      "tel": "2165890498",
-      "adres": "ZÜMRÜTEVLER MAH.ÇIGDEM SK.BIRLIK APT.22/2-3 MALTEPE"
-    },
-    {
-      "id": 62820,
-      "ad": "DİDEM TOPRAK ECZANESİ",
-      "tel": "5334450616",
-      "adres": "Feyzullah Mah. Bağdat Cad. No:336-338C"
+      "id": 56282,
+      "ad": "YEDİTEPE ECZANESİ",
+      "tel": "2163521674",
+      "adres": "Altayçeşme Mah. Atatürk Cad. No:83"
     }
   ]
 }

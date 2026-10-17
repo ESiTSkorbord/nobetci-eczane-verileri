@@ -1,34 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 39288,
-      "ad": "DEMİRCİOĞLU ECZANESİ",
-      "tel": "2164885073",
-      "adres": "ATALAR MAH. ÜSKÜDAR CAD. NO:152/A"
+      "id": 37579,
+      "ad": "MERT ECZANESİ",
+      "tel": "2166322361",
+      "adres": "Orta Mahallesi Vezirköprü Caddesi, 6B"
     },
     {
-      "id": 13296,
-      "ad": "GÜLNIHAL ECZANESI",
-      "tel": "2163741715",
-      "adres": "KIZILAY BULVARI NO:25/A"
+      "id": 56729,
+      "ad": "NOKTA ECZANESİ",
+      "tel": "2165178457",
+      "adres": "Karlıktepe Mah. İnönü Cad. No:57A"
     },
     {
-      "id": 40178,
-      "ad": "MERCAN ECZANESİ",
-      "tel": "2164757688",
-      "adres": "Uğur Mumcu Mah. Şeyh Şamil Cad. No:31F"
+      "id": 49075,
+      "ad": "YENİ ŞİFA ECZANESİ",
+      "tel": "2163098344",
+      "adres": "Hürriyet Mahallesi Abdi İpekçi Caddesi, 19-21/A 34876 Kurfalı"
     },
     {
-      "id": 38227,
-      "ad": "SOĞANLIK ECZANESİ",
-      "tel": "2163098920",
-      "adres": "ORTA MAH. VEZİRKÖPRÜ CAD. ZEMİN KAT NO:7"
-    },
-    {
-      "id": 13253,
-      "ad": "TOPSELVI YAGMUR",
-      "tel": "2164887959",
-      "adres": "YUNUS MH. BOSTAN CD. NO:36/A-B KARTAL ISTANBUL"
+      "id": 35413,
+      "ad": "İNCİR ECZANESİ",
+      "tel": "2163830821",
+      "adres": "ORHANTEPE MAH. SARAYLAR CAD. NO:80A"
     }
   ]
 }
