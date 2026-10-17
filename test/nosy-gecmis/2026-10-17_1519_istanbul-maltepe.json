@@ -1,0 +1,66 @@
+{
+ "alindi": "2026-10-17 15:19",
+ "http": 200,
+ "yanit": {
+  "status": "success",
+  "message": "ok",
+  "messageTR": "ok",
+  "systemTime": 1792239579,
+  "endpoint": "pharmacies-on-duty",
+  "rowCount": 3,
+  "creditUsed": 1,
+  "data": [
+   {
+    "pharmacyID": 47294,
+    "cityId": 34,
+    "districtId": 1364,
+    "pharmacyName": "Tanyol Eczanesi",
+    "address": "Feyzullah Mahallesi, Şehit Hikmet Alp Caddesi, 26A",
+    "city": "İstanbul",
+    "district": "Maltepe",
+    "town": "Feyzullah",
+    "directions": null,
+    "phone": "+902163521674",
+    "phone2": null,
+    "pharmacyDutyStart": null,
+    "pharmacyDutyEnd": null,
+    "latitude": 40.93065173589367,
+    "longitude": 29.13464739686969
+   },
+   {
+    "pharmacyID": 46441,
+    "cityId": 34,
+    "districtId": 1364,
+    "pharmacyName": "Nida Cadde Eczanesi",
+    "address": "Çınar Mahallesi, Bağdat Caddesi, 136/C",
+    "city": "İstanbul",
+    "district": "Maltepe",
+    "town": "Çinar",
+    "directions": null,
+    "phone": "+902164177417",
+    "phone2": null,
+    "pharmacyDutyStart": null,
+    "pharmacyDutyEnd": null,
+    "latitude": 40.944295,
+    "longitude": 29.112287
+   },
+   {
+    "pharmacyID": 43060,
+    "cityId": 34,
+    "districtId": 1364,
+    "pharmacyName": "Akgül Eczanesi",
+    "address": "Zümrütevler Mahallesi, Gül Caddesi, 13/A",
+    "city": "İstanbul",
+    "district": "Maltepe",
+    "town": "Zümrütevler",
+    "directions": null,
+    "phone": "+902163705734",
+    "phone2": null,
+    "pharmacyDutyStart": null,
+    "pharmacyDutyEnd": null,
+    "latitude": 40.9382291874108,
+    "longitude": 29.1430191025232
+   }
+  ]
+ }
+}
