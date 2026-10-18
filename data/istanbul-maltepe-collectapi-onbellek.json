@@ -1,20 +1,30 @@
 {
-  "tarih_iso": "2026-10-17",
+  "tarih_iso": "2026-10-18",
   "collectapi_sonuc": [
     {
-      "ad": "AKGÜL ECZANESİ",
-      "tel": "02163705734",
-      "adres": "ZÜMRÜTEVLER MAH. GÜL CAD. NO:13/A - Nane Sok. No: 14"
+      "ad": "DİDEM TOPRAK ECZANESİ",
+      "tel": "02163995393",
+      "adres": "FEYZULLAH MAH. MİMAR SİNAN CAD. NO.6A"
     },
     {
-      "ad": "NİDA ECZANESİ",
-      "tel": "02164177417",
-      "adres": "ÇINAR MAH. BAĞDAT CAD. NO:136C"
+      "ad": "FUNDA COŞKUN ECZANESİ",
+      "tel": "02164174700",
+      "adres": "KÜÇÜKYALI MERKEZ MAH. RÜŞTÜ SARP CAD. NO: 24-26 İÇ KAPI NO:18"
     },
     {
-      "ad": "YEDİTEPE ECZANESİ",
-      "tel": "02163521674",
-      "adres": "ALTAYÇEŞME MAH. ATATÜRK CAD. NO:83B"
+      "ad": "KERİM ECZANESİ",
+      "tel": "02164594934",
+      "adres": "ALTAYÇEŞME MAH. NEFER SOK. NO:6/C"
+    },
+    {
+      "ad": "PAŞAOĞLU ECZANESİ",
+      "tel": "02163760587",
+      "adres": "ZÜMRÜTEVLER MAH. TÜLİN CAD. No:161"
+    },
+    {
+      "ad": "CITYLOFT DRAGOS ECZANESİ",
+      "tel": "02165534445",
+      "adres": "CEVİZLİ MAH. CUMHURİYET PARKI SOK. NO:2AA"
     }
   ]
 }

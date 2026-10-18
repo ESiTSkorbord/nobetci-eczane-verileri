@@ -1,25 +1,20 @@
 {
-  "tarih_iso": "2026-10-17",
+  "tarih_iso": "2026-10-18",
   "collectapi_sonuc": [
     {
-      "ad": "MERT ECZANESİ",
-      "tel": "02166322361",
-      "adres": "ORTA MAH. VEZİRKÖPRÜ CAD. NO:6B"
+      "ad": "YAKACIK İNCİ ECZANESİ",
+      "tel": "02164519091",
+      "adres": "GÜMÜŞPINAR MAH. YALI SK. NO:5/1C"
     },
     {
-      "ad": "İNCİR ECZANESİ",
-      "tel": "02163830821",
-      "adres": "ORHANTEPE MAH. SARAYLAR CAD.NO:80/A"
+      "ad": "ASLI ECZANESİ",
+      "tel": "02164736021",
+      "adres": "ATALAR MAH. DOĞU CAD. NO: 72/A"
     },
     {
-      "ad": "NOKTA ECZANESİ",
-      "tel": "02165178457",
-      "adres": "Karlıktepe Mah. İnönü Cad. No:57A"
-    },
-    {
-      "ad": "YENİ ŞİFA ECZANESİ",
-      "tel": "02163098344",
-      "adres": "HÜRRİYET MAH. ABDİ İPEKÇİ CAD. NO:21/A"
+      "ad": "HORİZON ECZANESİ",
+      "tel": "02163681990",
+      "adres": "KORDONBOYU MAH. TURGUT ÖZAL BULVARI NO:65/18"
     }
   ]
 }
