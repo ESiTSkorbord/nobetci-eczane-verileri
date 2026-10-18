@@ -1,22 +1,16 @@
 {
   "eczaneler": [
     {
-      "id": 15648,
-      "ad": "AKGÜL",
-      "tel": "2163705734",
-      "adres": "ZÜMRÜTEVLER MAH. GÜL CAD. NO:13/A MALTEPE"
+      "id": 35825,
+      "ad": "KERİM ECZANESİ",
+      "tel": "2164594934",
+      "adres": "Altayçeşme Mah. Nefer Sok. No:6/C"
     },
     {
-      "id": 52631,
-      "ad": "NİDA CADDE ECZANESİ",
-      "tel": "2164177417",
-      "adres": "Çınar Mah. Bağdat Cad. No:136/C"
-    },
-    {
-      "id": 56282,
-      "ad": "YEDİTEPE ECZANESİ",
-      "tel": "2163521674",
-      "adres": "Altayçeşme Mah. Atatürk Cad. No:83"
+      "id": 15659,
+      "ad": "PASAOGLU",
+      "tel": "2164276919",
+      "adres": "TÜLIN CD. NO:161 ZÜMRÜTEVLER"
     }
   ]
 }

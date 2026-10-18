@@ -1,28 +1,22 @@
 {
   "eczaneler": [
     {
-      "id": 37579,
-      "ad": "MERT ECZANESİ",
-      "tel": "2166322361",
-      "adres": "Orta Mahallesi Vezirköprü Caddesi, 6B"
+      "id": 48782,
+      "ad": "ASLI ECZANESİ",
+      "tel": "2164736021",
+      "adres": "ATALAR MH.DOGU CD. NO:72"
     },
     {
-      "id": 56729,
-      "ad": "NOKTA ECZANESİ",
-      "tel": "2165178457",
-      "adres": "Karlıktepe Mah. İnönü Cad. No:57A"
+      "id": 37716,
+      "ad": "HORİZON ECZANESİ",
+      "tel": "2163681990",
+      "adres": "Kordonboyu Mahallesi Turgut Özal Bulvarı, 65/18"
     },
     {
-      "id": 49075,
-      "ad": "YENİ ŞİFA ECZANESİ",
-      "tel": "2163098344",
-      "adres": "Hürriyet Mahallesi Abdi İpekçi Caddesi, 19-21/A 34876 Kurfalı"
-    },
-    {
-      "id": 35413,
-      "ad": "İNCİR ECZANESİ",
-      "tel": "2163830821",
-      "adres": "ORHANTEPE MAH. SARAYLAR CAD. NO:80A"
+      "id": 28823,
+      "ad": "YAKACIK İNCİ ECZANESİ",
+      "tel": "2164519091",
+      "adres": "Gümüşpınar Mahallesi Yalı Sokak, 5/1C"
     }
   ]
 }
