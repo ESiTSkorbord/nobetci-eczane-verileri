@@ -1,0 +1,83 @@
+{
+ "alindi": "2026-10-18 15:44",
+ "http": 200,
+ "yanit": {
+  "status": "success",
+  "message": "ok",
+  "messageTR": "ok",
+  "systemTime": 1792327488,
+  "endpoint": "pharmacies-on-duty",
+  "rowCount": 4,
+  "creditUsed": 1,
+  "data": [
+   {
+    "pharmacyID": 47594,
+    "cityId": 34,
+    "districtId": 1362,
+    "pharmacyName": "Yakacik İnci Eczanesi",
+    "address": "Gümüşpınar Mahallesi Yalı Sokak 5/1C",
+    "city": "İstanbul",
+    "district": "Kartal",
+    "town": "Gümüşpinar",
+    "directions": null,
+    "phone": "+902164519091",
+    "phone2": null,
+    "pharmacyDutyStart": null,
+    "pharmacyDutyEnd": null,
+    "latitude": 40.9199604338962,
+    "longitude": 29.2170444629969
+   },
+   {
+    "pharmacyID": 45450,
+    "cityId": 34,
+    "districtId": 1362,
+    "pharmacyName": "Horizon Eczanesi",
+    "address": "Kordonboyu Mahallesi, Turgut Özal Bulvarı, 65/18",
+    "city": "İstanbul",
+    "district": "Kartal",
+    "town": "Kordonboyu",
+    "directions": null,
+    "phone": "+902163681990",
+    "phone2": null,
+    "pharmacyDutyStart": null,
+    "pharmacyDutyEnd": null,
+    "latitude": 40.8908219491124,
+    "longitude": 29.1758705195079
+   },
+   {
+    "pharmacyID": 43269,
+    "cityId": 34,
+    "districtId": 1362,
+    "pharmacyName": "Asli Eczanesi",
+    "address": "Atalar Mahallesi, Doğu Caddesi, 72",
+    "city": "İstanbul",
+    "district": "Kartal",
+    "town": "Atalar",
+    "directions": null,
+    "phone": "+902164736021",
+    "phone2": null,
+    "pharmacyDutyStart": null,
+    "pharmacyDutyEnd": null,
+    "latitude": 40.907487475223,
+    "longitude": 29.1724760652966
+   },
+   {
+    "pharmacyID": 54419,
+    "cityId": 34,
+    "districtId": 1362,
+    "pharmacyName": "Nur Eczanesi",
+    "address": "Orta Mahallesi Yalnız Selvi Caddesi No:16A",
+    "city": "İstanbul",
+    "district": "Kartal",
+    "town": "Soğanlık",
+    "directions": null,
+    "phone": "",
+    "phone2": null,
+    "pharmacyDutyStart": null,
+    "pharmacyDutyEnd": null,
+    "latitude": 40.91476391490544,
+    "longitude": 29.20787500365605
+   }
+  ]
+ }
+}

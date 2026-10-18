@@ -41,3 +41,9 @@
     Sadece NOSY'de var : Nur Eczanesi
 [istanbul-maltepe] FARK VAR | Nosy=3 bizim=2 (bizim liste tarihi: 18 Ekim Pazar) | kredi=1
     Sadece NOSY'de var : Funda Coşkun Eczanesi
+
+=== 2026-10-18 15:44 ===
+[istanbul-kartal] FARK VAR | Nosy=4 bizim=3 (bizim liste tarihi: 18 Ekim Pazar) | kredi=1
+    Sadece NOSY'de var : Nur Eczanesi
+[istanbul-maltepe] FARK VAR | Nosy=3 bizim=6 (bizim liste tarihi: 18 Ekim Pazar) | kredi=1
+    Sadece BIZDE var   : DİDEM TOPRAK ECZANESİ, PAŞAOĞLU ECZANESİ, CITYLOFT DRAGOS ECZANESİ

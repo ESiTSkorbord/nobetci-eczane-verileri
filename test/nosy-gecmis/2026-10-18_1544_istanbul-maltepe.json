@@ -1,0 +1,66 @@
+{
+ "alindi": "2026-10-18 15:44",
+ "http": 200,
+ "yanit": {
+  "status": "success",
+  "message": "ok",
+  "messageTR": "ok",
+  "systemTime": 1792327488,
+  "endpoint": "pharmacies-on-duty",
+  "rowCount": 3,
+  "creditUsed": 1,
+  "data": [
+   {
+    "pharmacyID": 46637,
+    "cityId": 34,
+    "districtId": 1364,
+    "pharmacyName": "Paşaoğlu Eczanesi",
+    "address": "Zümrütevler Mahallesi, Tülin Caddesi, 161",
+    "city": "İstanbul",
+    "district": "Maltepe",
+    "town": "Zümrütevler",
+    "directions": null,
+    "phone": "+902164276919",
+    "phone2": null,
+    "pharmacyDutyStart": null,
+    "pharmacyDutyEnd": null,
+    "latitude": 40.9409194528432,
+    "longitude": 29.1538951493655
+   },
+   {
+    "pharmacyID": 45718,
+    "cityId": 34,
+    "districtId": 1364,
+    "pharmacyName": "Kerim Eczanesi",
+    "address": "Altayçeşme Mahallesi, Nefer Sokak, 6/C",
+    "city": "İstanbul",
+    "district": "Maltepe",
+    "town": "Altayçeşme",
+    "directions": null,
+    "phone": "+902164594934",
+    "phone2": null,
+    "pharmacyDutyStart": null,
+    "pharmacyDutyEnd": null,
+    "latitude": 40.93466844551766,
+    "longitude": 29.12779748439789
+   },
+   {
+    "pharmacyID": 44941,
+    "cityId": 34,
+    "districtId": 1364,
+    "pharmacyName": "Funda Coşkun Eczanesi",
+    "address": "Küçükyalı Merkez Mahallesi, Rüştü Sarp Caddesi, 22G",
+    "city": "İstanbul",
+    "district": "Maltepe",
+    "town": "Küçükyali Merkez",
+    "directions": null,
+    "phone": "+902164174700",
+    "phone2": null,
+    "pharmacyDutyStart": null,
+    "pharmacyDutyEnd": null,
+    "latitude": 40.95044328677685,
+    "longitude": 29.11715447902679
+   }
+  ]
+ }
+}
