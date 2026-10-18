@@ -27,3 +27,11 @@
 === 2026-10-17 21:50 ===
 [istanbul-kartal] UYUSUYOR | Nosy=4 bizim=4 (bizim liste tarihi: 17 Ekim Cumartesi) | kredi=1
 [istanbul-maltepe] UYUSUYOR | Nosy=3 bizim=3 (bizim liste tarihi: 17 Ekim Cumartesi) | kredi=1
+
+=== 2026-10-18 09:13 ===
+[istanbul-kartal] FARK VAR | Nosy=4 bizim=3 (bizim liste tarihi: 18 Ekim Pazar) | kredi=1
+    Sadece NOSY'de var : İncir Eczanesi, Yeni Şifa Eczanesi, Nokta Eczanesi, Mert Eczanesi
+    Sadece BIZDE var   : ASLI ECZANESİ, HORİZON ECZANESİ, YAKACIK İNCİ ECZANESİ
+[istanbul-maltepe] FARK VAR | Nosy=3 bizim=2 (bizim liste tarihi: 18 Ekim Pazar) | kredi=1
+    Sadece NOSY'de var : Tanyol Eczanesi, Nida Cadde Eczanesi, Akgül Eczanesi
+    Sadece BIZDE var   : KERİM ECZANESİ, PASAOGLU

@@ -1,0 +1,83 @@
+{
+ "alindi": "2026-10-18 09:13",
+ "http": 200,
+ "yanit": {
+  "status": "success",
+  "message": "ok",
+  "messageTR": "ok",
+  "systemTime": 1792304017,
+  "endpoint": "pharmacies-on-duty",
+  "rowCount": 4,
+  "creditUsed": 1,
+  "data": [
+   {
+    "pharmacyID": 48465,
+    "cityId": 34,
+    "districtId": 1362,
+    "pharmacyName": "İncir Eczanesi",
+    "address": "Orhantepe Mahallesi, Saraylar Caddesi, 80A",
+    "city": "İstanbul",
+    "district": "Kartal",
+    "town": "Orhantepe",
+    "directions": null,
+    "phone": "+902163830821",
+    "phone2": null,
+    "pharmacyDutyStart": null,
+    "pharmacyDutyEnd": null,
+    "latitude": 40.91079641703175,
+    "longitude": 29.16860997676849
+   },
+   {
+    "pharmacyID": 47810,
+    "cityId": 34,
+    "districtId": 1362,
+    "pharmacyName": "Yeni Şifa Eczanesi",
+    "address": "Hürriyet Mahallesi, Abdi İpekçi Caddesi, 19-21/A",
+    "city": "İstanbul",
+    "district": "Kartal",
+    "town": "",
+    "directions": null,
+    "phone": "+902163098344",
+    "phone2": null,
+    "pharmacyDutyStart": null,
+    "pharmacyDutyEnd": null,
+    "latitude": 40.9009970057138,
+    "longitude": 29.2280299881921
+   },
+   {
+    "pharmacyID": 46377,
+    "cityId": 34,
+    "districtId": 1362,
+    "pharmacyName": "Nokta Eczanesi",
+    "address": "Petroliş Mahallesi, Kızılay Bulvarı, 53/1",
+    "city": "İstanbul",
+    "district": "Kartal",
+    "town": "Petrol İş",
+    "directions": null,
+    "phone": "+902165178457",
+    "phone2": null,
+    "pharmacyDutyStart": null,
+    "pharmacyDutyEnd": null,
+    "latitude": 40.900892,
+    "longitude": 29.184961
+   },
+   {
+    "pharmacyID": 46121,
+    "cityId": 34,
+    "districtId": 1362,
+    "pharmacyName": "Mert Eczanesi",
+    "address": "Orta Mahallesi, Vezirköprü Caddesi, 6B",
+    "city": "İstanbul",
+    "district": "Kartal",
+    "town": "Orta",
+    "directions": null,
+    "phone": "+902166322361",
+    "phone2": null,
+    "pharmacyDutyStart": null,
+    "pharmacyDutyEnd": null,
+    "latitude": 40.9100251995492,
+    "longitude": 29.2045058529413
+   }
+  ]
+ }
+}
