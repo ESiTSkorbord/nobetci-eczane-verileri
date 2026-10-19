@@ -1,20 +1,30 @@
 {
-  "tarih_iso": "2026-10-18",
+  "tarih_iso": "2026-10-19",
   "collectapi_sonuc": [
     {
-      "ad": "YAKACIK İNCİ ECZANESİ",
-      "tel": "02164519091",
-      "adres": "GÜMÜŞPINAR MAH. YALI SK. NO:5/1C"
+      "ad": "SAADET ECZANESİ",
+      "tel": "02164519068",
+      "adres": "SOĞANLIK YENİ MAH.ATATÜRK CD.NO:30/A"
     },
     {
-      "ad": "ASLI ECZANESİ",
-      "tel": "02164736021",
-      "adres": "ATALAR MAH. DOĞU CAD. NO: 72/A"
+      "ad": "AZRA ECZANESİ",
+      "tel": "02164751700",
+      "adres": "UĞUR MUMCU MH. YUNUS EMRE CADDESİ NO:33A"
     },
     {
-      "ad": "HORİZON ECZANESİ",
-      "tel": "02163681990",
-      "adres": "KORDONBOYU MAH. TURGUT ÖZAL BULVARI NO:65/18"
+      "ad": "DENİZ ECZANESİ",
+      "tel": "02163894087",
+      "adres": "PETROL İŞ MAH. KIZILAY BULVARI NO:27/F"
+    },
+    {
+      "ad": "MUTLULUK ECZANESİ",
+      "tel": "02164731425",
+      "adres": "TOPSELVİ MAH. TOPSELVİ CAD. NO:95K"
+    },
+    {
+      "ad": "MAY ECZANESİ",
+      "tel": "02163050570",
+      "adres": "CEVİZLİ MAH. CEVİZLİ D-100 GÜNEY YANYOL CAD. NO:2C"
     }
   ]
 }
