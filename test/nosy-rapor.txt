@@ -57,3 +57,7 @@
 === 2026-10-19 18:48 ===
 [istanbul-kartal] UYUSUYOR | Nosy=5 bizim=5 (bizim liste tarihi: 19 Ekim Pazartesi) | kredi=1
 [istanbul-maltepe] UYUSUYOR | Nosy=4 bizim=4 (bizim liste tarihi: 19 Ekim Pazartesi) | kredi=1
+
+=== 2026-10-20 00:15 ===
+[istanbul-kartal] UYUSUYOR | Nosy=5 bizim=5 (bizim liste tarihi: 19 Ekim Pazartesi) | kredi=1
+[istanbul-maltepe] UYUSUYOR | Nosy=4 bizim=4 (bizim liste tarihi: 19 Ekim Pazartesi) | kredi=1
