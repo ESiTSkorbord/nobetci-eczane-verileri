@@ -1,40 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 35825,
-      "ad": "KERİM ECZANESİ",
-      "tel": "2164594934",
-      "adres": "Altayçeşme Mah. Nefer Sok. No:6/C"
+      "id": 43311,
+      "ad": "BÜŞRA ECZANESİ",
+      "tel": "2165753330",
+      "adres": "Fındıklı Mah. Gazi Mustafa Kemal Cad. No:21B"
     },
     {
-      "id": 15659,
-      "ad": "PASAOGLU",
-      "tel": "2164276919",
-      "adres": "TÜLIN CD. NO:161 ZÜMRÜTEVLER"
+      "id": 15705,
+      "ad": "DURCAN",
+      "tel": "2164212432",
+      "adres": "Başıbüyük Mahallesi\r\nBaşıbüyük Caddesi, 30/A-B"
     },
     {
-      "id": 62820,
-      "ad": "DİDEM TOPRAK ECZANESİ",
-      "tel": "5334450616",
-      "adres": "Feyzullah Mah. Bağdat Cad. No:336-338C"
+      "id": 51845,
+      "ad": "NOKTA ECZANESİ",
+      "tel": "2163707138",
+      "adres": "Cevizli Mahallesi Zuhal Caddesi, 16/B"
     },
     {
-      "id": 64034,
-      "ad": "FUNDA COŞKUN ECZANESİ",
-      "tel": "2164174700",
-      "adres": "Küçükyalı Merkez Mahallesi, Rüştü Sarp Caddesi, No:24-26 İç kapı No: 18"
-    },
-    {
-      "id": 9234403,
-      "ad": "PAŞAOĞLU ECZANESİ",
-      "tel": "02163760587",
-      "adres": "ZÜMRÜTEVLER MAH. TÜLİN CAD. No:161"
-    },
-    {
-      "id": 9464948,
-      "ad": "CITYLOFT DRAGOS ECZANESİ",
-      "tel": "02165534445",
-      "adres": "CEVİZLİ MAH. CUMHURİYET PARKI SOK. NO:2AA"
+      "id": 15761,
+      "ad": "ÇARE",
+      "tel": "2165182993",
+      "adres": "BAGDAT CAD.138/C KÜÇÜKYALI/MALTEPE/IST."
     }
   ]
 }

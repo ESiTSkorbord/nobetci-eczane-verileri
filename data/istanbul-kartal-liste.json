@@ -1,22 +1,34 @@
 {
   "eczaneler": [
     {
-      "id": 48782,
-      "ad": "ASLI ECZANESİ",
-      "tel": "2164736021",
-      "adres": "ATALAR MH.DOGU CD. NO:72"
+      "id": 39341,
+      "ad": "AZRA ECZANESİ",
+      "tel": "2164751700",
+      "adres": "Uğur Mumcu Mahallesi Yunus Emre Caddesi, 33A"
     },
     {
-      "id": 37716,
-      "ad": "HORİZON ECZANESİ",
-      "tel": "2163681990",
-      "adres": "Kordonboyu Mahallesi Turgut Özal Bulvarı, 65/18"
+      "id": 13321,
+      "ad": "DENIZ ECZANESI",
+      "tel": "2163894087",
+      "adres": "PETROL-IS MAH. KIZILAY BULVARI NO:27/4"
     },
     {
-      "id": 28823,
-      "ad": "YAKACIK İNCİ ECZANESİ",
-      "tel": "2164519091",
-      "adres": "Gümüşpınar Mahallesi Yalı Sokak, 5/1C"
+      "id": 44682,
+      "ad": "MAY ECZANESİ",
+      "tel": "2163050570",
+      "adres": "Cevizli Mah. Cevizli D-100 Güney Yan Yolu Kuriş Kule Dükkanlar No:2/C"
+    },
+    {
+      "id": 62516,
+      "ad": "MUTLULUK ECZANESİ",
+      "tel": "5451985907",
+      "adres": "Topselvi Mahallesi,Topselvi Caddesi,No:95/K"
+    },
+    {
+      "id": 13333,
+      "ad": "SAADET ECZANESI",
+      "tel": "2164519068",
+      "adres": "ATATÜRK CAD. NO:30/1 SOGANLIK"
     }
   ]
 }
