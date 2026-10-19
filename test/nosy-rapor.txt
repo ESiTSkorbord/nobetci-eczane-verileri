@@ -53,3 +53,7 @@
     Sadece NOSY'de var : Nur Eczanesi
 [istanbul-maltepe] FARK VAR | Nosy=3 bizim=6 (bizim liste tarihi: 18 Ekim Pazar) | kredi=1
     Sadece BIZDE var   : DİDEM TOPRAK ECZANESİ, PAŞAOĞLU ECZANESİ, CITYLOFT DRAGOS ECZANESİ
+
+=== 2026-10-19 18:48 ===
+[istanbul-kartal] UYUSUYOR | Nosy=5 bizim=5 (bizim liste tarihi: 19 Ekim Pazartesi) | kredi=1
+[istanbul-maltepe] UYUSUYOR | Nosy=4 bizim=4 (bizim liste tarihi: 19 Ekim Pazartesi) | kredi=1

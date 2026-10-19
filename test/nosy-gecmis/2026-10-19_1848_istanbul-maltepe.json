@@ -1,0 +1,83 @@
+{
+ "alindi": "2026-10-19 18:48",
+ "http": 200,
+ "yanit": {
+  "status": "success",
+  "message": "ok",
+  "messageTR": "ok",
+  "systemTime": 1792424908,
+  "endpoint": "pharmacies-on-duty",
+  "rowCount": 4,
+  "creditUsed": 1,
+  "data": [
+   {
+    "pharmacyID": 48058,
+    "cityId": 34,
+    "districtId": 1364,
+    "pharmacyName": "Çare Eczanesi",
+    "address": "Çınar Mahallesi, Bağdat Caddesi, 138/3",
+    "city": "İstanbul",
+    "district": "Maltepe",
+    "town": "Çinar",
+    "directions": null,
+    "phone": "+902165182993",
+    "phone2": null,
+    "pharmacyDutyStart": null,
+    "pharmacyDutyEnd": null,
+    "latitude": 40.9441174770774,
+    "longitude": 29.1124607151046
+   },
+   {
+    "pharmacyID": 46378,
+    "cityId": 34,
+    "districtId": 1364,
+    "pharmacyName": "Nokta Eczanesi",
+    "address": "Cevizli Mahallesi, Zuhal Caddesi, 16/B",
+    "city": "İstanbul",
+    "district": "Maltepe",
+    "town": "",
+    "directions": null,
+    "phone": "+902163707138",
+    "phone2": null,
+    "pharmacyDutyStart": null,
+    "pharmacyDutyEnd": null,
+    "latitude": 40.917834,
+    "longitude": 29.15467
+   },
+   {
+    "pharmacyID": 44325,
+    "cityId": 34,
+    "districtId": 1364,
+    "pharmacyName": "Durcan Eczanesi",
+    "address": "Başıbüyük Mahallesi, Başıbüyük Caddesi, 30/A-B",
+    "city": "İstanbul",
+    "district": "Maltepe",
+    "town": "Başibüyük",
+    "directions": null,
+    "phone": "+902164212432",
+    "phone2": null,
+    "pharmacyDutyStart": null,
+    "pharmacyDutyEnd": null,
+    "latitude": 40.9550926293701,
+    "longitude": 29.1444342636367
+   },
+   {
+    "pharmacyID": 43880,
+    "cityId": 34,
+    "districtId": 1364,
+    "pharmacyName": "Büşra Eczanesi",
+    "address": "Fındıklı Mahallesi, Atatürk Caddesi, 21B",
+    "city": "İstanbul",
+    "district": "Maltepe",
+    "town": "Findikli",
+    "directions": null,
+    "phone": "+902165753330",
+    "phone2": null,
+    "pharmacyDutyStart": null,
+    "pharmacyDutyEnd": null,
+    "latitude": 40.97004516726823,
+    "longitude": 29.12428412792391
+   }
+  ]
+ }
+}
