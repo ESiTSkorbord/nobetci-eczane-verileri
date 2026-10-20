@@ -1,0 +1,107 @@
+200 GET https://www.istanbuleczaciodasi.org.tr/nobetci-eczane/
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+                    <title>İstanbul Nöbetçi Eczaneler - İstanbul Eczacı Odası</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="description" content="İstanbul ve Yalova illerindeki nöbetçi eczanelere en hızlı ve doğru şekilde ulaşabilir, harita üzerinde görüntüleyebilirsiniz.">
+        <meta name="keywords" content="nöbetci eczane,nöbetci eczaneler,nöbetçi,eczane,istanbul,yalova,en yakın,harita,bu gece,bugün">
+        <meta property="og:title" content="İstanbul Nöbetçi Eczaneler - İstanbul Eczacı Odası"/>
+        <meta property="og:description" content="İstanbul ve Yalova illerindeki nöbetçi eczanelere en hızlı şekilde ulaşabilir, harita üzerinde görüntüleyebilirsiniz."/>
+        <meta property="og:url" content="//www.istanbuleczaciodasi.com/nobetci-eczane/'"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content="//www.istanbuleczaciodasi.org.tr/nobetci-eczane/img/128x128.png"/>
+        <meta property="og:image:secure_url" content="//www.istanbuleczaciodasi.org.tr/nobetci-eczane/img/128x128.png"/>
+        <meta property="og:image:type" content="image/png"/>
+        <meta property="og:image:width" content="128"/>
+        <meta property="og:image:height" content="128"/>
+        <meta name="fragment" content="!"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+        <link rel="canonical" href="//www.istanbuleczaciodasi.org.tr/nobetci-eczane/"/>
+        <link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="manifest" href="./manifest.json">
+            <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+            <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+            <script src="//api-maps.yandex.ru/2.1/?lang=tr_TR" type="text/javascript"></script>
+                <script type="text/javascript">
+                        var hash = decodeURIComponent($(location).attr('hash').substr(2));
+            var method = 'dinamik';
+                    </script>
+        <script type="text/javascript" src="js/n.min.js?r=6ad7b0910bb2e"></script>
+    </head>
+    <body>
+    <div id="fb-root"></div>
+    <div id="message">
+        <div id="message_title">Uyarı !<a href="javascript:void(0);" onclick="$(this).parent().parent().hide();">X</a></div>
+        <div id="message_content"></div>
+    </div>
+    <div id="header">
+        <h1 id="main-title" class="fleft">&nbsp;İstanbul Nöbetçi Eczaneler - Bugün Saat <span id="time"></span> İtibariyle
+        </h1>
+        <div id="social" class="fright">
+            <a class="fleft add-to-chrome" href="//chrome.google.com/webstore/detail/i%CC%87stanbul-n%C3%B6bet%C3%A7i-eczanel/okgfcmegjgknggoibcnjneebopocpglb?utm_source=chrome-ntp-icon&hl=tr"><img id="addtochrome" src="img/addtochrome.png"/></a>
+            <div class="fleft fb-share-button" data-href="//www.istanbuleczaciodasi.org.tr/nobetci-eczane/" data-layout="button"></div>
+            <a class="twitter-share-button" href="//twitter.com/share" data-lang="tr" data-count="none">Tweet</a>
+        </div>
+    </div>
+    <div id="outer">
+        <div id="left_bar">
+            <a id="slide_button" href="javascript:void(0);">»</a>
+            <div id="filter_form_cont">
+                <form id="filter_form">
+                    <div id="il">
+                        <input type="radio" id="il1" name="il" class="il" checked="checked" value="34"/><label for="il1">İstanbul</label>
+                        <input type="radio" id="il2" name="il" class="il" value="77"/><label for="il2">Yalova</label>
+                    </div>
+                    <select id="ilce" name="ilce">
+                        <option value="İlçe Seçiniz" selected="selected">İlçe Seçiniz</option>
+                    </select>
+                    <input type="hidden" name="h" id="h" value="497a346e4545613735577a354e773d3d"/>
+                </form>
+                <div style="position:absolute;bottom:10px;font-weight:normal;font-size:12px;">İstanbul Eczacı Odası - Bilgi İşlem - © 2026 -
+                    <a href="./privacy.php?lng=tr">Gizlilik</a></div>
+            </div>
+            <div id="eczane_list_cont">
+                            </div>
+        </div>
+        <div id="map_outer">
+            <div id="map_canvas"></div>
+        </div>
+    </div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/tr_TR/sdk.js#xfbml=1&appId=608152052569628&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        !function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+            if (!d.getElementById(id)) {
+                js = d.createElement(s);
+                js.id = id;
+                js.src = p + '://platform.twitter.com/widgets.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }
+        }(document, 'script', 'twitter-wjs');
+
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-3936040-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    </body>
+    </html>
