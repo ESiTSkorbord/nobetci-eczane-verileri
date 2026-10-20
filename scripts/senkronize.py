@@ -258,6 +258,9 @@ def normallestir(metin):
         return ""
     metin = str(metin).strip()
     metin = metin.replace("İ", "I").replace("ı", "I").replace("i", "I")
+    # 20 Ekim: s/ş, g/ğ, u/ü, o/ö, c/ç farki yuzunden ayni eczane (PASAOGLU / PAŞAOĞLU)
+    # iki kayit sanilmasin diye Turkce harfler ASCII karsiliklarina katlanir.
+    metin = metin.translate(str.maketrans("ŞşĞğÜüÖöÇç", "SsGgUuOoCc"))
     return " ".join(metin.upper().split())
 
 
@@ -701,6 +704,63 @@ def durum_dosyasini_yaz(durumlar, simdi):
     print(f"Durum dosyasi yazildi: {DURUM_YOLU}")
 
 
+ODASI_YOLU = os.path.join(DATA_KLASORU, "odasi-bugun.json")  # scripts/odasi_cek.py yazar
+ODASI_MAX_YAS_DK = 45
+ODASI_SENTETIK_ID_TABANI = 8_000_000  # + Odasi sicil no (tumlistede olmayan eczaneler icin)
+
+
+def odasi_verisini_oku(simdi):
+    """Odasi dosyasi BUGUNE ait ve taze ise eczane listesini, degilse None dondurur."""
+    veri = json_oku(ODASI_YOLU, {})
+    if not isinstance(veri, dict) or not isinstance(veri.get("eczaneler"), list):
+        return None
+    zaman = str(veri.get("zaman") or "")
+    try:
+        z = datetime.strptime(zaman, "%Y-%m-%d %H:%M")
+    except Exception:
+        return None
+    if zaman[:10] != simdi.strftime("%Y-%m-%d"):
+        print(f"Odasi verisi BUGUNE ait degil ({zaman}) - eski sisteme donuluyor.")
+        return None
+    yas_dk = (simdi.replace(tzinfo=None) - z).total_seconds() / 60
+    if yas_dk > ODASI_MAX_YAS_DK:
+        print(f"Odasi verisi eski ({int(yas_dk)} dk) - eski sisteme donuluyor.")
+        return None
+    return veri["eczaneler"]
+
+
+def odasi_ilce_listesi(odasi_eczaneler, api_ilce, tumliste, etiket):
+    """Odasi kayitlarindan ilcenin (eczaneler, idler) listesini kurar.
+    Tumlistede (telefon/isim) eslesen eczanenin id/ad/adres'i KORUNUR (panelde bugunku
+    gorunum bozulmasin); eslesmeyenler icin Odasi bilgisi + sentetik id (8_000_000+sicil)."""
+    hedef = normallestir(api_ilce)
+    eczaneler, idler, gorulen_tel = [], [], set()
+    for e in odasi_eczaneler:
+        if normallestir(e.get("ilce")) != hedef:
+            continue
+        tel = telefon_normallestir(e.get("tel"))
+        if tel and tel in gorulen_tel:
+            continue
+        aday = {"ad": e.get("ad"), "tel": e.get("tel"), "adres": e.get("adres")}
+        gercek = tumlisteden_bul(aday, tumliste)
+        if gercek is not None and gercek.get("id") is not None:
+            kayit = {"id": gercek["id"], "ad": gercek.get("ad") or aday["ad"],
+                     "tel": gercek.get("tel") or aday["tel"], "adres": gercek.get("adres") or aday["adres"]}
+        else:
+            sicil = e.get("sicil")
+            eid = ODASI_SENTETIK_ID_TABANI + int(sicil) if str(sicil).isdigit() else sentetik_id_uret(normallestir(e.get("ad")))
+            kayit = {"id": eid, "ad": (aday["ad"] or "").strip(), "tel": (aday["tel"] or "").strip(),
+                     "adres": (aday["adres"] or "").strip()}
+            print(f"[{etiket}] Odasi'ndan tumlistede OLMAYAN eczane: {kayit['ad']} (id {eid})")
+        if kayit["id"] in idler:
+            continue
+        if tel:
+            gorulen_tel.add(tel)
+        eczaneler.append(kayit)
+        idler.append(kayit["id"])
+    return eczaneler, idler
+
+
 def main():
     if not os.path.isfile(KONFIG_YOLU):
         print(f"HATA: konfig dosyasi bulunamadi: {KONFIG_YOLU}", file=sys.stderr)
@@ -733,6 +793,9 @@ def main():
         if k.get("api_il") and k.get("api_ilce"):
             il_ilceleri.setdefault(k["api_il"], []).append(normallestir(k["api_ilce"]))
 
+    odasi_verisi = odasi_verisini_oku(simdi)
+    print("Odasi verisi: " + (f"{len(odasi_verisi)} kayit (ANA KAYNAK)" if odasi_verisi else "YOK - eski sistem (teknikzeka+CollectAPI)"))
+
     il_cache = {}
     durumlar = {}
     basarili_sayisi = 0
@@ -751,6 +814,26 @@ def main():
             print(f"[{etiket}] ATLANDI: konfig satiri eksik alan iceriyor.")
             atlanan_sayisi += 1
             continue
+
+        # --- 20 Ekim: ANA KAYNAK = Istanbul Eczaci Odasi (scripts/odasi_cek.py) ---
+        if odasi_verisi:
+            o_eczaneler, o_idler = odasi_ilce_listesi(odasi_verisi, api_ilce, tumliste_oku(il_slug, ilce_slug), etiket)
+            if o_eczaneler:
+                haric_olanlari_cikar(o_eczaneler, o_idler, etiket)
+                duzeltmeleri_uygula(o_eczaneler, etiket)
+                liste_yolu = os.path.join(DATA_KLASORU, f"{il_slug}-{ilce_slug}-liste.json")
+                gunluk_yolu = os.path.join(DATA_KLASORU, f"{il_slug}-{ilce_slug}.json")
+                onceki_idler = onceki_idler_oku(gunluk_yolu)
+                with open(liste_yolu, "w", encoding="utf-8") as f:
+                    json.dump({"eczaneler": o_eczaneler}, f, ensure_ascii=False, indent=2)
+                with open(gunluk_yolu, "w", encoding="utf-8") as f:
+                    json.dump({"tarih": tarih_metni, "nobetciler": o_idler}, f, ensure_ascii=False, indent=2)
+                durumlar[etiket] = {"durum": "guncellendi", "kaynak": "odasi", "eczane_sayisi": len(o_eczaneler),
+                                    "eklenen": 0, "liste_degisti": set(o_idler) != onceki_idler}
+                print(f"[{etiket}] OK (odasi): {len(o_eczaneler)} eczane yazildi.")
+                basarili_sayisi += 1
+                continue
+            print(f"[{etiket}] Odasi'nda bu ilce icin kayit yok - eski sisteme donuluyor.")
 
         if api_il not in il_cache:
             print(f"[{api_il}] API'den cekiliyor...")
