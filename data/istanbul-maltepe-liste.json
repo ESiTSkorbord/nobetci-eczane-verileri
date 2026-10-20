@@ -1,6 +1,12 @@
 {
   "eczaneler": [
     {
+      "id": 50947,
+      "ad": "EMİN ECZANESİ",
+      "tel": "2163763589",
+      "adres": "Esenkent Mah. Kanipaşa Cad. No:25/A Maltepe"
+    },
+    {
       "id": 62820,
       "ad": "DİDEM TOPRAK ECZANESİ",
       "tel": "5334450616",
@@ -11,12 +17,6 @@
       "ad": "ECZANE KIRMIZI",
       "tel": "2165041255",
       "adres": "Aydınevler Mahallesi Siteler Yolu Sokak, 1"
-    },
-    {
-      "id": 50947,
-      "ad": "EMİN ECZANESİ",
-      "tel": "2163763589",
-      "adres": "Esenkent Mah. Kanipaşa Cad. No:25/A Maltepe"
     }
   ]
 }
