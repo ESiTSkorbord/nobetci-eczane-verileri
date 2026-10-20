@@ -1,0 +1,83 @@
+{
+ "alindi": "2026-10-20 16:46",
+ "http": 200,
+ "yanit": {
+  "status": "success",
+  "message": "ok",
+  "messageTR": "ok",
+  "systemTime": 1792504013,
+  "endpoint": "pharmacies-on-duty",
+  "rowCount": 4,
+  "creditUsed": 1,
+  "data": [
+   {
+    "pharmacyID": 48060,
+    "cityId": 34,
+    "districtId": 1362,
+    "pharmacyName": "Çarşi Eczanesi",
+    "address": "Kordonboyu Mahallesi, Ankara Caddesi, 56",
+    "city": "İstanbul",
+    "district": "Kartal",
+    "town": "Kordonboyu",
+    "directions": null,
+    "phone": "+902163061077",
+    "phone2": null,
+    "pharmacyDutyStart": null,
+    "pharmacyDutyEnd": null,
+    "latitude": 40.8885096717917,
+    "longitude": 29.1881003676885
+   },
+   {
+    "pharmacyID": 45660,
+    "cityId": 34,
+    "districtId": 1362,
+    "pharmacyName": "Kartal Plus Eczanesi",
+    "address": "Orta Mahallesi, Yalnız Selvi Caddesi, 21A",
+    "city": "İstanbul",
+    "district": "Kartal",
+    "town": "Orta",
+    "directions": null,
+    "phone": "+902162250891",
+    "phone2": null,
+    "pharmacyDutyStart": null,
+    "pharmacyDutyEnd": null,
+    "latitude": 40.9138750120774,
+    "longitude": 29.208512882851
+   },
+   {
+    "pharmacyID": 45367,
+    "cityId": 34,
+    "districtId": 1362,
+    "pharmacyName": "Hanne Eczanesi",
+    "address": "Hürriyet Mahallesi, Peker Sokak, 33",
+    "city": "İstanbul",
+    "district": "Kartal",
+    "town": "",
+    "directions": null,
+    "phone": "+902166726064",
+    "phone2": null,
+    "pharmacyDutyStart": null,
+    "pharmacyDutyEnd": null,
+    "latitude": 40.9057866765629,
+    "longitude": 29.2327977261726
+   },
+   {
+    "pharmacyID": 44145,
+    "cityId": 34,
+    "districtId": 1362,
+    "pharmacyName": "Demir Eczanesi",
+    "address": "Atalar Mahallesi, Doğu Caddesi, 68B",
+    "city": "İstanbul",
+    "district": "Kartal",
+    "town": "Atalar",
+    "directions": null,
+    "phone": "+902163749464",
+    "phone2": null,
+    "pharmacyDutyStart": null,
+    "pharmacyDutyEnd": null,
+    "latitude": 40.9081190582398,
+    "longitude": 29.1716154435447
+   }
+  ]
+ }
+}

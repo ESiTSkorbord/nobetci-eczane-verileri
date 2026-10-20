@@ -1,0 +1,66 @@
+{
+ "alindi": "2026-10-20 16:46",
+ "http": 200,
+ "yanit": {
+  "status": "success",
+  "message": "ok",
+  "messageTR": "ok",
+  "systemTime": 1792504014,
+  "endpoint": "pharmacies-on-duty",
+  "rowCount": 3,
+  "creditUsed": 1,
+  "data": [
+   {
+    "pharmacyID": 44634,
+    "cityId": 34,
+    "districtId": 1364,
+    "pharmacyName": "Emin Eczanesi",
+    "address": "Esenkent Mahallesi, Kanipaşa Caddesi, 25/A",
+    "city": "İstanbul",
+    "district": "Maltepe",
+    "town": "Esenkent",
+    "directions": null,
+    "phone": "+902163763589",
+    "phone2": null,
+    "pharmacyDutyStart": null,
+    "pharmacyDutyEnd": null,
+    "latitude": 40.921936,
+    "longitude": 29.167704
+   },
+   {
+    "pharmacyID": 44434,
+    "cityId": 34,
+    "districtId": 1364,
+    "pharmacyName": "Eczane Kirmizi",
+    "address": "Aydınevler Mahallesi, Siteler Yolu Sokak, 1",
+    "city": "İstanbul",
+    "district": "Maltepe",
+    "town": "Aydinevler",
+    "directions": null,
+    "phone": "+902165041255",
+    "phone2": null,
+    "pharmacyDutyStart": null,
+    "pharmacyDutyEnd": null,
+    "latitude": 40.95263327491924,
+    "longitude": 29.12137383528247
+   },
+   {
+    "pharmacyID": 54024,
+    "cityId": 34,
+    "districtId": 1364,
+    "pharmacyName": "Didem Toprak Eczanesi",
+    "address": "Feyzullah Mahallesi Bağdat Caddesi No:No:336-338C",
+    "city": "İstanbul",
+    "district": "Maltepe",
+    "town": "Feyzullah",
+    "directions": "BAĞDAT CADDESİ ÜZERİNDE MALTEPE MERKEZ CAMİSİNDEN KADIKÖY YÖNÜNE DOĞRU 200 METRE İLERDE VAKIFBANK'IN YANINDA TATBAK'IN KARŞISI",
+    "phone": "5334450616",
+    "phone2": null,
+    "pharmacyDutyStart": null,
+    "pharmacyDutyEnd": null,
+    "latitude": 40.92646771064339,
+    "longitude": 29.12954523236629
+   }
+  ]
+ }
+}
