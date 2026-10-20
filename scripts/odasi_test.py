@@ -33,6 +33,7 @@ def main():
         print("select sayisi:", len(secenekler))
         for s in secenekler:
             print("  select id=%r name=%r secenek=%d" % (s["id"], s["name"], len(s["secenekler"])))
+        sayfa.screenshot(path="test/odasi/%s_ilk-sayfa.png" % zaman, full_page=True)
         for ilce in ILCELER:
             sonuc = None
             for idx, s in enumerate(secenekler):
@@ -43,7 +44,15 @@ def main():
                 print("[%s] ilce secenegi bulunamadi" % ilce)
                 continue
             idx, o = sonuc
-            sayfa.locator("select").nth(idx).select_option(value=o["d"])
+            # Gizli <select> + ozel menu: degeri JS ile yaz, 'change' olayini hem yerel hem jQuery ile tetikle
+            sayfa.evaluate(
+                """([idx, deger]) => {
+                     const el = document.querySelectorAll('select')[idx];
+                     el.value = deger;
+                     el.dispatchEvent(new Event('input', {bubbles: true}));
+                     el.dispatchEvent(new Event('change', {bubbles: true}));
+                     if (window.jQuery) { window.jQuery(el).val(deger).trigger('change'); }
+                   }""", [idx, o["d"]])
             sayfa.wait_for_timeout(6000)
             govde = sayfa.inner_text("body")
             with open("test/odasi/%s_%s.txt" % (zaman, ilce.lower()), "w", encoding="utf-8") as f:
