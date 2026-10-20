@@ -1,34 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 39341,
-      "ad": "AZRA ECZANESİ",
-      "tel": "2164751700",
-      "adres": "Uğur Mumcu Mahallesi Yunus Emre Caddesi, 33A"
+      "id": 40461,
+      "ad": "DEMİR ECZANESİ",
+      "tel": "2163749464",
+      "adres": "Atalar Mah. Doğu Cad. No:68B"
     },
     {
-      "id": 13321,
-      "ad": "DENIZ ECZANESI",
-      "tel": "2163894087",
-      "adres": "PETROL-IS MAH. KIZILAY BULVARI NO:27/4"
+      "id": 44500,
+      "ad": "HANNE ECZANESİ",
+      "tel": "2166726064",
+      "adres": "Hürriyet Mahallesi Peker Sokak, 33"
     },
     {
-      "id": 44682,
-      "ad": "MAY ECZANESİ",
-      "tel": "2163050570",
-      "adres": "Cevizli Mah. Cevizli D-100 Güney Yan Yolu Kuriş Kule Dükkanlar No:2/C"
+      "id": 37660,
+      "ad": "KARTAL PLUS ECZANESİ",
+      "tel": "2162250891",
+      "adres": "Orta Mahallesi Yalnız Selvi Caddesi, 21A"
     },
     {
-      "id": 62516,
-      "ad": "MUTLULUK ECZANESİ",
-      "tel": "5451985907",
-      "adres": "Topselvi Mahallesi,Topselvi Caddesi,No:95/K"
-    },
-    {
-      "id": 13333,
-      "ad": "SAADET ECZANESI",
-      "tel": "2164519068",
-      "adres": "ATATÜRK CAD. NO:30/1 SOGANLIK"
+      "id": 40738,
+      "ad": "ÇARŞI ECZANESİ",
+      "tel": "2163061077",
+      "adres": "Kordonboyu Mahallesi Ankara Caddesi, 56"
     }
   ]
 }

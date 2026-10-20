@@ -1,28 +1,22 @@
 {
   "eczaneler": [
     {
-      "id": 43311,
-      "ad": "BÜŞRA ECZANESİ",
-      "tel": "2165753330",
-      "adres": "Fındıklı Mah. Gazi Mustafa Kemal Cad. No:21B"
+      "id": 62820,
+      "ad": "DİDEM TOPRAK ECZANESİ",
+      "tel": "5334450616",
+      "adres": "Feyzullah Mah. Bağdat Cad. No:336-338C"
     },
     {
-      "id": 15705,
-      "ad": "DURCAN",
-      "tel": "2164212432",
-      "adres": "Başıbüyük Mahallesi\r\nBaşıbüyük Caddesi, 30/A-B"
+      "id": 41488,
+      "ad": "ECZANE KIRMIZI",
+      "tel": "2165041255",
+      "adres": "Aydınevler Mahallesi Siteler Yolu Sokak, 1"
     },
     {
-      "id": 51845,
-      "ad": "NOKTA ECZANESİ",
-      "tel": "2163707138",
-      "adres": "Cevizli Mahallesi Zuhal Caddesi, 16/B"
-    },
-    {
-      "id": 15761,
-      "ad": "ÇARE",
-      "tel": "2165182993",
-      "adres": "BAGDAT CAD.138/C KÜÇÜKYALI/MALTEPE/IST."
+      "id": 50947,
+      "ad": "EMİN ECZANESİ",
+      "tel": "2163763589",
+      "adres": "Esenkent Mah. Kanipaşa Cad. No:25/A Maltepe"
     }
   ]
 }
