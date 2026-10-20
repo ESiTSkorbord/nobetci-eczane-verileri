@@ -35,6 +35,16 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Playwright kur (Odasi icin)
+        continue-on-error: true
+        run: |
+          pip install playwright
+          python -m playwright install --with-deps chromium
+
+      - name: Odasi nobetci listesini cek (ANA KAYNAK)
+        continue-on-error: true
+        run: python scripts/odasi_cek.py
+
       - name: Nobetci verisini senkronize et
         env:
           COLLECTAPI_KEY: ${{ secrets.COLLECTAPI_KEY }}
