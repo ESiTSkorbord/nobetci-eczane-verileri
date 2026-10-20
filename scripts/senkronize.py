@@ -816,7 +816,7 @@ def main():
             continue
 
         # --- 20 Ekim: ANA KAYNAK = Istanbul Eczaci Odasi (scripts/odasi_cek.py) ---
-        if odasi_verisi:
+        if odasi_verisi and normallestir(api_il) == "ISTANBUL":
             o_eczaneler, o_idler = odasi_ilce_listesi(odasi_verisi, api_ilce, tumliste_oku(il_slug, ilce_slug), etiket)
             if o_eczaneler:
                 haric_olanlari_cikar(o_eczaneler, o_idler, etiket)
