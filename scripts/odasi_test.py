@@ -1,68 +1,69 @@
 #!/usr/bin/env python3
-"""Istanbul Eczaci Odasi nobetci sayfasi DENEME - sadece okur, data/ klasorune dokunmaz.
-Gercek tarayici (Chromium) ile sayfayi acar, ilceyi secer, gorunen metni + ekran goruntusunu test/odasi/ altina yazar."""
+"""Istanbul Eczaci Odasi nobetci sayfasi DENEME (2. surum) - sadece okur, data/ klasorune dokunmaz.
+Gercek tarayici ile sayfayi acar, ilce menusune gercekten tiklayip ilceyi secer,
+gorunen metni, ekran goruntusunu ve sayfanin yaptigi AG ISTEKLERINI (veri nereden geliyor) test/odasi/ altina yazar."""
 import os
-import re
-import sys
 from datetime import datetime, timedelta, timezone
 
 from playwright.sync_api import sync_playwright
 
 URL = "https://www.istanbuleczaciodasi.org.tr/nobetci-eczane/"
-ILCELER = ["KARTAL", "MALTEPE"]
-
-
-def norm(s):
-    s = (s or "").strip()
-    s = s.replace("İ", "I").replace("ı", "I").replace("i", "I")
-    return " ".join(s.upper().split())
+ILCELER = ["Kartal", "Maltepe"]
+CIKTI = "test/odasi"
 
 
 def main():
     zaman = datetime.now(timezone(timedelta(hours=3))).strftime("%Y-%m-%d_%H%M")
-    os.makedirs("test/odasi", exist_ok=True)
+    os.makedirs(CIKTI, exist_ok=True)
+    istekler = []
+
     with sync_playwright() as p:
         tarayici = p.chromium.launch()
-        sayfa = tarayici.new_page(viewport={"width": 1300, "height": 2400}, locale="tr-TR")
-        yanit = sayfa.goto(URL, wait_until="networkidle", timeout=60000)
-        print("HTTP:", yanit.status if yanit else None, "baslik:", sayfa.title())
+        sayfa = tarayici.new_page(viewport={"width": 1300, "height": 1400}, locale="tr-TR")
+
+        def yanit_yakala(r):
+            try:
+                url = r.url
+                if "yandex" in url or "google" in url or "facebook" in url or "twitter" in url:
+                    return
+                tur = r.headers.get("content-type", "")
+                satir = "%s %s %s" % (r.status, r.request.method, url)
+                istekler.append(satir)
+                if any(x in tur for x in ("json", "text/plain", "text/html", "javascript")) and "n.min.js" not in url:
+                    govde = r.text()
+                    if len(govde) < 200000:
+                        ad = "%s/%s_xhr_%d.txt" % (CIKTI, zaman, len(istekler))
+                        with open(ad, "w", encoding="utf-8") as f:
+                            f.write(satir + "\n\n" + govde)
+            except Exception as e:
+                istekler.append("yakalama hatasi: %s" % e)
+
+        sayfa.on("response", yanit_yakala)
+        sayfa.goto(URL, wait_until="networkidle", timeout=60000)
         sayfa.wait_for_timeout(3000)
-        secenekler = sayfa.evaluate(
-            """() => Array.from(document.querySelectorAll('select')).map(s => ({
-                 id: s.id, name: s.name, secenekler: Array.from(s.options).map(o => ({d: o.value, t: o.text}))}))""")
-        print("select sayisi:", len(secenekler))
-        for s in secenekler:
-            print("  select id=%r name=%r secenek=%d" % (s["id"], s["name"], len(s["secenekler"])))
-        sayfa.screenshot(path="test/odasi/%s_ilk-sayfa.png" % zaman, full_page=True)
+
         for ilce in ILCELER:
-            sonuc = None
-            for idx, s in enumerate(secenekler):
-                for o in s["secenekler"]:
-                    if norm(o["t"]) == ilce or norm(o["d"]) == ilce:
-                        sonuc = (idx, o)
-            if not sonuc:
-                print("[%s] ilce secenegi bulunamadi" % ilce)
-                continue
-            idx, o = sonuc
-            # Gizli <select> + ozel menu: degeri JS ile yaz, 'change' olayini hem yerel hem jQuery ile tetikle
-            sayfa.evaluate(
-                """([idx, deger]) => {
-                     const el = document.querySelectorAll('select')[idx];
-                     el.value = deger;
-                     el.dispatchEvent(new Event('input', {bubbles: true}));
-                     el.dispatchEvent(new Event('change', {bubbles: true}));
-                     if (window.jQuery) { window.jQuery(el).val(deger).trigger('change'); }
-                   }""", [idx, o["d"]])
-            sayfa.wait_for_timeout(6000)
-            govde = sayfa.inner_text("body")
-            with open("test/odasi/%s_%s.txt" % (zaman, ilce.lower()), "w", encoding="utf-8") as f:
-                f.write(govde)
-            with open("test/odasi/%s_%s.html" % (zaman, ilce.lower()), "w", encoding="utf-8") as f:
-                f.write(sayfa.content())
-            sayfa.screenshot(path="test/odasi/%s_%s.png" % (zaman, ilce.lower()), full_page=True)
             print("\n=== %s ===" % ilce)
-            print(govde[:3000])
+            try:
+                # jQuery UI selectmenu: gorunen dugmeye tikla, acilan listeden ilceyi sec
+                sayfa.locator("#ilce-button, .ui-selectmenu-button").first.click(timeout=10000)
+                sayfa.wait_for_timeout(800)
+                sayfa.locator("ul.ui-menu li, .ui-selectmenu-menu li").filter(has_text=ilce).first.click(timeout=10000)
+                sayfa.wait_for_timeout(6000)
+            except Exception as e:
+                print("secim hatasi:", str(e)[:300])
+            govde = sayfa.inner_text("body")
+            with open("%s/%s_%s.txt" % (CIKTI, zaman, ilce.lower()), "w", encoding="utf-8") as f:
+                f.write(govde)
+            sayfa.screenshot(path="%s/%s_%s.png" % (CIKTI, zaman, ilce.lower()))
+            print(govde[:2500])
+
         tarayici.close()
+
+    with open("%s/%s_aglar.txt" % (CIKTI, zaman), "w", encoding="utf-8") as f:
+        f.write("\n".join(istekler))
+    print("\n--- Ag istekleri ---")
+    print("\n".join(istekler[:60]))
 
 
 if __name__ == "__main__":
