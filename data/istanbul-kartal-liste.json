@@ -1,28 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 40461,
-      "ad": "DEMİR ECZANESİ",
-      "tel": "2163749464",
-      "adres": "Atalar Mah. Doğu Cad. No:68B"
+      "id": 65555,
+      "ad": "SU ECZANESİ",
+      "tel": "5318987199",
+      "adres": "Cevizli Mah. Seyitgazi Sok. No:16/A"
     },
     {
-      "id": 40738,
-      "ad": "ÇARŞI ECZANESİ",
-      "tel": "2163061077",
-      "adres": "Kordonboyu Mahallesi Ankara Caddesi, 56"
+      "id": 13262,
+      "ad": "FERDA ECZANESI",
+      "tel": "2163061617",
+      "adres": "KARLIKTEPE MAH. SPOR CAD. NO:4/D"
     },
     {
-      "id": 44500,
-      "ad": "HANNE ECZANESİ",
-      "tel": "2166726064",
-      "adres": "Hürriyet Mahallesi Peker Sokak, 33"
+      "id": 54913,
+      "ad": "CEMİL ECZANESI",
+      "tel": "2163770848",
+      "adres": "ORTA MAH. KAPTANIDERYA CAD. NO:40/B"
     },
     {
-      "id": 37660,
-      "ad": "KARTAL PLUS ECZANESİ",
-      "tel": "2162250891",
-      "adres": "Orta Mahallesi Yalnız Selvi Caddesi, 21A"
+      "id": 13270,
+      "ad": "ÇAĞRI ECZANESİ",
+      "tel": "2163095805",
+      "adres": "CUMHURIYET MAH. ZEYTINLIK CAD. NO:37/A"
     }
   ]
 }

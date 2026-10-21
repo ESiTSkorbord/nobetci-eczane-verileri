@@ -1,6 +1,6 @@
 {
- "zaman": "2026-10-21 08:01",
- "adet": 140,
+ "zaman": "2026-10-21 09:01",
+ "adet": 137,
  "eczaneler": [
   {
    "sicil": 2338,
@@ -10,928 +10,564 @@
    "adres": "Burgazadası Mahallesi Çınarlık Sokak 3"
   },
   {
-   "sicil": 28994,
-   "ad": "ŞEBNEM ECZANESİ",
-   "tel": "2122400102",
-   "ilce": "Başakşehir",
-   "adres": "Güvercintepe Mahallesi Ahmet Yesevi Caddesi 98/A"
-  },
-  {
-   "sicil": 14986,
-   "ad": "TAN ECZANESİ",
-   "tel": "2126732362",
-   "ilce": "Bağcılar",
-   "adres": "Yüzyıl Mahallesi Mustafa Kemal Caddesi 13A"
-  },
-  {
-   "sicil": 11432,
-   "ad": "YURDABAK ECZANESİ",
-   "tel": "2126299716",
+   "sicil": 32448,
+   "ad": "ZÜMRA ECZANESİ",
+   "tel": "2124302573",
    "ilce": "Esenler",
-   "adres": "Turgut Reis Mahallesi Karaosmanoğlu Caddesi 77"
+   "adres": "Turgut Reis Mahallesi Cengiz Topel Caddesi No:57/A"
   },
   {
-   "sicil": 16790,
-   "ad": "BANU ECZANESİ",
-   "tel": "2125432887",
-   "ilce": "Bakırköy",
-   "adres": "Osmaniye Mahallesi Adalet Sokak 6"
-  },
-  {
-   "sicil": 34536,
-   "ad": "LALE ECZANESİ",
-   "tel": "2125599999",
-   "ilce": "Bakırköy",
-   "adres": "Ataköy 3-4-11.  Kısım Mahallesi Dr. Remzi Kazancıgil Caddesi Ataköy 4.Kısım Çarşısı No:12"
-  },
-  {
-   "sicil": 37610,
-   "ad": "KUZEY ECZANESİ",
-   "tel": "2167713781",
-   "ilce": "Kadıköy",
-   "adres": "Suadiye Mahallesi Emin Ali Paşa Caddesi No:62/B"
-  },
-  {
-   "sicil": 10920,
-   "ad": "ECZANE MASLAK 1453",
-   "tel": "2128017939",
-   "ilce": "Sarıyer",
-   "adres": "Maslak Mahallesi Söğüt (Kadastral 1. Pafta) Sokak 20AH"
-  },
-  {
-   "sicil": 26798,
-   "ad": "ÖZTÜRK ECZANESİ",
-   "tel": "2128834304",
-   "ilce": "Büyükçekmece",
-   "adres": "Mimar Sinan Merkez Mahallesi Uğur Sokak 21L"
-  },
-  {
-   "sicil": 25446,
-   "ad": "ATAKUL ECZANESİ",
-   "tel": "2124880531",
+   "sicil": 28230,
+   "ad": "ZÜLAL ECZANESİ",
+   "tel": "2126484846",
    "ilce": "Başakşehir",
-   "adres": "Başak Mahallesi Yunus Emre Caddesi 18/1K"
+   "adres": "Şahintepe Mahallesi Kurban Sokak 14/A"
   },
   {
-   "sicil": 9272,
-   "ad": "TEPECİK ECZANESİ",
-   "tel": "2128612566",
+   "sicil": 26290,
+   "ad": "İSTİKLAL ECZANESİ",
+   "tel": "2122432115",
+   "ilce": "Beyoğlu",
+   "adres": "Tomtom Mahallesi Kumbaracı Yokuşu Sokak 68B"
+  },
+  {
+   "sicil": 29532,
+   "ad": "BEYAZ ECZANESİ",
+   "tel": "5309435429",
    "ilce": "Büyükçekmece",
-   "adres": "Hürriyet Mahallesi İstiklal Caddesi 18/A"
+   "adres": "Fatih Mahallesi Adnan Kahveci Caddesi 20/A"
   },
   {
-   "sicil": 26148,
-   "ad": "DEMİR ECZANESİ",
-   "tel": "2163749464",
-   "ilce": "Kartal",
-   "adres": "Atalar Mahallesi Doğu Caddesi 68B"
-  },
-  {
-   "sicil": 29962,
-   "ad": "GEZGİN ECZANESİ",
-   "tel": "5013618433",
-   "ilce": "Beylikdüzü",
-   "adres": "Adnan Kahveci Mahallesi Kurtuluş Caddesi 26/4-4"
-  },
-  {
-   "sicil": 14662,
-   "ad": "MELİS ECZANESİ",
-   "tel": "2122727110",
-   "ilce": "Beşiktaş",
-   "adres": "Gayrettepe Mahallesi Yener Sokak 2/A"
-  },
-  {
-   "sicil": 19384,
-   "ad": "KÜPLÜCE ECZANESİ",
-   "tel": "2163219200",
-   "ilce": "Üsküdar",
-   "adres": "Küplüce Mahallesi Okulyolu Sokak 23A"
-  },
-  {
-   "sicil": 25388,
-   "ad": "ÖZLEM ECZANESİ",
-   "tel": "2129996812",
-   "ilce": "Beylikdüzü",
-   "adres": "Cumhuriyet Mahallesi Onur Sokak 10"
-  },
-  {
-   "sicil": 28246,
-   "ad": "EYLÜL ECZANESİ",
-   "tel": "5528761311",
-   "ilce": "Beylikdüzü",
-   "adres": "Yakuplu Mahallesi 120. Sokak 47B/9"
-  },
-  {
-   "sicil": 29082,
-   "ad": "ZUHAL ECZANESİ",
-   "tel": "5333530837",
-   "ilce": "Esenyurt",
-   "adres": "Orhan Gazi Mahallesi 1664. Sokak 1A"
-  },
-  {
-   "sicil": 25024,
-   "ad": "DEMİR ECZANESİ",
-   "tel": "2125932105",
-   "ilce": "Avcılar",
-   "adres": "Üniversite Mahallesi Mareşal Caddesi 18B-18C"
-  },
-  {
-   "sicil": 28098,
-   "ad": "YAŞAM ECZANESİ",
-   "tel": "2125931129",
-   "ilce": "Avcılar",
-   "adres": "Avcılar Merkez Mahallesi Harmanyeri Sokak 12/B"
-  },
-  {
-   "sicil": 15842,
-   "ad": "CAN ECZANESİ",
-   "tel": "2124180304",
-   "ilce": "Gaziosmanpaşa",
-   "adres": "Hürriyet Mahallesi 255. Sokak 14/1"
-  },
-  {
-   "sicil": 19450,
-   "ad": "GENÇ ECZANE",
-   "tel": "5394644362",
-   "ilce": "Gaziosmanpaşa",
-   "adres": "Karayolları Mahallesi 621. Sokak 40"
-  },
-  {
-   "sicil": 22884,
-   "ad": "OĞUZ ECZANESİ",
-   "tel": "2126187707",
-   "ilce": "Gaziosmanpaşa",
-   "adres": "Fevzi Çakmak Mahallesi İstanbul Caddesi 30/C"
-  },
-  {
-   "sicil": 33782,
-   "ad": "BEYKOZ ECZANESİ",
-   "tel": "2165370203",
-   "ilce": "Beykoz",
-   "adres": "Fatih Mahallesi Çavuşbaşı Cumhuriyet Caddesi 202/B"
-  },
-  {
-   "sicil": 34976,
-   "ad": "HANDAN ECZANESİ",
-   "tel": "2163231075",
-   "ilce": "Beykoz",
-   "adres": "Tokatköy Mahallesi Sultan Aziz Caddesi No:76/A"
-  },
-  {
-   "sicil": 15900,
-   "ad": "ÖMÜR ECZANESİ",
-   "tel": "2126134565",
+   "sicil": 12744,
+   "ad": "AKSU ECZANESİ",
+   "tel": "2126402729",
    "ilce": "Bayrampaşa",
-   "adres": "Ortamahalle Mahallesi Adalet Sokak 36"
+   "adres": "Kartaltepe Mahallesi Süleymanşah Caddesi 19/A"
   },
   {
-   "sicil": 28850,
-   "ad": "ESRA ECZANESİ",
-   "tel": "2128820282",
-   "ilce": "Büyükçekmece",
-   "adres": "Dizdariye Mahallesi Karaağaç Sokak 1/A"
+   "sicil": 28932,
+   "ad": "MARİNA ECZANESİ",
+   "tel": "2128001517",
+   "ilce": "Beylikdüzü",
+   "adres": "Marmara Mahallesi Ulusum Caddesi 4/38-8"
   },
   {
-   "sicil": 22410,
-   "ad": "NEVİZADE ECZANESİ",
-   "tel": "2122438400",
-   "ilce": "Beyoğlu",
-   "adres": "Hüseyinağa Mahallesi Sahne Sokak No:8/A"
+   "sicil": 35616,
+   "ad": "LİLYUM ECZANESİ",
+   "tel": "2128905136",
+   "ilce": "Beylikdüzü",
+   "adres": "Barış Mahallesi Necip Fazıl Kısakürek Sokak No:1E/23"
   },
   {
-   "sicil": 29262,
-   "ad": "EMİN ECZANESİ",
-   "tel": "2163763589",
-   "ilce": "Maltepe",
-   "adres": "Esenkent Mahallesi Kanipaşa Caddesi 25/A"
+   "sicil": 38686,
+   "ad": "ÇUBUKLU ECZANESİ",
+   "tel": "2166311724",
+   "ilce": "Beykoz",
+   "adres": "Çubuklu Mahallesi Fırın Sokak 18/A"
   },
   {
-   "sicil": 24056,
-   "ad": "ECZANE LEMAN SIZMAZ",
-   "tel": "2122941528",
-   "ilce": "Kağıthane",
-   "adres": "Yahya Kemal Mahallesi Sanayi Caddesi 8/A"
-  },
-  {
-   "sicil": 31504,
-   "ad": "MUHTAR ECZANESİ",
-   "tel": "2125236738",
-   "ilce": "Fatih",
-   "adres": "Ali Kuşcu Mahallesi Darüşşafaka Caddesi 23/A"
-  },
-  {
-   "sicil": 3462,
-   "ad": "SAMATYA ECZANESİ",
-   "tel": "2125880010",
-   "ilce": "Fatih",
-   "adres": "Cerrahpaşa Mahallesi Koca Mustafapaşa Caddesi 44/A"
-  },
-  {
-   "sicil": 31540,
-   "ad": "MİLLET ECZANESİ",
-   "tel": "2129246343",
-   "ilce": "Fatih",
-   "adres": "Şehremini Mahallesi Turgut Özal Millet Caddesi 135/A"
-  },
-  {
-   "sicil": 14812,
-   "ad": "DOĞANEVLER ECZANESİ",
-   "tel": "2163135017",
-   "ilce": "Ümraniye",
-   "adres": "Tepeüstü Mahallesi Doğanevler Caddesi 10"
-  },
-  {
-   "sicil": 34978,
-   "ad": "ALKIŞ ECZANESİ",
-   "tel": "5327750480",
-   "ilce": "Ümraniye",
-   "adres": "Parseller Mahallesi Kesikkaya Caddesi No:29/A"
-  },
-  {
-   "sicil": 19780,
-   "ad": "NEKTAR ECZANESİ",
-   "tel": "2123528532",
-   "ilce": "Beşiktaş",
-   "adres": "Etiler Mahallesi Tepecik Yolu Caddesi İncesu Sokak, 5/A"
-  },
-  {
-   "sicil": 23318,
-   "ad": "DENİZ ECZANESİ",
-   "tel": "2125011850",
-   "ilce": "Eyüp",
-   "adres": "Topçular Mahallesi Eyüp Sultan Bulvarı 67/A"
-  },
-  {
-   "sicil": 13306,
-   "ad": "ALPDENİZ ECZANESİ",
-   "tel": "5063924545",
-   "ilce": "Küçükçekmece",
-   "adres": "Halkalı Merkez Mahallesi 1438. Sokak No:2AC"
-  },
-  {
-   "sicil": 14770,
-   "ad": "GÜLŞEN ECZANESİ",
-   "tel": "2124719150",
-   "ilce": "Küçükçekmece",
-   "adres": "Atatürk Mahallesi İkitelli Caddesi 137/A"
-  },
-  {
-   "sicil": 18832,
-   "ad": "TUBA ECZANESİ",
-   "tel": "2125635350",
+   "sicil": 10174,
+   "ad": "BUKETCAN ECZANESİ",
+   "tel": "2126181198",
    "ilce": "Gaziosmanpaşa",
-   "adres": "Yıldıztabya Mahallesi Yıldıztabya Caddesi 75/C"
+   "adres": "Karadeniz Mahallesi General Aldoğan Caddesi 5"
   },
   {
-   "sicil": 11198,
-   "ad": "UFUK ECZANESİ",
-   "tel": "2122782295",
-   "ilce": "Kağıthane",
-   "adres": "Sultan Selim Mahallesi Sultan Selim Caddesi 166/A"
+   "sicil": 27492,
+   "ad": "İKİZLER ECZANESİ",
+   "tel": "2124770879",
+   "ilce": "Gaziosmanpaşa",
+   "adres": "Şemsipaşa Mahallesi Küçükköy Caddesi 173A"
   },
   {
-   "sicil": 28052,
-   "ad": "ELİF ŞİFA ECZANESİ",
-   "tel": "2125080805",
-   "ilce": "Esenler",
-   "adres": "Nine Hatun Mahallesi Ayazma Caddesi 88B"
+   "sicil": 30700,
+   "ad": "MEVLANA ECZANESİ",
+   "tel": "2124196720",
+   "ilce": "Gaziosmanpaşa",
+   "adres": "Mevlana Mahallesi Sefa Caddesi 34/A"
   },
   {
-   "sicil": 3632,
-   "ad": "ÇATALCA ECZANESİ",
-   "tel": "2127891026",
-   "ilce": "Çatalca",
-   "adres": "Ferhatpaşa Mahallesi Atatürk Caddesi 123"
+   "sicil": 26470,
+   "ad": "BOZTEMUR ECZANESİ",
+   "tel": "5511974493",
+   "ilce": "Avcılar",
+   "adres": "Mustafa Kemal Paşa Mahallesi Firuzköy Bulvarı 113A"
   },
   {
-   "sicil": 19176,
-   "ad": "İSTANBUL ECZANESİ",
-   "tel": "2126505407",
-   "ilce": "Sultangazi",
-   "adres": "Gazi Mahallesi İsmetpaşa Caddesi 51/B"
+   "sicil": 30518,
+   "ad": "BAYRAM ECZANESİ",
+   "tel": "2125900712",
+   "ilce": "Avcılar",
+   "adres": "Cihangir Mahallesi Şükran Sokak No:18/A"
   },
   {
-   "sicil": 18398,
-   "ad": "NESLİHAN ECZANESİ",
-   "tel": "2125286869",
-   "ilce": "Fatih",
-   "adres": "Hocapaşa Mahallesi Muradiye Caddesi 17"
+   "sicil": 27908,
+   "ad": "KORU ECZANESİ",
+   "tel": "2128134717",
+   "ilce": "Esenyurt",
+   "adres": "Koza Mahallesi 1638. Sokak F1 Blok No:3/E-31"
   },
   {
-   "sicil": 22962,
-   "ad": "SEDAT ECZANESİ",
-   "tel": "2165950006",
-   "ilce": "Pendik",
-   "adres": "Sanayi Mahallesi Çetin Sokak 8/B"
+   "sicil": 20600,
+   "ad": "TEMEL ECZANESİ",
+   "tel": "2164220644",
+   "ilce": "Üsküdar",
+   "adres": "Kirazlıtepe Mahallesi Mehmet Akif Ersoy Caddesi 43"
   },
   {
-   "sicil": 8808,
-   "ad": "AREL ECZANESİ",
-   "tel": "2122872570",
+   "sicil": 28442,
+   "ad": "HARMONY ECZANESİ",
+   "tel": "5302906333",
    "ilce": "Beşiktaş",
-   "adres": "Bebek Mahallesi Küçükbebek Caddesi 19/3"
+   "adres": "Türkali Mahallesi Ihlamurdere Caddesi 52A"
   },
   {
-   "sicil": 11450,
-   "ad": "ÇAĞLAR ECZANESİ",
-   "tel": "2122422728",
-   "ilce": "Sarıyer",
-   "adres": "Sarıyer Merkez Mahallesi Yenimahalle Caddesi 18"
+   "sicil": 17096,
+   "ad": "MERKEZ EFENDİ ECZANESİ",
+   "tel": "2128801092",
+   "ilce": "Beylikdüzü",
+   "adres": "Gürpınar Merkez Mahallesi Sohbet Sokak 13/2"
   },
   {
-   "sicil": 23040,
-   "ad": "ÇARŞI ECZANESİ",
-   "tel": "2163061077",
+   "sicil": 32918,
+   "ad": "SU ECZANESİ",
+   "tel": "5318987199",
    "ilce": "Kartal",
-   "adres": "Kordonboyu Mahallesi Ankara Caddesi 56"
+   "adres": "Cevizli Mahallesi Seyit Gazi Sokak No:16/A"
   },
   {
-   "sicil": 18114,
-   "ad": "SAĞLIK ECZANESİ",
-   "tel": "2123281875",
+   "sicil": 11412,
+   "ad": "DİLEM ECZANESİ",
+   "tel": "2128610622",
+   "ilce": "Büyükçekmece",
+   "adres": "Ulus Mahallesi Atatürk Caddesi 24/A"
+  },
+  {
+   "sicil": 16026,
+   "ad": "BATI ECZANESİ",
+   "tel": "2128824020",
+   "ilce": "Büyükçekmece",
+   "adres": "Mimar Sinan Merkez Mahallesi Çizmeci Sokak 2A"
+  },
+  {
+   "sicil": 22802,
+   "ad": "MURAT ECZANESİ",
+   "tel": "2122898777",
    "ilce": "Sarıyer",
-   "adres": "Tarabya Mahallesi Şalcıkır Caddesi 11/A"
+   "adres": "Ayazağa Mahallesi Atatürk Caddesi 1/A"
   },
   {
-   "sicil": 21208,
-   "ad": "PINAR ECZANESİ",
-   "tel": "2123423241",
-   "ilce": "Sarıyer",
-   "adres": "Maden Mahallesi Kuğu Sokak 4"
-  },
-  {
-   "sicil": 21110,
-   "ad": "YAŞAM ECZANESİ",
-   "tel": "2124240898",
-   "ilce": "Küçükçekmece",
-   "adres": "Kanarya Mahallesi Şahin Caddesi 37/1"
-  },
-  {
-   "sicil": 14464,
-   "ad": "GÖKÇE ECZANESİ",
-   "tel": "2163901173",
-   "ilce": "Pendik",
-   "adres": "Bahçelievler Mahallesi Aydınlı Caddesi 5/1"
-  },
-  {
-   "sicil": 36438,
-   "ad": "DİDEM TOPRAK ECZANESİ",
-   "tel": "5334450616",
-   "ilce": "Maltepe",
-   "adres": "Feyzullah Mahallesi Bağdat Caddesi No:336-338C"
-  },
-  {
-   "sicil": 24212,
-   "ad": "VATAN ECZANESİ",
-   "tel": "2165659671",
+   "sicil": 31004,
+   "ad": "BOSTANCI ECZANESİ",
+   "tel": "8506775616",
    "ilce": "Kadıköy",
-   "adres": "Dumlupınar Mahallesi Mektep Sokak 16E"
+   "adres": "Bostancı Mahallesi Prof. Ali Nihat Tarlan Caddesi 54/B"
   },
   {
-   "sicil": 28882,
-   "ad": "AKALIN ECZANESİ",
-   "tel": "2165660330",
-   "ilce": "Kadıköy",
-   "adres": "19 Mayıs Mahallesi Bayar Caddesi No:41/D"
-  },
-  {
-   "sicil": 31046,
-   "ad": "TUĞÇE ECZANESİ",
-   "tel": "2163638785",
-   "ilce": "Kadıköy",
-   "adres": "Fenerbahçe Mahallesi Hasan Ali Yücel Sokak 15/A"
-  },
-  {
-   "sicil": 36728,
-   "ad": "GİZEM ECE ECZANESİ",
-   "tel": "5354585400",
-   "ilce": "Kadıköy",
-   "adres": "Suadiye Mahallesi Kaptan Arif Sokak No:27/A"
-  },
-  {
-   "sicil": 18278,
-   "ad": "DOĞAN ECZANESİ",
-   "tel": "2126412490",
-   "ilce": "Güngören",
-   "adres": "Abdurrahman Nafiz Gürman Mahallesi Şair Ahmet Kutsi Tecer Caddesi 37"
-  },
-  {
-   "sicil": 15524,
-   "ad": "GÜLHANE ECZANESİ",
-   "tel": "2163381297",
-   "ilce": "Kadıköy",
-   "adres": "Osmanağa Mahallesi Söğütlüçeşme Caddesi No:21-B"
-  },
-  {
-   "sicil": 21450,
-   "ad": "ALFA ECZANESİ",
-   "tel": "2163394339",
-   "ilce": "Kadıköy",
-   "adres": "Koşuyolu Mahallesi Koşuyolu Caddesi 2/A"
-  },
-  {
-   "sicil": 22714,
-   "ad": "HANNE ECZANESİ",
-   "tel": "2166726064",
-   "ilce": "Kartal",
-   "adres": "Hürriyet Mahallesi Peker Sokak 33"
-  },
-  {
-   "sicil": 6296,
-   "ad": "HEYBELİADA ECZANESİ",
-   "tel": "2163518415",
-   "ilce": "Adalar",
-   "adres": "Heybeliada Mahallesi Ayyıldız Caddesi No:25/D"
-  },
-  {
-   "sicil": 29020,
-   "ad": "ÖZBEK ECZANESİ",
-   "tel": "5317742777",
-   "ilce": "Çiftlikköy",
-   "adres": "Çiftlik Mahallesi Sakarya Caddesi 44/10"
-  },
-  {
-   "sicil": 24524,
-   "ad": "BANU ECZANESİ",
-   "tel": "2262460889",
-   "ilce": "Çınarcık",
-   "adres": "Harmanlar Mahallesi Vali Akı Caddesi 3/A"
-  },
-  {
-   "sicil": 27432,
-   "ad": "PAPATYA ECZANESİ",
-   "tel": "2167012122",
-   "ilce": "Tuzla",
-   "adres": "İstasyon Mahallesi Vatan Caddesi 117/4-3"
-  },
-  {
-   "sicil": 22780,
-   "ad": "YEŞİLÇAY ECZANESİ",
-   "tel": "2167218900",
-   "ilce": "Şile",
-   "adres": "Ağva Merkez Mahallesi Yakuplu Caddesi 9/C"
-  },
-  {
-   "sicil": 22950,
-   "ad": "İLKAY ECZANESİ",
-   "tel": "2165538168",
-   "ilce": "Ümraniye",
-   "adres": "Kazım Karabekir Mahallesi Ömür Sokak 43/1"
-  },
-  {
-   "sicil": 18776,
-   "ad": "BETÜL KETENCİ ECZANESİ",
-   "tel": "2167042808",
-   "ilce": "Şile",
-   "adres": "Hacıkasım Mahallesi Cumhuriyet Caddesi 42/B"
-  },
-  {
-   "sicil": 24234,
-   "ad": "CEYDA ECZANESİ",
-   "tel": "2166507868",
-   "ilce": "Üsküdar",
-   "adres": "Bulgurlu Mahallesi Kireçfırını Sokak Dış Kapı No:6/E İç Kapı No:30"
-  },
-  {
-   "sicil": 17778,
-   "ad": "ATAŞEHİR DENİZ ECZANESİ",
-   "tel": "2165774410",
-   "ilce": "Ataşehir",
-   "adres": "Küçükbakkalköy Mahallesi Işıklar Caddesi 37/D"
-  },
-  {
-   "sicil": 18568,
-   "ad": "SÜRMELİOĞLU ECZANESİ",
-   "tel": "2164707673",
-   "ilce": "Ataşehir",
-   "adres": "Aşık Veysel Mahallesi 3001. Caddesi 102"
-  },
-  {
-   "sicil": 22374,
-   "ad": "TAMAY ECZANESİ",
-   "tel": "2165723609",
-   "ilce": "Ataşehir",
-   "adres": "İçerenköy Mahallesi Adem Sokak 57B"
-  },
-  {
-   "sicil": 34800,
-   "ad": "ZEYTİN AĞACI ECZANESİ",
-   "tel": "2165768595",
-   "ilce": "Ataşehir",
-   "adres": "İnönü Mahallesi Kartal Caddesi No:40/B"
-  },
-  {
-   "sicil": 19938,
-   "ad": "KARTAL PLUS ECZANESİ",
-   "tel": "2162250891",
-   "ilce": "Kartal",
-   "adres": "Orta Mahallesi Yalnız Selvi Caddesi 21A"
-  },
-  {
-   "sicil": 17138,
-   "ad": "ARDA ECZANESİ",
-   "tel": "5417717360",
-   "ilce": "Armutlu",
-   "adres": "Karşıyaka Mahallesi Okul Caddesi 3A"
-  },
-  {
-   "sicil": 20508,
-   "ad": "KENT ECZANESİ",
-   "tel": "2268127556",
-   "ilce": "Yalova",
-   "adres": "Fevzi Çakmak Mahallesi Fırın Sokak 23/A"
-  },
-  {
-   "sicil": 21538,
-   "ad": "İREM ECZANESİ",
-   "tel": "2268134010",
-   "ilce": "Yalova",
-   "adres": "Bağlarbaşı Mahallesi Kınalı Sokak 1/14"
-  },
-  {
-   "sicil": 24952,
-   "ad": "ECZANE VEFA",
-   "tel": "2127801505",
-   "ilce": "Arnavutköy",
-   "adres": "Hadımköy Mahallesi Cahit Sıtkı Tarancı Caddesi 86F"
-  },
-  {
-   "sicil": 20926,
-   "ad": "SEVCAN ECZANESİ",
-   "tel": "2124150003",
-   "ilce": "Zeytinburnu",
-   "adres": "Sümer Mahallesi Şehit Piyade Er Yaşar Yeşilkır Sokak 6B"
-  },
-  {
-   "sicil": 30764,
-   "ad": "ULU ECZANESİ",
-   "tel": "2125460818",
-   "ilce": "Zeytinburnu",
-   "adres": "Beştelsiz Mahallesi 114. Sokak 6/B"
-  },
-  {
-   "sicil": 5154,
-   "ad": "NURAN ECZANESİ",
-   "tel": "5334345574",
-   "ilce": "Şişli",
-   "adres": "Mahmut Şevket Paşa Mahallesi Mithat Paşa Caddesi 31B"
-  },
-  {
-   "sicil": 20144,
-   "ad": "PERLA ECZANESİ",
-   "tel": "2122330418",
-   "ilce": "Şişli",
-   "adres": "Teşvikiye Mahallesi Valikonağı Caddesi 68/A"
-  },
-  {
-   "sicil": 34762,
-   "ad": "NEFES ECZANESİ",
-   "tel": "2128133607",
-   "ilce": "Şişli",
-   "adres": "Merkez Mahallesi Oktay Cebeci Sokak No:30/A"
-  },
-  {
-   "sicil": 39046,
-   "ad": "GÖKDOĞAN ECZANESİ",
-   "tel": "2128774834",
-   "ilce": "Şişli",
-   "adres": "Fulya Mahallesi Mehmetçik Caddesi No:48/A"
-  },
-  {
-   "sicil": 15754,
-   "ad": "SÖNMEZ ECZANESİ",
-   "tel": "2127318515",
-   "ilce": "Silivri",
-   "adres": "Yavuz Selim Mahallesi 202 Caddesi 25/A"
-  },
-  {
-   "sicil": 6852,
-   "ad": "ONUR ECZANESİ",
-   "tel": "2125739811",
-   "ilce": "Bakırköy",
-   "adres": "Yeşilköy Mahallesi İstasyon Caddesi 6"
-  },
-  {
-   "sicil": 24074,
-   "ad": "EKŞİNAR ECZANESİ",
-   "tel": "2126011144",
-   "ilce": "Bakırköy",
-   "adres": "Şenlikköy Mahallesi Florya Caddesi 59C"
-  },
-  {
-   "sicil": 27288,
-   "ad": "MELİH ECZANESİ",
-   "tel": "2128125559",
-   "ilce": "Başakşehir",
-   "adres": "Kayabaşı Mahallesi Kayaşehir Bulvarı 46DA"
-  },
-  {
-   "sicil": 15540,
-   "ad": "GÖKTÜRK SİBEL ECZANESİ",
-   "tel": "2123221159",
-   "ilce": "Eyüp",
-   "adres": "Göktürk Merkez Mahallesi Göktürk Caddesi 48/D"
-  },
-  {
-   "sicil": 28140,
-   "ad": "ESİN ECZANESİ",
-   "tel": "2164841021",
-   "ilce": "Çekmeköy",
-   "adres": "Sultançiftliği Mahallesi Turgut Özal Bulvarı 90/O"
-  },
-  {
-   "sicil": 13494,
-   "ad": "YENİ FISTIKAĞACI ECZANESİ",
-   "tel": "2163349940",
-   "ilce": "Üsküdar",
-   "adres": "İcadiye Mahallesi Çifteçınar Sokak 53/A"
-  },
-  {
-   "sicil": 16684,
-   "ad": "AYAZMA ECZANESİ",
-   "tel": "2165326812",
-   "ilce": "Üsküdar",
-   "adres": "Ahmediye Mahallesi Halk Caddesi 33B"
-  },
-  {
-   "sicil": 21408,
-   "ad": "ECZANE KIRMIZI",
-   "tel": "2165041255",
-   "ilce": "Maltepe",
-   "adres": "Aydınevler Mahallesi Siteler Yolu Sokak 1"
-  },
-  {
-   "sicil": 37588,
-   "ad": "ÖNDER ECZANESİ",
-   "tel": "2164230025",
-   "ilce": "Tuzla",
-   "adres": "Mimar Sinan Mahallesi Güngörmüş Sokak No:35/A"
-  },
-  {
-   "sicil": 18264,
-   "ad": "BİRGÜL ECZANESİ",
-   "tel": "2126138630",
-   "ilce": "Kağıthane",
-   "adres": "Kağıthane Merkez Mahallesi Osmanpaşa Caddesi 35A"
-  },
-  {
-   "sicil": 21548,
-   "ad": "GÜLERYÜZ ECZANESİ",
-   "tel": "2123699585",
-   "ilce": "Beyoğlu",
-   "adres": "Piripaşa Mahallesi Şaban Deresi Sokak 7/D"
-  },
-  {
-   "sicil": 33552,
-   "ad": "KASIMPAŞA ECZANESİ",
-   "tel": "2122537744",
-   "ilce": "Beyoğlu",
-   "adres": "Yahya Kahya Mahallesi Kasımpaşa Bostanı Sokak 18A"
-  },
-  {
-   "sicil": 13660,
-   "ad": "MERKEZ ECZANESİ",
-   "tel": "5558013738",
-   "ilce": "Sancaktepe",
-   "adres": "Abdurrahmangazi Mahallesi Osmangazi Caddesi 1/B"
-  },
-  {
-   "sicil": 25762,
-   "ad": "TOPRAK ECZANESİ",
-   "tel": "2165061130",
-   "ilce": "Pendik",
-   "adres": "Kaynarca Mahallesi Kafkas Sokak 5A"
-  },
-  {
-   "sicil": 25486,
-   "ad": "TUNA ECZANESİ",
-   "tel": "5441713456",
-   "ilce": "Ümraniye",
-   "adres": "Yamanevler Mahallesi Alemdağ Caddesi 155/B"
-  },
-  {
-   "sicil": 30516,
-   "ad": "BAŞAK ECZANESİ",
-   "tel": "2165231974",
-   "ilce": "Ümraniye",
-   "adres": "Namık Kemal Mahallesi Sütçü İmam Caddesi 10/A"
-  },
-  {
-   "sicil": 24742,
+   "sicil": 14406,
    "ad": "EYLÜL ECZANESİ",
-   "tel": "5455899222",
-   "ilce": "Sultanbeyli",
-   "adres": "Abdurrahmangazi Mahallesi Begonya Sokak 8A/1"
+   "tel": "2125837873",
+   "ilce": "Bakırköy",
+   "adres": "Zeytinlik Mahallesi Ömer Naci Sokak 32/2"
   },
   {
-   "sicil": 26966,
-   "ad": "ADİL ECZANESİ",
-   "tel": "5452862899",
-   "ilce": "Sultanbeyli",
-   "adres": "Adil Mahallesi Yelkenci Sokak 8/A"
+   "sicil": 19062,
+   "ad": "RUBİN ECZANESİ",
+   "tel": "2125425130",
+   "ilce": "Bakırköy",
+   "adres": "Zuhuratbaba Mahallesi Zuhuratbaba Caddesi 1/A"
   },
   {
-   "sicil": 35326,
-   "ad": "İZGÜ ECZANESİ",
-   "tel": "2166223860",
-   "ilce": "Sancaktepe",
-   "adres": "Sarıgazi Mahallesi Zaim Caddesi 36A"
+   "sicil": 23752,
+   "ad": "SÜLÜNTEPE ECZANESİ",
+   "tel": "2163789498",
+   "ilce": "Pendik",
+   "adres": "Sülüntepe Mahallesi Abdurrahmangazi Sokak 3/A"
   },
   {
-   "sicil": 17990,
-   "ad": "ASRIN DENİZ ECZANESİ",
-   "tel": "2166216393",
-   "ilce": "Sancaktepe",
-   "adres": "Emek Mahallesi Mehmet Akif Ersoy Caddesi 9/1"
+   "sicil": 26868,
+   "ad": "BERNA ECZANESİ",
+   "tel": "2124194079",
+   "ilce": "Sultangazi",
+   "adres": "Zübeyde Hanım Mahallesi 1276. Sokak 1A"
   },
   {
-   "sicil": 30186,
-   "ad": "SEDA ECZANESİ",
-   "tel": "5466222336",
-   "ilce": "Sancaktepe",
-   "adres": "İnönü Mahallesi Demokrasi Caddesi No:93-95B"
+   "sicil": 26506,
+   "ad": "YENİKAPI İSKELE ECZANESİ",
+   "tel": "2125179727",
+   "ilce": "Fatih",
+   "adres": "Katip Kasım Mahallesi Kennedy Caddesi 9"
   },
   {
-   "sicil": 28378,
-   "ad": "MASAL ECZANESİ",
-   "tel": "2164942210",
-   "ilce": "Tuzla",
-   "adres": "İçmeler Mahallesi İncesu Sokak 16/A"
+   "sicil": 18598,
+   "ad": "ÜMİT ŞAHİN ECZANESİ",
+   "tel": "2122488704",
+   "ilce": "Fatih",
+   "adres": "Hobyar Mahallesi Hamidiye Caddesi 16/E"
   },
   {
-   "sicil": 27418,
-   "ad": "OKYANUS ECZANESİ",
-   "tel": "2124069153",
+   "sicil": 26880,
+   "ad": "ÖZBEY ECZANESİ",
+   "tel": "2127891990",
+   "ilce": "Çatalca",
+   "adres": "Ferhatpaşa Mahallesi Bahtiyar Sokak 30A"
+  },
+  {
+   "sicil": 28436,
+   "ad": "MEYDAN ECZANESİ",
+   "tel": "2125688446",
+   "ilce": "Esenler",
+   "adres": "Nine Hatun Mahallesi İnönü Caddesi 19C"
+  },
+  {
+   "sicil": 15594,
+   "ad": "BERK ECZANESİ",
+   "tel": "2126475855",
+   "ilce": "Esenler",
+   "adres": "Fatih Mahallesi Fatih Caddesi 4"
+  },
+  {
+   "sicil": 29866,
+   "ad": "FERAH ECZANESİ",
+   "tel": "2126146460",
    "ilce": "Eyüp",
-   "adres": "Çırçır Mahallesi Dönmez Sokak 32/A"
+   "adres": "Rami Yeni Mahallesi Reşadiye Caddesi 27/A"
   },
   {
-   "sicil": 26974,
-   "ad": "BAŞAK ECZANESİ",
-   "tel": "5305459934",
-   "ilce": "Çekmeköy",
-   "adres": "Merkez Mahallesi Çavuşbaşı Caddesi 44A"
-  },
-  {
-   "sicil": 22502,
-   "ad": "TAN ECZANESİ",
-   "tel": "2125411344",
+   "sicil": 29234,
+   "ad": "İREM ECZANESİ",
+   "tel": "2124943650",
    "ilce": "Küçükçekmece",
-   "adres": "Yeşilova Mahallesi İnönü Sokak 2"
+   "adres": "Mehmet Akif Mahallesi Kemalpaşa Caddesi 90/D"
   },
   {
-   "sicil": 11394,
-   "ad": "ARDA ECZANESİ",
-   "tel": "5421241278",
+   "sicil": 14448,
+   "ad": "KANUNİ ECZANESİ",
+   "tel": "5324548780",
    "ilce": "Küçükçekmece",
-   "adres": "İnönü Mahallesi Maslak Çeşme Caddesi 92"
+   "adres": "Atakent Mahallesi 221. Sokak C18"
   },
   {
-   "sicil": 13788,
-   "ad": "ELİT ECZANESİ",
-   "tel": "2125992700",
-   "ilce": "Küçükçekmece",
-   "adres": "Cennet Mahallesi Turgut Reis Caddesi 61/A"
+   "sicil": 30092,
+   "ad": "İPEK ÖZTÜRK ECZANESİ",
+   "tel": "5308980272",
+   "ilce": "Kağıthane",
+   "adres": "Yeşilce Mahallesi Destek Sokak 44-B"
   },
   {
-   "sicil": 29712,
-   "ad": "MÜEZZİNOĞLU ECZANESİ",
-   "tel": "2128904041",
-   "ilce": "Sultangazi",
-   "adres": "Ellinci Yıl Mahallesi 2083. Sokak 10/A"
+   "sicil": 18394,
+   "ad": "MÜGE ECZANESİ",
+   "tel": "2124181001",
+   "ilce": "Eyüp",
+   "adres": "İslambey Mahallesi Halitpaşa Caddesi 22/1"
   },
   {
-   "sicil": 23944,
-   "ad": "SULTANGAZİ ECZANESİ",
-   "tel": "2124751991",
-   "ilce": "Sultangazi",
-   "adres": "Uğur Mumcu Mahallesi 2347. Sokak 10/A"
+   "sicil": 34688,
+   "ad": "SERRA NUR ECZANESİ",
+   "tel": "5366639436",
+   "ilce": "Fatih",
+   "adres": "İskenderpaşa Mahallesi Aile Sokak 41/A"
   },
   {
-   "sicil": 23562,
-   "ad": "SUDE ECZANESİ",
-   "tel": "5426761064",
-   "ilce": "Sultangazi",
-   "adres": "Uğur Mumcu Mahallesi N Caddesi 47-49M C BLOK NO. 83"
+   "sicil": 20768,
+   "ad": "EROL ECZANESİ",
+   "tel": "2125866252",
+   "ilce": "Fatih",
+   "adres": "Haseki Sultan Mahallesi Dr. Adnan Adıvar Caddesi 24/B"
   },
   {
-   "sicil": 21714,
-   "ad": "KAPTAN ECZANESİ",
-   "tel": "2127272105",
-   "ilce": "Silivri",
-   "adres": "Yeni Mahallesi Nedim Beyazgül Sokak 1B"
+   "sicil": 22466,
+   "ad": "KÜBRA ECZANESİ",
+   "tel": "2125853938",
+   "ilce": "Fatih",
+   "adres": "Şehremini Mahallesi Börekçi Veli Sokak No:18/A"
   },
   {
-   "sicil": 23688,
-   "ad": "ÇINAR ECZANESİ",
-   "tel": "2127273919",
-   "ilce": "Silivri",
-   "adres": "Yeni Mahallesi Çelebi Sokak 3"
+   "sicil": 19862,
+   "ad": "HAYAT ECZANESİ",
+   "tel": "2122705975",
+   "ilce": "Kağıthane",
+   "adres": "Ortabayır Mahallesi Talatpaşa Caddesi 123/A"
   },
   {
-   "sicil": 23284,
-   "ad": "G-PLUS ECZANESİ",
-   "tel": "2128030509",
-   "ilce": "Bağcılar",
-   "adres": "Bağlar Mahallesi Mimar Sinan Caddesi 37B"
+   "sicil": 10258,
+   "ad": "FİDAN ECZANESİ",
+   "tel": "2163764699",
+   "ilce": "Maltepe",
+   "adres": "Esenkent Mahallesi Kanipaşa Caddesi 189/B"
   },
   {
-   "sicil": 27004,
-   "ad": "TUĞBA ECZANESİ",
-   "tel": "2124350990",
-   "ilce": "Bağcılar",
-   "adres": "Bağcılar Merkez Mahallesi İstanbul Caddesi 46/A"
+   "sicil": 24596,
+   "ad": "YENİ HİLAL ECZANESİ",
+   "tel": "2165081070",
+   "ilce": "Ümraniye",
+   "adres": "Şerifali Mahallesi İbrahim Hakkı Sokak 13A"
   },
   {
-   "sicil": 29464,
-   "ad": "TUNCAY ECZANESİ",
-   "tel": "2126901067",
-   "ilce": "Bağcılar",
-   "adres": "Fatih Mahallesi Velioğlu Caddesi 18/A"
+   "sicil": 37058,
+   "ad": "GÖKŞEN ECZANESİ",
+   "tel": "2165145919",
+   "ilce": "Ümraniye",
+   "adres": "Ihlamurkuyu Mahallesi Karakol Sokak 3/11"
   },
   {
-   "sicil": 13820,
-   "ad": "AYYILDIZ ECZANESİ",
-   "tel": "2126546454",
-   "ilce": "Bahçelievler",
-   "adres": "Zafer Mahallesi Marsan Sokak 11/A"
+   "sicil": 34416,
+   "ad": "TUTKU ECZANESİ",
+   "tel": "2164502240",
+   "ilce": "Kadıköy",
+   "adres": "Caferağa Mahallesi Gn. Asım Gündüz Caddesi No:81/A"
   },
   {
-   "sicil": 18768,
-   "ad": "PINAR ECZANESİ",
-   "tel": "2125071030",
-   "ilce": "Bahçelievler",
-   "adres": "Siyavuşpaşa Mahallesi Çamlık Caddesi 22"
+   "sicil": 34832,
+   "ad": "FİTO ECZANESİ",
+   "tel": "2164184415",
+   "ilce": "Kadıköy",
+   "adres": "Hasanpaşa Mahallesi Söğütlüçeşme Caddesi No:178/A"
   },
   {
-   "sicil": 13290,
-   "ad": "SEVDA ECZANESİ",
-   "tel": "2126545252",
-   "ilce": "Bahçelievler",
-   "adres": "Şirinevler Mahallesi Fetih Caddesi 28/B"
-  },
-  {
-   "sicil": 22384,
-   "ad": "CANAN ARNAVUTKÖY ECZANESİ",
-   "tel": "2126217586",
-   "ilce": "Arnavutköy",
-   "adres": "Arnavutköy Merkez Mahallesi Semih Sokak 8/10A"
-  },
-  {
-   "sicil": 25576,
-   "ad": "MARMARA ECZANESİ",
-   "tel": "2125970293",
-   "ilce": "Arnavutköy",
-   "adres": "Anadolu Mahallesi Necip Fazıl Caddesi 33B"
-  },
-  {
-   "sicil": 24428,
-   "ad": "HELİS ECZANESİ",
-   "tel": "2124163164",
+   "sicil": 14356,
+   "ad": "GÜL ECZANESİ",
+   "tel": "2125045486",
    "ilce": "Güngören",
-   "adres": "Mareşal Çakmak Mahallesi Soğanlı Caddesi 14A"
+   "adres": "Abdurrahman Nafiz Gürman Mahallesi Kınalıtepe Sokak 25/27 D"
   },
   {
-   "sicil": 20218,
-   "ad": "YEŞİM ECZANESİ",
-   "tel": "2128540712",
-   "ilce": "Esenyurt",
-   "adres": "Güzelyurt Mahallesi Yıldırım Beyazıt Caddesi 20"
+   "sicil": 19388,
+   "ad": "AİLE ECZANESİ",
+   "tel": "2167595531",
+   "ilce": "Kadıköy",
+   "adres": "Sahrayıcedit Mahallesi Atatürk Caddesi 19/B"
   },
   {
-   "sicil": 15860,
-   "ad": "AVRUPA ECZANESİ",
-   "tel": "2124501500",
-   "ilce": "Esenyurt",
-   "adres": "İnönü Mahallesi Doğan Araslı Bulvarı 118"
+   "sicil": 23876,
+   "ad": "ECRİN ECZANESİ",
+   "tel": "2165662021",
+   "ilce": "Kadıköy",
+   "adres": "Merdivenköy Mahallesi Nisan Sokak 20A"
   },
   {
-   "sicil": 33744,
-   "ad": "BAYRAKTAR ECZANESİ",
-   "tel": "5350479271",
-   "ilce": "Esenyurt",
-   "adres": "Süleymaniye Mahallesi Ispartakule Caddesi No:8/A"
+   "sicil": 25910,
+   "ad": "ASİL ECZANESİ",
+   "tel": "2163383573",
+   "ilce": "Kadıköy",
+   "adres": "Feneryolu Mahallesi Feneryolu Sokak 20/C/D"
   },
   {
-   "sicil": 22706,
-   "ad": "SAYIN ECZANESİ",
-   "tel": "2126993179",
-   "ilce": "Esenyurt",
-   "adres": "Fatih Mahallesi 956. Sokak 17-19M"
+   "sicil": 33730,
+   "ad": "ŞAŞKINBAKKAL ECZANESİ",
+   "tel": "2163572252",
+   "ilce": "Kadıköy",
+   "adres": "Erenköy Mahallesi Kazım Karabekir Caddesi 1/F"
   },
   {
-   "sicil": 27372,
-   "ad": "PEHLİVANOĞLU ECZANESİ",
-   "tel": "2126917722",
-   "ilce": "Esenyurt",
-   "adres": "İstiklal Mahallesi 2665. Sokak 22/2/B"
+   "sicil": 34344,
+   "ad": "ERVA ECZANESİ",
+   "tel": "2163702233",
+   "ilce": "Maltepe",
+   "adres": "Bağlarbaşı Mahallesi Çırak Sokak No:20/A"
   },
   {
-   "sicil": 24138,
-   "ad": "YENİ ECZANE",
-   "tel": "2163823800",
-   "ilce": "Adalar",
-   "adres": "Nizam Mahallesi Çınar Caddesi 7/A"
+   "sicil": 12122,
+   "ad": "ERKAM ECZANESİ",
+   "tel": "2125980023",
+   "ilce": "Küçükçekmece",
+   "adres": "Kanarya Mahallesi Balıkçın Caddesi 3/B"
+  },
+  {
+   "sicil": 30674,
+   "ad": "AHSEN ECZANESİ",
+   "tel": "2163900980",
+   "ilce": "Pendik",
+   "adres": "Yenimahalle Mahallesi Yenipazar Caddesi 46/A"
+  },
+  {
+   "sicil": 14154,
+   "ad": "DEFNE ECZANESİ",
+   "tel": "2122854954",
+   "ilce": "Sarıyer",
+   "adres": "Darüşşafaka Mahallesi Gazeteciler Sitesi B/2 Blok, 7"
+  },
+  {
+   "sicil": 28506,
+   "ad": "ÖZGE SELÇİK ECZANESİ",
+   "tel": "2122596586",
+   "ilce": "Beşiktaş",
+   "adres": "Mecidiye Mahallesi Dereboyu Caddesi 155/A"
+  },
+  {
+   "sicil": 18108,
+   "ad": "FERDA ECZANESİ",
+   "tel": "2163061617",
+   "ilce": "Kartal",
+   "adres": "Karlıktepe Mahallesi Spor Caddesi 4 D"
+  },
+  {
+   "sicil": 22446,
+   "ad": "AYLİN ECZANESİ (V)",
+   "tel": "2122717265",
+   "ilce": "Sarıyer",
+   "adres": "Kazım Karabekir Paşa Mahallesi Gülbağlar Caddesi 5/A"
+  },
+  {
+   "sicil": 28806,
+   "ad": "MECİDİYEKÖY ECZANESİ",
+   "tel": "2122118983",
+   "ilce": "Şişli",
+   "adres": "Mecidiyeköy Mahallesi Selahattin Pınar Caddesi 20/A"
+  },
+  {
+   "sicil": 17278,
+   "ad": "ŞANSLI ECZANESİ",
+   "tel": "2127315777",
+   "ilce": "Silivri",
+   "adres": "Selimpaşa Merkez Mahallesi İskender Özcan Caddesi 6/C"
+  },
+  {
+   "sicil": 16220,
+   "ad": "HUZUR ECZANESİ",
+   "tel": "2122206272",
+   "ilce": "Şişli",
+   "adres": "Halide Edip Adıvar Mahallesi Darülaceze Caddesi 11/B"
+  },
+  {
+   "sicil": 25454,
+   "ad": "BOMONTİ ECZANESİ",
+   "tel": "2122918082",
+   "ilce": "Şişli",
+   "adres": "Duatepe Mahallesi Ergenekon Caddesi 119A"
+  },
+  {
+   "sicil": 33664,
+   "ad": "YENİ ŞİŞLİ ITIR ECZANESİ",
+   "tel": "2122968180",
+   "ilce": "Şişli",
+   "adres": "Şişli Merkez Mahallesi Abidei Hürriyet Caddesi 141/B"
+  },
+  {
+   "sicil": 15324,
+   "ad": "HAYAT AĞACI ECZANESİ",
+   "tel": "2163952946",
+   "ilce": "Ataşehir",
+   "adres": "Atatürk Mahallesi Ataşehir Bulvarı 12/H"
+  },
+  {
+   "sicil": 20082,
+   "ad": "GÜZİN ECZANESİ",
+   "tel": "2164705622",
+   "ilce": "Ataşehir",
+   "adres": "Örnek Mahallesi Somuncu Baba Sokak 104 A5"
+  },
+  {
+   "sicil": 21216,
+   "ad": "YENİŞEHİR ECZANESİ",
+   "tel": "5076957097",
+   "ilce": "Ataşehir",
+   "adres": "Mevlana Mahallesi Sakarya Caddesi 12"
+  },
+  {
+   "sicil": 25632,
+   "ad": "SEVGİ ECZANESİ",
+   "tel": "2165720206",
+   "ilce": "Ataşehir",
+   "adres": "İçerenköy Mahallesi Prof. Dr. Necmettin Erbakan Caddesi 45A"
+  },
+  {
+   "sicil": 23560,
+   "ad": "ÇAĞLAR ECZANESİ",
+   "tel": "2125820086",
+   "ilce": "Zeytinburnu",
+   "adres": "Beştelsiz Mahallesi 101. Sokak No:105U"
+  },
+  {
+   "sicil": 30422,
+   "ad": "TUĞÇEM ECZANESİ",
+   "tel": "2124153455",
+   "ilce": "Zeytinburnu",
+   "adres": "Gökalp Mahallesi Prof. Dr. Muammer Aksoy Sokak 95/A"
+  },
+  {
+   "sicil": 25288,
+   "ad": "FATİH ECZANESİ",
+   "tel": "2127801570",
+   "ilce": "Arnavutköy",
+   "adres": "Hadımköy Mahallesi Şebeke Caddesi 1"
+  },
+  {
+   "sicil": 19066,
+   "ad": "EMRE ECZANESİ",
+   "tel": "2268135857",
+   "ilce": "Yalova",
+   "adres": "Bahçelievler Mahallesi Turhan Koçal Cad. Güzel Apt. No:20/A"
+  },
+  {
+   "sicil": 30120,
+   "ad": "İSKELE ECZANESİ",
+   "tel": "5010129477",
+   "ilce": "Armutlu",
+   "adres": "Bayır Mahallesi İskele Sokak 10/C"
+  },
+  {
+   "sicil": 18126,
+   "ad": "CEMİL ECZANESİ",
+   "tel": "2163770848",
+   "ilce": "Kartal",
+   "adres": "Orta Mahallesi Kaptanıderya Caddesi 40/B"
+  },
+  {
+   "sicil": 25758,
+   "ad": "AYHAN ECZANESİ",
+   "tel": "2268000400",
+   "ilce": "Yalova",
+   "adres": "İsmetpaşa Mahallesi Çağatay Sokak 4/1"
+  },
+  {
+   "sicil": 17744,
+   "ad": "UZMAN ECZANESİ",
+   "tel": "2167115917",
+   "ilce": "Şile",
+   "adres": "Çavuş Mahallesi Üsküdar Caddesi 144"
+  },
+  {
+   "sicil": 18448,
+   "ad": "ULAŞ  ECZANESİ",
+   "tel": "2166302686",
+   "ilce": "Ümraniye",
+   "adres": "İnkılap Mahallesi Ordu Caddesi 2/A"
+  },
+  {
+   "sicil": 25466,
+   "ad": "HUZUR ECZANESİ",
+   "tel": "2163443366",
+   "ilce": "Üsküdar",
+   "adres": "Kısıklı Mahallesi Alemdağ Yan Yolu Caddesi 39/A"
+  },
+  {
+   "sicil": 8976,
+   "ad": "ŞİFA ECZANESİ",
+   "tel": "2167218169",
+   "ilce": "Şile",
+   "adres": "Ağva Merkez Mahallesi Yakuplu Caddesi 7"
+  },
+  {
+   "sicil": 21446,
+   "ad": "İLHAN ECZANESİ",
+   "tel": "2164475299",
+   "ilce": "Tuzla",
+   "adres": "Yayla Mahallesi Ali İhsan Paşa Caddesi 37A"
+  },
+  {
+   "sicil": 14440,
+   "ad": "TUNÇ ECZANESİ",
+   "tel": "2262450700",
+   "ilce": "Çınarcık",
+   "adres": "Harmanlar Mahallesi 254. Sokak 2/8"
+  },
+  {
+   "sicil": 15922,
+   "ad": "DENİZ ECZANESİ",
+   "tel": "2263528017",
+   "ilce": "Çiftlikköy",
+   "adres": "Sahil Mahallesi Yalı Caddesi 22"
   },
   {
    "sicil": 6638,
@@ -941,46 +577,389 @@
    "adres": "Kınalıada Mahallesi İskele Sokak 3/B"
   },
   {
-   "sicil": 39370,
-   "ad": "MİNA ECZANESİ",
-   "tel": "2125184750",
-   "ilce": "Fatih",
-   "adres": "Mimar Kemalettin Mahallesi Koca Ragıp Paşa Caddesi No:9/C"
+   "sicil": 13762,
+   "ad": "HAYAT ECZANESİ",
+   "tel": "2163519907",
+   "ilce": "Adalar",
+   "adres": "Heybeliada Mahallesi Ayyıldız Caddesi 43"
   },
   {
-   "sicil": 28958,
-   "ad": "ÇELİK ECZANESİ",
-   "tel": "2122172530",
-   "ilce": "Şişli",
-   "adres": "Kuştepe Mahallesi Şehit Er Cihan Namlı Caddesi 131/C"
+   "sicil": 12196,
+   "ad": "ÇAĞRI ECZANESİ",
+   "tel": "2163095805",
+   "ilce": "Kartal",
+   "adres": "Cumhuriyet Mahallesi Yüzyıl Caddesi 47/B"
   },
   {
-   "sicil": 28858,
-   "ad": "BİRİNCİ ECZANESİ",
-   "tel": "2123022905",
-   "ilce": "Esenyurt",
-   "adres": "Akevler Mahallesi Fatih Sultan Mehmet Caddesi 95/A"
+   "sicil": 33754,
+   "ad": "FLORA ECZANESİ",
+   "tel": "5069083441",
+   "ilce": "Çekmeköy",
+   "adres": "Sultançiftliği Mahallesi Özveri Sokak 1A/1C"
   },
   {
-   "sicil": 15680,
-   "ad": "DEFNE ECZANESİ",
-   "tel": "2264629230",
-   "ilce": "Altınova",
-   "adres": "Kaytazdere Merkez Mahallesi Devlet Karayolu Caddesi 134/C"
+   "sicil": 32690,
+   "ad": "ONUR ECZANESİ",
+   "tel": "2123222080",
+   "ilce": "Eyüp",
+   "adres": "Göktürk Merkez Mahallesi Çamlık Caddesi 7/B"
   },
   {
-   "sicil": 32708,
-   "ad": "ÇAVUŞPAŞA ECZANESİ",
-   "tel": "2125393011",
-   "ilce": "Bahçelievler",
-   "adres": "Soğanlı Mahallesi Çavuşpaşa Caddesi No:43/A"
+   "sicil": 21172,
+   "ad": "FEYZA ECZANESİ",
+   "tel": "2128926892",
+   "ilce": "Başakşehir",
+   "adres": "Kayabaşı Mahallesi Kayaşehir Bulvarı Adım İstanbul Sitesi A3 Blok No:40CK (Dükkan-174)"
   },
   {
-   "sicil": 31148,
-   "ad": "ELLEZOĞLU ECZANESİ",
-   "tel": "2128925792",
+   "sicil": 13844,
+   "ad": "SEVGİ ECZANESİ",
+   "tel": "2126623763",
+   "ilce": "Bakırköy",
+   "adres": "Yeşilköy Mahallesi İstasyon Caddesi 17/B"
+  },
+  {
+   "sicil": 37328,
+   "ad": "ESİN ECZANESİ",
+   "tel": "5388416297",
+   "ilce": "Tuzla",
+   "adres": "Şifa Mahallesi İnönü Caddesi Tuzla Kiptaş 1.Etap Konutları E03 Blok No:73/B"
+  },
+  {
+   "sicil": 21686,
+   "ad": "EMEK ECZANESİ",
+   "tel": "2165492155",
+   "ilce": "Maltepe",
+   "adres": "Küçükyalı Merkez Mahallesi Er Sokak 1/A"
+  },
+  {
+   "sicil": 9564,
+   "ad": "HAKAN ECZANESİ",
+   "tel": "2163433429",
+   "ilce": "Üsküdar",
+   "adres": "Salacak Mahallesi Harem İskele Caddesi 6"
+  },
+  {
+   "sicil": 32732,
+   "ad": "DİLARA ECZANESİ",
+   "tel": "5366444015",
+   "ilce": "Üsküdar",
+   "adres": "Aziz Mahmut Hüdayi Mahallesi Doğancılar Caddesi No:45/E"
+  },
+  {
+   "sicil": 13222,
+   "ad": "CİHAN ECZANESİ",
+   "tel": "2122553872",
+   "ilce": "Beyoğlu",
+   "adres": "Fetihtepe Mahallesi Dereiçi Sokak 226-C"
+  },
+  {
+   "sicil": 25058,
+   "ad": "OĞUZ ECZANESİ",
+   "tel": "2122383734",
+   "ilce": "Beyoğlu",
+   "adres": "Kadı Mehmet Mahallesi Değirmen Arkası Sokak 1A"
+  },
+  {
+   "sicil": 29222,
+   "ad": "GÜNDEM ECZANESİ",
+   "tel": "2122316505",
+   "ilce": "Kağıthane",
+   "adres": "Hürriyet Mahallesi Dr. Cemil Bengü Caddesi 2A"
+  },
+  {
+   "sicil": 25984,
+   "ad": "ECZANE KURTULUŞ",
+   "tel": "2166211155",
+   "ilce": "Sancaktepe",
+   "adres": "Abdurrahmangazi Mahallesi Bedir Caddesi 30/34A"
+  },
+  {
+   "sicil": 25262,
+   "ad": "ESENLER ECZANESİ",
+   "tel": "2163964373",
+   "ilce": "Pendik",
+   "adres": "Esenler Mahallesi Rıfat Ilgaz Caddesi 44/A"
+  },
+  {
+   "sicil": 22454,
+   "ad": "MERVE ECZANESİ",
+   "tel": "2164813733",
+   "ilce": "Ümraniye",
+   "adres": "İstiklal Mahallesi Mithatpaşa Caddesi 30/D"
+  },
+  {
+   "sicil": 24772,
+   "ad": "KAYCİ ECZANESİ",
+   "tel": "2164811412",
+   "ilce": "Ümraniye",
+   "adres": "Atatürk Mahallesi Alemdağ Caddesi 2"
+  },
+  {
+   "sicil": 19426,
+   "ad": "AHMET YESEVİ ECZANESİ",
+   "tel": "5416691200",
+   "ilce": "Sultanbeyli",
+   "adres": "Battalgazi Mahallesi Paşaköy Caddesi 63A"
+  },
+  {
+   "sicil": 29150,
+   "ad": "LİVA ECZANESİ",
+   "tel": "2167590558",
+   "ilce": "Sultanbeyli",
+   "adres": "Adil Mahallesi Polenez Caddesi 26/B"
+  },
+  {
+   "sicil": 33568,
+   "ad": "MERKEZ NUR ECZANESİ",
+   "tel": "5513514765",
+   "ilce": "Sancaktepe",
+   "adres": "Kemal Türkler Mahallesi Osmangazi Caddesi No:5"
+  },
+  {
+   "sicil": 30084,
+   "ad": "NİLGÜN ECZANESİ",
+   "tel": "2166222181",
+   "ilce": "Sancaktepe",
+   "adres": "Emek Mahallesi Buğra Sokak 26-28A"
+  },
+  {
+   "sicil": 27244,
+   "ad": "EDİZ ECZANESİ",
+   "tel": "2165091928",
+   "ilce": "Sancaktepe",
+   "adres": "Yenidoğan Mahallesi Ömer Hayyam Caddesi 30/1A"
+  },
+  {
+   "sicil": 30706,
+   "ad": "MİRAY ECZANESİ",
+   "tel": "2163932520",
+   "ilce": "Tuzla",
+   "adres": "Aydınlı Mahallesi Gürpınar Caddesi 37B"
+  },
+  {
+   "sicil": 27232,
+   "ad": "ÖZLEM KOÇ ECZANESİ",
+   "tel": "2127411155",
+   "ilce": "Eyüp",
+   "adres": "Karadolap Mahallesi Vardar Bulvarı 64/D"
+  },
+  {
+   "sicil": 27354,
+   "ad": "IHLAMUR ECZANESİ",
+   "tel": "2165042804",
+   "ilce": "Çekmeköy",
+   "adres": "Mimar Sinan Mahallesi Mimar Sinan Caddesi No:85/1A"
+  },
+  {
+   "sicil": 17224,
+   "ad": "UMUDUM ECZANESİ",
+   "tel": "2125415055",
+   "ilce": "Küçükçekmece",
+   "adres": "Kartaltepe Mahallesi 1. Malazgirt Caddesi No:6/M"
+  },
+  {
+   "sicil": 20640,
+   "ad": "ÖNER ECZANESİ",
+   "tel": "2124243465",
+   "ilce": "Küçükçekmece",
+   "adres": "Yeni Mahallesi İnönü Caddesi 142/3"
+  },
+  {
+   "sicil": 24118,
+   "ad": "SAĞLIK ECZANESİ",
+   "tel": "2124973710",
+   "ilce": "Sultangazi",
+   "adres": "Uğur Mumcu Mahallesi Belediye Sokak 2D"
+  },
+  {
+   "sicil": 17716,
+   "ad": "KARDELEN ECZANESİ",
+   "tel": "2125951300",
+   "ilce": "Sultangazi",
+   "adres": "Habipler Mahallesi A-1 Caddesi 37/c"
+  },
+  {
+   "sicil": 27562,
+   "ad": "GÜL ECZANESİ",
+   "tel": "2126687040",
+   "ilce": "Sultangazi",
+   "adres": "Sultançiftliği Mahallesi Ordu Caddesi 67/A BAĞIMSIZ BÖLÜM9"
+  },
+  {
+   "sicil": 29342,
+   "ad": "BİRCE ECZANESİ",
+   "tel": "2123836464",
+   "ilce": "Silivri",
+   "adres": "Piri Mehmet Paşa Mahallesi İnönü Caddesi 8/A"
+  },
+  {
+   "sicil": 28852,
+   "ad": "LAVANTA ECZANESİ",
+   "tel": "2128302822",
+   "ilce": "Silivri",
+   "adres": "Yeni Mahallesi Hatipoğlu Sokak Dış Kapı No:5E A Blok"
+  },
+  {
+   "sicil": 21648,
+   "ad": "AYAS ECZANESİ",
+   "tel": "2124458037",
    "ilce": "Bağcılar",
-   "adres": "Göztepe Mahallesi 2325. Sokak 2/A"
+   "adres": "Göztepe Mahallesi Karanfil Sokak 54A"
+  },
+  {
+   "sicil": 30468,
+   "ad": "ÖZGEM ECZANESİ",
+   "tel": "2124342565",
+   "ilce": "Bağcılar",
+   "adres": "Yavuz Selim Mahallesi 991.SOKAK 14/A"
+  },
+  {
+   "sicil": 30646,
+   "ad": "AYDIN ECZANESİ",
+   "tel": "2124336828",
+   "ilce": "Bağcılar",
+   "adres": "Yıldıztepe Mahallesi Şehit Teğmen Hasan Hüseyin Aksoy Caddesi 4/B"
+  },
+  {
+   "sicil": 32222,
+   "ad": "NEBİL ECZANESİ",
+   "tel": "2125152070",
+   "ilce": "Bağcılar",
+   "adres": "Hürriyet Mahallesi Cumhuriyet Caddesi 21/B"
+  },
+  {
+   "sicil": 25522,
+   "ad": "DOĞA ECZANESİ",
+   "tel": "2124514323",
+   "ilce": "Bahçelievler",
+   "adres": "Şirinevler Mahallesi Hastane Caddesi 18D"
+  },
+  {
+   "sicil": 18198,
+   "ad": "ALP ECZANESİ",
+   "tel": "2125554055",
+   "ilce": "Bahçelievler",
+   "adres": "Bahçelievler Mahallesi Adnan Kahveci Bulvarı 6/B"
+  },
+  {
+   "sicil": 23118,
+   "ad": "YENİBOSNA YILDIZ ECZANESİ",
+   "tel": "2126306147",
+   "ilce": "Bahçelievler",
+   "adres": "Yenibosna Merkez Mahallesi Çakar Sokak 16A"
+  },
+  {
+   "sicil": 11996,
+   "ad": "GÜNEŞ ECZANESİ",
+   "tel": "2126549993",
+   "ilce": "Bahçelievler",
+   "adres": "Hürriyet Mahallesi Hürriyet Caddesi No:40/A"
+  },
+  {
+   "sicil": 15004,
+   "ad": "MERVE NUR ECZANESİ",
+   "tel": "2125977330",
+   "ilce": "Arnavutköy",
+   "adres": "Arnavutköy Merkez Mahallesi Tahtakale Sokak 6/B"
+  },
+  {
+   "sicil": 19808,
+   "ad": "BERRAK ECZANESİ",
+   "tel": "2125391162",
+   "ilce": "Güngören",
+   "adres": "Güneştepe Mahallesi Yavuz Selim Caddesi 20"
+  },
+  {
+   "sicil": 32766,
+   "ad": "MODA ECZANESİ",
+   "tel": "2128130056",
+   "ilce": "Başakşehir",
+   "adres": "Başakşehir Mahallesi Gazi Mustafa Kemal Bulvarı 3. İstanbul Moda Evleri B1 Blok No:7/AD"
+  },
+  {
+   "sicil": 35922,
+   "ad": "İREM ŞEN ECZANESİ",
+   "tel": "5397776066",
+   "ilce": "Küçükçekmece",
+   "adres": "Kemalpaşa Mahallesi Sultan Murat Caddesi No:51/A"
+  },
+  {
+   "sicil": 33702,
+   "ad": "DEMET ECZANESİ",
+   "tel": "2126200044",
+   "ilce": "Esenyurt",
+   "adres": "Balıkyolu Mahallesi Balıkyolu Caddesi No:67/B"
+  },
+  {
+   "sicil": 14496,
+   "ad": "AKIN ECZANESİ",
+   "tel": "2126200635",
+   "ilce": "Esenyurt",
+   "adres": "Üçevler Mahallesi Urfalılar Caddesi 71/C"
+  },
+  {
+   "sicil": 28740,
+   "ad": "ARAN ECZANESİ",
+   "tel": "2124230446",
+   "ilce": "Esenyurt",
+   "adres": "Turgut Özal Mahallesi 55. Sokak 29A"
+  },
+  {
+   "sicil": 25950,
+   "ad": "DURMAZ ECZANESİ",
+   "tel": "2126894252",
+   "ilce": "Esenyurt",
+   "adres": "Hürriyet Mahallesi Gazi Caddesi 42A"
+  },
+  {
+   "sicil": 28114,
+   "ad": "SUEDA ECZANESİ",
+   "tel": "2128525209",
+   "ilce": "Esenyurt",
+   "adres": "Piri Reis Mahallesi Nazım Hikmet Bulvarı 62/D"
+  },
+  {
+   "sicil": 8680,
+   "ad": "MERKEZ ECZANESİ",
+   "tel": "2163826392",
+   "ilce": "Adalar",
+   "adres": "Nizam Mahallesi 23 Nisan Caddesi 12"
+  },
+  {
+   "sicil": 33672,
+   "ad": "ŞEYMA ECZANESİ",
+   "tel": "2265070077",
+   "ilce": "Altınova",
+   "adres": "Hürriyet Mahallesi Bağdat Caddesi No:20 A/2 İç Kapı No:7"
+  },
+  {
+   "sicil": 17148,
+   "ad": "SEREZ ECZANESİ",
+   "tel": "2166800979",
+   "ilce": "Beykoz",
+   "adres": "İncirköy Mahallesi Şehitlik Caddesi 80/B"
+  },
+  {
+   "sicil": 34472,
+   "ad": "KORU FLORYA ECZANESİ",
+   "tel": "2129990470",
+   "ilce": "Bakırköy",
+   "adres": "Şenlikköy Mahallesi Ekşi Nar Sokak 46/1"
+  },
+  {
+   "sicil": 39596,
+   "ad": "MERT ECZANESİ",
+   "tel": "5364732805",
+   "ilce": "Arnavutköy",
+   "adres": "Nene Hatun Mahallesi Fatih Caddesi No:176/B"
+  },
+  {
+   "sicil": 36794,
+   "ad": "İKBAL ECZANESİ",
+   "tel": "5451332393",
+   "ilce": "Beşiktaş",
+   "adres": "Konaklar Mahallesi Org. İzzettin Aksalur Caddesi 26 (31)"
   }
  ]
 }
