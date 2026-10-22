@@ -728,7 +728,11 @@ ODASI_SENTETIK_ID_TABANI = 8_000_000  # + Odasi sicil no (tumlistede olmayan ecz
 
 
 def odasi_verisini_oku(simdi):
-    """Odasi dosyasi BUGUNE ait ve taze ise eczane listesini, degilse None dondurur."""
+    """Odasi listesini dondurur (AYNI VARDIYADAN ise, yasi ne olursa olsun), degilse None.
+    23 Ekim: eskiden 'bugune ait + 45 dk'dan taze' sartiydi; Odasi cekmesi bir gece boyu
+    basarisiz olunca (site yenilendi) veri 'eski' sayilip teknikzeka/CollectAPI'ye dusuluyor,
+    o da (Hipokrat gibi) Odasi'nda olmayan eczane ekliyordu. Nobet listesi vardiya boyunca
+    (09:00-09:00) sabit oldugu icin AYNI VARDIYADAKI Odasi verisi gecerli sayilir."""
     veri = json_oku(ODASI_YOLU, {})
     if not isinstance(veri, dict) or not isinstance(veri.get("eczaneler"), list):
         return None
@@ -737,13 +741,13 @@ def odasi_verisini_oku(simdi):
         z = datetime.strptime(zaman, "%Y-%m-%d %H:%M")
     except Exception:
         return None
-    if zaman[:10] != simdi.strftime("%Y-%m-%d"):
-        print(f"Odasi verisi BUGUNE ait degil ({zaman}) - eski sisteme donuluyor.")
+    simdi_n = simdi.replace(tzinfo=None)
+    if _vardiya_gunu(z) != _vardiya_gunu(simdi_n):
+        print(f"Odasi verisi BASKA VARDIYAYA ait ({zaman}) - eski sisteme donuluyor.")
         return None
-    yas_dk = (simdi.replace(tzinfo=None) - z).total_seconds() / 60
+    yas_dk = (simdi_n - z).total_seconds() / 60
     if yas_dk > ODASI_MAX_YAS_DK:
-        print(f"Odasi verisi eski ({int(yas_dk)} dk) - eski sisteme donuluyor.")
-        return None
+        print(f"Odasi verisi {int(yas_dk)} dk once cekildi ama AYNI VARDIYA - kullaniliyor.")
     return veri["eczaneler"]
 
 
