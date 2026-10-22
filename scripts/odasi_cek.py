@@ -20,12 +20,13 @@ ILCE_ID_ARALIK = range(1, 61)  # Istanbul ilce id'leri (Maltepe=22); bos donenle
 KOK = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CIKTI = os.path.join(KOK, "data", "odasi-bugun.json")
 
-JS_TARA = """
-async ([api, ids]) => {
+JS_TARA = r"""
+async ([sablon, basliklar, ids]) => {
   const out = [];
   for (const id of ids) {
+    const url = sablon.replace(/([?&])id=\d+/, "$1id=" + id);
     try {
-      const r = await fetch(api + id, {headers: {"Accept": "application/json"}});
+      const r = await fetch(url, {headers: basliklar});
       const t = await r.text();
       out.push([id, r.status, t]);
     } catch (e) {
@@ -58,22 +59,46 @@ def ilce_yanitini_coz(metin):
     return sonuc
 
 
+YASAK_BASLIK = {"host", "content-length", "user-agent", "referer", "origin", "accept-encoding",
+                "connection", "cookie", "priority"}
+
+
 def cek():
     kayitlar, hatalar = {}, []
+    yakalanan = {}   # ilk /api/nobetci-eczane-web/ istegi: url + basliklar (token burada)
+    gorulen = []
+
+    def istek(r):
+        if "/api/nobetci-eczane-web/" in r.url:
+            gorulen.append("%s [basliklar: %s]" % (r.url[:110], ",".join(sorted(r.headers.keys()))[:200]))
+            if "url" not in yakalanan and "action=district" in r.url:
+                yakalanan["url"] = r.url
+                yakalanan["basliklar"] = {k: v for k, v in r.headers.items()
+                                          if k.lower() not in YASAK_BASLIK and not k.lower().startswith("sec-")
+                                          and not k.startswith(":")}
+
     with sync_playwright() as p:
         t = p.chromium.launch()
         s = t.new_page(viewport={"width": 1300, "height": 1400}, locale="tr-TR")
+        s.on("request", istek)
         try:
-            s.goto(URL, wait_until="networkidle", timeout=60000)
-            s.wait_for_timeout(2000)
+            s.goto(URL + "?ilce=22", wait_until="networkidle", timeout=60000)
+            s.wait_for_timeout(3000)
         except Exception as e:
             print("[TESHIS] sayfa acilamadi: %s" % str(e)[:150])
-        sonuclar = s.evaluate(JS_TARA, [API, list(ILCE_ID_ARALIK)])
+        if "url" not in yakalanan:
+            print("[TESHIS] sayfa kendi ilce istegini yapmadi; gorulen API istekleri:")
+            for g in gorulen[:8]:
+                print("[TESHIS]   " + g)
+            t.close()
+            return []
+        print("[TESHIS] yakalanan istek: %s | basliklar=%s" % (yakalanan["url"][:120], ",".join(sorted(yakalanan["basliklar"]))))
+        sonuclar = s.evaluate(JS_TARA, [yakalanan["url"], yakalanan["basliklar"], list(ILCE_ID_ARALIK)])
         t.close()
     dolu_ilce = 0
     for ilce_id, durum, metin in sonuclar:
         if durum != 200:
-            hatalar.append("id %s -> HTTP %s %s" % (ilce_id, durum, metin[:60]))
+            hatalar.append("id %s -> HTTP %s %s" % (ilce_id, durum, metin[:200]))
             continue
         liste = ilce_yanitini_coz(metin)
         if liste:
@@ -82,7 +107,7 @@ def cek():
             kayitlar[k["sicil"] if k["sicil"] is not None else (k["ad"], k["ilce"])] = k
     print("Odasi: %d ilce dolu, %d eczane" % (dolu_ilce, len(kayitlar)))
     if hatalar:
-        for h in hatalar[:6]:
+        for h in hatalar[:3]:
             print("[TESHIS] " + h)
         print("[TESHIS] toplam %d istekte hata" % len(hatalar))
     return list(kayitlar.values())
