@@ -1,55 +1,63 @@
 {
- "zaman": "2026-10-23 02:01",
+ "zaman": "2026-10-23 02:21",
  "adet": 7,
+ "gecerli_kadar": "2026-10-23T09:00:00+03:00",
  "eczaneler": [
   {
    "sicil": 15119,
    "ad": "DEYYAROĞLU ECZANESİ",
    "tel": "2166710988",
    "ilce": "Kartal",
-   "adres": "Çarşı Mahallesi, Yakakent Caddesi, 15-A"
+   "adres": "Çarşı Mahallesi, Yakakent Caddesi, 15-A",
+   "bitis": "2026-10-23T09:00:00+03:00"
   },
   {
    "sicil": 11360,
    "ad": "KURAL ECZANESİ",
    "tel": "2163090900",
    "ilce": "Kartal",
-   "adres": "Orta Mahallesi, Yusuf Efendi Sokak, 8A"
+   "adres": "Orta Mahallesi, Yusuf Efendi Sokak, 8A",
+   "bitis": "2026-10-23T09:00:00+03:00"
   },
   {
    "sicil": 8859,
    "ad": "TÜRKAYDIN ECZANESİ",
    "tel": "2166522779",
    "ilce": "Kartal",
-   "adres": "Yukarı Mahallesi, Kızılay Bulvarı, No:38/B"
+   "adres": "Yukarı Mahallesi, Kızılay Bulvarı, No:38/B",
+   "bitis": "2026-10-23T09:00:00+03:00"
   },
   {
    "sicil": 15604,
    "ad": "YAŞAM ECZANESİ",
    "tel": "2163053733",
    "ilce": "Kartal",
-   "adres": "Orhantepe Mahallesi, Bankalar Caddesi, 26/B"
+   "adres": "Orhantepe Mahallesi, Bankalar Caddesi, 26/B",
+   "bitis": "2026-10-23T09:00:00+03:00"
   },
   {
    "sicil": 11633,
    "ad": "ERGUVAN ECZANESİ",
    "tel": "5057790203",
    "ilce": "Maltepe",
-   "adres": "Altıntepe Mahallesi, Bağdat Caddesi, 79D"
+   "adres": "Altıntepe Mahallesi, Bağdat Caddesi, 79D",
+   "bitis": "2026-10-23T09:00:00+03:00"
   },
   {
    "sicil": 15353,
    "ad": "ESİN KAYA ECZANESİ",
    "tel": "2164419477",
    "ilce": "Maltepe",
-   "adres": "Bağlarbaşı Mahallesi, Feyzullah Caddesi, 28/D"
+   "adres": "Bağlarbaşı Mahallesi, Feyzullah Caddesi, 28/D",
+   "bitis": "2026-10-23T09:00:00+03:00"
   },
   {
    "sicil": 12575,
    "ad": "SEMANUR ECZANESİ",
    "tel": "2164170099",
    "ilce": "Maltepe",
-   "adres": "Girne Mahallesi, Narlıdere Caddesi, No:24/A"
+   "adres": "Girne Mahallesi, Narlıdere Caddesi, No:24/A",
+   "bitis": "2026-10-23T09:00:00+03:00"
   }
  ]
 }
