@@ -14,6 +14,7 @@ import json
 import os
 import re
 import sys
+import time
 from datetime import datetime, timedelta, timezone
 
 from playwright.sync_api import sync_playwright
@@ -89,8 +90,23 @@ def ilce_yanitini_coz(metin):
         if not adres:
             adres = " ".join(str(x) for x in [e.get("mahalle"), e.get("caddeSokak"), e.get("binaKapi")] if x).strip()
         sonuc.append({"sicil": e.get("sicil"), "ad": str(e["ad"]).strip(), "tel": "",
-                      "ilce": e.get("ilce"), "adres": adres})
+                      "ilce": e.get("ilce"), "adres": adres, "bitis": e.get("dutyEndsAt") or ""})
     return sonuc
+
+
+class BayatVeri(Exception):
+    """Odasi cevabi var ama nobet suresi zaten bitmis (09:00 vardiya degisimi, site henuz guncellemedi)."""
+
+
+def en_erken_bitis(liste):
+    """Kayitlardaki dutyEndsAt'larin en erkeni (aware datetime) ya da None."""
+    bitisler = []
+    for k in liste:
+        try:
+            bitisler.append(datetime.fromisoformat(k.get("bitis") or ""))
+        except Exception:
+            pass
+    return min(bitisler) if bitisler else None
 
 
 YASAK_BASLIK = {"host", "content-length", "user-agent", "referer", "origin", "accept-encoding",
@@ -264,17 +280,46 @@ def cek():
             print("[TESHIS] " + h)
         print("[TESHIS] toplam %d istekte hata" % len(hatalar))
         return []
-    return list(kayitlar.values())
+    sonuc = list(kayitlar.values())
+    bitis = en_erken_bitis(sonuc)
+    if bitis is not None and datetime.now(timezone.utc) >= bitis:
+        raise BayatVeri("nobet suresi bitmis (bitis=%s)" % bitis.isoformat())
+    return sonuc
+
+
+def vardiya_penceresi_mi():
+    """Istanbul saatiyle 08:55-09:45 (sabah vardiya degisimi; Pazar/tatilde tam gun nobet de burada biter) ve
+    18:55-19:45 (gunduz/gece ayri yayinlanirsa): Odasi bu araliklara yakin guncelliyor (09:01 .. 09:15 ..)."""
+    t = datetime.now(timezone(timedelta(hours=3)))
+    dk = t.hour * 60 + t.minute
+    return (8 * 60 + 55 <= dk <= 9 * 60 + 45) or (18 * 60 + 55 <= dk <= 19 * 60 + 45)
 
 
 def main():
     liste = None
-    for deneme in range(3):
+    bayat, hata = 0, 0
+    while True:
+        # Vardiya penceresinde (09:00 civari) Odasi guncellenene kadar 3 dk arayla en cok 12 kez (~35 dk) bekle;
+        # pencere disinda 3 kez, 75 sn arayla. Her bekleme sadece "nobet suresi bitmis" durumunda olur.
+        pencere = vardiya_penceresi_mi()
+        limit, aralik = (12, 180) if pencere else (3, 75)
         try:
             liste = cek()
+            if liste:
+                break
+            hata += 1
+        except BayatVeri as e:
+            bayat += 1
+            print("Odasi henuz guncellenmedi (deneme %d/%d): %s" % (bayat, limit, e))
+            if bayat >= limit:
+                liste = None
+                break
+            time.sleep(aralik)
+            continue
         except Exception as e:
-            print("Odasi cekme hatasi (deneme %d): %s" % (deneme + 1, str(e)[:200]))
-        if liste:
+            hata += 1
+            print("Odasi cekme hatasi (deneme %d): %s" % (hata, str(e)[:200]))
+        if hata >= 3:
             break
     if not liste:
         print("Odasi verisi alinamadi/supheli (%s kayit) - dosya degistirilmedi." % (len(liste) if liste else 0))
@@ -282,7 +327,9 @@ def main():
     z = datetime.now(timezone(timedelta(hours=3)))
     os.makedirs(os.path.dirname(CIKTI), exist_ok=True)
     with open(CIKTI, "w", encoding="utf-8") as f:
-        json.dump({"zaman": z.strftime("%Y-%m-%d %H:%M"), "adet": len(liste), "eczaneler": liste},
+        bitis = en_erken_bitis(liste)
+        json.dump({"zaman": z.strftime("%Y-%m-%d %H:%M"), "adet": len(liste),
+                   "gecerli_kadar": bitis.isoformat() if bitis else "", "eczaneler": liste},
                   f, ensure_ascii=False, indent=1)
     print("Odasi: %d eczane yazildi (%s)" % (len(liste), z.strftime("%H:%M")))
     return 0
