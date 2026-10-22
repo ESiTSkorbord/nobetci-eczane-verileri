@@ -6,9 +6,13 @@ ilce ilce JSON veriyor: GET /api/nobetci-eczane-web/?action=district&id=<ilceId>
 Yeni cevapta telefon YOK (sadece phoneTicket) -> tel bos birakilir; senkronize.py telefonu
 tumlisteden isimle tamamlar. Cikti formati ESKISIYLE AYNI (data/odasi-bugun.json), senkronize.py degismez.
 Sayfayi gercek tarayiciyla acar (cerez/koruma icin), sonra sayfanin icinden ilce id'lerini tarar.
+23 Ekim (hafif mod): SADECE config/eczane-kaynaklari.json'daki Istanbul ilceleri cekilir (saatte ~2 istek);
+ilce id'leri data/odasi-ilce-idleri.json'da onbelleklenir (yoksa/eksikse BIR KERE 1-60 taranir);
+telefon sadece onbellekte (data/odasi-telefon.json, 30 gun) OLMAYAN eczaneler icin sorulur.
 Basarisiz olursa dosyaya DOKUNMAZ (eski sistem devreye girer) ve cikis kodu 0 doner."""
 import json
 import os
+import re
 import sys
 from datetime import datetime, timedelta, timezone
 
@@ -19,20 +23,50 @@ API = "/api/nobetci-eczane-web/?action=district&id="
 ILCE_ID_ARALIK = range(1, 61)  # Istanbul ilce id'leri (Maltepe=22); bos donenler atlanir
 KOK = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CIKTI = os.path.join(KOK, "data", "odasi-bugun.json")
+KONFIG = os.path.join(KOK, "config", "eczane-kaynaklari.json")
+ID_ONBELLEK = os.path.join(KOK, "data", "odasi-ilce-idleri.json")
+TEL_ONBELLEK = os.path.join(KOK, "data", "odasi-telefon.json")
+TEL_GECERLILIK_GUN = 30
 
 JS_TARA = r"""
-async ([sablon, basliklar, ids]) => {
+async ([sablon, telSablon, basliklar, ids, telBilinen, hedefler]) => {
   const out = [];
+  const bekle = ms => new Promise(res => setTimeout(res, ms));
+  const bilinen = new Set(telBilinen);
+  const norm = m => String(m || "").replace(/İ/g, "I").replace(/ı/g, "I").replace(/i/g, "I")
+    .replace(/Ş|ş/g, "S").replace(/Ğ|ğ/g, "G").replace(/Ü|ü/g, "U").replace(/Ö|ö/g, "O").replace(/Ç|ç/g, "C")
+    .trim().toUpperCase().replace(/\s+/g, " ");
   for (const id of ids) {
     const url = sablon.replace(/([?&])id=\d+/, "$1id=" + id);
+    let durum = 0, metin = "", tel = {};
     try {
       const r = await fetch(url, {headers: basliklar});
-      const t = await r.text();
-      out.push([id, r.status, t]);
+      durum = r.status;
+      metin = await r.text();
+      if (durum === 200) {
+        let d = null;
+        try { d = JSON.parse(metin); } catch (e) {}
+        const liste = (d && Array.isArray(d.data)) ? d.data : [];
+        for (const e of liste) {
+          if (!e.phoneTicket || bilinen.has(String(e.sicil)) || !hedefler.includes(norm(e.ilce))) continue;
+          try {
+            const pr = await fetch(telSablon, {
+              method: "POST",
+              headers: Object.assign({}, basliklar, {"Content-Type": "application/json"}),
+              body: JSON.stringify({regionId: e.regionId, sicil: String(e.sicil), ticket: e.phoneTicket})
+            });
+            tel[String(e.sicil)] = [pr.status, (await pr.text()).slice(0, 400)];
+          } catch (x) {
+            tel[String(e.sicil)] = [0, String(x).slice(0, 80)];
+          }
+          await bekle(300);
+        }
+      }
     } catch (e) {
-      out.push([id, 0, String(e).slice(0, 80)]);
+      metin = String(e).slice(0, 80);
     }
-    await new Promise(res => setTimeout(res, 120));
+    out.push([id, durum, metin, tel]);
+    await bekle(400);
   }
   return out;
 }
@@ -63,10 +97,83 @@ YASAK_BASLIK = {"host", "content-length", "user-agent", "referer", "origin", "ac
                 "connection", "cookie", "priority"}
 
 
+def _norm(m):
+    m = str(m or "").strip().replace("İ", "I").replace("ı", "I").replace("i", "I")
+    m = m.translate(str.maketrans("ŞşĞğÜüÖöÇç", "SsGgUuOoCc"))
+    return " ".join(m.upper().split())
+
+
+def json_oku(yol, varsayilan):
+    try:
+        with open(yol, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return varsayilan
+
+
+def hedef_ilceler():
+    """Config'teki Istanbul ilceleri (normallestirilmis ad listesi)."""
+    k = json_oku(KONFIG, {}).get("kaynaklar", [])
+    return sorted({_norm(x.get("api_ilce")) for x in k if _norm(x.get("api_il")) == "ISTANBUL" and x.get("api_ilce")})
+
+
+def telefon_coz(metin):
+    """Telefon cevabindan (JSON, sekli bilinmiyor) 10 haneli numarayi cikarir; bulamazsa ''.
+    Once 'phone/tel' iceren anahtarlara, sonra herhangi bir string/liste degerine bakar."""
+    import re
+    try:
+        d = json.loads(metin)
+    except Exception:
+        d = metin
+
+    def rakamlar(v):
+        r = "".join(c for c in str(v) if c.isdigit())
+        if len(r) == 11 and r[0] == "0":
+            r = r[1:]
+        elif len(r) == 12 and r[:2] == "90":
+            r = r[2:]
+        return r if len(r) == 10 else ""
+
+    def tara(v, anahtarli):
+        if isinstance(v, dict):
+            for k, x in v.items():
+                kl = str(k).lower()
+                bulunan = tara(x, anahtarli or "phone" in kl or "tel" in kl or "number" in kl or "numara" in kl)
+                if bulunan:
+                    return bulunan
+        elif isinstance(v, list):
+            for x in v:
+                bulunan = tara(x, anahtarli)
+                if bulunan:
+                    return bulunan
+        elif isinstance(v, (str, int)) and not isinstance(v, bool):
+            if anahtarli or isinstance(v, str):
+                return rakamlar(v)
+        return ""
+
+    return tara(d, False)
+
+
 def cek():
-    kayitlar, hatalar = {}, []
-    yakalanan = {}   # ilk /api/nobetci-eczane-web/ istegi: url + basliklar (token burada)
-    gorulen = []
+    hedefler = hedef_ilceler()
+    if not hedefler:
+        print("[TESHIS] config'te Istanbul ilcesi yok - atlandi.")
+        return []
+    idler = json_oku(ID_ONBELLEK, {})
+    eksik = [h for h in hedefler if h not in idler]
+    tel_onbellek = json_oku(TEL_ONBELLEK, {})
+    bugun = (datetime.now(timezone(timedelta(hours=3)))).date()
+    gecerli_tel = {}
+    for sicil, v in tel_onbellek.items():
+        try:
+            yas = (bugun - datetime.strptime(v.get("tarih", ""), "%Y-%m-%d").date()).days
+        except Exception:
+            continue
+        if yas <= TEL_GECERLILIK_GUN and v.get("tel"):
+            gecerli_tel[str(sicil)] = v
+
+    taranacak = list(ILCE_ID_ARALIK) if eksik else sorted({int(idler[h]) for h in hedefler})
+    yakalanan, gorulen = {}, []
 
     def istek(r):
         if "/api/nobetci-eczane-web/" in r.url:
@@ -92,24 +199,71 @@ def cek():
                 print("[TESHIS]   " + g)
             t.close()
             return []
-        print("[TESHIS] yakalanan istek: %s | basliklar=%s" % (yakalanan["url"][:120], ",".join(sorted(yakalanan["basliklar"]))))
-        sonuclar = s.evaluate(JS_TARA, [yakalanan["url"], yakalanan["basliklar"], list(ILCE_ID_ARALIK)])
+        tel_url = re.sub(r"action=district&id=\d+", "action=phone", yakalanan["url"])
+        sonuclar = s.evaluate(JS_TARA, [yakalanan["url"], tel_url, yakalanan["basliklar"], taranacak,
+                                        sorted(gecerli_tel.keys()), hedefler])
         t.close()
-    dolu_ilce = 0
-    for ilce_id, durum, metin in sonuclar:
+
+    kayitlar, hatalar, bulunan_idler = {}, [], {}
+    tel_ok, tel_onb, tel_yok, tel_ornek = 0, 0, 0, []
+    for ilce_id, durum, metin, tel_cevaplari in sonuclar:
         if durum != 200:
             hatalar.append("id %s -> HTTP %s %s" % (ilce_id, durum, metin[:200]))
             continue
         liste = ilce_yanitini_coz(metin)
         if liste:
-            dolu_ilce += 1
+            bulunan_idler[_norm(liste[0]["ilce"])] = ilce_id
         for k in liste:
+            if _norm(k["ilce"]) not in hedefler:
+                continue
+            sic = str(k["sicil"])
+            if sic in gecerli_tel:
+                k["tel"] = gecerli_tel[sic]["tel"]
+                tel_onb += 1
+            else:
+                durum_tel, cevap = (tel_cevaplari.get(sic) or [0, ""])
+                numara = telefon_coz(cevap) if durum_tel == 200 else ""
+                if numara:
+                    k["tel"] = numara
+                    tel_onbellek[sic] = {"tel": numara, "tarih": bugun.strftime("%Y-%m-%d")}
+                    tel_ok += 1
+                else:
+                    tel_yok += 1
+                    if len(tel_ornek) < 2:
+                        tel_ornek.append("sicil %s -> HTTP %s %r" % (k["sicil"], durum_tel, cevap[:120]))
             kayitlar[k["sicil"] if k["sicil"] is not None else (k["ad"], k["ilce"])] = k
-    print("Odasi: %d ilce dolu, %d eczane" % (dolu_ilce, len(kayitlar)))
+
+    # ilce id onbellegini guncelle (sadece hedef ilceler)
+    degisti = False
+    for h in hedefler:
+        if h in bulunan_idler and idler.get(h) != bulunan_idler[h]:
+            idler[h] = bulunan_idler[h]
+            degisti = True
+    if degisti:
+        os.makedirs(os.path.dirname(ID_ONBELLEK), exist_ok=True)
+        with open(ID_ONBELLEK, "w", encoding="utf-8") as f:
+            json.dump(idler, f, ensure_ascii=False, indent=1)
+    # telefon onbellegi (30 gunden eskiler atilir)
+    tel_onbellek = {k: v for k, v in tel_onbellek.items()
+                    if isinstance(v, dict) and v.get("tel")}
+    os.makedirs(os.path.dirname(TEL_ONBELLEK), exist_ok=True)
+    with open(TEL_ONBELLEK, "w", encoding="utf-8") as f:
+        json.dump(tel_onbellek, f, ensure_ascii=False, indent=1)
+
+    print("Odasi: %s ilceleri, %d eczane | telefon: %d onbellekten, %d yeni alindi, %d alinamadi%s"
+          % (",".join(hedefler), len(kayitlar), tel_onb, tel_ok, tel_yok, " | id taramasi yapildi" if eksik else ""))
+    for o in tel_ornek:
+        print("[TESHIS] telefon alinamadi: " + o)
+    # her hedef ilce icin cevap alinmis olmali (aksi halde dosyaya yazma)
+    eksik_kalan = [h for h in hedefler if h not in bulunan_idler and h not in idler]
+    if eksik_kalan:
+        print("[TESHIS] id bulunamayan ilce: %s" % ",".join(eksik_kalan))
+        return []
     if hatalar:
         for h in hatalar[:3]:
             print("[TESHIS] " + h)
         print("[TESHIS] toplam %d istekte hata" % len(hatalar))
+        return []
     return list(kayitlar.values())
 
 
@@ -120,9 +274,9 @@ def main():
             liste = cek()
         except Exception as e:
             print("Odasi cekme hatasi (deneme %d): %s" % (deneme + 1, str(e)[:200]))
-        if liste and len(liste) >= 20:
+        if liste:
             break
-    if not liste or len(liste) < 20:
+    if not liste:
         print("Odasi verisi alinamadi/supheli (%s kayit) - dosya degistirilmedi." % (len(liste) if liste else 0))
         return 0
     z = datetime.now(timezone(timedelta(hours=3)))
