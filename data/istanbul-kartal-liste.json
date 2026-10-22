@@ -1,28 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 65555,
-      "ad": "SU ECZANESİ",
-      "tel": "5318987199",
-      "adres": "Cevizli Mah. Seyitgazi Sok. No:16/A"
+      "id": 54025,
+      "ad": "YAŞAM ECZANESİ",
+      "tel": "2163053733",
+      "adres": "Orhantepe Mah. Bankalar Cad. No:26/B"
     },
     {
-      "id": 13262,
-      "ad": "FERDA ECZANESI",
-      "tel": "2163061617",
-      "adres": "KARLIKTEPE MAH. SPOR CAD. NO:4/D"
+      "id": 61616,
+      "ad": "AYDIN ECZANESİ",
+      "tel": "2163706081",
+      "adres": "Orhantepe Mahallesi, Bankalar Caddesi, No:45/A"
     },
     {
-      "id": 54913,
-      "ad": "CEMİL ECZANESI",
-      "tel": "2163770848",
-      "adres": "ORTA MAH. KAPTANIDERYA CAD. NO:40/B"
+      "id": 53537,
+      "ad": "DEYYAROĞLU ECZANESİ",
+      "tel": "2166710988",
+      "adres": "ÇARŞI MAH. YAKAKENT CAD. NO:15-A"
     },
     {
-      "id": 13270,
-      "ad": "ÇAĞRI ECZANESİ",
-      "tel": "2163095805",
-      "adres": "CUMHURIYET MAH. ZEYTINLIK CAD. NO:37/A"
+      "id": 34527,
+      "ad": "KURAL ECZANESİ",
+      "tel": "2163090900",
+      "adres": "ORTA MAH. YUSUF EFENDİ SOK. NO : 8A"
     }
   ]
 }
