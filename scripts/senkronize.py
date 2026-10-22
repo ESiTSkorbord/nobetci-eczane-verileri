@@ -763,7 +763,7 @@ def odasi_referans_oku(simdi):
     gece yarisindan sonra Odasi dosyasi 22'sine ait olsa da vardiya ayni oldugu surece gecerli.
     Doner: Odasi kayit listesi ya da None (dosya yok/bozuk/baska vardiya -> suzme YAPILMAZ)."""
     veri = json_oku(ODASI_YOLU, {})
-    if not isinstance(veri, dict) or not isinstance(veri.get("eczaneler"), list) or len(veri["eczaneler"]) < 20:
+    if not isinstance(veri, dict) or not isinstance(veri.get("eczaneler"), list) or len(veri["eczaneler"]) < 1:
         return None
     try:
         z = datetime.strptime(str(veri.get("zaman") or ""), "%Y-%m-%d %H:%M")
@@ -790,8 +790,11 @@ def odasi_ilce_listesi(odasi_eczaneler, api_ilce, tumliste, etiket):
         aday = {"ad": e.get("ad"), "tel": e.get("tel"), "adres": e.get("adres")}
         gercek = tumlisteden_bul(aday, tumliste)
         if gercek is not None and gercek.get("id") is not None:
+            # 23 Ekim: Odasi'ndan GECERLI (10 haneli) telefon geldiyse O kullanilir; tumlistedeki
+            # "0"/bos telefonlar (orn. Erguvan) Odasi'nin gercek numarasiyla degisir.
+            tel_son = aday["tel"] if telefon_normallestir(aday["tel"]) else (gercek.get("tel") or aday["tel"])
             kayit = {"id": gercek["id"], "ad": gercek.get("ad") or aday["ad"],
-                     "tel": gercek.get("tel") or aday["tel"], "adres": gercek.get("adres") or aday["adres"]}
+                     "tel": tel_son, "adres": gercek.get("adres") or aday["adres"]}
         else:
             sicil = e.get("sicil")
             eid = ODASI_SENTETIK_ID_TABANI + int(sicil) if str(sicil).isdigit() else sentetik_id_uret(normallestir(e.get("ad")))
