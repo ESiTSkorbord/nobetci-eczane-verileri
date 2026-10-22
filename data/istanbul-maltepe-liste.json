@@ -1,22 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 50138,
-      "ad": "ESİN KAYA ECZANESİ",
-      "tel": "2164419477",
-      "adres": "Bağlarbaşı Mah. Feyzullah Cad. No:28/D"
-    },
-    {
       "id": 58349,
       "ad": "ERGUVAN ECZANESİ",
       "tel": "0",
       "adres": "Altıntepe Mah. Bağdat Cad. No:79D"
     },
     {
+      "id": 50138,
+      "ad": "ESİN KAYA ECZANESİ",
+      "tel": "2164419477",
+      "adres": "Bağlarbaşı Mah. Feyzullah Cad. No:28/D"
+    },
+    {
       "id": 63339,
       "ad": "SEMANUR ECZANESİ",
       "tel": "2164170099",
       "adres": "Girne Mahallesi,Narlıdere Caddesi, No:24/A"
+    },
+    {
+      "id": 56073,
+      "ad": "HİPOKRAT ECZANESİ",
+      "tel": "0",
+      "adres": "Bağlarbaşı Mah. FeyzullaSh Cad. No:28/A"
     }
   ]
 }

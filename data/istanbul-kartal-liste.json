@@ -1,18 +1,6 @@
 {
   "eczaneler": [
     {
-      "id": 54025,
-      "ad": "YAŞAM ECZANESİ",
-      "tel": "2163053733",
-      "adres": "Orhantepe Mah. Bankalar Cad. No:26/B"
-    },
-    {
-      "id": 61616,
-      "ad": "TÜRKAYDIN ECZANESİ",
-      "tel": "2166522779",
-      "adres": "Yukarı Mahalle,Kızılay Bulvarı No:38/B"
-    },
-    {
       "id": 53537,
       "ad": "DEYYAROĞLU ECZANESİ",
       "tel": "2166710988",
@@ -23,6 +11,18 @@
       "ad": "KURAL ECZANESİ",
       "tel": "2163090900",
       "adres": "ORTA MAH. YUSUF EFENDİ SOK. NO : 8A"
+    },
+    {
+      "id": 61616,
+      "ad": "TÜRKAYDIN ECZANESİ",
+      "tel": "2166522779",
+      "adres": "Yukarı Mahalle,Kızılay Bulvarı No:38/B"
+    },
+    {
+      "id": 54025,
+      "ad": "YAŞAM ECZANESİ",
+      "tel": "2163053733",
+      "adres": "Orhantepe Mah. Bankalar Cad. No:26/B"
     }
   ]
 }

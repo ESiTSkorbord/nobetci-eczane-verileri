@@ -146,3 +146,4 @@
 2026-10-18 23:00 | istanbul-maltepe | CollectAPI'den eklendi (teknikzeka'da yoktu): FUNDA COŞKUN ECZANESİ
 2026-10-18 23:00 | istanbul-maltepe | CollectAPI'den eklendi (teknikzeka'da yoktu): PAŞAOĞLU ECZANESİ
 2026-10-18 23:00 | istanbul-maltepe | CollectAPI'den eklendi (teknikzeka'da yoktu): CITYLOFT DRAGOS ECZANESİ
+2026-10-22 18:02 | istanbul-maltepe | CollectAPI'den eklendi (teknikzeka'da yoktu): HİPOKRAT ECZANESİ

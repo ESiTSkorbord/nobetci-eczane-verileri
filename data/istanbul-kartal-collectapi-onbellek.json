@@ -1,25 +1,20 @@
 {
-  "tarih_iso": "2026-10-20",
+  "tarih_iso": "2026-10-22",
   "collectapi_sonuc": [
     {
-      "ad": "HANNE ECZANESİ",
-      "tel": "02166726064",
-      "adres": "HÜRRİYET MAH. PEKER SOK. NO:33 Z-1"
+      "ad": "AYDIN ECZANESİ",
+      "tel": "02166522779",
+      "adres": "YUKARI MAH. KIZILAY BULVARI NO:38/B"
     },
     {
-      "ad": "ÇARŞI ECZANESİ",
-      "tel": "02163061077",
-      "adres": "KORDONBOYU MH. ANKARA CAD. NO:56"
+      "ad": "YAŞAM ECZANESİ",
+      "tel": "02163053733",
+      "adres": "Orhantepe Mah. Bankalar Cad .No:26B"
     },
     {
-      "ad": "KARTAL PLUS ECZANESİ",
-      "tel": "02162250891",
-      "adres": "ORTA MAH. YALNIZ SELVİ CD. NO:21A"
-    },
-    {
-      "ad": "DEMİR ECZANESİ",
-      "tel": "02163749464",
-      "adres": "ATALAR MAH. DOĞU CAD. NO:68B"
+      "ad": "DEYYAROĞLU ECZANESİ",
+      "tel": "02166710988",
+      "adres": "Yakacık Çarşı Mah. Yakakent Cad. No:15A"
     }
   ]
 }
