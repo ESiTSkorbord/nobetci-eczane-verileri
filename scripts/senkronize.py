@@ -98,7 +98,7 @@ import urllib.request
 import urllib.parse
 import urllib.error
 import zlib
-from datetime import datetime, date, timedelta
+from datetime import datetime, date, timedelta, timezone
 
 try:
     from zoneinfo import ZoneInfo
@@ -742,6 +742,9 @@ def odasi_verisini_oku(simdi):
     except Exception:
         return None
     simdi_n = simdi.replace(tzinfo=None)
+    if _nobet_bitti_mi(veri):
+        print(f"Odasi verisi ({zaman}) icindeki nobet suresi BITMIS (vardiya degisti, site henuz guncellemedi) - eski sisteme donuluyor.")
+        return None
     if _vardiya_gunu(z) != _vardiya_gunu(simdi_n):
         print(f"Odasi verisi BASKA VARDIYAYA ait ({zaman}) - eski sisteme donuluyor.")
         return None
@@ -749,6 +752,18 @@ def odasi_verisini_oku(simdi):
     if yas_dk > ODASI_MAX_YAS_DK:
         print(f"Odasi verisi {int(yas_dk)} dk once cekildi ama AYNI VARDIYA - kullaniliyor.")
     return veri["eczaneler"]
+
+
+def _nobet_bitti_mi(veri):
+    """odasi_cek.py 'gecerli_kadar' (en erken dutyEndsAt) yazar; simdi bunu gectiyse liste ESKI vardiyaya aittir.
+    09:00'da site henuz guncellenmediyse 'yeni vardiya damgali ESKI liste' kabul edilmesin diye."""
+    gk = str((veri or {}).get("gecerli_kadar") or "")
+    if not gk:
+        return False
+    try:
+        return datetime.now(timezone.utc) >= datetime.fromisoformat(gk)
+    except Exception:
+        return False
 
 
 def _vardiya_gunu(dt):
@@ -769,7 +784,7 @@ def odasi_referans_oku(simdi):
         z = datetime.strptime(str(veri.get("zaman") or ""), "%Y-%m-%d %H:%M")
     except Exception:
         return None
-    if _vardiya_gunu(z) != _vardiya_gunu(simdi.replace(tzinfo=None)):
+    if _nobet_bitti_mi(veri) or _vardiya_gunu(z) != _vardiya_gunu(simdi.replace(tzinfo=None)):
         print("Odasi referansi baska vardiyaya ait - CollectAPI suzulmeyecek.")
         return None
     return veri["eczaneler"]
