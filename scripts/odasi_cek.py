@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Istanbul Eczaci Odasi nobetci listesi (ANA KAYNAK) - 20 Ekim.
+"""Istanbul Eczaci Odasi nobetci listesi (ANA KAYNAK) - 20 Ekim. (23 Ekim: TESHIS ciktisi eklendi)
 Sayfayi gercek tarayiciyla (Playwright) acar, sayfanin kendi yaptigi JSON istegini
 (tum Istanbul) yakalar ve data/odasi-bugun.json'a yazar. senkronize.py bunu okur.
-Basarisiz olursa dosyaya DOKUNMAZ (eski sistem devreye girer) ve cikis kodu 0 doner."""
+Basarisiz olursa dosyaya DOKUNMAZ (eski sistem devreye girer) ve cikis kodu 0 doner.
+Veri cekme mantigi AYNI; sadece basarisizlikta NEDEN'i log'a yazar ([TESHIS] satirlari)."""
 import json
 import os
 import sys
@@ -17,23 +18,47 @@ CIKTI = os.path.join(KOK, "data", "odasi-bugun.json")
 
 def cek():
     sonuc = {}
+    teshis = []  # her istek/cevap icin kisa not
 
     def yakala(r):
         try:
+            if r.request.method == "POST":
+                govde = ""
+                try:
+                    govde = r.text()
+                except Exception as e:
+                    govde = "<okunamadi: %s>" % str(e)[:60]
+                teshis.append("POST %s -> HTTP %s, %d bayt, ilk100=%r" % (r.url[:90], r.status, len(govde), govde[:100]))
             if "nobetci-eczane/index.php" in r.url and r.request.method == "POST":
                 d = json.loads(r.text())
                 if isinstance(d, dict) and isinstance(d.get("eczaneler"), list):
                     sonuc["liste"] = d["eczaneler"]
-        except Exception:
-            pass
+                    teshis.append("  -> liste yakalandi: %d kayit" % len(d["eczaneler"]))
+                else:
+                    teshis.append("  -> JSON ama 'eczaneler' listesi yok; anahtarlar=%s" % (list(d.keys())[:8] if isinstance(d, dict) else type(d).__name__))
+        except Exception as e:
+            teshis.append("  -> yakalama hatasi: %s" % str(e)[:100])
 
     with sync_playwright() as p:
         t = p.chromium.launch()
         s = t.new_page(viewport={"width": 1300, "height": 1400}, locale="tr-TR")
         s.on("response", yakala)
-        s.goto(URL, wait_until="networkidle", timeout=60000)
-        s.wait_for_timeout(4000)
+        durum = None
+        try:
+            yanit = s.goto(URL, wait_until="networkidle", timeout=60000)
+            durum = yanit.status if yanit else None
+            s.wait_for_timeout(4000)
+            baslik = s.title()
+            govde = (s.inner_text("body") or "").replace("\n", " ")[:160]
+            teshis.append("sayfa: HTTP %s, baslik=%r, govde=%r" % (durum, baslik, govde))
+        except Exception as e:
+            teshis.append("sayfa acilamadi: %s" % str(e)[:150])
         t.close()
+    if "liste" not in sonuc:
+        for satir in teshis[:12]:
+            print("[TESHIS] " + satir)
+        if not teshis:
+            print("[TESHIS] hic POST istegi gorulmedi")
     return sonuc.get("liste")
 
 
