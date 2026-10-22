@@ -98,7 +98,7 @@ import urllib.request
 import urllib.parse
 import urllib.error
 import zlib
-from datetime import datetime, date
+from datetime import datetime, date, timedelta
 
 try:
     from zoneinfo import ZoneInfo
@@ -374,6 +374,16 @@ def collectapi_onbellek_yaz(onbellek_yolu, bugun_tarih_iso, sonuc):
     os.makedirs(os.path.dirname(onbellek_yolu), exist_ok=True)
     with open(onbellek_yolu, "w", encoding="utf-8") as f:
         json.dump({"tarih_iso": bugun_tarih_iso, "collectapi_sonuc": sonuc}, f, ensure_ascii=False, indent=2)
+
+
+def reddedilen_log_yaz(zaman_damgasi, etiket, ad):
+    """Odasi'nda olmadigi icin yok sayilan CollectAPI kayitlari (izlenebilirlik)."""
+    try:
+        os.makedirs(DATA_KLASORU, exist_ok=True)
+        with open(os.path.join(DATA_KLASORU, "collectapi-reddedilenler-log.txt"), "a", encoding="utf-8") as f:
+            f.write(f"{zaman_damgasi} | {etiket} | {ad} | Odasi'nda yok\n")
+    except Exception as e:
+        print(f"Reddedilen log yazilamadi: {e}")
 
 
 def eklenen_log_yaz(zaman_damgasi, etiket, ad):
@@ -660,7 +670,7 @@ def duzeltmeleri_uygula(eczaneler, etiket):
     return uygulanan
 
 
-def yedegi_listeye_ekle(eczaneler, idler, yedek_sonuc, tumliste, etiket, neden):
+def yedegi_listeye_ekle(eczaneler, idler, yedek_sonuc, tumliste, etiket, neden, odasi_ref=None):
     """Yedek kaynaktaki, listede OLMAYAN eczaneleri ekler (telefon/isim eslesmesi).
     Eklenen sayisini dondurur."""
     mevcut_isimler = {isim_anahtari(e["ad"]) for e in eczaneler}
@@ -674,6 +684,14 @@ def yedegi_listeye_ekle(eczaneler, idler, yedek_sonuc, tumliste, etiket, neden):
             continue
         if (tel_norm and tel_norm in mevcut_tel) or isim_norm in mevcut_isimler:
             continue
+        if odasi_ref is not None:
+            # Odasi REFERANS: Odasi listesinde (telefon ya da isim) olmayan CollectAPI kaydi YOK SAYILIR
+            o_tel = {telefon_normallestir(o.get("tel")) for o in odasi_ref if telefon_normallestir(o.get("tel"))}
+            o_isim = {isim_anahtari(o.get("ad")) for o in odasi_ref}
+            if not ((tel_norm and tel_norm in o_tel) or isim_norm in o_isim):
+                print(f"[{etiket}] CollectAPI kaydi YOK SAYILDI (Odasi'nda yok): {aday['ad']}")
+                reddedilen_log_yaz(zaman_damgasi, etiket, aday["ad"])
+                continue
         gercek = tumlisteden_bul(aday, tumliste)
         if gercek is not None and gercek.get("id") is not None:
             kayit = {"id": gercek["id"], "ad": gercek.get("ad") or aday["ad"],
@@ -725,6 +743,30 @@ def odasi_verisini_oku(simdi):
     yas_dk = (simdi.replace(tzinfo=None) - z).total_seconds() / 60
     if yas_dk > ODASI_MAX_YAS_DK:
         print(f"Odasi verisi eski ({int(yas_dk)} dk) - eski sisteme donuluyor.")
+        return None
+    return veri["eczaneler"]
+
+
+def _vardiya_gunu(dt):
+    """Nobet vardiyasi sabah 09:00'da degisir: 09:00'dan onceki saatler bir onceki gune aittir."""
+    return (dt - timedelta(hours=9)).date()
+
+
+def odasi_referans_oku(simdi):
+    """23 Ekim: CollectAPI'den gelen 'ek' eczaneleri DOGRULAMAK icin Odasi listesi.
+    odasi_verisini_oku() 45 dk'dan eskiyi reddeder (ana kaynak olarak kullanmamak icin);
+    ama CollectAPI'yi suzmek icin AYNI VARDIYADAN (09:00 sinirli) herhangi bir yas yeterli -
+    gece yarisindan sonra Odasi dosyasi 22'sine ait olsa da vardiya ayni oldugu surece gecerli.
+    Doner: Odasi kayit listesi ya da None (dosya yok/bozuk/baska vardiya -> suzme YAPILMAZ)."""
+    veri = json_oku(ODASI_YOLU, {})
+    if not isinstance(veri, dict) or not isinstance(veri.get("eczaneler"), list) or len(veri["eczaneler"]) < 20:
+        return None
+    try:
+        z = datetime.strptime(str(veri.get("zaman") or ""), "%Y-%m-%d %H:%M")
+    except Exception:
+        return None
+    if _vardiya_gunu(z) != _vardiya_gunu(simdi.replace(tzinfo=None)):
+        print("Odasi referansi baska vardiyaya ait - CollectAPI suzulmeyecek.")
         return None
     return veri["eczaneler"]
 
@@ -795,6 +837,9 @@ def main():
 
     odasi_verisi = odasi_verisini_oku(simdi)
     print("Odasi verisi: " + (f"{len(odasi_verisi)} kayit (ANA KAYNAK)" if odasi_verisi else "YOK - eski sistem (teknikzeka+CollectAPI)"))
+
+    odasi_ref = odasi_referans_oku(simdi)
+    print("Odasi referansi (CollectAPI suzgeci): " + (f"{len(odasi_ref)} kayit" if odasi_ref else "YOK - suzme yapilmayacak"))
 
     il_cache = {}
     durumlar = {}
@@ -899,7 +944,8 @@ def main():
         if teknikzeka_taze:
             kaynak_etiketi = "teknikzeka"
             if yedek_sonuc and (yedek_degisti or not yogun):
-                eklenen = yedegi_listeye_ekle(eczaneler, idler, yedek_sonuc, tumliste_oku(il_slug, ilce_slug), etiket, "teknikzeka'da yoktu")
+                eklenen = yedegi_listeye_ekle(eczaneler, idler, yedek_sonuc, tumliste_oku(il_slug, ilce_slug), etiket, "teknikzeka'da yoktu",
+                                                odasi_ref if normallestir(api_il) == "ISTANBUL" else None)
                 if eklenen:
                     kaynak_etiketi = "teknikzeka+collectapi"
             elif yedek_sonuc and yogun and not yedek_degisti:
@@ -907,7 +953,8 @@ def main():
         elif yedek_sonuc and yedek_degisti:
             tumliste = tumliste_oku(il_slug, ilce_slug)
             eklenen = yedegi_listeye_ekle(eczaneler, idler, yedek_sonuc, tumliste, etiket,
-                                          "teknikzeka guncel degil - ANA KAYNAK olarak")
+                                          "teknikzeka guncel degil - ANA KAYNAK olarak",
+                                          odasi_ref if normallestir(api_il) == "ISTANBUL" else None)
             if eczaneler:
                 kaynak_etiketi = "collectapi"
 
