@@ -148,3 +148,4 @@
 2026-10-18 23:00 | istanbul-maltepe | CollectAPI'den eklendi (teknikzeka'da yoktu): CITYLOFT DRAGOS ECZANESİ
 2026-10-22 18:02 | istanbul-maltepe | CollectAPI'den eklendi (teknikzeka'da yoktu): HİPOKRAT ECZANESİ
 2026-10-22 19:12 | istanbul-maltepe | CollectAPI'den eklendi (teknikzeka'da yoktu): HİPOKRAT ECZANESİ
+2026-10-22 20:01 | istanbul-maltepe | CollectAPI'den eklendi (teknikzeka'da yoktu): HİPOKRAT ECZANESİ
