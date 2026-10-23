@@ -1,22 +1,22 @@
 {
   "eczaneler": [
     {
-      "id": 58349,
-      "ad": "ERGUVAN ECZANESİ",
-      "tel": "5057790203",
-      "adres": "Altıntepe Mah. Bağdat Cad. No:79D"
+      "id": 65250,
+      "ad": "ESİN ECZANESİ",
+      "tel": "2163677003",
+      "adres": "Altayçeşme Mah. İstiklal Cad. No:15/17E"
     },
     {
-      "id": 50138,
-      "ad": "ESİN KAYA ECZANESİ",
-      "tel": "2164419477",
-      "adres": "Bağlarbaşı Mah. Feyzullah Cad. No:28/D"
+      "id": 54018,
+      "ad": "İREM ECZANESİ",
+      "tel": "2164915858",
+      "adres": "Zümrütevler Mah. Tülin Cad. No:4/A"
     },
     {
-      "id": 63339,
-      "ad": "SEMANUR ECZANESİ",
-      "tel": "2164170099",
-      "adres": "Girne Mahallesi,Narlıdere Caddesi, No:24/A"
+      "id": 8014812,
+      "ad": "YÜKSEL ECZANESİ",
+      "tel": "2165142931",
+      "adres": "Küçükyalı Merkez Mahallesi, Kılavuz Çayırı Caddesi, No:74/B"
     }
   ]
 }
