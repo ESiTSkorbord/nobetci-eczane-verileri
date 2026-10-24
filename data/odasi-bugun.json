@@ -1,71 +1,63 @@
 {
- "zaman": "2026-10-24 08:01",
- "adet": 8,
- "gecerli_kadar": "2026-10-24T09:00:00+03:00",
+ "zaman": "2026-10-24 09:01",
+ "adet": 7,
+ "gecerli_kadar": "2026-10-25T09:00:00+03:00",
  "eczaneler": [
   {
-   "sicil": 12756,
-   "ad": "ADA ECZANESİ",
-   "tel": "2163771122",
+   "sicil": 11856,
+   "ad": "SACİDE ECZANESİ",
+   "tel": "2165042453",
    "ilce": "Kartal",
-   "adres": "Soğanlık Yeni Mahallesi, Mimar Sinan Caddesi, 40A",
-   "bitis": "2026-10-24T09:00:00+03:00"
+   "adres": "Karlıktepe Mahallesi, Soğanlık Caddesi, No:34/A",
+   "bitis": "2026-10-25T09:00:00+03:00"
   },
   {
-   "sicil": 14265,
-   "ad": "AYŞEGÜL ECZANESİ",
-   "tel": "2163094050",
+   "sicil": 12168,
+   "ad": "SOĞANLIK ECZANESİ",
+   "tel": "2163098920",
    "ilce": "Kartal",
-   "adres": "Cumhuriyet Mahallesi, Erzincan Sokak, 30/B",
-   "bitis": "2026-10-24T09:00:00+03:00"
+   "adres": "Orta Mahallesi, Vezirköprü Caddesi, 7",
+   "bitis": "2026-10-25T09:00:00+03:00"
   },
   {
-   "sicil": 9608,
-   "ad": "CANSU ECZANESİ",
-   "tel": "2163740622",
+   "sicil": 18248,
+   "ad": "ŞEYDA ECZANESİ",
+   "tel": "2166297090",
    "ilce": "Kartal",
-   "adres": "Kordonboyu Mahallesi, Kumlar Caddesi, 39",
-   "bitis": "2026-10-24T09:00:00+03:00"
+   "adres": "Orhantepe Mahallesi, Pazar Sokak, 5E",
+   "bitis": "2026-10-25T09:00:00+03:00"
   },
   {
-   "sicil": 8716,
-   "ad": "GÜNDOĞDU ECZANESİ",
-   "tel": "2164418266",
+   "sicil": 10498,
+   "ad": "YAKACIK DERMAN ECZANESİ",
+   "tel": "2165767642",
    "ilce": "Kartal",
-   "adres": "Cevizli Mahallesi, Mustafa Kemal Caddesi, 26/D",
-   "bitis": "2026-10-24T09:00:00+03:00"
+   "adres": "Çarşı Mahallesi, Enis Akaygen Sokak, 7/B",
+   "bitis": "2026-10-25T09:00:00+03:00"
   },
   {
-   "sicil": 13204,
-   "ad": "ÖMÜR ECZANESİ",
-   "tel": "2163065353",
-   "ilce": "Kartal",
-   "adres": "Yalı Mahallesi, Tufan Sokak, 22B",
-   "bitis": "2026-10-24T09:00:00+03:00"
-  },
-  {
-   "sicil": 4057,
-   "ad": "ESİN ECZANESİ",
-   "tel": "2163677003",
+   "sicil": 10429,
+   "ad": "ANADOLU ECZANESİ",
+   "tel": "2164279097",
    "ilce": "Maltepe",
-   "adres": "Altayçeşme Mahallesi, İstiklal Caddesi, 15/17E",
-   "bitis": "2026-10-24T09:00:00+03:00"
+   "adres": "Zümrütevler Mahallesi, Tülin Caddesi, 45",
+   "bitis": "2026-10-25T09:00:00+03:00"
   },
   {
-   "sicil": 12563,
-   "ad": "İREM ECZANESİ",
-   "tel": "2164915858",
+   "sicil": 10138,
+   "ad": "FATOŞ KÜÇÜKYALI ECZANESİ",
+   "tel": "2163888858",
    "ilce": "Maltepe",
-   "adres": "Zümrütevler Mahallesi, Tülin Caddesi, 4/A",
-   "bitis": "2026-10-24T09:00:00+03:00"
+   "adres": "Küçükyalı Merkez Mahallesi, Rüştü Sarp Caddesi, 2G",
+   "bitis": "2026-10-25T09:00:00+03:00"
   },
   {
-   "sicil": 14812,
-   "ad": "YÜKSEL ECZANESİ",
-   "tel": "2165142931",
+   "sicil": 6456,
+   "ad": "ORHANGAZİ ECZANESİ",
+   "tel": "2163718426",
    "ilce": "Maltepe",
-   "adres": "Küçükyalı Merkez Mahallesi, Kılavuz Çayırı Caddesi, No:74/B",
-   "bitis": "2026-10-24T09:00:00+03:00"
+   "adres": "Cevizli Mahallesi, Orhan Gazi Caddesi, 12",
+   "bitis": "2026-10-25T09:00:00+03:00"
   }
  ]
 }

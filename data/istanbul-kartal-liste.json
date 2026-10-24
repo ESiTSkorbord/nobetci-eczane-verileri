@@ -1,34 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 41653,
-      "ad": "ADA ECZANESİ",
-      "tel": "2163771122",
-      "adres": "Soğanlık Yeni Mah. Mimar Sinan Cad. No:40A"
+      "id": 61548,
+      "ad": "SACİDE ECZANESİ",
+      "tel": "2165042453",
+      "adres": "Karlıktepe Mahallesi,Soğanlık Caddesi,No:34/A"
     },
     {
-      "id": 54775,
-      "ad": "AYŞEGÜL ECZANESİ",
-      "tel": "2163094050",
-      "adres": "Cumhuriyet Mah. Erzincan Sok. No:30-B"
+      "id": 38227,
+      "ad": "SOĞANLIK ECZANESİ",
+      "tel": "2163098920",
+      "adres": "ORTA MAH. VEZİRKÖPRÜ CAD. ZEMİN KAT NO:7"
     },
     {
-      "id": 13374,
-      "ad": "CANSU ECZANESI",
-      "tel": "2163740622",
-      "adres": "KORDONBOYU MAH. KUMLAR CAD. 39/1-2 KARTAL"
+      "id": 60853,
+      "ad": "ŞEYDA ECZANESİ",
+      "tel": "2166297090",
+      "adres": "Orhantepe Mah. Pazar Sok. No:5E"
     },
     {
-      "id": 13326,
-      "ad": "GÜNDOGDU ECZANESI",
-      "tel": "2164418266",
-      "adres": "MUSTAFA KEMAL CAD. NO:26/1"
-    },
-    {
-      "id": 42762,
-      "ad": "ÖMÜR ECZANESİ",
-      "tel": "2163065353",
-      "adres": "Yalı Mah. Tufan Sok. No:22B"
+      "id": 15790,
+      "ad": "YAKACIK DERMAN ECZANESİ",
+      "tel": "2165767642",
+      "adres": "ÇARSI MH. KARTAL CD.ENIS AKAYGEN SK.NO:9/27 KARTAL"
     }
   ]
 }
