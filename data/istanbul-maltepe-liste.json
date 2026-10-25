@@ -1,22 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 15715,
-      "ad": "ANADOLU ECZANESİ",
-      "tel": "2164279097",
-      "adres": "ZÜMRÜTEVLER MH.TÜLIN CD. NO:45"
+      "id": 40507,
+      "ad": "ALTINTEPE GÖKHAN ECZANESİ",
+      "tel": "2163881881",
+      "adres": "Altıntepe Mahallesi Cihadiye Caddesi, 42"
     },
     {
-      "id": 8010138,
-      "ad": "FATOŞ KÜÇÜKYALI ECZANESİ",
-      "tel": "2163888858",
-      "adres": "Küçükyalı Merkez Mahallesi, Rüştü Sarp Caddesi, 2G"
+      "id": 53349,
+      "ad": "BUSEM ECZANESİ",
+      "tel": "2164595670",
+      "adres": "Bağlarbaşı Mah. İnönü Cad. No:85/B"
     },
     {
-      "id": 15729,
-      "ad": "ORHANGAZI ECZANESI",
-      "tel": "2163718426",
-      "adres": "ORHANGAZI CAD.NO.12 MALTEPE/ISTANBUL"
+      "id": 41443,
+      "ad": "MALTEPE PLUS ECZANESİ",
+      "tel": "2164595586",
+      "adres": "Altayçeşme Mah. Bağdat Cad. No:409/B"
+    },
+    {
+      "id": 27033,
+      "ad": "NESİBE AVŞAR",
+      "tel": "2164210202",
+      "adres": "Başıbüyük Mah. Başıbüyük Cad. No:31 Maltepe"
     }
   ]
 }

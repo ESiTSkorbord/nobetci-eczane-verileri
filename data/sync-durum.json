@@ -1,18 +1,18 @@
 {
-  "tarih": "2026-10-18",
-  "zaman": "09:13",
+  "tarih": "2026-10-25",
+  "zaman": "09:01",
   "ilceler": {
     "istanbul-kartal": {
       "durum": "guncellendi",
-      "kaynak": "teknikzeka",
-      "eczane_sayisi": 3,
+      "kaynak": "odasi",
+      "eczane_sayisi": 4,
       "eklenen": 0,
       "liste_degisti": true
     },
     "istanbul-maltepe": {
       "durum": "guncellendi",
-      "kaynak": "teknikzeka",
-      "eczane_sayisi": 2,
+      "kaynak": "odasi",
+      "eczane_sayisi": 4,
       "eklenen": 0,
       "liste_degisti": true
     }

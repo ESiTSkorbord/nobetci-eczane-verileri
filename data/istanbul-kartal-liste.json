@@ -1,28 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 61548,
-      "ad": "SACİDE ECZANESİ",
-      "tel": "2165042453",
-      "adres": "Karlıktepe Mahallesi,Soğanlık Caddesi,No:34/A"
+      "id": 45601,
+      "ad": "ÇINAR ECZANESİ",
+      "tel": "2163535312",
+      "adres": "YUKARI MAH. ÇIRÇIR CAD. No:21/A"
     },
     {
-      "id": 38227,
-      "ad": "SOĞANLIK ECZANESİ",
-      "tel": "2163098920",
-      "adres": "ORTA MAH. VEZİRKÖPRÜ CAD. ZEMİN KAT NO:7"
+      "id": 13352,
+      "ad": "ERBAŞ ECZANESİ",
+      "tel": "5442428488",
+      "adres": "Uğur Mumcu Mahallesi, Şeyh Şamil Caddesi, No:40/D"
     },
     {
-      "id": 60853,
-      "ad": "ŞEYDA ECZANESİ",
-      "tel": "2166297090",
-      "adres": "Orhantepe Mah. Pazar Sok. No:5E"
+      "id": 13389,
+      "ad": "FILIZ ECZANESI",
+      "tel": "2163701570",
+      "adres": "ORHANTEPE MAH. GEZIYOLU SOK. NO:32/1"
     },
     {
-      "id": 15790,
-      "ad": "YAKACIK DERMAN ECZANESİ",
-      "tel": "2165767642",
-      "adres": "ÇARSI MH. KARTAL CD.ENIS AKAYGEN SK.NO:9/27 KARTAL"
+      "id": 51869,
+      "ad": "TURKUAZ ECZANESİ",
+      "tel": "2163770778",
+      "adres": "Gümüşpınar Mahallesi Atatürk Caddesi, 107/B 34880 Kartal/İstanbul"
     }
   ]
 }
