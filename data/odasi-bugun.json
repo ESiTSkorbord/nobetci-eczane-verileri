@@ -1,71 +1,63 @@
 {
- "zaman": "2026-10-26 08:01",
- "adet": 8,
- "gecerli_kadar": "2026-10-26T09:00:00+03:00",
+ "zaman": "2026-10-26 09:01",
+ "adet": 7,
+ "gecerli_kadar": "2026-10-27T09:00:00+03:00",
  "eczaneler": [
   {
-   "sicil": 12163,
-   "ad": "ÇINAR ECZANESİ",
-   "tel": "2163535312",
+   "sicil": 12425,
+   "ad": "BİZİM ECZANESİ",
+   "tel": "2163096957",
    "ilce": "Kartal",
-   "adres": "Yukarı Mahallesi, Çırçır Caddesi, 21/A",
-   "bitis": "2026-10-26T09:00:00+03:00"
+   "adres": "Çarşı Mahallesi, Çam Sokak, 43A",
+   "bitis": "2026-10-27T09:00:00+03:00"
   },
   {
-   "sicil": 9854,
-   "ad": "ERBAŞ ECZANESİ",
-   "tel": "5442428488",
+   "sicil": 5269,
+   "ad": "DEMİRAY ECZANESİ",
+   "tel": "2163097099",
    "ilce": "Kartal",
-   "adres": "Uğur Mumcu Mahallesi Şeyh Şamil Caddesi 40/D",
-   "bitis": "2026-10-26T09:00:00+03:00"
+   "adres": "Orta Mahallesi, Yusuf Efendi Sokak, 4C",
+   "bitis": "2026-10-27T09:00:00+03:00"
   },
   {
-   "sicil": 7252,
-   "ad": "FİLİZ ECZANESİ",
-   "tel": "2163701570",
+   "sicil": 10093,
+   "ad": "EMEK ECZANESİ",
+   "tel": "2165179808",
    "ilce": "Kartal",
-   "adres": "Orhantepe Mahallesi, Gezi Yolu Sokak, 32/1",
-   "bitis": "2026-10-26T09:00:00+03:00"
+   "adres": "Petroliş Mahallesi, Kızılay Bulvarı, 17/A",
+   "bitis": "2026-10-27T09:00:00+03:00"
   },
   {
-   "sicil": 12776,
-   "ad": "TURKUAZ ECZANESİ",
-   "tel": "2163770778",
+   "sicil": 8809,
+   "ad": "ŞULE ECZANESİ",
+   "tel": "2163063019",
    "ilce": "Kartal",
-   "adres": "Gümüşpınar Mahallesi, Atatürk Caddesi, 107/B",
-   "bitis": "2026-10-26T09:00:00+03:00"
+   "adres": "Petroliş Mahallesi, Rahvanlar Caddesi, 47/A",
+   "bitis": "2026-10-27T09:00:00+03:00"
   },
   {
-   "sicil": 4625,
-   "ad": "ALTINTEPE GÖKHAN ECZANESİ",
-   "tel": "2163881881",
+   "sicil": 11964,
+   "ad": "ECZANE RİTİM",
+   "tel": "2162667466",
    "ilce": "Maltepe",
-   "adres": "Altıntepe Mahallesi, Cihadiye Caddesi, 42",
-   "bitis": "2026-10-26T09:00:00+03:00"
+   "adres": "Cevizli Mahallesi, Zuhal Caddesi, 46/38",
+   "bitis": "2026-10-27T09:00:00+03:00"
   },
   {
-   "sicil": 15146,
-   "ad": "BUSEM ECZANESİ",
-   "tel": "2164595670",
+   "sicil": 7069,
+   "ad": "EMRE ECZANESİ",
+   "tel": "2164274403",
    "ilce": "Maltepe",
-   "adres": "Bağlarbaşı Mahallesi, İnönü Caddesi, 85/B",
-   "bitis": "2026-10-26T09:00:00+03:00"
+   "adres": "Esenkent Mahallesi, Kanipaşa Caddesi, 147",
+   "bitis": "2026-10-27T09:00:00+03:00"
   },
   {
-   "sicil": 7490,
-   "ad": "MALTEPE PLUS ECZANESİ",
-   "tel": "2164595586",
+   "sicil": 14212,
+   "ad": "LOTUS ECZANESİ",
+   "tel": "2164891966",
    "ilce": "Maltepe",
-   "adres": "Altayçeşme Mahallesi, Bağdat Caddesi, 409/B-1",
-   "bitis": "2026-10-26T09:00:00+03:00"
-  },
-  {
-   "sicil": 11405,
-   "ad": "NESİBE AVŞAR ECZANESİ",
-   "tel": "2164210202",
-   "ilce": "Maltepe",
-   "adres": "Başıbüyük Mahallesi, Başıbüyük Caddesi, (Eski Atatürk Caddesi), 47",
-   "bitis": "2026-10-26T09:00:00+03:00"
+   "adres": "Altıntepe Mahallesi, Emin Ali Paşa Caddesi, No:3B",
+   "bitis": "2026-10-27T09:00:00+03:00"
   }
  ]
 }

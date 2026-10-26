@@ -1,28 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 45601,
-      "ad": "ÇINAR ECZANESİ",
-      "tel": "2163535312",
-      "adres": "YUKARI MAH. ÇIRÇIR CAD. No:21/A"
+      "id": 40104,
+      "ad": "BİZİM ECZANESİ",
+      "tel": "2163096957",
+      "adres": "Yakacık Çarşı Mah. Çam Sok. No:43A"
     },
     {
-      "id": 13352,
-      "ad": "ERBAŞ ECZANESİ",
-      "tel": "5442428488",
-      "adres": "Uğur Mumcu Mahallesi, Şeyh Şamil Caddesi, No:40/D"
+      "id": 34688,
+      "ad": "DEMİRAY ECZANESİ",
+      "tel": "2163097099",
+      "adres": "ORTA MAH. YUSUF EFENDİ SOK. NO:4C"
     },
     {
-      "id": 13389,
-      "ad": "FILIZ ECZANESI",
-      "tel": "2163701570",
-      "adres": "ORHANTEPE MAH. GEZIYOLU SOK. NO:32/1"
+      "id": 56896,
+      "ad": "EMEK ECZANESI",
+      "tel": "2165179808",
+      "adres": "Yukarı Mah. Kızılay Bulvarı No:38/B"
     },
     {
-      "id": 51869,
-      "ad": "TURKUAZ ECZANESİ",
-      "tel": "2163770778",
-      "adres": "Gümüşpınar Mahallesi Atatürk Caddesi, 107/B 34880 Kartal/İstanbul"
+      "id": 53017,
+      "ad": "ŞULE ECZANESİ",
+      "tel": "2163063019",
+      "adres": "Petrol İş Mah. Rahvanlar Cad. No:47/A"
     }
   ]
 }

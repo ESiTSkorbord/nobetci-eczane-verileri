@@ -1,28 +1,22 @@
 {
   "eczaneler": [
     {
-      "id": 40507,
-      "ad": "ALTINTEPE GÖKHAN ECZANESİ",
-      "tel": "2163881881",
-      "adres": "Altıntepe Mahallesi Cihadiye Caddesi, 42"
+      "id": 38800,
+      "ad": "ECZANE RİTİM",
+      "tel": "2162667466",
+      "adres": "Cevizli Mah. Zuhal Cad. Füsun Sok. No:46/38"
     },
     {
-      "id": 53349,
-      "ad": "BUSEM ECZANESİ",
-      "tel": "2164595670",
-      "adres": "Bağlarbaşı Mah. İnönü Cad. No:85/B"
+      "id": 15709,
+      "ad": "EMRE",
+      "tel": "2164274403",
+      "adres": "ESENKENT MAH. KANIPASA CAD. NO:147 MALTEPE"
     },
     {
-      "id": 41443,
-      "ad": "MALTEPE PLUS ECZANESİ",
-      "tel": "2164595586",
-      "adres": "Altayçeşme Mah. Bağdat Cad. No:409/B"
-    },
-    {
-      "id": 27033,
-      "ad": "NESİBE AVŞAR",
-      "tel": "2164210202",
-      "adres": "Başıbüyük Mah. Başıbüyük Cad. No:31 Maltepe"
+      "id": 62660,
+      "ad": "LOTUS ECZANESİ",
+      "tel": "2164891966",
+      "adres": "Altıntepe Mahallesi,Emin Ali Paşa Caddesi, No:3B"
     }
   ]
 }
