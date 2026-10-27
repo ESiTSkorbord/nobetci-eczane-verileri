@@ -1,22 +1,22 @@
 {
   "eczaneler": [
     {
-      "id": 38800,
-      "ad": "ECZANE RİTİM",
-      "tel": "2162667466",
-      "adres": "Cevizli Mah. Zuhal Cad. Füsun Sok. No:46/38"
+      "id": 29161,
+      "ad": "FUAYE",
+      "tel": "2162901880",
+      "adres": "Zümrütevler Mahallesi Yol-5 Sokak, 10"
     },
     {
-      "id": 15709,
-      "ad": "EMRE",
-      "tel": "2164274403",
-      "adres": "ESENKENT MAH. KANIPASA CAD. NO:147 MALTEPE"
+      "id": 56251,
+      "ad": "GAYE ECZANESİ",
+      "tel": "2165184081",
+      "adres": "İdealtepe Mah. Rıfkı Tongsir Cad. No:89/A"
     },
     {
-      "id": 62660,
-      "ad": "LOTUS ECZANESİ",
-      "tel": "2164891966",
-      "adres": "Altıntepe Mahallesi,Emin Ali Paşa Caddesi, No:3B"
+      "id": 15656,
+      "ad": "IRMAK",
+      "tel": "2163711653",
+      "adres": "ALTAYÇESME MAH.ESENLIK SK.NO.1"
     }
   ]
 }
