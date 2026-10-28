@@ -1,28 +1,34 @@
 {
   "eczaneler": [
     {
-      "id": 42463,
-      "ad": "BARIŞ ECZANESİ",
-      "tel": "2164512324",
-      "adres": "Cumhuriyet Mahallesi Yüzyıl Caddesi, 50A"
+      "id": 56740,
+      "ad": "21 MAYIS ECZANESİ",
+      "tel": "2163741602",
+      "adres": "Petrol İş Mah. Kızılay Bulv. No:21/C"
     },
     {
-      "id": 50127,
-      "ad": "CEYLAN ECZANESİ",
-      "tel": "2163772149",
-      "adres": "Soğanlık Yeni Mah. Beytalı Cad. No:40/A"
+      "id": 50213,
+      "ad": "CAN ECZANESİ",
+      "tel": "2163771331",
+      "adres": "Hürriyet Mah. Abdi İpekçi Cad. No:25-A"
     },
     {
-      "id": 62350,
-      "ad": "YENİ ATALAR ECZANESİ",
-      "tel": "2165176720",
-      "adres": "Petrol İş Mah. Rahvanlar Cad. No:60A"
+      "id": 26824,
+      "ad": "İSTANBUL ECZANESİ",
+      "tel": "2163705457",
+      "adres": "Soğanlık Yeni Mahallesi Atatürk Caddesi, 3"
     },
     {
-      "id": 59005,
-      "ad": "ZEYNEPNUR ECZANESİ",
-      "tel": "2163062725",
-      "adres": "Karlıktepe Mahallesi, Tecerdağı Caddesi, 2A"
+      "id": 61967,
+      "ad": "RÜYA ECZANESİ",
+      "tel": "2164881521",
+      "adres": "Yalı Mahallesi,Topel Sokak,No:3/A"
+    },
+    {
+      "id": 65555,
+      "ad": "SU ECZANESİ",
+      "tel": "5318987199",
+      "adres": "Cevizli Mah. Seyitgazi Sok. No:16/A"
     }
   ]
 }
