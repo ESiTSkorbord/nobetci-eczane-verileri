@@ -1,34 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 56740,
-      "ad": "21 MAYIS ECZANESİ",
-      "tel": "2163741602",
-      "adres": "Petrol İş Mah. Kızılay Bulv. No:21/C"
+      "id": 48889,
+      "ad": "ANATOLİUM ECZANESİ",
+      "tel": "2164515151",
+      "adres": "Soğanlık Yeni Mah. Soğanlık D100 Kuzey Yanyol Cad. B Blok No:72/185"
     },
     {
-      "id": 50213,
-      "ad": "CAN ECZANESİ",
-      "tel": "2163771331",
-      "adres": "Hürriyet Mah. Abdi İpekçi Cad. No:25-A"
+      "id": 43667,
+      "ad": "DERİN ECZANESİ",
+      "tel": "2163091945",
+      "adres": "Hürriyet Mah. Peker Sok. No:36A"
     },
     {
-      "id": 26824,
-      "ad": "İSTANBUL ECZANESİ",
-      "tel": "2163705457",
-      "adres": "Soğanlık Yeni Mahallesi Atatürk Caddesi, 3"
+      "id": 58421,
+      "ad": "MARİN KARTAL ECZANESİ",
+      "tel": "2164885419",
+      "adres": "Petroliş Mahallesi Üsküdar Caddesi, 90/B"
     },
     {
-      "id": 61967,
-      "ad": "RÜYA ECZANESİ",
-      "tel": "2164881521",
-      "adres": "Yalı Mahallesi,Topel Sokak,No:3/A"
-    },
-    {
-      "id": 65555,
-      "ad": "SU ECZANESİ",
-      "tel": "5318987199",
-      "adres": "Cevizli Mah. Seyitgazi Sok. No:16/A"
+      "id": 55778,
+      "ad": "NESLİHAN ECZANESİ",
+      "tel": "2164883657",
+      "adres": "Atalar Mah. Üsküdar Cad. No:103/A"
     }
   ]
 }

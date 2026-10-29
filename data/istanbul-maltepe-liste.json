@@ -1,34 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 56883,
-      "ad": "ATLAS ECZANESİ",
-      "tel": "5422768199",
-      "adres": "Altıntepe Mahallesi Bağdat Caddesi, 15-33 AS"
+      "id": 34325,
+      "ad": "ARDA ECZANESİ",
+      "tel": "2163665663",
+      "adres": "İDEALTEPE RIFKI TONGSİR CAD. NO:28/B"
     },
     {
-      "id": 62820,
-      "ad": "DİDEM TOPRAK ECZANESİ",
-      "tel": "5334450616",
-      "adres": "Feyzullah Mah. Bağdat Cad. No:336-338C"
+      "id": 15731,
+      "ad": "ARMAGAN",
+      "tel": "2164423738",
+      "adres": "ATATÜRK CD.36/A MALTEPE"
     },
     {
-      "id": 48066,
-      "ad": "ÖZEN KÜÇÜKYALI ECZANESİ",
-      "tel": "2163885074",
-      "adres": "İDEALTEPE MAH. MIZRAK SOK. NO:2A"
+      "id": 15684,
+      "ad": "SEMA",
+      "tel": "2163990834",
+      "adres": "ZÜMRÜTEVLER MAH. GÜL CAD. NO:30/B MALTEPE"
     },
     {
-      "id": 41596,
-      "ad": "PİAZZA YAŞAM ECZANESİ",
-      "tel": "2165155585",
-      "adres": "Cevizli Mah. Tugay Yolu Cad. No:69/C İç Kapı No:203"
-    },
-    {
-      "id": 28040,
-      "ad": "SAFA ECZANESİ",
-      "tel": "2165893016",
-      "adres": "Zümrütevler Mahallesi Can Sokak No:1/B"
+      "id": 44311,
+      "ad": "YASEMİN ECZANESİ",
+      "tel": "2164414143",
+      "adres": "Bağlarbaşı Mah. Bağdat Cad. No:432/A"
     }
   ]
 }
