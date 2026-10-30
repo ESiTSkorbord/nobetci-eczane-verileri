@@ -1,71 +1,63 @@
 {
- "zaman": "2026-10-30 08:01",
- "adet": 8,
- "gecerli_kadar": "2026-10-30T09:00:00+03:00",
+ "zaman": "2026-10-30 09:03",
+ "adet": 7,
+ "gecerli_kadar": "2026-10-31T09:00:00+03:00",
  "eczaneler": [
   {
-   "sicil": 10675,
-   "ad": "ANATOLİUM ECZANESİ",
-   "tel": "2164515151",
+   "sicil": 12727,
+   "ad": "DURUSU ECZANESİ",
+   "tel": "2167664202",
    "ilce": "Kartal",
-   "adres": "Soğanlık Yeni Mahallesi, Soğanlık E-5 Yanyol Caddesi, 72/185",
-   "bitis": "2026-10-30T09:00:00+03:00"
+   "adres": "Atalar Mahallesi, Üsküdar Caddesi, 73-B",
+   "bitis": "2026-10-31T09:00:00+03:00"
   },
   {
-   "sicil": 6832,
-   "ad": "DERİN ECZANESİ",
-   "tel": "2163091945",
+   "sicil": 9283,
+   "ad": "FATİH ECZANESİ",
+   "tel": "2165668822",
    "ilce": "Kartal",
-   "adres": "Hürriyet Mahallesi, Peker Sokak, 36A",
-   "bitis": "2026-10-30T09:00:00+03:00"
+   "adres": "Soğanlık Yeni Mahallesi, Mimar Sinan Caddesi, 35/A-35/C",
+   "bitis": "2026-10-31T09:00:00+03:00"
   },
   {
-   "sicil": 15202,
-   "ad": "MARİN KARTAL ECZANESİ",
-   "tel": "2164885419",
+   "sicil": 9733,
+   "ad": "GÜLŞEN ECZANESİ",
+   "tel": "2163742138",
    "ilce": "Kartal",
-   "adres": "Petroliş Mahallesi, Üsküdar Caddesi, 90/B",
-   "bitis": "2026-10-30T09:00:00+03:00"
+   "adres": "Esentepe Mahallesi, Hakan Sokak, 9A",
+   "bitis": "2026-10-31T09:00:00+03:00"
   },
   {
-   "sicil": 15049,
-   "ad": "NESLİHAN ECZANESİ",
-   "tel": "2164883657",
+   "sicil": 14833,
+   "ad": "SELVİ ECZANESİ",
+   "tel": "2163091909",
    "ilce": "Kartal",
-   "adres": "Atalar Mahallesi, Üsküdar Caddesi, 103/A",
-   "bitis": "2026-10-30T09:00:00+03:00"
+   "adres": "Cumhuriyet Mahallesi, Adnan Kahveci Caddesi, 86/B",
+   "bitis": "2026-10-31T09:00:00+03:00"
   },
   {
-   "sicil": 5912,
-   "ad": "ARDA ECZANESİ",
-   "tel": "2163665663",
+   "sicil": 7841,
+   "ad": "CAN ŞİFA ECZANESİ",
+   "tel": "2163527418",
    "ilce": "Maltepe",
-   "adres": "İdealtepe Mahallesi, Rıfkı Tongsir Caddesi, 28",
-   "bitis": "2026-10-30T09:00:00+03:00"
+   "adres": "Bağlarbaşı Mahallesi, Feyzullah Caddesi, 26/C",
+   "bitis": "2026-10-31T09:00:00+03:00"
   },
   {
-   "sicil": 2541,
-   "ad": "ARMAĞAN ECZANESİ",
-   "tel": "2164423738",
+   "sicil": 12659,
+   "ad": "GÜLAY ÖNER ECZANESİ",
+   "tel": "2164899232",
    "ilce": "Maltepe",
-   "adres": "Bağlarbaşı Mahallesi, Atatürk Caddesi, 38/A",
-   "bitis": "2026-10-30T09:00:00+03:00"
+   "adres": "Çınar Mahallesi, Bağdat Caddesi, 154C",
+   "bitis": "2026-10-31T09:00:00+03:00"
   },
   {
-   "sicil": 5252,
-   "ad": "SEMA ECZANESİ",
-   "tel": "2163990834",
+   "sicil": 17139,
+   "ad": "HAYAT ECZANESİ",
+   "tel": "2164212160",
    "ilce": "Maltepe",
-   "adres": "Zümrütevler Mahallesi, Gül Caddesi, 30/2",
-   "bitis": "2026-10-30T09:00:00+03:00"
-  },
-  {
-   "sicil": 13003,
-   "ad": "YASEMİN ECZANESİ",
-   "tel": "2164414143",
-   "ilce": "Maltepe",
-   "adres": "Bağlarbaşı Mahallesi, Bağdat Caddesi, 432A",
-   "bitis": "2026-10-30T09:00:00+03:00"
+   "adres": "Başıbüyük Mahallesi, Başıbüyük Caddesi, 12/A",
+   "bitis": "2026-10-31T09:00:00+03:00"
   }
  ]
 }

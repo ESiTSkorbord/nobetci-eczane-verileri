@@ -1,28 +1,22 @@
 {
   "eczaneler": [
     {
-      "id": 34325,
-      "ad": "ARDA ECZANESİ",
-      "tel": "2163665663",
-      "adres": "İDEALTEPE RIFKI TONGSİR CAD. NO:28/B"
+      "id": 15621,
+      "ad": "CAN SIFA",
+      "tel": "2163527418",
+      "adres": "FEYZULLAH CAD.NO.26/2 MALTEPE"
     },
     {
-      "id": 15731,
-      "ad": "ARMAGAN",
-      "tel": "2164423738",
-      "adres": "ATATÜRK CD.36/A MALTEPE"
+      "id": 40828,
+      "ad": "GÜLAY ÖNER ECZANESİ",
+      "tel": "2164899232",
+      "adres": "Çınar Mah. Bağdat Cad. No:154/C"
     },
     {
-      "id": 15684,
-      "ad": "SEMA",
-      "tel": "2163990834",
-      "adres": "ZÜMRÜTEVLER MAH. GÜL CAD. NO:30/B MALTEPE"
-    },
-    {
-      "id": 44311,
-      "ad": "YASEMİN ECZANESİ",
-      "tel": "2164414143",
-      "adres": "Bağlarbaşı Mah. Bağdat Cad. No:432/A"
+      "id": 56448,
+      "ad": "HAYAT ECZANESİ",
+      "tel": "2164212160",
+      "adres": "Başıbüyük Mah. Başıbüyük Cad. No:12/A"
     }
   ]
 }
