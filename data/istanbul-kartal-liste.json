@@ -1,28 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 56235,
-      "ad": "DURUSU ECZANESİ",
-      "tel": "2167664202",
-      "adres": "Atalar Mah. Üsküdar Cad. No:73-B"
+      "id": 13387,
+      "ad": "GÜMÜŞPINAR",
+      "tel": "2166719444",
+      "adres": "GÜMÜSPINAR MH. DEFNELI CD. NO:10/1 KARTAL"
     },
     {
-      "id": 8009283,
-      "ad": "FATİH ECZANESİ",
-      "tel": "2165668822",
-      "adres": "Soğanlık Yeni Mahallesi, Mimar Sinan Caddesi, 35/A-35/C"
+      "id": 62756,
+      "ad": "PAPATYA ECZANESİ",
+      "tel": "2167551415",
+      "adres": "Petroliş Mahallesi,Nirengi Sokak,No:11/A"
     },
     {
-      "id": 43530,
-      "ad": "GÜLŞEN ECZANESİ",
-      "tel": "2163742138",
-      "adres": "Esentepe Mah. Hakan Sok. No:9A"
+      "id": 50806,
+      "ad": "PELİN ECZANESİ",
+      "tel": "2164525344",
+      "adres": "Çarşı Mahallesi, Gökdemir Sokak, 9/B"
     },
     {
-      "id": 49301,
-      "ad": "SELVİ ECZANESİ",
-      "tel": "2163091909",
-      "adres": "Cumhuriyet Mah. Adnan Kahveci Cad. No:86/B"
+      "id": 49263,
+      "ad": "TAMİRHANE ECZANESİ",
+      "tel": "2163525055",
+      "adres": "Orhantepe Mahallesi Bankalar Caddesi, 14/A"
     }
   ]
 }
