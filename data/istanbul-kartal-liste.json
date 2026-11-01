@@ -1,28 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 13387,
-      "ad": "GÜMÜŞPINAR",
-      "tel": "2166719444",
-      "adres": "GÜMÜSPINAR MH. DEFNELI CD. NO:10/1 KARTAL"
+      "id": 43530,
+      "ad": "GÜLŞEN ECZANESİ",
+      "tel": "2163742138",
+      "adres": "Esentepe Mah. Hakan Sok. No:9A"
     },
     {
-      "id": 62756,
-      "ad": "PAPATYA ECZANESİ",
-      "tel": "2167551415",
-      "adres": "Petroliş Mahallesi,Nirengi Sokak,No:11/A"
+      "id": 13271,
+      "ad": "HÜMA ECZANESI",
+      "tel": "2163096215",
+      "adres": "ATATÜRK CAD. NO:93/1"
     },
     {
-      "id": 50806,
-      "ad": "PELİN ECZANESİ",
-      "tel": "2164525344",
-      "adres": "Çarşı Mahallesi, Gökdemir Sokak, 9/B"
+      "id": 61538,
+      "ad": "REFERANS ECZANESİ",
+      "tel": "2167849080",
+      "adres": "Atalar Mahallesi,Kartopu Sokak, No:13/P"
     },
     {
-      "id": 49263,
-      "ad": "TAMİRHANE ECZANESİ",
-      "tel": "2163525055",
-      "adres": "Orhantepe Mahallesi Bankalar Caddesi, 14/A"
+      "id": 45104,
+      "ad": "YENİ EKİN ECZANESİ",
+      "tel": "2163773110",
+      "adres": "Hürriyet Mah. Peker Sok. No:3A"
     }
   ]
 }

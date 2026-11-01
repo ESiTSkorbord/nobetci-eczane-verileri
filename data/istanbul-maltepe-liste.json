@@ -1,22 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 54859,
-      "ad": "ECZANE AYBÜKE ECZANESİ",
-      "tel": "2164212183",
-      "adres": "Başıbüyük Mah. Başıbüyük Cad. No:16A"
+      "id": 15728,
+      "ad": "AYBERK",
+      "tel": "5336787681",
+      "adres": "CEVIZLI MAH. BAGDAT CAD. ERCIYES SOK. NO:3/1 MALTEPE"
     },
     {
-      "id": 15622,
-      "ad": "GÜLEN",
-      "tel": "2163660122",
-      "adres": "IDEALTEPE MH. RIFKI TONGSIR CD. NO:105/2 KÜÇÜKYALI"
+      "id": 15752,
+      "ad": "AYSEN TURAN",
+      "tel": "2164893541",
+      "adres": "KÜÇÜKYALI MH. RÜSTÜ SARP CD. 28/11"
     },
     {
-      "id": 39120,
-      "ad": "MELİKE ECZANESİ",
-      "tel": "2164594114",
-      "adres": "Feyzullah Mahallesi Bağdat Caddesi, 284/B"
+      "id": 61192,
+      "ad": "MALTEPE PARK ECZANESİ",
+      "tel": "5458632189",
+      "adres": "Cevizli Mah. Tugay Yolu Cad. No:67/A İç kapı No:36-37 Maltepe Park Avm"
+    },
+    {
+      "id": 41489,
+      "ad": "YELKEN",
+      "tel": "2164213666",
+      "adres": "Başıbüyük Mahallesi Başıbüyük Caddesi, 10A"
     }
   ]
 }
