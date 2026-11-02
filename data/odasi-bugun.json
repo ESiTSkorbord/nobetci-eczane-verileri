@@ -1,71 +1,71 @@
 {
- "zaman": "2026-11-02 08:02",
+ "zaman": "2026-11-02 09:03",
  "adet": 8,
- "gecerli_kadar": "2026-11-02T09:00:00+03:00",
+ "gecerli_kadar": "2026-11-03T09:00:00+03:00",
  "eczaneler": [
   {
-   "sicil": 9733,
-   "ad": "GÜLŞEN ECZANESİ",
-   "tel": "2163742138",
+   "sicil": 13519,
+   "ad": "BURAK ECZANESİ",
+   "tel": "2164579948",
    "ilce": "Kartal",
-   "adres": "Esentepe Mahallesi, Hakan Sokak, 9A",
-   "bitis": "2026-11-02T09:00:00+03:00"
+   "adres": "Orhantepe Mahallesi, Tuğraberk Sokak, 5/B",
+   "bitis": "2026-11-03T09:00:00+03:00"
   },
   {
-   "sicil": 5006,
-   "ad": "HÜMA ECZANESİ",
-   "tel": "2163096215",
+   "sicil": 17818,
+   "ad": "EZGİ ECZANESİ",
+   "tel": "2167558588",
    "ilce": "Kartal",
-   "adres": "Soğanlık Yeni Mahallesi, Atatürk Caddesi, 93/1",
-   "bitis": "2026-11-02T09:00:00+03:00"
+   "adres": "Petroliş Mahallesi, Üsküdar Caddesi, 53/C",
+   "bitis": "2026-11-03T09:00:00+03:00"
   },
   {
-   "sicil": 8957,
-   "ad": "REFERANS ECZANESİ",
-   "tel": "2167849080",
+   "sicil": 10500,
+   "ad": "KARTAL ECZANESİ",
+   "tel": "2164880045",
    "ilce": "Kartal",
-   "adres": "Atalar Mahallesi, Çanakkale Caddesi, No:13/P",
-   "bitis": "2026-11-02T09:00:00+03:00"
+   "adres": "Gümüşpınar Mahallesi, Defneli Caddesi, 4/1A",
+   "bitis": "2026-11-03T09:00:00+03:00"
   },
   {
-   "sicil": 11294,
-   "ad": "YENİ EKİN ECZANESİ",
-   "tel": "2163773110",
+   "sicil": 17516,
+   "ad": "RÜYA ECZANESİ",
+   "tel": "2164881521",
    "ilce": "Kartal",
-   "adres": "Hürriyet Mahallesi, Peker Sokak, 3A",
-   "bitis": "2026-11-02T09:00:00+03:00"
+   "adres": "Yalı Mahallesi, Topel Sokak, No:3/A",
+   "bitis": "2026-11-03T09:00:00+03:00"
   },
   {
-   "sicil": 8694,
-   "ad": "AYBERK ECZANESİ",
-   "tel": "5336787681",
-   "ilce": "Maltepe",
-   "adres": "Cevizli Mahallesi, Kır Sokak, 8",
-   "bitis": "2026-11-02T09:00:00+03:00"
+   "sicil": 1854,
+   "ad": "YAKACIK ECZANESİ",
+   "tel": "2163771376",
+   "ilce": "Kartal",
+   "adres": "Çarşı Mahallesi, Kartal Caddesi, 10C",
+   "bitis": "2026-11-03T09:00:00+03:00"
   },
   {
-   "sicil": 8425,
-   "ad": "AYŞEN TURAN ECZANESİ",
-   "tel": "2164893541",
+   "sicil": 15337,
+   "ad": "GÜNCE ECZANESİ",
+   "tel": "2163662296",
    "ilce": "Maltepe",
-   "adres": "Küçükyalı Merkez Mahallesi, Rüştü Sarp Caddesi, 28/A",
-   "bitis": "2026-11-02T09:00:00+03:00"
+   "adres": "Küçükyalı Merkez Mahallesi, Bağdat Caddesi, 104/B",
+   "bitis": "2026-11-03T09:00:00+03:00"
   },
   {
-   "sicil": 10669,
-   "ad": "MALTEPE PARK ECZANESİ",
-   "tel": "5458632189",
+   "sicil": 17757,
+   "ad": "HAZAN ECZANESİ",
+   "tel": "2163520486",
    "ilce": "Maltepe",
-   "adres": "Cevizli Mahallesi, Tugay Yolu Caddesi, 67/A",
-   "bitis": "2026-11-02T09:00:00+03:00"
+   "adres": "Feyzullah Mahallesi, Bağdat Caddesi, 324-C",
+   "bitis": "2026-11-03T09:00:00+03:00"
   },
   {
-   "sicil": 9686,
-   "ad": "YELKEN ECZANESİ",
-   "tel": "2164213666",
+   "sicil": 10852,
+   "ad": "ONUR ECZANESİ",
+   "tel": "2165898282",
    "ilce": "Maltepe",
-   "adres": "Başıbüyük Mahallesi, Başıbüyük Caddesi, 10A",
-   "bitis": "2026-11-02T09:00:00+03:00"
+   "adres": "Zümrütevler Mahallesi, Çağlayanlar Sokak, No:29/2",
+   "bitis": "2026-11-03T09:00:00+03:00"
   }
  ]
 }

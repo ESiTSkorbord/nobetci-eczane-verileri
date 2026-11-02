@@ -1,28 +1,22 @@
 {
   "eczaneler": [
     {
-      "id": 15728,
-      "ad": "AYBERK",
-      "tel": "5336787681",
-      "adres": "CEVIZLI MAH. BAGDAT CAD. ERCIYES SOK. NO:3/1 MALTEPE"
+      "id": 61235,
+      "ad": "GÜNCE ECZANESİ",
+      "tel": "2163662296",
+      "adres": "Küçükyalı Merkez Mah. Bağdat Cad. No:104/B"
     },
     {
-      "id": 15752,
-      "ad": "AYSEN TURAN",
-      "tel": "2164893541",
-      "adres": "KÜÇÜKYALI MH. RÜSTÜ SARP CD. 28/11"
+      "id": 62513,
+      "ad": "HAZAN ECZANESİ",
+      "tel": "2163520486",
+      "adres": "Feyzullah Mah. Bağdat Cad. No:324-C"
     },
     {
-      "id": 61192,
-      "ad": "MALTEPE PARK ECZANESİ",
-      "tel": "5458632189",
-      "adres": "Cevizli Mah. Tugay Yolu Cad. No:67/A İç kapı No:36-37 Maltepe Park Avm"
-    },
-    {
-      "id": 41489,
-      "ad": "YELKEN",
-      "tel": "2164213666",
-      "adres": "Başıbüyük Mahallesi Başıbüyük Caddesi, 10A"
+      "id": 15776,
+      "ad": "ONUR",
+      "tel": "2165898282",
+      "adres": "ZÜMRÜTEVLER MH. NIL CD. ÇAGLAYAN SK. NO:29/2"
     }
   ]
 }
