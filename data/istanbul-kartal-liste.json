@@ -1,34 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 48266,
-      "ad": "BURAK ECZANESİ",
-      "tel": "2164579948",
-      "adres": "Orhantepe Mah. Tuğraberk Sk. No:5/B"
+      "id": 54913,
+      "ad": "CEMİL ECZANESI",
+      "tel": "2163770848",
+      "adres": "ORTA MAH. KAPTANIDERYA CAD. NO:40/B"
     },
     {
-      "id": 62365,
-      "ad": "EZGİ ECZANESİ",
-      "tel": "2167558588",
-      "adres": "Petroliş Mah. Üsküdar Cad. No:53/C"
+      "id": 52679,
+      "ad": "EYLÜL ECZANESİ",
+      "tel": "2164591156",
+      "adres": "Cevizli Mah. Konya Sk. No:11/C"
     },
     {
-      "id": 48345,
-      "ad": "KARTAL ECZANESİ",
-      "tel": "2164880045",
-      "adres": "Gümüşpınar Mahallesi Defneli Caddesi, 4/1A"
+      "id": 61932,
+      "ad": "FEYZA ECZANESİ",
+      "tel": "5513415893",
+      "adres": "Esentepe Mahallesi,Toros Caddesi, No:44/A"
     },
     {
-      "id": 61967,
-      "ad": "RÜYA ECZANESİ",
-      "tel": "2164881521",
-      "adres": "Yalı Mahallesi,Topel Sokak,No:3/A"
-    },
-    {
-      "id": 13303,
-      "ad": "YAKACIK ECZANESİ",
-      "tel": "2163771376",
-      "adres": "KARTAL CAD. NO:22 YAKACIK"
+      "id": 13301,
+      "ad": "OKÇU ECZANESİ",
+      "tel": "2163771307",
+      "adres": "HÜRRIYET MAH. ABDI IPEKÇI CAD. NO:33/6"
     }
   ]
 }
