@@ -790,6 +790,43 @@ def odasi_referans_oku(simdi):
     return veri["eczaneler"]
 
 
+import re as _re
+
+# 4 Kasim: ADRES KISALTMA (panel yazilimindaki adresKisalt() ile ayni kisaltmalar: MAH. CAD. SK. BLV. APT. SIT. NO D.).
+# Panel yazilimi karsilastirmayi SADECE BUYUK HARFLE yapiyor; Odasi'ndan gelen adresler ise "Orta Mahallesi Yalnız Selvi
+# Caddesi" gibi karisik harfli oldugu icin panelde KISALTILMIYOR, adres uzayip cok sayfaya bolunuyordu. Bu yuzden Odasi'ndan
+# gelen adresleri burada (panel yazilimina dokunmadan, tum panellerde aninda gecerli) kisaltiyoruz. Buyuk harfli kelime
+# buyuk harfli kisaltmaya ("MAH."), diger hal "Mah."'a donusur. Zaten kisaltilmis ("MAH.", "Cad.") metne dokunulmaz.
+def _tr_kalip(kelime):
+    cikti = ""
+    for h in kelime:
+        if h in "iıİI":
+            cikti += "[iIİı]"
+        elif h in "gğGĞ":
+            cikti += "[gGğĞ]"
+        else:
+            cikti += _re.escape(h)
+    return cikti
+
+_ADRES_KISALTMALARI = [
+    (_re.compile(r"\b" + _tr_kalip("mahallesi") + r"\b|\b" + _tr_kalip("mahalle") + r"\b", _re.IGNORECASE), "Mah."),
+    (_re.compile(r"\b" + _tr_kalip("caddesi") + r"\b|\b" + _tr_kalip("cadde") + r"\b", _re.IGNORECASE), "Cad."),
+    (_re.compile(r"\b" + _tr_kalip("sokağı") + r"\b|\b" + _tr_kalip("sokak") + r"\b", _re.IGNORECASE), "Sk."),
+    (_re.compile(r"\b" + _tr_kalip("bulvarı") + r"\b|\b" + _tr_kalip("bulvar") + r"\b", _re.IGNORECASE), "Blv."),
+    (_re.compile(r"\b" + _tr_kalip("apartmanı") + r"\b|\b" + _tr_kalip("apartman") + r"\b", _re.IGNORECASE), "Apt."),
+    (_re.compile(r"\b" + _tr_kalip("sitesi") + r"\b", _re.IGNORECASE), "Sit."),
+    (_re.compile(r"\b" + _tr_kalip("numara") + r"\b", _re.IGNORECASE), "No"),
+    (_re.compile(r"\b" + _tr_kalip("daire") + r"\b", _re.IGNORECASE), "D."),
+]
+
+
+def adres_kisalt(adres):
+    s = (adres or "").strip()
+    for kalip, kisa in _ADRES_KISALTMALARI:
+        s = kalip.sub(lambda m, k=kisa: k.upper() if m.group(0).isupper() else k, s)
+    return s
+
+
 def odasi_ilce_listesi(odasi_eczaneler, api_ilce, tumliste, etiket):
     """Odasi kayitlarindan ilcenin (eczaneler, idler) listesini kurar.
     Tumlistede (telefon/isim) eslesen eczanenin id/ad/adres'i KORUNUR (panelde bugunku
@@ -808,7 +845,10 @@ def odasi_ilce_listesi(odasi_eczaneler, api_ilce, tumliste, etiket):
             # 23 Ekim: Odasi'ndan GECERLI (10 haneli) telefon geldiyse O kullanilir; tumlistedeki
             # "0"/bos telefonlar (orn. Erguvan) Odasi'nin gercek numarasiyla degisir.
             tel_son = aday["tel"] if telefon_normallestir(aday["tel"]) else (gercek.get("tel") or aday["tel"])
-            kayit = {"id": gercek["id"], "ad": gercek.get("ad") or aday["ad"],
+            # 4 Kasim: ISIM artik ODASI'ndan gelir ("GULSUYU ECZANESI", "SIFA ECZANESI"). Eskiden tumlistedeki
+            # (teknikzeka) isim korunuyordu; o kaynakta "ECZANESI" eki bazen yok ("GULSUYU", "SIFA" - ASCII "S").
+            # ID (kendi eczane tespiti) ve adres tumlistedeki gibi KORUNUR; Odasi ismi bos gelirse eski isim kullanilir.
+            kayit = {"id": gercek["id"], "ad": (aday["ad"] or "").strip() or gercek.get("ad") or aday["ad"],
                      "tel": tel_son, "adres": gercek.get("adres") or aday["adres"]}
         else:
             sicil = e.get("sicil")
@@ -816,6 +856,7 @@ def odasi_ilce_listesi(odasi_eczaneler, api_ilce, tumliste, etiket):
             kayit = {"id": eid, "ad": (aday["ad"] or "").strip(), "tel": (aday["tel"] or "").strip(),
                      "adres": (aday["adres"] or "").strip()}
             print(f"[{etiket}] Odasi'ndan tumlistede OLMAYAN eczane: {kayit['ad']} (id {eid})")
+        kayit["adres"] = adres_kisalt(kayit.get("adres"))
         if kayit["id"] in idler:
             continue
         if tel:
