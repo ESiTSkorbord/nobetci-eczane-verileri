@@ -59,5 +59,18 @@ jobs:
             echo "Degisiklik yok, commit atilmayacak."
           else
             git commit -m "Otomatik nobetci eczane senkronizasyonu"
-            git push
+            # 4 Kasim: GitHub bazen gecici "remote: Internal Server Error" (HTTP 500) doner - bu bizim hatamiz
+            # degil, sunucu tarafi. Eskiden tek denemede is basarisiz sayiliyor ve o saatin verisi yayinlanmiyordu.
+            # Simdi en fazla 5 kez, artan bekleyisle tekrar denenir (araya baska bir commit girerse once birlestirilir).
+            for deneme in 1 2 3 4 5; do
+              if git push; then
+                echo "Push basarili (deneme $deneme)."
+                exit 0
+              fi
+              echo "Push basarisiz (deneme $deneme/5), $((deneme * 20)) sn sonra tekrar denenecek..."
+              sleep $((deneme * 20))
+              git pull --rebase -X theirs origin "${GITHUB_REF_NAME}" || git rebase --abort || true
+            done
+            echo "Push 5 denemede de basarisiz oldu."
+            exit 1
           fi
