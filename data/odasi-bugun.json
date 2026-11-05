@@ -1,63 +1,63 @@
 {
- "zaman": "2026-11-05 08:01",
+ "zaman": "2026-11-05 09:01",
  "adet": 7,
- "gecerli_kadar": "2026-11-05T09:00:00+03:00",
+ "gecerli_kadar": "2026-11-06T09:00:00+03:00",
  "eczaneler": [
   {
-   "sicil": 10947,
-   "ad": "HANIMELİ ECZANESİ",
-   "tel": "2164882578",
+   "sicil": 14501,
+   "ad": "CAN ECZANESİ",
+   "tel": "2163771331",
    "ilce": "Kartal",
-   "adres": "Atalar Mahallesi, Aydın Sokak, 24/A",
-   "bitis": "2026-11-05T09:00:00+03:00"
+   "adres": "Hürriyet Mahallesi, Abdi İpekçi Caddesi, 25-A",
+   "bitis": "2026-11-06T09:00:00+03:00"
   },
   {
-   "sicil": 9469,
-   "ad": "KARTAL PLUS ECZANESİ",
-   "tel": "2162250891",
+   "sicil": 15378,
+   "ad": "LİLYUM ECZANESİ",
+   "tel": "2162088200",
    "ilce": "Kartal",
-   "adres": "Orta Mahallesi, Yalnız Selvi Caddesi, 21A",
-   "bitis": "2026-11-05T09:00:00+03:00"
+   "adres": "Atalar Mahallesi, Halit Paşa Caddesi, 80-82B",
+   "bitis": "2026-11-06T09:00:00+03:00"
   },
   {
-   "sicil": 13060,
-   "ad": "POLEN ECZANESİ",
-   "tel": "2164883266",
+   "sicil": 11332,
+   "ad": "MERT ECZANESİ",
+   "tel": "2166322361",
    "ilce": "Kartal",
-   "adres": "Hürriyet Mahallesi, Olimpiyat Caddesi, No:67F",
-   "bitis": "2026-11-05T09:00:00+03:00"
+   "adres": "Orta Mahallesi, Vezirköprü Caddesi, 6B",
+   "bitis": "2026-11-06T09:00:00+03:00"
   },
   {
-   "sicil": 6646,
-   "ad": "YENİ MESUT ECZANESİ",
-   "tel": "2163743004",
+   "sicil": 11549,
+   "ad": "ŞURUP ECZANESİ",
+   "tel": "2164882629",
    "ilce": "Kartal",
-   "adres": "Petroliş Mahallesi, Üsküdar Caddesi, 27D",
-   "bitis": "2026-11-05T09:00:00+03:00"
+   "adres": "Karlıktepe Mahallesi, Fahri Korutürk Caddesi, 19",
+   "bitis": "2026-11-06T09:00:00+03:00"
   },
   {
-   "sicil": 4306,
-   "ad": "GÜLSUYU ECZANESİ",
-   "tel": "2163763187",
+   "sicil": 14212,
+   "ad": "LOTUS ECZANESİ",
+   "tel": "2164891966",
    "ilce": "Maltepe",
-   "adres": "Gülsuyu Mahallesi, Eski Üsküdar Caddesi, 45/B",
-   "bitis": "2026-11-05T09:00:00+03:00"
+   "adres": "Altıntepe Mahallesi, Emin Ali Paşa Caddesi, No:3B",
+   "bitis": "2026-11-06T09:00:00+03:00"
   },
   {
-   "sicil": 12538,
-   "ad": "KÜÇÜKYALI ELİF ECZANESİ",
-   "tel": "2164897678",
+   "sicil": 14530,
+   "ad": "NUR ECZANESİ",
+   "tel": "2164411418",
    "ilce": "Maltepe",
-   "adres": "Altıntepe Mahallesi, Bağdat Caddesi, 99A-B",
-   "bitis": "2026-11-05T09:00:00+03:00"
+   "adres": "Zümrütevler Mahallesi, Nil Caddesi, 35/C",
+   "bitis": "2026-11-06T09:00:00+03:00"
   },
   {
-   "sicil": 6611,
-   "ad": "ŞİFA ECZANESİ",
-   "tel": "2164570707",
+   "sicil": 7173,
+   "ad": "YAĞIZ ECZANESİ",
+   "tel": "2166297575",
    "ilce": "Maltepe",
-   "adres": "Feyzullah Mahallesi, Mimar Sinan Caddesi, Havuzlar Sokak No:9/2",
-   "bitis": "2026-11-05T09:00:00+03:00"
+   "adres": "Feyzullah Mahallesi, Bağdat Caddesi, 262B",
+   "bitis": "2026-11-06T09:00:00+03:00"
   }
  ]
 }
