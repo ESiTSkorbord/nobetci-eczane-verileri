@@ -1,28 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 35413,
-      "ad": "İNCİR ECZANESİ",
-      "tel": "2163830821",
-      "adres": "ORHANTEPE MAH. SARAYLAR CAD. NO:80A"
+      "id": 48782,
+      "ad": "ASLI ECZANESİ",
+      "tel": "2164736021",
+      "adres": "ATALAR MH.DOGU CD. NO:72"
     },
     {
-      "id": 56865,
-      "ad": "METEHAN ECZANESİ",
-      "tel": "2164757900",
-      "adres": "Uğur Mumcu Mah. Fatih Sultan Mehmet Cad. No:32-A"
+      "id": 13330,
+      "ad": "HÜRRİYET ECZANESİ",
+      "tel": "2164520042",
+      "adres": "HÜRRIYET MAH. ABDI IPEKÇI CAD. NO:50/B"
     },
     {
-      "id": 63293,
-      "ad": "NUR ECZANESİ",
-      "tel": "5559972025",
-      "adres": "Orta Mah.,Yalnız Selvi Cad., 16A"
+      "id": 51869,
+      "ad": "TURKUAZ ECZANESİ",
+      "tel": "2163770778",
+      "adres": "Gümüşpınar Mah. Atatürk Cad., 107/B 34880 Kartal/İstanbul"
     },
     {
-      "id": 8010734,
-      "ad": "SEVRA ECZANESİ",
-      "tel": "2165922244",
-      "adres": "Petroliş Mah. Üsküdar Cad. 62/2"
+      "id": 34250,
+      "ad": "YENİ İNCİ ECZANESİ",
+      "tel": "2165177749",
+      "adres": "KARLIKTEPE MH. HUZURTEPE SK. NO:10A"
     }
   ]
 }

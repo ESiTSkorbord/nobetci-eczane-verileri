@@ -1,22 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 15650,
-      "ad": "ÇINAR ECZANESİ",
-      "tel": "2163714845",
-      "adres": "Bağlarbaşı Mahallesi,Bağdat Caddesi,No:467/2"
+      "id": 39510,
+      "ad": "BAŞIBÜYÜK ECZANESİ",
+      "tel": "2164212025",
+      "adres": "Başıbüyük Mah. Açar Sok. No:4/A"
     },
     {
-      "id": 50063,
-      "ad": "MERAY ECZANESİ",
-      "tel": "2163668093",
-      "adres": "Altıntepe Mah. Bahar Sk., 7B"
+      "id": 43311,
+      "ad": "BÜŞRA ECZANESİ",
+      "tel": "2165753330",
+      "adres": "Fındıklı Mah. Gazi Mustafa Kemal Cad. No:21B"
     },
     {
-      "id": 48114,
-      "ad": "NESLİHAN ECZANESİ",
-      "tel": "2162666004",
-      "adres": "ZÜMRÜTEVLER MAH. BAŞÖĞRETMEN CAD NO:26A"
+      "id": 62249,
+      "ad": "FİLİZ ERÇİN ECZANESİ",
+      "tel": "2163625116",
+      "adres": "Bağlarbaşı Mah.,Feyzullah Cad., No:26/D"
+    },
+    {
+      "id": 51921,
+      "ad": "MİNA ECZANESİ",
+      "tel": "2163676462",
+      "adres": "Çınar Mah. Başakçı Sok. No:3/A Maltepe /İstanbu"
     }
   ]
 }
