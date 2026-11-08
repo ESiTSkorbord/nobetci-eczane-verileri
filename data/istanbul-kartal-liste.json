@@ -1,28 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 48782,
-      "ad": "ASLI ECZANESİ",
-      "tel": "2164736021",
-      "adres": "ATALAR MH.DOGU CD. NO:72"
+      "id": 44720,
+      "ad": "DİLŞAT ECZANESİ",
+      "tel": "2163876540",
+      "adres": "Karlıktepe Mah. Yaşar Doğu Cad. No:3A"
     },
     {
-      "id": 13330,
-      "ad": "HÜRRİYET ECZANESİ",
-      "tel": "2164520042",
-      "adres": "HÜRRIYET MAH. ABDI IPEKÇI CAD. NO:50/B"
+      "id": 44682,
+      "ad": "MAY ECZANESİ",
+      "tel": "2163050570",
+      "adres": "Cevizli Mah. Cevizli D-100 Güney Yan Yolu Kuriş Kule Dükkanlar No:2/C"
     },
     {
-      "id": 51869,
-      "ad": "TURKUAZ ECZANESİ",
-      "tel": "2163770778",
-      "adres": "Gümüşpınar Mah. Atatürk Cad., 107/B 34880 Kartal/İstanbul"
+      "id": 49301,
+      "ad": "SELVİ ECZANESİ",
+      "tel": "2163091909",
+      "adres": "Cumhuriyet Mah. Adnan Kahveci Cad. No:86/B"
     },
     {
-      "id": 34250,
-      "ad": "YENİ İNCİ ECZANESİ",
-      "tel": "2165177749",
-      "adres": "KARLIKTEPE MH. HUZURTEPE SK. NO:10A"
+      "id": 38227,
+      "ad": "SOĞANLIK ECZANESİ",
+      "tel": "2163098920",
+      "adres": "ORTA MAH. VEZİRKÖPRÜ CAD. ZEMİN KAT NO:7"
     }
   ]
 }

@@ -1,28 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 39510,
-      "ad": "BAŞIBÜYÜK ECZANESİ",
-      "tel": "2164212025",
-      "adres": "Başıbüyük Mah. Açar Sok. No:4/A"
+      "id": 55843,
+      "ad": "BATUHAN ECZANESİ",
+      "tel": "5073883050",
+      "adres": "Küçükyalı Merkez Mah. Ahmet Kutsi Tecer Sok. No:19/B"
     },
     {
-      "id": 43311,
-      "ad": "BÜŞRA ECZANESİ",
-      "tel": "2165753330",
-      "adres": "Fındıklı Mah. Gazi Mustafa Kemal Cad. No:21B"
+      "id": 15606,
+      "ad": "MALTEPE ECZANESİ",
+      "tel": "2163059987",
+      "adres": "CEMAL BEY CD. 3/2 MALTEPE"
     },
     {
-      "id": 62249,
-      "ad": "FİLİZ ERÇİN ECZANESİ",
-      "tel": "2163625116",
-      "adres": "Bağlarbaşı Mah.,Feyzullah Cad., No:26/D"
+      "id": 44576,
+      "ad": "ÖYKÜ ECZANESİ",
+      "tel": "2163527400",
+      "adres": "Bağlarbaşı Mah. Beşevler Sok. No:21/D"
     },
     {
-      "id": 51921,
-      "ad": "MİNA ECZANESİ",
-      "tel": "2163676462",
-      "adres": "Çınar Mah. Başakçı Sok. No:3/A Maltepe /İstanbu"
+      "id": 59392,
+      "ad": "YENİ GÜLER ECZANESİ",
+      "tel": "5348263075",
+      "adres": "Gülensu Mah.,Akar Sk. No:2/A"
     }
   ]
 }
