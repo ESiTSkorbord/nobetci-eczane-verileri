@@ -1,20 +1,20 @@
 {
   "tarih": "2026-11-08",
-  "zaman": "09:01",
+  "zaman": "09:05",
   "ilceler": {
     "istanbul-kartal": {
       "durum": "guncellendi",
       "kaynak": "odasi",
       "eczane_sayisi": 4,
       "eklenen": 0,
-      "liste_degisti": true
+      "liste_degisti": false
     },
     "istanbul-maltepe": {
       "durum": "guncellendi",
       "kaynak": "odasi",
       "eczane_sayisi": 4,
       "eklenen": 0,
-      "liste_degisti": true
+      "liste_degisti": false
     }
   }
 }
