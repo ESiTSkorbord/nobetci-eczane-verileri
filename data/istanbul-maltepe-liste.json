@@ -1,28 +1,22 @@
 {
   "eczaneler": [
     {
-      "id": 55843,
-      "ad": "BATUHAN ECZANESİ",
-      "tel": "5073883050",
-      "adres": "Küçükyalı Merkez Mah. Ahmet Kutsi Tecer Sok. No:19/B"
+      "id": 41012,
+      "ad": "ÇAĞATAY ECZANESİ",
+      "tel": "2164898270",
+      "adres": "İdealtepe Mah. Bağdat Cad., 176/14"
     },
     {
-      "id": 15606,
-      "ad": "MALTEPE ECZANESİ",
-      "tel": "2163059987",
-      "adres": "CEMAL BEY CD. 3/2 MALTEPE"
+      "id": 61608,
+      "ad": "MALTEPE MÜZEYYEN ECZANESİ",
+      "tel": "5510807337",
+      "adres": "Zümrütevler Mah.,Gül Cad. No:18-20/B"
     },
     {
-      "id": 44576,
-      "ad": "ÖYKÜ ECZANESİ",
-      "tel": "2163527400",
-      "adres": "Bağlarbaşı Mah. Beşevler Sok. No:21/D"
-    },
-    {
-      "id": 59392,
-      "ad": "YENİ GÜLER ECZANESİ",
-      "tel": "5348263075",
-      "adres": "Gülensu Mah.,Akar Sk. No:2/A"
+      "id": 47962,
+      "ad": "YENİ NESİL ECZANESİ",
+      "tel": "2165061991",
+      "adres": "BAĞLARBAŞI MAH. GÜLYOLU SOK. NO:1/A"
     }
   ]
 }
