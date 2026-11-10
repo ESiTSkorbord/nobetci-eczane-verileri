@@ -1,63 +1,63 @@
 {
- "zaman": "2026-11-10 08:01",
+ "zaman": "2026-11-10 09:02",
  "adet": 7,
- "gecerli_kadar": "2026-11-10T09:00:00+03:00",
+ "gecerli_kadar": "2026-11-11T09:00:00+03:00",
  "eczaneler": [
   {
-   "sicil": 15326,
-   "ad": "CEYLAN ECZANESİ",
-   "tel": "2163772149",
+   "sicil": 9854,
+   "ad": "ERBAŞ ECZANESİ",
+   "tel": "5442428488",
    "ilce": "Kartal",
-   "adres": "Soğanlık Yeni Mahallesi, Yahya Kemal Beyatlı Caddesi, 40/A",
-   "bitis": "2026-11-10T09:00:00+03:00"
+   "adres": "Uğur Mumcu Mahallesi Şeyh Şamil Caddesi 40/D",
+   "bitis": "2026-11-11T09:00:00+03:00"
   },
   {
-   "sicil": 9124,
-   "ad": "DOLUNAY ECZANESİ",
-   "tel": "2163530805",
+   "sicil": 12672,
+   "ad": "GÜRBÜZ ECZANESİ",
+   "tel": "2163522520",
    "ilce": "Kartal",
-   "adres": "Yukarı Mahallesi Çırçır Caddesi 15/1",
-   "bitis": "2026-11-10T09:00:00+03:00"
+   "adres": "Cevizli Mahallesi, Cevizli D-100 Güney Yanyol Caddesi, 2/14",
+   "bitis": "2026-11-11T09:00:00+03:00"
   },
   {
-   "sicil": 10391,
-   "ad": "IHLAMUR ECZANESİ",
-   "tel": "2164762303",
+   "sicil": 10497,
+   "ad": "İSTANBUL ECZANESİ",
+   "tel": "2163705457",
    "ilce": "Kartal",
-   "adres": "Uğur Mumcu Mahallesi, Şeyh Şamil Caddesi, 13CD",
-   "bitis": "2026-11-10T09:00:00+03:00"
+   "adres": "Soğanlık Yeni Mahallesi Atatürk Caddesi 3",
+   "bitis": "2026-11-11T09:00:00+03:00"
   },
   {
-   "sicil": 15593,
-   "ad": "ZEHRA IŞIK ECZANESİ",
-   "tel": "2163059080",
+   "sicil": 10313,
+   "ad": "YAĞMUR ECZANESİ",
+   "tel": "2165172889",
    "ilce": "Kartal",
-   "adres": "Cevizli Mahallesi, Mustafa Kemal Caddesi, 42/A",
-   "bitis": "2026-11-10T09:00:00+03:00"
+   "adres": "Karlıktepe Mahallesi, Fahri Korutürk Caddesi, 13/A",
+   "bitis": "2026-11-11T09:00:00+03:00"
   },
   {
-   "sicil": 5330,
-   "ad": "ÇAĞATAY ECZANESİ",
-   "tel": "2164898270",
+   "sicil": 14725,
+   "ad": "GALİP ECZANESİ",
+   "tel": "2163764949",
    "ilce": "Maltepe",
-   "adres": "İdealtepe Mahallesi, Bağdat Caddesi, 176/B",
-   "bitis": "2026-11-10T09:00:00+03:00"
+   "adres": "Gülsuyu Mahallesi, Eski Üsküdar Caddesi, 39/A",
+   "bitis": "2026-11-11T09:00:00+03:00"
   },
   {
-   "sicil": 16948,
-   "ad": "MALTEPE MÜZEYYEN ECZANESİ",
-   "tel": "5510807337",
+   "sicil": 12506,
+   "ad": "NERGİS ECZANESİ",
+   "tel": "2163520288",
    "ilce": "Maltepe",
-   "adres": "Zümrütevler Mahallesi, Gül Caddesi, No:18-20/B",
-   "bitis": "2026-11-10T09:00:00+03:00"
+   "adres": "Altayçeşme Mahallesi, Atatürk Caddesi, 43/C",
+   "bitis": "2026-11-11T09:00:00+03:00"
   },
   {
-   "sicil": 14587,
-   "ad": "YENİ NESİL ECZANESİ",
-   "tel": "2165061991",
+   "sicil": 13688,
+   "ad": "NİDA ECZANESİ",
+   "tel": "2164176432",
    "ilce": "Maltepe",
-   "adres": "Bağlarbaşı Mahallesi, Gülyolu Sokak, 1/A",
-   "bitis": "2026-11-10T09:00:00+03:00"
+   "adres": "Çınar Mahallesi, Kadir Has Caddesi, 40/A",
+   "bitis": "2026-11-11T09:00:00+03:00"
   }
  ]
 }
