@@ -1,63 +1,63 @@
 {
- "zaman": "2026-11-11 08:01",
+ "zaman": "2026-11-11 09:01",
  "adet": 7,
- "gecerli_kadar": "2026-11-11T09:00:00+03:00",
+ "gecerli_kadar": "2026-11-12T09:00:00+03:00",
  "eczaneler": [
   {
-   "sicil": 9854,
-   "ad": "ERBAŞ ECZANESİ",
-   "tel": "5442428488",
+   "sicil": 13261,
+   "ad": "ANADOLU ECZANESİ",
+   "tel": "2164423210",
    "ilce": "Kartal",
-   "adres": "Uğur Mumcu Mahallesi Şeyh Şamil Caddesi 40/D",
-   "bitis": "2026-11-11T09:00:00+03:00"
+   "adres": "Orhantepe Mahallesi, Saraylar Caddesi, 48/B",
+   "bitis": "2026-11-12T09:00:00+03:00"
   },
   {
-   "sicil": 12672,
-   "ad": "GÜRBÜZ ECZANESİ",
-   "tel": "2163522520",
+   "sicil": 10964,
+   "ad": "ÇORUH ECZANESİ",
+   "tel": "2163899700",
    "ilce": "Kartal",
-   "adres": "Cevizli Mahallesi, Cevizli D-100 Güney Yanyol Caddesi, 2/14",
-   "bitis": "2026-11-11T09:00:00+03:00"
+   "adres": "Yukarı Mahallesi, Üsküdar Caddesi, 13/B",
+   "bitis": "2026-11-12T09:00:00+03:00"
   },
   {
-   "sicil": 10497,
-   "ad": "İSTANBUL ECZANESİ",
-   "tel": "2163705457",
+   "sicil": 8365,
+   "ad": "HATİCE ECZANESİ",
+   "tel": "2164521490",
    "ilce": "Kartal",
-   "adres": "Soğanlık Yeni Mahallesi Atatürk Caddesi 3",
-   "bitis": "2026-11-11T09:00:00+03:00"
+   "adres": "Çarşı Mahallesi, Tarihi Ayazma Caddesi, 2J",
+   "bitis": "2026-11-12T09:00:00+03:00"
   },
   {
-   "sicil": 10313,
-   "ad": "YAĞMUR ECZANESİ",
-   "tel": "2165172889",
+   "sicil": 6275,
+   "ad": "SAADET ECZANESİ",
+   "tel": "2164519068",
    "ilce": "Kartal",
-   "adres": "Karlıktepe Mahallesi, Fahri Korutürk Caddesi, 13/A",
-   "bitis": "2026-11-11T09:00:00+03:00"
+   "adres": "Soğanlık Yeni Mahallesi, Atatürk Caddesi, 30/A",
+   "bitis": "2026-11-12T09:00:00+03:00"
   },
   {
-   "sicil": 14725,
-   "ad": "GALİP ECZANESİ",
-   "tel": "2163764949",
+   "sicil": 10429,
+   "ad": "ANADOLU ECZANESİ",
+   "tel": "2164279097",
    "ilce": "Maltepe",
-   "adres": "Gülsuyu Mahallesi, Eski Üsküdar Caddesi, 39/A",
-   "bitis": "2026-11-11T09:00:00+03:00"
+   "adres": "Zümrütevler Mahallesi, Tülin Caddesi, 45",
+   "bitis": "2026-11-12T09:00:00+03:00"
   },
   {
-   "sicil": 12506,
-   "ad": "NERGİS ECZANESİ",
-   "tel": "2163520288",
+   "sicil": 15552,
+   "ad": "ÖRS ECZANESİ",
+   "tel": "2164170239",
    "ilce": "Maltepe",
-   "adres": "Altayçeşme Mahallesi, Atatürk Caddesi, 43/C",
-   "bitis": "2026-11-11T09:00:00+03:00"
+   "adres": "Çınar Mahallesi, Kadir Has Caddesi, 28/B",
+   "bitis": "2026-11-12T09:00:00+03:00"
   },
   {
-   "sicil": 13688,
-   "ad": "NİDA ECZANESİ",
-   "tel": "2164176432",
+   "sicil": 9439,
+   "ad": "POZİTİF ECZANESİ",
+   "tel": "2163837098",
    "ilce": "Maltepe",
-   "adres": "Çınar Mahallesi, Kadir Has Caddesi, 40/A",
-   "bitis": "2026-11-11T09:00:00+03:00"
+   "adres": "Yalı Mahallesi, Mareşal Fevzi Çakmak Caddesi, 44",
+   "bitis": "2026-11-12T09:00:00+03:00"
   }
  ]
 }
