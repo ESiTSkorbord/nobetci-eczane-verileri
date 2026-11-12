@@ -1,28 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 8013261,
-      "ad": "ANADOLU ECZANESİ",
-      "tel": "2164423210",
-      "adres": "Orhantepe Mah., Saraylar Cad., 48/B"
+      "id": 41653,
+      "ad": "ADA ECZANESİ",
+      "tel": "2163771122",
+      "adres": "Soğanlık Yeni Mah. Mimar Sinan Cad. No:40A"
     },
     {
-      "id": 49690,
-      "ad": "ÇORUH ECZANESİ",
-      "tel": "2163899700",
-      "adres": "Yukarı Mah. Üsküdar Cad., 13/B"
+      "id": 8005422,
+      "ad": "AYDIN ECZANESİ",
+      "tel": "2163706081",
+      "adres": "Orhantepe Mah., Bankalar Cad., No:45/A"
     },
     {
-      "id": 13335,
-      "ad": "HATİCE ECZANESİ",
-      "tel": "2164521490",
-      "adres": "Çarşı Mah.\r\nTarihi Ayazma Cad., 2J\r\n34876 Yakacık"
+      "id": 51676,
+      "ad": "BERRAK ECZANESİ",
+      "tel": "2163875087",
+      "adres": "Atalar Mah. Tecerdağı Cad. No:61/B"
     },
     {
-      "id": 13333,
-      "ad": "SAADET ECZANESİ",
-      "tel": "2164519068",
-      "adres": "ATATÜRK CAD. NO:30/1 SOGANLIK"
+      "id": 28823,
+      "ad": "YAKACIK İNCİ ECZANESİ",
+      "tel": "2164519091",
+      "adres": "Gümüşpınar Mah. Yalı Sk., 5/1C"
     }
   ]
 }

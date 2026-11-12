@@ -1,22 +1,22 @@
 {
   "eczaneler": [
     {
-      "id": 15715,
-      "ad": "ANADOLU ECZANESİ",
-      "tel": "2164279097",
-      "adres": "ZÜMRÜTEVLER MH.TÜLIN CD. NO:45"
+      "id": 15605,
+      "ad": "KUL ECZANESİ",
+      "tel": "2163058454",
+      "adres": "ATATÜRK CAD.NO.27/1 ZÜMRÜTEVLER/MALTEPE"
     },
     {
-      "id": 56863,
-      "ad": "ÖRS ECZANESİ",
-      "tel": "2164170239",
-      "adres": "Çınar Mah. Kadir Has Cad. No:28/B"
+      "id": 8012198,
+      "ad": "KÜBRA ECZANESİ",
+      "tel": "2164416766",
+      "adres": "Bağlarbaşı Mah., Feyzullah Cad., No: 117BC"
     },
     {
-      "id": 15670,
-      "ad": "POZİTİF ECZANESİ",
-      "tel": "2163837098",
-      "adres": "YALI MH. M.FEVZI ÇAKMAK CD. NO:40/2 SALIH APT. MALTEPE"
+      "id": 48066,
+      "ad": "ÖZEN KÜÇÜKYALI ECZANESİ",
+      "tel": "2163885074",
+      "adres": "İDEALTEPE MAH. MIZRAK SOK. NO:2A"
     }
   ]
 }
