@@ -1,71 +1,63 @@
 {
- "zaman": "2026-11-14 08:01",
- "adet": 8,
- "gecerli_kadar": "2026-11-14T09:00:00+03:00",
+ "zaman": "2026-11-14 09:02",
+ "adet": 7,
+ "gecerli_kadar": "2026-11-15T09:00:00+03:00",
  "eczaneler": [
   {
-   "sicil": 10585,
-   "ad": "GÜMÜŞPINAR ECZANESİ",
-   "tel": "2166719444",
+   "sicil": 12036,
+   "ad": "CADDE ECZANESİ",
+   "tel": "2164410046",
    "ilce": "Kartal",
-   "adres": "Gümüşpınar Mahallesi, Defneli Caddesi, 10/1",
-   "bitis": "2026-11-14T09:00:00+03:00"
+   "adres": "Yakacık Çarşı Mah., Kartal Cad., A Blok No:68-70/H",
+   "bitis": "2026-11-15T09:00:00+03:00"
   },
   {
-   "sicil": 9298,
-   "ad": "HORİZON ECZANESİ",
-   "tel": "2163681990",
+   "sicil": 15326,
+   "ad": "CEYLAN ECZANESİ",
+   "tel": "2163772149",
    "ilce": "Kartal",
-   "adres": "Kordonboyu Mahallesi, Turgut Özal Bulvarı, 65/18",
-   "bitis": "2026-11-14T09:00:00+03:00"
+   "adres": "Soğanlık Yeni Mahallesi, Yahya Kemal Beyatlı Caddesi, 40/A",
+   "bitis": "2026-11-15T09:00:00+03:00"
   },
   {
-   "sicil": 10464,
-   "ad": "TOPSELVİ YAĞMUR ECZANESİ",
-   "tel": "2164887959",
+   "sicil": 14561,
+   "ad": "CİHAN ECZANESİ",
+   "tel": "2167558585",
    "ilce": "Kartal",
-   "adres": "Yunus Mahallesi, Bostan Caddesi, 44A",
-   "bitis": "2026-11-14T09:00:00+03:00"
+   "adres": "Esentepe Mahallesi, Anadolu Caddesi, 5/2H",
+   "bitis": "2026-11-15T09:00:00+03:00"
   },
   {
-   "sicil": 7835,
-   "ad": "VATAN ECZANESİ",
-   "tel": "2163522538",
+   "sicil": 15049,
+   "ad": "NESLİHAN ECZANESİ",
+   "tel": "2164883657",
    "ilce": "Kartal",
-   "adres": "Orhantepe Mahallesi, Şehit Hakan Kurban Caddesi, 39B",
-   "bitis": "2026-11-14T09:00:00+03:00"
+   "adres": "Atalar Mahallesi, Üsküdar Caddesi, 103/A",
+   "bitis": "2026-11-15T09:00:00+03:00"
   },
   {
-   "sicil": 7473,
-   "ad": "YENİ ŞİFA ECZANESİ",
-   "tel": "2163098344",
-   "ilce": "Kartal",
-   "adres": "Hürriyet Mahallesi, Abdi İpekçi Caddesi, 19-21/A",
-   "bitis": "2026-11-14T09:00:00+03:00"
-  },
-  {
-   "sicil": 16822,
-   "ad": "BAL ECZANESİ",
-   "tel": "2163669618",
+   "sicil": 16145,
+   "ad": "HİLAL ECZANESİ",
+   "tel": "5077415125",
    "ilce": "Maltepe",
-   "adres": "Altıntepe Mahallesi, Galipbey Caddesi, 47/A",
-   "bitis": "2026-11-14T09:00:00+03:00"
+   "adres": "Bağlarbaşı Mahallesi, Atatürk Caddesi, 26/B",
+   "bitis": "2026-11-15T09:00:00+03:00"
   },
   {
-   "sicil": 10605,
-   "ad": "BÖLGEM ECZANESİ",
-   "tel": "2163835544",
+   "sicil": 9903,
+   "ad": "PERVİN ECZANESİ",
+   "tel": "2164896161",
    "ilce": "Maltepe",
-   "adres": "Altayçeşme Mahallesi, Seri Sokak, 18-22CE",
-   "bitis": "2026-11-14T09:00:00+03:00"
+   "adres": "Çınar Mahallesi, Rezzan Has Sokak, 3E",
+   "bitis": "2026-11-15T09:00:00+03:00"
   },
   {
-   "sicil": 7069,
-   "ad": "EMRE ECZANESİ",
-   "tel": "2164274403",
+   "sicil": 12575,
+   "ad": "SEMANUR ECZANESİ",
+   "tel": "2164170099",
    "ilce": "Maltepe",
-   "adres": "Esenkent Mahallesi, Kanipaşa Caddesi, 147",
-   "bitis": "2026-11-14T09:00:00+03:00"
+   "adres": "Girne Mahallesi, Narlıdere Caddesi, No:24/A",
+   "bitis": "2026-11-15T09:00:00+03:00"
   }
  ]
 }

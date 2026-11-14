@@ -1,34 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 13387,
-      "ad": "GÜMÜŞPINAR ECZANESİ",
-      "tel": "2166719444",
-      "adres": "GÜMÜSPINAR MH. DEFNELI CD. NO:10/1 KARTAL"
+      "id": 8012036,
+      "ad": "CADDE ECZANESİ",
+      "tel": "2164410046",
+      "adres": "Yakacık Çarşı Mah., Kartal Cad., A Blok No:68-70/H"
     },
     {
-      "id": 37716,
-      "ad": "HORİZON ECZANESİ",
-      "tel": "2163681990",
-      "adres": "Kordonboyu Mah. Turgut Özal Blv., 65/18"
+      "id": 50127,
+      "ad": "CEYLAN ECZANESİ",
+      "tel": "2163772149",
+      "adres": "Soğanlık Yeni Mah. Beytalı Cad. No:40/A"
     },
     {
-      "id": 13253,
-      "ad": "TOPSELVİ YAĞMUR ECZANESİ",
-      "tel": "2164887959",
-      "adres": "YUNUS MH. BOSTAN CD. NO:36/A-B KARTAL ISTANBUL"
+      "id": 48121,
+      "ad": "CİHAN ECZANESİ",
+      "tel": "2167558585",
+      "adres": "ESENTEPE MAH. ANADOLU CAD NO:5/2H"
     },
     {
-      "id": 37615,
-      "ad": "VATAN ECZANESİ",
-      "tel": "2163522538",
-      "adres": "CEVİZLİ MAH. DENİZER CAD. NO:25D"
-    },
-    {
-      "id": 49075,
-      "ad": "YENİ ŞİFA ECZANESİ",
-      "tel": "2163098344",
-      "adres": "Hürriyet Mah. Abdi İpekçi Cad., 19-21/A 34876 Kurfalı"
+      "id": 55778,
+      "ad": "NESLİHAN ECZANESİ",
+      "tel": "2164883657",
+      "adres": "Atalar Mah. Üsküdar Cad. No:103/A"
     }
   ]
 }
