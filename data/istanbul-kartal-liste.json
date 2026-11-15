@@ -1,28 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 8012036,
-      "ad": "CADDE ECZANESİ",
-      "tel": "2164410046",
-      "adres": "Yakacık Çarşı Mah., Kartal Cad., A Blok No:68-70/H"
+      "id": 34688,
+      "ad": "DEMİRAY ECZANESİ",
+      "tel": "2163097099",
+      "adres": "ORTA MAH. YUSUF EFENDİ SOK. NO:4C"
     },
     {
-      "id": 50127,
-      "ad": "CEYLAN ECZANESİ",
-      "tel": "2163772149",
-      "adres": "Soğanlık Yeni Mah. Beytalı Cad. No:40/A"
+      "id": 56024,
+      "ad": "EGE ECZANESİ",
+      "tel": "2166719135",
+      "adres": "YAKACIK YENİ MAH. SAMANDIRA CAD. NO:23A"
     },
     {
-      "id": 48121,
-      "ad": "CİHAN ECZANESİ",
-      "tel": "2167558585",
-      "adres": "ESENTEPE MAH. ANADOLU CAD NO:5/2H"
+      "id": 43669,
+      "ad": "İSTMARİNA ECZANESİ",
+      "tel": "2165194544",
+      "adres": "Kordonboyu Mah. Ankara Cad. No:147/6 İç Kapı No:223"
     },
     {
-      "id": 55778,
-      "ad": "NESLİHAN ECZANESİ",
-      "tel": "2164883657",
-      "adres": "Atalar Mah. Üsküdar Cad. No:103/A"
+      "id": 53017,
+      "ad": "ŞULE ECZANESİ",
+      "tel": "2163063019",
+      "adres": "Petrol İş Mah. Rahvanlar Cad. No:47/A"
     }
   ]
 }
