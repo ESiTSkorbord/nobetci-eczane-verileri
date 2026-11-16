@@ -1,34 +1,22 @@
 {
   "eczaneler": [
     {
-      "id": 38800,
-      "ad": "ECZANE RİTİM",
-      "tel": "2162667466",
-      "adres": "Cevizli Mah. Zuhal Cad. Füsun Sok. No:46/38"
+      "id": 60117,
+      "ad": "ÇAĞDAŞ ECZANESİ",
+      "tel": "2164274926",
+      "adres": "Gülensu Mah.,Akar Sk.,No:4"
     },
     {
-      "id": 56362,
-      "ad": "ELA ECZANESİ",
-      "tel": "2167552252",
-      "adres": "Fındıklı Mah. Gazi Mustafa Kemal Cad., 17-19/D"
+      "id": 39120,
+      "ad": "MELİKE ECZANESİ",
+      "tel": "2164594114",
+      "adres": "Feyzullah Mah. Bağdat Cad., 284/B"
     },
     {
-      "id": 58349,
-      "ad": "ERGUVAN ECZANESİ",
-      "tel": "5057790203",
-      "adres": "Altıntepe Mah. Bağdat Cad. No:79D"
-    },
-    {
-      "id": 44673,
-      "ad": "KİRAZ ECZANESİ",
-      "tel": "2164416725",
-      "adres": "ALTAYÇESME MH. ADALI SK. NO:9B"
-    },
-    {
-      "id": 15708,
-      "ad": "NURAN ECZANESİ",
-      "tel": "2164214421",
-      "adres": "ATATÜRK CD. HASTANE ARKASI SK.SERHAT APT. NO:1 A BASIBÜYÜK"
+      "id": 15750,
+      "ad": "SİMLA ECZANESİ",
+      "tel": "2164892174",
+      "adres": "ALTINTEPE BAGDAT CAD. NO.76/B KÜÇÜKYALI/MALTEPE"
     }
   ]
 }

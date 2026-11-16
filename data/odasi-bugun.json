@@ -1,79 +1,63 @@
 {
- "zaman": "2026-11-16 08:01",
- "adet": 9,
- "gecerli_kadar": "2026-11-16T09:00:00+03:00",
+ "zaman": "2026-11-16 09:01",
+ "adet": 7,
+ "gecerli_kadar": "2026-11-17T09:00:00+03:00",
  "eczaneler": [
   {
-   "sicil": 5269,
-   "ad": "DEMİRAY ECZANESİ",
-   "tel": "2163097099",
+   "sicil": 9283,
+   "ad": "FATİH ECZANESİ",
+   "tel": "2165668822",
    "ilce": "Kartal",
-   "adres": "Orta Mahallesi, Yusuf Efendi Sokak, 4C",
-   "bitis": "2026-11-16T09:00:00+03:00"
+   "adres": "Soğanlık Yeni Mahallesi, Mimar Sinan Caddesi, 35/A-35/C",
+   "bitis": "2026-11-17T09:00:00+03:00"
   },
   {
-   "sicil": 8436,
-   "ad": "EGE ECZANESİ",
-   "tel": "2166719135",
+   "sicil": 8716,
+   "ad": "GÜNDOĞDU ECZANESİ",
+   "tel": "2164418266",
    "ilce": "Kartal",
-   "adres": "Yakacık Yeni Mahallesi, Samandıra Caddesi, 23A",
-   "bitis": "2026-11-16T09:00:00+03:00"
+   "adres": "Cevizli Mahallesi, Mustafa Kemal Caddesi, 26/D",
+   "bitis": "2026-11-17T09:00:00+03:00"
   },
   {
-   "sicil": 12737,
-   "ad": "İSTMARİNA ECZANESİ",
-   "tel": "2165194544",
+   "sicil": 12630,
+   "ad": "HALE ECZANESİ",
+   "tel": "2163741413",
    "ilce": "Kartal",
-   "adres": "Kordonboyu Mahallesi, Ankara Caddesi, 147/6",
-   "bitis": "2026-11-16T09:00:00+03:00"
+   "adres": "Esentepe Mahallesi, Bulut Sokak, 4B",
+   "bitis": "2026-11-17T09:00:00+03:00"
   },
   {
-   "sicil": 8809,
-   "ad": "ŞULE ECZANESİ",
-   "tel": "2163063019",
+   "sicil": 10857,
+   "ad": "HANNE ECZANESİ",
+   "tel": "2166726064",
    "ilce": "Kartal",
-   "adres": "Petroliş Mahallesi, Rahvanlar Caddesi, 47/A",
-   "bitis": "2026-11-16T09:00:00+03:00"
+   "adres": "Hürriyet Mahallesi, Peker Sokak, 33",
+   "bitis": "2026-11-17T09:00:00+03:00"
   },
   {
-   "sicil": 11964,
-   "ad": "ECZANE RİTİM",
-   "tel": "2162667466",
+   "sicil": 16914,
+   "ad": "ÇAĞDAŞ ECZANESİ",
+   "tel": "2164274926",
    "ilce": "Maltepe",
-   "adres": "Cevizli Mahallesi, Zuhal Caddesi, 46/38",
-   "bitis": "2026-11-16T09:00:00+03:00"
+   "adres": "Gülensu Mahallesi, Akar Sokak, No:4",
+   "bitis": "2026-11-17T09:00:00+03:00"
   },
   {
-   "sicil": 11485,
-   "ad": "ELA ECZANESİ",
-   "tel": "2167552252",
+   "sicil": 8550,
+   "ad": "MELİKE ECZANESİ",
+   "tel": "2164594114",
    "ilce": "Maltepe",
-   "adres": "Fındıklı Mahallesi, Gazi Mustafa Kemal Caddesi, 17-19/D",
-   "bitis": "2026-11-16T09:00:00+03:00"
+   "adres": "Feyzullah Mahallesi, Bağdat Caddesi, 284/B",
+   "bitis": "2026-11-17T09:00:00+03:00"
   },
   {
-   "sicil": 11633,
-   "ad": "ERGUVAN ECZANESİ",
-   "tel": "5057790203",
+   "sicil": 7501,
+   "ad": "SİMLA ECZANESİ",
+   "tel": "2164892174",
    "ilce": "Maltepe",
-   "adres": "Altıntepe Mahallesi, Bağdat Caddesi, 79D",
-   "bitis": "2026-11-16T09:00:00+03:00"
-  },
-  {
-   "sicil": 8956,
-   "ad": "KİRAZ ECZANESİ",
-   "tel": "2164416725",
-   "ilce": "Maltepe",
-   "adres": "Altayçeşme Mahallesi, Adalı Sokak, 9/B",
-   "bitis": "2026-11-16T09:00:00+03:00"
-  },
-  {
-   "sicil": 8979,
-   "ad": "NURAN ECZANESİ",
-   "tel": "2164214421",
-   "ilce": "Maltepe",
-   "adres": "Başıbüyük Mahallesi, Hastane Arkası Sokak, 1",
-   "bitis": "2026-11-16T09:00:00+03:00"
+   "adres": "Altıntepe Mahallesi, Bağdat Caddesi, 76",
+   "bitis": "2026-11-17T09:00:00+03:00"
   }
  ]
 }
