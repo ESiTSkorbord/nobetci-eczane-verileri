@@ -1,14 +1,14 @@
 {
- "zaman": "2026-11-17 11:02",
+ "zaman": "2026-11-17 12:02",
  "adet": 7,
  "gecerli_kadar": "2026-11-18T09:00:00+03:00",
  "eczaneler": [
   {
-   "sicil": 10675,
-   "ad": "ANATOLİUM ECZANESİ",
-   "tel": "2164515151",
+   "sicil": 15326,
+   "ad": "CEYLAN ECZANESİ",
+   "tel": "2163772149",
    "ilce": "Kartal",
-   "adres": "Soğanlık Yeni Mahallesi, Soğanlık E-5 Yanyol Caddesi, 72/185",
+   "adres": "Soğanlık Yeni Mahallesi, Yahya Kemal Beyatlı Caddesi, 40/A",
    "bitis": "2026-11-18T09:00:00+03:00"
   },
   {
