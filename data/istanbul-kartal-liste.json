@@ -1,28 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 8009283,
-      "ad": "FATİH ECZANESİ",
-      "tel": "2165668822",
-      "adres": "Soğanlık Yeni Mah., Mimar Sinan Cad., 35/A-35/C"
+      "id": 48889,
+      "ad": "ANATOLİUM ECZANESİ",
+      "tel": "2164515151",
+      "adres": "Soğanlık Yeni Mah. Soğanlık D100 Kuzey Yanyol Cad. B Blok No:72/185"
     },
     {
-      "id": 13326,
-      "ad": "GÜNDOĞDU ECZANESİ",
-      "tel": "2164418266",
-      "adres": "MUSTAFA KEMAL CAD. NO:26/1"
+      "id": 45601,
+      "ad": "ÇINAR ECZANESİ",
+      "tel": "2163535312",
+      "adres": "YUKARI MAH. ÇIRÇIR CAD. No:21/A"
     },
     {
-      "id": 55075,
-      "ad": "HALE ECZANESİ",
-      "tel": "2163741413",
-      "adres": "Esentepe Mah. Bulut Sok. No:4B"
+      "id": 13352,
+      "ad": "ERBAŞ ECZANESİ",
+      "tel": "5442428488",
+      "adres": "Uğur Mumcu Mahallesi, Şeyh Şamil Caddesi, No:40/D"
     },
     {
-      "id": 44500,
-      "ad": "HANNE ECZANESİ",
-      "tel": "2166726064",
-      "adres": "Hürriyet Mah. Peker Sk., 33"
+      "id": 38515,
+      "ad": "MAHİNUR ECZANESİ",
+      "tel": "2164594008",
+      "adres": "ORHANTEPE MAH. 30 AGUSTOS CAD. NO:20B"
     }
   ]
 }
