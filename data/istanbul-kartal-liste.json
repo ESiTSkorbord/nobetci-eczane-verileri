@@ -1,28 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 50127,
-      "ad": "CEYLAN ECZANESİ",
-      "tel": "2163772149",
-      "adres": "Soğanlık Yeni Mah. Beytalı Cad. No:40/A"
+      "id": 53537,
+      "ad": "DEYYAROĞLU ECZANESİ",
+      "tel": "2166710988",
+      "adres": "ÇARŞI MAH. YAKAKENT CAD. NO:15-A"
     },
     {
-      "id": 45601,
-      "ad": "ÇINAR ECZANESİ",
-      "tel": "2163535312",
-      "adres": "YUKARI MAH. ÇIRÇIR CAD. No:21/A"
+      "id": 13271,
+      "ad": "HÜMA ECZANESİ",
+      "tel": "2163096215",
+      "adres": "ATATÜRK CAD. NO:93/1"
     },
     {
-      "id": 13352,
-      "ad": "ERBAŞ ECZANESİ",
-      "tel": "5442428488",
-      "adres": "Uğur Mumcu Mahallesi, Şeyh Şamil Caddesi, No:40/D"
+      "id": 51187,
+      "ad": "MANZARA ADALAR ECZANESİ",
+      "tel": "5416299524",
+      "adres": "Karlıktepe Mah. Yakacık Cad. No:67B D Blok İç Kapı No:2"
     },
     {
-      "id": 38515,
-      "ad": "MAHİNUR ECZANESİ",
-      "tel": "2164594008",
-      "adres": "ORHANTEPE MAH. 30 AGUSTOS CAD. NO:20B"
+      "id": 56535,
+      "ad": "SERENAY ECZANESİ",
+      "tel": "2163837036",
+      "adres": "Orhantepe Mah. 30 Ağustos Cad. No:21/A"
     }
   ]
 }

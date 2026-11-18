@@ -1,22 +1,22 @@
 {
   "eczaneler": [
     {
-      "id": 56536,
-      "ad": "MERYEM ECZANESİ",
-      "tel": "2164415280",
-      "adres": "Bağlarbaşı Mah., Bağdat Cad., 449D"
+      "id": 15661,
+      "ad": "AYSEL ECZANESİ",
+      "tel": "2163762319",
+      "adres": "ESKI ÜSKÜDAR CAD. NO:38/4 GÜLSUYU MALTEPE"
     },
     {
-      "id": 64986,
-      "ad": "YENİ ŞİFA ECZANESİ",
-      "tel": "2163993436",
-      "adres": "Zümrütevler Mah., Karaca Cad., 27-33/A"
+      "id": 51055,
+      "ad": "YAĞMUR ECZANESİ",
+      "tel": "2167591011",
+      "adres": "İDEALTEPE MAH. BAĞDAT CAD. NO:220/B"
     },
     {
-      "id": 46637,
-      "ad": "YİĞİT ECZANESİ",
-      "tel": "2165184985",
-      "adres": "ÇINAR MAH. REZZAN HAS. SOK. NO:9/D"
+      "id": 64027,
+      "ad": "YENİ GELİBOLU ECZANE",
+      "tel": "2164422227",
+      "adres": "Cevizli Mah.,Toros Cad., No:4/A"
     }
   ]
 }
