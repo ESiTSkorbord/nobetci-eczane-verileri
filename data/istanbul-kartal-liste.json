@@ -1,28 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 53537,
-      "ad": "DEYYAROĞLU ECZANESİ",
-      "tel": "2166710988",
-      "adres": "ÇARŞI MAH. YAKAKENT CAD. NO:15-A"
+      "id": 13270,
+      "ad": "ÇAĞRI ECZANESİ",
+      "tel": "2163095805",
+      "adres": "CUMHURIYET MAH. ZEYTINLIK CAD. NO:37/A"
     },
     {
-      "id": 13271,
-      "ad": "HÜMA ECZANESİ",
-      "tel": "2163096215",
-      "adres": "ATATÜRK CAD. NO:93/1"
+      "id": 44720,
+      "ad": "DİLŞAT ECZANESİ",
+      "tel": "2163876540",
+      "adres": "Karlıktepe Mah. Yaşar Doğu Cad. No:3A"
     },
     {
-      "id": 51187,
-      "ad": "MANZARA ADALAR ECZANESİ",
-      "tel": "5416299524",
-      "adres": "Karlıktepe Mah. Yakacık Cad. No:67B D Blok İç Kapı No:2"
+      "id": 37660,
+      "ad": "KARTAL PLUS ECZANESİ",
+      "tel": "2162250891",
+      "adres": "Orta Mah. Yalnız Selvi Cad., 21A"
     },
     {
-      "id": 56535,
-      "ad": "SERENAY ECZANESİ",
-      "tel": "2163837036",
-      "adres": "Orhantepe Mah. 30 Ağustos Cad. No:21/A"
+      "id": 62350,
+      "ad": "YENİ ATALAR ECZANESİ",
+      "tel": "2165176720",
+      "adres": "Petrol İş Mah. Rahvanlar Cad. No:60A"
     }
   ]
 }
