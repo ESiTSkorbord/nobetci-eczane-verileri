@@ -1,28 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 13270,
-      "ad": "ÇAĞRI ECZANESİ",
-      "tel": "2163095805",
-      "adres": "CUMHURIYET MAH. ZEYTINLIK CAD. NO:37/A"
+      "id": 56740,
+      "ad": "21 MAYIS ECZANESİ",
+      "tel": "2163741602",
+      "adres": "Petrol İş Mah. Kızılay Bulv. No:21/C"
     },
     {
-      "id": 44720,
-      "ad": "DİLŞAT ECZANESİ",
-      "tel": "2163876540",
-      "adres": "Karlıktepe Mah. Yaşar Doğu Cad. No:3A"
+      "id": 41653,
+      "ad": "ADA ECZANESİ",
+      "tel": "2163771122",
+      "adres": "Soğanlık Yeni Mah. Mimar Sinan Cad. No:40A"
     },
     {
-      "id": 37660,
-      "ad": "KARTAL PLUS ECZANESİ",
-      "tel": "2162250891",
-      "adres": "Orta Mah. Yalnız Selvi Cad., 21A"
+      "id": 42463,
+      "ad": "BARIŞ ECZANESİ",
+      "tel": "2164512324",
+      "adres": "Cumhuriyet Mah. Yüzyıl Cad., 50A"
     },
     {
-      "id": 62350,
-      "ad": "YENİ ATALAR ECZANESİ",
-      "tel": "2165176720",
-      "adres": "Petrol İş Mah. Rahvanlar Cad. No:60A"
+      "id": 40461,
+      "ad": "DEMİR ECZANESİ",
+      "tel": "2163749464",
+      "adres": "Atalar Mah. Doğu Cad. No:68B"
     }
   ]
 }

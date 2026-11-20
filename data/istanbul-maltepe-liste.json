@@ -1,22 +1,22 @@
 {
   "eczaneler": [
     {
-      "id": 56883,
-      "ad": "ATLAS ECZANESİ",
-      "tel": "5422768199",
-      "adres": "Altıntepe Mah. Bağdat Cad., 15-33 AS"
+      "id": 40507,
+      "ad": "ALTINTEPE GÖKHAN ECZANESİ",
+      "tel": "2163881881",
+      "adres": "Altıntepe Mah. Cihadiye Cad., 42"
     },
     {
-      "id": 54859,
-      "ad": "AYBÜKE ECZANESİ",
-      "tel": "2164212183",
-      "adres": "Başıbüyük Mah. Başıbüyük Cad. No:16A"
+      "id": 47957,
+      "ad": "BANDIRMA ECZANESİ",
+      "tel": "2163994370",
+      "adres": "CEVİZLİ MAH. BAĞDAT CAD. NO:553/A"
     },
     {
-      "id": 51054,
-      "ad": "DOĞA ECZANESİ",
-      "tel": "2163522827",
-      "adres": "BAĞLARBAŞI MAH. BAĞDAT CAD. NO:457/F"
+      "id": 15659,
+      "ad": "PAŞAOĞLU ECZANESİ",
+      "tel": "2164276919",
+      "adres": "TÜLIN CD. NO:161 ZÜMRÜTEVLER"
     }
   ]
 }

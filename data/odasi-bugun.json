@@ -1,63 +1,63 @@
 {
- "zaman": "2026-11-20 08:03",
+ "zaman": "2026-11-20 09:09",
  "adet": 7,
- "gecerli_kadar": "2026-11-20T09:00:00+03:00",
+ "gecerli_kadar": "2026-11-21T09:00:00+03:00",
  "eczaneler": [
   {
-   "sicil": 5598,
-   "ad": "ÇAĞRI ECZANESİ",
-   "tel": "2163095805",
+   "sicil": 15779,
+   "ad": "21 MAYIS ECZANESİ",
+   "tel": "2163741602",
    "ilce": "Kartal",
-   "adres": "Cumhuriyet Mahallesi, Yüzyıl Caddesi, 47/B",
-   "bitis": "2026-11-20T09:00:00+03:00"
+   "adres": "Petroliş Mahallesi, Kızılay Bulvarı, 21/C",
+   "bitis": "2026-11-21T09:00:00+03:00"
   },
   {
-   "sicil": 9652,
-   "ad": "DİLŞAT ECZANESİ",
-   "tel": "2163876540",
+   "sicil": 12756,
+   "ad": "ADA ECZANESİ",
+   "tel": "2163771122",
    "ilce": "Kartal",
-   "adres": "Karlıktepe Mahallesi, Yaşardoğu Caddesi, 3A",
-   "bitis": "2026-11-20T09:00:00+03:00"
+   "adres": "Soğanlık Yeni Mahallesi, Mimar Sinan Caddesi, 40A",
+   "bitis": "2026-11-21T09:00:00+03:00"
   },
   {
-   "sicil": 9469,
-   "ad": "KARTAL PLUS ECZANESİ",
-   "tel": "2162250891",
+   "sicil": 5632,
+   "ad": "BARIŞ ECZANESİ",
+   "tel": "2164512324",
    "ilce": "Kartal",
-   "adres": "Orta Mahallesi, Yalnız Selvi Caddesi, 21A",
-   "bitis": "2026-11-20T09:00:00+03:00"
+   "adres": "Cumhuriyet Mahallesi, Yüzyıl Caddesi, 50A",
+   "bitis": "2026-11-21T09:00:00+03:00"
   },
   {
-   "sicil": 13947,
-   "ad": "YENİ ATALAR ECZANESİ",
-   "tel": "2165176720",
+   "sicil": 12574,
+   "ad": "DEMİR ECZANESİ",
+   "tel": "2163749464",
    "ilce": "Kartal",
-   "adres": "Petroliş Mahallesi, Rahvanlar Caddesi, 60A",
-   "bitis": "2026-11-20T09:00:00+03:00"
+   "adres": "Atalar Mahallesi, Doğu Caddesi, 68B",
+   "bitis": "2026-11-21T09:00:00+03:00"
   },
   {
-   "sicil": 10310,
-   "ad": "ATLAS ECZANESİ",
-   "tel": "5422768199",
+   "sicil": 4625,
+   "ad": "ALTINTEPE GÖKHAN ECZANESİ",
+   "tel": "2163881881",
    "ilce": "Maltepe",
-   "adres": "Altıntepe Mahallesi, Bağdat Caddesi, 15-33 AS",
-   "bitis": "2026-11-20T09:00:00+03:00"
+   "adres": "Altıntepe Mahallesi, Cihadiye Caddesi, 42",
+   "bitis": "2026-11-21T09:00:00+03:00"
   },
   {
-   "sicil": 15160,
-   "ad": "AYBÜKE ECZANESİ",
-   "tel": "2164212183",
+   "sicil": 14595,
+   "ad": "BANDIRMA ECZANESİ",
+   "tel": "2163994370",
    "ilce": "Maltepe",
-   "adres": "Başıbüyük Mahallesi, Başıbüyük Caddesi, 16/A",
-   "bitis": "2026-11-20T09:00:00+03:00"
+   "adres": "Cevizli Mahallesi, Bağdat Caddesi, 553/A",
+   "bitis": "2026-11-21T09:00:00+03:00"
   },
   {
-   "sicil": 7164,
-   "ad": "DOĞA ECZANESİ",
-   "tel": "2163522827",
+   "sicil": 7524,
+   "ad": "PAŞAOĞLU ECZANESİ",
+   "tel": "2164276919",
    "ilce": "Maltepe",
-   "adres": "Bağlarbaşı Mahallesi, Bağdat Caddesi, 457/F",
-   "bitis": "2026-11-20T09:00:00+03:00"
+   "adres": "Zümrütevler Mahallesi, Tülin Caddesi, 161",
+   "bitis": "2026-11-21T09:00:00+03:00"
   }
  ]
 }
