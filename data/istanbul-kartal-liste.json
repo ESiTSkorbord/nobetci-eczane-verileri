@@ -1,28 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 56740,
-      "ad": "21 MAYIS ECZANESİ",
-      "tel": "2163741602",
-      "adres": "Petrol İş Mah. Kızılay Bulv. No:21/C"
+      "id": 13374,
+      "ad": "CANSU ECZANESİ",
+      "tel": "2163740622",
+      "adres": "KORDONBOYU MAH. KUMLAR CAD. 39/1-2 KARTAL"
     },
     {
-      "id": 41653,
-      "ad": "ADA ECZANESİ",
-      "tel": "2163771122",
-      "adres": "Soğanlık Yeni Mah. Mimar Sinan Cad. No:40A"
+      "id": 8018719,
+      "ad": "GİZEM ECZANESİ",
+      "tel": "2167714645",
+      "adres": "Cevizli Mah., Mustafa Kemal Cad., No:28/A"
     },
     {
-      "id": 42463,
-      "ad": "BARIŞ ECZANESİ",
-      "tel": "2164512324",
-      "adres": "Cumhuriyet Mah. Yüzyıl Cad., 50A"
+      "id": 26824,
+      "ad": "İSTANBUL ECZANESİ",
+      "tel": "2163705457",
+      "adres": "Soğanlık Yeni Mah. Atatürk Cad., 3"
     },
     {
-      "id": 40461,
-      "ad": "DEMİR ECZANESİ",
-      "tel": "2163749464",
-      "adres": "Atalar Mah. Doğu Cad. No:68B"
+      "id": 15790,
+      "ad": "YAKACIK DERMAN ECZANESİ",
+      "tel": "2165767642",
+      "adres": "ÇARSI MH. KARTAL CD.ENIS AKAYGEN SK.NO:9/27 KARTAL"
     }
   ]
 }

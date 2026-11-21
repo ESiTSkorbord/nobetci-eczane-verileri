@@ -1,22 +1,22 @@
 {
   "eczaneler": [
     {
-      "id": 40507,
-      "ad": "ALTINTEPE GÖKHAN ECZANESİ",
-      "tel": "2163881881",
-      "adres": "Altıntepe Mah. Cihadiye Cad., 42"
+      "id": 60855,
+      "ad": "ADALAR ECZANESİ",
+      "tel": "5324409555",
+      "adres": "Çınar Mah. Kadir Has Cad. No:55EB"
     },
     {
-      "id": 47957,
-      "ad": "BANDIRMA ECZANESİ",
-      "tel": "2163994370",
-      "adres": "CEVİZLİ MAH. BAĞDAT CAD. NO:553/A"
+      "id": 47704,
+      "ad": "DEMİRTÜRK ECZANESİ",
+      "tel": "2164212777",
+      "adres": "BAŞIBÜYÜK MAH. BAŞIBÜYÜK CAD. NO:4-B MALTEPE"
     },
     {
-      "id": 15659,
-      "ad": "PAŞAOĞLU ECZANESİ",
-      "tel": "2164276919",
-      "adres": "TÜLIN CD. NO:161 ZÜMRÜTEVLER"
+      "id": 59394,
+      "ad": "İSTANBUL ECZANESİ",
+      "tel": "2163525420",
+      "adres": "Altayçeşme Mah.,Bağdat Cad. No:377 A"
     }
   ]
 }
