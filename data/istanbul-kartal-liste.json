@@ -1,28 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 13374,
-      "ad": "CANSU ECZANESİ",
-      "tel": "2163740622",
-      "adres": "KORDONBOYU MAH. KUMLAR CAD. 39/1-2 KARTAL"
+      "id": 65232,
+      "ad": "BATIYAKASI ECZANESİ",
+      "tel": "2167594559",
+      "adres": "Esentepe Mah. Şehit Koray Karaca Sok., 18/AC"
     },
     {
-      "id": 8018719,
-      "ad": "GİZEM ECZANESİ",
-      "tel": "2167714645",
-      "adres": "Cevizli Mah., Mustafa Kemal Cad., No:28/A"
+      "id": 54913,
+      "ad": "CEMİL ECZANESİ",
+      "tel": "2163770848",
+      "adres": "ORTA MAH. KAPTANIDERYA CAD. NO:40/B"
     },
     {
-      "id": 26824,
-      "ad": "İSTANBUL ECZANESİ",
-      "tel": "2163705457",
-      "adres": "Soğanlık Yeni Mah. Atatürk Cad., 3"
+      "id": 13325,
+      "ad": "MERKEZ ECZANESİ",
+      "tel": "2164415348",
+      "adres": "ORHANTEPE MAH. ÇINAR CAD. 7/D"
     },
     {
-      "id": 15790,
-      "ad": "YAKACIK DERMAN ECZANESİ",
-      "tel": "2165767642",
-      "adres": "ÇARSI MH. KARTAL CD.ENIS AKAYGEN SK.NO:9/27 KARTAL"
+      "id": 46838,
+      "ad": "ZEYNEP ECZANESİ",
+      "tel": "2163090989",
+      "adres": "Hürriyet Mah. Adnan Kahveci Blv. Türkeli Sk. No:2-1"
     }
   ]
 }
