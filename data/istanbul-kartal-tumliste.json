@@ -25,6 +25,12 @@
       "adres": "ATALAR MAH. ÜSKÜDAR CAD. NO:108/D"
     },
     {
+      "id": 66643,
+      "ad": "ADALET SAĞLIK ECZANESİ",
+      "tel": "5058252730",
+      "adres": "Cevizli Mahallesi,Mustafa Kemal Caddesi, No:58/A"
+    },
+    {
       "id": 13254,
       "ad": "AKIN ECZANESİ",
       "tel": "2162904175",
@@ -353,6 +359,12 @@
       "ad": "GÜRBÜZ ECZANESİ",
       "tel": "2163522520",
       "adres": "Cevizli Mah. Cevizli D-100 Güney Yanyol Cad. No:2 Kuriş Kule Dükkan No:14"
+    },
+    {
+      "id": 66043,
+      "ad": "GİZEM ECZANESİ",
+      "tel": "2167714645",
+      "adres": "Cevizli Mahallesi Mustafa Kemal Caddesi, 28/A"
     },
     {
       "id": 55075,
@@ -815,12 +827,6 @@
       "ad": "ÇAĞRI ECZANESİ",
       "tel": "2163095805",
       "adres": "CUMHURIYET MAH. ZEYTINLIK CAD. NO:37/A"
-    },
-    {
-      "id": 45601,
-      "ad": "ÇINAR ECZANESİ",
-      "tel": "2163535312",
-      "adres": "YUKARI MAH. ÇIRÇIR CAD. No:21/A"
     },
     {
       "id": 49690,
