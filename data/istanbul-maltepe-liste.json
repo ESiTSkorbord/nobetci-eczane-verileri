@@ -1,28 +1,22 @@
 {
   "eczaneler": [
     {
-      "id": 42721,
-      "ad": "CUMHURİYET ECZANESİ",
-      "tel": "2165192505",
-      "adres": "Feyzullah Mah. Havuzlar Sok. No:7B"
+      "id": 42823,
+      "ad": "ALTINTEPE ECZANESİ",
+      "tel": "2163661573",
+      "adres": "Altıntepe Mah. Emin Ali Paşa Cad. No:13B"
     },
     {
-      "id": 61098,
-      "ad": "ERVA ECZANESİ",
-      "tel": "2163702233",
-      "adres": "Bağlarbaşı Mah. Çırak Sok. No:20/A"
+      "id": 15716,
+      "ad": "ELİT ECZANESİ",
+      "tel": "2164410106",
+      "adres": "Feyzullah Mah.,Dumlupınar Cad., Nilüfer Sk. No:15/A"
     },
     {
-      "id": 58784,
-      "ad": "GAMZE ECZANESİ",
-      "tel": "2164171351",
-      "adres": "Altıntepe Mah. Galipbey Cad. No:26A"
-    },
-    {
-      "id": 28040,
-      "ad": "SAFA ECZANESİ",
-      "tel": "2165893016",
-      "adres": "Zümrütevler Mah. Can Sk. No:1/B"
+      "id": 14513,
+      "ad": "GÜVEN ECZANESİ",
+      "tel": "2164172203",
+      "adres": "GIRNE MH. NARLIDERE CD. NO:28/A"
     }
   ]
 }
