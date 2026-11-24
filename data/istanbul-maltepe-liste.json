@@ -1,22 +1,22 @@
 {
   "eczaneler": [
     {
-      "id": 42823,
-      "ad": "ALTINTEPE ECZANESİ",
-      "tel": "2163661573",
-      "adres": "Altıntepe Mah. Emin Ali Paşa Cad. No:13B"
+      "id": 15710,
+      "ad": "ESENKENT FARUK ECZANESİ",
+      "tel": "2164274805",
+      "adres": "ESENKENT MAH.KANIPASA CAD.187/D MALTEPE"
     },
     {
-      "id": 15716,
-      "ad": "ELİT ECZANESİ",
-      "tel": "2164410106",
-      "adres": "Feyzullah Mah.,Dumlupınar Cad., Nilüfer Sk. No:15/A"
+      "id": 38053,
+      "ad": "NEFES ECZANESİ",
+      "tel": "2164570464",
+      "adres": "Cevizli Mah. Toros Cad. No:3/B"
     },
     {
-      "id": 14513,
-      "ad": "GÜVEN ECZANESİ",
-      "tel": "2164172203",
-      "adres": "GIRNE MH. NARLIDERE CD. NO:28/A"
+      "id": 62270,
+      "ad": "ZEYTİNDALI ECZANESİ",
+      "tel": "5319936297",
+      "adres": "Çınar Mah. Mustafa Kemal Atatürk Cad. No:20/D"
     }
   ]
 }
