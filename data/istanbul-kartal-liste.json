@@ -1,28 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 13306,
-      "ad": "ACAR ECZANESİ",
-      "tel": "2163773145",
-      "adres": "HÜRRIYET MAH. ABDI IPEKÇI CAD. TEKIN SOK. NO:12/A"
+      "id": 13254,
+      "ad": "AKIN ECZANESİ",
+      "tel": "2162904175",
+      "adres": "UGUR MUMCU MH. SEYH SAMIL CD. UPCITY CENTER NO:15 F-3/2"
     },
     {
-      "id": 66643,
-      "ad": "ADALET SAĞLIK ECZANESİ",
-      "tel": "5058252730",
-      "adres": "Cevizli Mah.,Mustafa Kemal Cad., No:58/A"
+      "id": 56235,
+      "ad": "DURUSU ECZANESİ",
+      "tel": "2167664202",
+      "adres": "Atalar Mah. Üsküdar Cad. No:73-B"
     },
     {
-      "id": 43669,
-      "ad": "İSTMARİNA ECZANESİ",
-      "tel": "2165194544",
-      "adres": "Kordonboyu Mah. Ankara Cad. No:147/6 İç Kapı No:223"
+      "id": 55718,
+      "ad": "KORDONBOYU ECZANESİ",
+      "tel": "2163532540",
+      "adres": "Kordonboyu Mah. Ankara Cad .No:59B"
     },
     {
-      "id": 63293,
-      "ad": "NUR ECZANESİ",
-      "tel": "5559972025",
-      "adres": "Orta Mah.,Yalnız Selvi Cad., 16A"
+      "id": 13333,
+      "ad": "SAADET ECZANESİ",
+      "tel": "2164519068",
+      "adres": "ATATÜRK CAD. NO:30/1 SOGANLIK"
     }
   ]
 }

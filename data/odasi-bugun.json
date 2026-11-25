@@ -1,63 +1,63 @@
 {
- "zaman": "2026-11-25 08:01",
+ "zaman": "2026-11-25 09:01",
  "adet": 7,
- "gecerli_kadar": "2026-11-25T09:00:00+03:00",
+ "gecerli_kadar": "2026-11-26T09:00:00+03:00",
  "eczaneler": [
   {
-   "sicil": 9823,
-   "ad": "ACAR ECZANESİ",
-   "tel": "2163773145",
+   "sicil": 11032,
+   "ad": "AKIN ECZANESİ",
+   "tel": "2162904175",
    "ilce": "Kartal",
-   "adres": "Hürriyet Mahallesi, Nilsu Sokak, 14",
-   "bitis": "2026-11-25T09:00:00+03:00"
+   "adres": "Uğur Mumcu Mahallesi, Şeyh Şamil Caddesi, 9/K",
+   "bitis": "2026-11-26T09:00:00+03:00"
   },
   {
-   "sicil": 16510,
-   "ad": "ADALET SAĞLIK ECZANESİ",
-   "tel": "5058252730",
+   "sicil": 12727,
+   "ad": "DURUSU ECZANESİ",
+   "tel": "2167664202",
    "ilce": "Kartal",
-   "adres": "Cevizli Mahallesi, Mustafa Kemal Caddesi, No:58/A",
-   "bitis": "2026-11-25T09:00:00+03:00"
+   "adres": "Atalar Mahallesi, Üsküdar Caddesi, 73-B",
+   "bitis": "2026-11-26T09:00:00+03:00"
   },
   {
-   "sicil": 12737,
-   "ad": "İSTMARİNA ECZANESİ",
-   "tel": "2165194544",
+   "sicil": 16454,
+   "ad": "KORDONBOYU ECZANESİ",
+   "tel": "2163532540",
    "ilce": "Kartal",
-   "adres": "Kordonboyu Mahallesi, Ankara Caddesi, 147/6",
-   "bitis": "2026-11-25T09:00:00+03:00"
+   "adres": "Kordonboyu Mahallesi, Ankara Caddesi, 59B",
+   "bitis": "2026-11-26T09:00:00+03:00"
   },
   {
-   "sicil": 18957,
-   "ad": "NUR ECZANESİ",
-   "tel": "5559972025",
+   "sicil": 6275,
+   "ad": "SAADET ECZANESİ",
+   "tel": "2164519068",
    "ilce": "Kartal",
-   "adres": "Orta Mahallesi, Yalnız Selvi Caddesi, 16A",
-   "bitis": "2026-11-25T09:00:00+03:00"
+   "adres": "Soğanlık Yeni Mahallesi, Atatürk Caddesi, 30/A",
+   "bitis": "2026-11-26T09:00:00+03:00"
   },
   {
-   "sicil": 7365,
-   "ad": "ESENKENT FARUK ECZANESİ",
-   "tel": "2164274805",
+   "sicil": 5912,
+   "ad": "ARDA ECZANESİ",
+   "tel": "2163665663",
    "ilce": "Maltepe",
-   "adres": "Esenkent Mahallesi, Kanipaşa Caddesi, 187/D",
-   "bitis": "2026-11-25T09:00:00+03:00"
+   "adres": "İdealtepe Mahallesi, Rıfkı Tongsir Caddesi, 28",
+   "bitis": "2026-11-26T09:00:00+03:00"
   },
   {
-   "sicil": 8544,
-   "ad": "NEFES ECZANESİ",
-   "tel": "2164570464",
+   "sicil": 2737,
+   "ad": "TEOMAN ECZANESİ",
+   "tel": "2164278000",
    "ilce": "Maltepe",
-   "adres": "Cevizli Mahallesi, Toros Caddesi, 3/B",
-   "bitis": "2026-11-25T09:00:00+03:00"
+   "adres": "Zümrütevler Mahallesi, Nil Caddesi, 47/1B",
+   "bitis": "2026-11-26T09:00:00+03:00"
   },
   {
-   "sicil": 18682,
-   "ad": "ZEYTİNDALI ECZANESİ",
-   "tel": "5319936297",
+   "sicil": 8080,
+   "ad": "YEŞİM ECZANESİ",
+   "tel": "2163993329",
    "ilce": "Maltepe",
-   "adres": "Çınar Mahallesi, Mustafa Kemal Atatürk Cad., 20/D",
-   "bitis": "2026-11-25T09:00:00+03:00"
+   "adres": "Altayçeşme Mahallesi, Begonya Sokak, 11/B",
+   "bitis": "2026-11-26T09:00:00+03:00"
   }
  ]
 }
