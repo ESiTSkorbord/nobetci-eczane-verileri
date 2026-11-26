@@ -1,28 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 13254,
-      "ad": "AKIN ECZANESİ",
-      "tel": "2162904175",
-      "adres": "UGUR MUMCU MH. SEYH SAMIL CD. UPCITY CENTER NO:15 F-3/2"
+      "id": 61538,
+      "ad": "DİCLE ECZANESİ",
+      "tel": "2164733780",
+      "adres": "Atalar Mah.,Kartopu Sk., No:13/P"
     },
     {
-      "id": 56235,
-      "ad": "DURUSU ECZANESİ",
-      "tel": "2167664202",
-      "adres": "Atalar Mah. Üsküdar Cad. No:73-B"
+      "id": 50806,
+      "ad": "PELİN ECZANESİ",
+      "tel": "2164525344",
+      "adres": "Çarşı Mah., Gökdemir Sk., 9/B"
     },
     {
-      "id": 55718,
-      "ad": "KORDONBOYU ECZANESİ",
-      "tel": "2163532540",
-      "adres": "Kordonboyu Mah. Ankara Cad .No:59B"
+      "id": 38227,
+      "ad": "SOĞANLIK ECZANESİ",
+      "tel": "2163098920",
+      "adres": "ORTA MAH. VEZİRKÖPRÜ CAD. ZEMİN KAT NO:7"
     },
     {
-      "id": 13333,
-      "ad": "SAADET ECZANESİ",
-      "tel": "2164519068",
-      "adres": "ATATÜRK CAD. NO:30/1 SOGANLIK"
+      "id": 54025,
+      "ad": "YAŞAM ECZANESİ",
+      "tel": "2163053733",
+      "adres": "Orhantepe Mah. Bankalar Cad. No:26/B"
     }
   ]
 }
