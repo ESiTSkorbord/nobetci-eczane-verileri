@@ -1,28 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 61538,
-      "ad": "DİCLE ECZANESİ",
-      "tel": "2164733780",
-      "adres": "Atalar Mah.,Kartopu Sk., No:13/P"
+      "id": 56740,
+      "ad": "21 MAYIS ECZANESİ",
+      "tel": "2163741602",
+      "adres": "Petrol İş Mah. Kızılay Bulv. No:21/C"
     },
     {
-      "id": 50806,
-      "ad": "PELİN ECZANESİ",
-      "tel": "2164525344",
-      "adres": "Çarşı Mah., Gökdemir Sk., 9/B"
+      "id": 52772,
+      "ad": "PELİN DOĞAN ECZANESİ",
+      "tel": "5059526275",
+      "adres": "CEVİZLİ MAH. KÖROĞLU CAD. NO:3/A"
     },
     {
-      "id": 38227,
-      "ad": "SOĞANLIK ECZANESİ",
-      "tel": "2163098920",
-      "adres": "ORTA MAH. VEZİRKÖPRÜ CAD. ZEMİN KAT NO:7"
+      "id": 49301,
+      "ad": "SELVİ ECZANESİ",
+      "tel": "2163091909",
+      "adres": "Cumhuriyet Mah. Adnan Kahveci Cad. No:86/B"
     },
     {
-      "id": 54025,
-      "ad": "YAŞAM ECZANESİ",
-      "tel": "2163053733",
-      "adres": "Orhantepe Mah. Bankalar Cad. No:26/B"
+      "id": 51869,
+      "ad": "TURKUAZ ECZANESİ",
+      "tel": "2163770778",
+      "adres": "Gümüşpınar Mah. Atatürk Cad., 107/B 34880 Kartal/İstanbul"
     }
   ]
 }

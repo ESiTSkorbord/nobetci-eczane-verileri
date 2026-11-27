@@ -1,28 +1,22 @@
 {
   "eczaneler": [
     {
-      "id": 44494,
-      "ad": "GLOBAL ECZANESİ",
-      "tel": "2165735577",
-      "adres": "FINDIKLI MAH. GAZİ MUSTAFA KEMAL CAD. NO:37B"
+      "id": 54179,
+      "ad": "AFŞAR ECZANESİ",
+      "tel": "2167660688",
+      "adres": "Altayçeşme Mah. Efe Boz Sok. No:27 A"
     },
     {
-      "id": 56448,
-      "ad": "HAYAT ECZANESİ",
-      "tel": "2164212160",
-      "adres": "Başıbüyük Mah. Başıbüyük Cad. No:12/A"
+      "id": 43509,
+      "ad": "IHLAMUR ECZANESİ",
+      "tel": "2164410990",
+      "adres": "Zümrütevler Mah. Handegül Sok. No:129/1A"
     },
     {
-      "id": 56073,
-      "ad": "HİPOKRAT ECZANESİ",
-      "tel": "2164416705",
-      "adres": "Bağlarbaşı Mah. FeyzullaSh Cad. No:28/A"
-    },
-    {
-      "id": 46637,
-      "ad": "YİĞİT ECZANESİ",
-      "tel": "2165184985",
-      "adres": "ÇINAR MAH. REZZAN HAS. SOK. NO:9/D"
+      "id": 56397,
+      "ad": "PALLADIUM CADDE ECZANESİ",
+      "tel": "2165190550",
+      "adres": "Çınar Mah.,Rıfkı Tongsir Cad., No:113E-A"
     }
   ]
 }
