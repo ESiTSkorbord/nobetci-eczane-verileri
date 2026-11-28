@@ -1,28 +1,28 @@
 {
   "eczaneler": [
     {
-      "id": 56740,
-      "ad": "21 MAYIS ECZANESİ",
-      "tel": "2163741602",
-      "adres": "Petrol İş Mah. Kızılay Bulv. No:21/C"
+      "id": 13321,
+      "ad": "DENİZ ECZANESİ",
+      "tel": "2163894087",
+      "adres": "PETROL-IS MAH. KIZILAY BLV. NO:27/4"
     },
     {
-      "id": 52772,
-      "ad": "PELİN DOĞAN ECZANESİ",
-      "tel": "5059526275",
-      "adres": "CEVİZLİ MAH. KÖROĞLU CAD. NO:3/A"
+      "id": 13389,
+      "ad": "FİLİZ ECZANESİ",
+      "tel": "2163701570",
+      "adres": "ORHANTEPE MAH. GEZIYOLU SOK. NO:32/1"
     },
     {
-      "id": 49301,
-      "ad": "SELVİ ECZANESİ",
-      "tel": "2163091909",
-      "adres": "Cumhuriyet Mah. Adnan Kahveci Cad. No:86/B"
+      "id": 48345,
+      "ad": "KARTAL ECZANESİ",
+      "tel": "2164880045",
+      "adres": "Gümüşpınar Mah. Defneli Cad., 4/1A"
     },
     {
-      "id": 51869,
-      "ad": "TURKUAZ ECZANESİ",
-      "tel": "2163770778",
-      "adres": "Gümüşpınar Mah. Atatürk Cad., 107/B 34880 Kartal/İstanbul"
+      "id": 57819,
+      "ad": "ZERRİN ECZANESİ",
+      "tel": "2163772552",
+      "adres": "Yakacık Yeni Mah.,Samandıra Cad.,No:21/B"
     }
   ]
 }

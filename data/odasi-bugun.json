@@ -1,63 +1,63 @@
 {
- "zaman": "2026-11-28 08:01",
+ "zaman": "2026-11-28 09:01",
  "adet": 7,
- "gecerli_kadar": "2026-11-28T09:00:00+03:00",
+ "gecerli_kadar": "2026-11-29T09:00:00+03:00",
  "eczaneler": [
   {
-   "sicil": 15779,
-   "ad": "21 MAYIS ECZANESİ",
-   "tel": "2163741602",
+   "sicil": 8312,
+   "ad": "DENİZ ECZANESİ",
+   "tel": "2163894087",
    "ilce": "Kartal",
-   "adres": "Petroliş Mahallesi, Kızılay Bulvarı, 21/C",
-   "bitis": "2026-11-28T09:00:00+03:00"
+   "adres": "Petroliş Mahallesi, Kızılay Bulvarı, 27",
+   "bitis": "2026-11-29T09:00:00+03:00"
   },
   {
-   "sicil": 14625,
-   "ad": "PELİN DOĞAN ECZANESİ",
-   "tel": "5059526275",
+   "sicil": 7252,
+   "ad": "FİLİZ ECZANESİ",
+   "tel": "2163701570",
    "ilce": "Kartal",
-   "adres": "Cevizli Mahallesi, Köroğlu Caddesi, 3/A",
-   "bitis": "2026-11-28T09:00:00+03:00"
+   "adres": "Orhantepe Mahallesi, Gezi Yolu Sokak, 32/1",
+   "bitis": "2026-11-29T09:00:00+03:00"
   },
   {
-   "sicil": 14833,
-   "ad": "SELVİ ECZANESİ",
-   "tel": "2163091909",
+   "sicil": 10500,
+   "ad": "KARTAL ECZANESİ",
+   "tel": "2164880045",
    "ilce": "Kartal",
-   "adres": "Cumhuriyet Mahallesi, Adnan Kahveci Caddesi, 86/B",
-   "bitis": "2026-11-28T09:00:00+03:00"
+   "adres": "Gümüşpınar Mahallesi, Defneli Caddesi, 4/1A",
+   "bitis": "2026-11-29T09:00:00+03:00"
   },
   {
-   "sicil": 12776,
-   "ad": "TURKUAZ ECZANESİ",
-   "tel": "2163770778",
+   "sicil": 2950,
+   "ad": "ZERRİN ECZANESİ",
+   "tel": "2163772552",
    "ilce": "Kartal",
-   "adres": "Gümüşpınar Mahallesi, Atatürk Caddesi, 107/B",
-   "bitis": "2026-11-28T09:00:00+03:00"
+   "adres": "Yakacık Yeni Mahallesi, Samandıra Caddesi, 21/B",
+   "bitis": "2026-11-29T09:00:00+03:00"
   },
   {
-   "sicil": 16370,
-   "ad": "AFŞAR ECZANESİ",
-   "tel": "2167660688",
+   "sicil": 9418,
+   "ad": "CEMRE ECZANESİ",
+   "tel": "2166296699",
    "ilce": "Maltepe",
-   "adres": "Altayçeşme Mahallesi, Efe Boz Sokak, 27/A",
-   "bitis": "2026-11-28T09:00:00+03:00"
+   "adres": "Aydınevler Mahallesi, Selçukbey Caddesi, 32/A",
+   "bitis": "2026-11-29T09:00:00+03:00"
   },
   {
-   "sicil": 11678,
-   "ad": "IHLAMUR ECZANESİ",
-   "tel": "2164410990",
+   "sicil": 15200,
+   "ad": "MARMARAY ECZANESİ",
+   "tel": "2163520067",
    "ilce": "Maltepe",
-   "adres": "Zümrütevler Mahallesi, Handegül Sokak, 129/1A",
-   "bitis": "2026-11-28T09:00:00+03:00"
+   "adres": "Bağlarbaşı Mahallesi, İnönü Caddesi, 2/A",
+   "bitis": "2026-11-29T09:00:00+03:00"
   },
   {
-   "sicil": 14793,
-   "ad": "PALLADIUM CADDE ECZANESİ",
-   "tel": "2165190550",
+   "sicil": 6248,
+   "ad": "ÖRNEK ECZANESİ",
+   "tel": "2165890498",
    "ilce": "Maltepe",
-   "adres": "Çınar Mahallesi, Rıfkı Tongsir Caddesi, No:113E-A",
-   "bitis": "2026-11-28T09:00:00+03:00"
+   "adres": "Zümrütevler Mahallesi, Çiğdem Sokak, 26/2-3",
+   "bitis": "2026-11-29T09:00:00+03:00"
   }
  ]
 }
